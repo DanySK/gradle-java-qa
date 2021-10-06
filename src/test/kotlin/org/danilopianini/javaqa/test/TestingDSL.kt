@@ -1,4 +1,4 @@
-package org.danilopianini.template.test
+package org.danilopianini.javaqa.test
 
 import com.uchuhimo.konf.ConfigSpec
 import java.io.File

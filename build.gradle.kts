@@ -18,13 +18,13 @@ plugins {
  * Project information
  */
 group = "org.danilopianini"
-description = "A template repository for kickstarting Gradle Plugins"
+description = "Automated Quality Assurance configuration for Java Projects built with Gradle"
 inner class ProjectInfo {
-    val longName = "Template for Gradle Plugins"
+    val longName = "Java Quality Assurance Gradle plugin"
     val website = "https://github.com/DanySK/$name"
     val scm = "git@github.com:DanySK/$name.git"
-    val pluginImplementationClass = "$group.template.HelloGradle"
-    val tags = listOf("template", "kickstart", "example")
+    val pluginImplementationClass = "$group.javaqa.JavaQAPlugin"
+    val tags = listOf("java", "static analysis", "quality assurance", "qa", "style", "bugs")
 }
 val info = ProjectInfo()
 
@@ -158,7 +158,7 @@ pluginBundle {
 
 gradlePlugin {
     plugins {
-        create("plugin-template") {
+        create("java-qa") {
             id = "$group.${project.name}"
             displayName = info.longName
             description = project.description

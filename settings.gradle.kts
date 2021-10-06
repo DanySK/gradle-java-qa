@@ -10,5 +10,5 @@ gradleEnterprise {
     }
 }
 
-rootProject.name = "Template-for-Gradle-Plugins"
+rootProject.name = "gradle-java-qa"
 enableFeaturePreview("VERSION_CATALOGS")

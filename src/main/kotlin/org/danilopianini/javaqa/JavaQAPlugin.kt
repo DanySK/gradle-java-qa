@@ -1,4 +1,4 @@
-package org.danilopianini.template
+package org.danilopianini.javaqa
 
 import java.io.Serializable
 import org.gradle.api.DefaultTask
@@ -17,7 +17,7 @@ import org.gradle.kotlin.dsl.register
 /**
  * Just a template.
  */
-open class HelloGradle : Plugin<Project> {
+open class JavaQAPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         val extension = target.extensions.create<HelloExtension>("hello")
         target.tasks.register<HelloTask>("hello") {
