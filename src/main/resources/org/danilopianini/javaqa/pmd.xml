@@ -93,7 +93,7 @@
         <exclude name="CloseResource" />
         <exclude name="DataflowAnomalyAnalysis" />
         <exclude name="DoNotTerminateVM" />
-        <exclude name="MissingBreakInSwitch" />
+        <exclude name="ImplicitSwitchFallThrough" />
         <exclude name="NonStaticInitializer" />
         <exclude name="NullAssignment" />
         <exclude name="ReturnEmptyArrayRatherThanNull" />
