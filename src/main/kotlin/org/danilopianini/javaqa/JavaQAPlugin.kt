@@ -61,7 +61,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     suppressionsFile.writeText(suppressions)
                     val additionalRules = extension.checkstyle.additionalConfiguration.fromFileOrItself()
                     val configuration = loadResource(checkstylePath)
-                        .replace(Regex("<!--\\s*SUPPRESSIONS_FILE\\s*-->"), suppressionsFile.absolutePath)
+                        .replace(Regex("<!--\\s*SUPPRESSIONS_FILE\\s*-->"), suppressionsFile.path.replace('\\', '/'))
                         .replace(Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"), additionalRules)
                     config = resources.text.fromString(configuration)
                 }
