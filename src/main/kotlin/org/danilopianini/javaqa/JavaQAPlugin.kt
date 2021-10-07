@@ -1,14 +1,11 @@
 package org.danilopianini.javaqa
 
-import com.github.spotbugs.snom.Effort
 import com.github.spotbugs.snom.SpotBugsExtension
 import com.github.spotbugs.snom.SpotBugsPlugin
-import java.io.Serializable
 import org.gradle.api.DefaultTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.model.ObjectFactory
-import org.gradle.api.plugins.ExtensionContainer
 import org.gradle.api.plugins.JavaPlugin
 import org.gradle.api.plugins.quality.CheckstyleExtension
 import org.gradle.api.plugins.quality.CheckstylePlugin
@@ -16,7 +13,6 @@ import org.gradle.api.plugins.quality.PmdExtension
 import org.gradle.api.plugins.quality.PmdPlugin
 import org.gradle.api.provider.Property
 import org.gradle.api.provider.Provider
-import org.gradle.api.resources.TextResourceFactory
 import org.gradle.api.tasks.Input
 import org.gradle.api.tasks.Internal
 import org.gradle.api.tasks.TaskAction
@@ -29,6 +25,7 @@ import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
 import java.io.File
+import java.io.Serializable
 import java.util.Properties
 
 /**
@@ -36,10 +33,10 @@ import java.util.Properties
  */
 open class JavaQAPlugin : Plugin<Project> {
     override fun apply(project: Project) {
-        with (project) {
+        with(project) {
             plugins.withType(JavaPlugin::class.java) {
                 val extension = project.extensions.create("javaQA", JavaQAExtension::class.java, this)
-                with (plugins) {
+                with(plugins) {
                     apply(CheckstylePlugin::class)
                     apply(PmdPlugin::class)
                     apply(JacocoPlugin::class)
@@ -70,6 +67,8 @@ open class JavaQAPlugin : Plugin<Project> {
                 }
                 configureExtension<PmdExtension> {
                     toolVersion = versionOf("pmd")
+                    ruleSets = listOf()
+                    ruleSetConfig = resources.text.fromString(loadResource(pmdPath))
                 }
                 configureExtension<JacocoPluginExtension> {
                     toolVersion = versionOf("jacoco")
