@@ -1,0 +1,14 @@
+tests:
+  - description: "Base Java QA tasks should execute"
+    configuration:
+      tasks: check
+      options: --stacktrace
+    expectation:
+      success:
+        - checkstyleMain
+        - checkstyleTest
+        - pmdMain
+        - pmdTest
+        - spotbugsMain
+        - spotbugsTest
+        - jacocoTestReport
