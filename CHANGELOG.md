@@ -1,3 +1,7 @@
+# 0.2.1
+
+* Update checkstyle to 9.0.1
+
 # 0.2.0
 
 * Update checkstyle to 8.45.1
