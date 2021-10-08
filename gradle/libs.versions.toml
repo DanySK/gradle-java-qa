@@ -1,7 +1,7 @@
 [versions]
 checkstyle = "8.30"
 jacoco = "0.8.7"
-mockito = "3.12.4"
+mockito = "4.0.0"
 konf = "1.1.2"
 kotlin = "1.5.31"
 kotest = "4.6.3"
