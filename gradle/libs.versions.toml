@@ -1,5 +1,5 @@
 [versions]
-checkstyle = "8.30"
+checkstyle = "8.45.1"
 jacoco = "0.8.7"
 mockito = "4.0.0"
 konf = "1.1.2"
