@@ -1,3 +1,7 @@
+# 0.2.2
+
+* Update SpotBugs to 4.4.2
+
 # 0.2.1
 
 * Update checkstyle to 9.0.1
