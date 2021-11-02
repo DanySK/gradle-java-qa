@@ -2,11 +2,16 @@ package org.danilopianini.javaqa
 
 import com.github.spotbugs.snom.SpotBugsExtension
 import com.github.spotbugs.snom.SpotBugsPlugin
+import de.aaschmid.gradle.plugins.cpd.CpdExtension
+import de.aaschmid.gradle.plugins.cpd.CpdPlugin
+import org.danilopianini.javaqa.JavaQAPlugin.Companion.configureExtension
 import org.gradle.api.DefaultTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.api.file.FileTree
 import org.gradle.api.model.ObjectFactory
 import org.gradle.api.plugins.JavaPlugin
+import org.gradle.api.plugins.JavaPluginExtension
 import org.gradle.api.plugins.quality.CheckstyleExtension
 import org.gradle.api.plugins.quality.CheckstylePlugin
 import org.gradle.api.plugins.quality.PmdExtension
@@ -19,8 +24,8 @@ import org.gradle.api.tasks.TaskAction
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.create
+import org.gradle.kotlin.dsl.findByType
 import org.gradle.kotlin.dsl.property
-import org.gradle.kotlin.dsl.register
 import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
@@ -38,10 +43,12 @@ open class JavaQAPlugin : Plugin<Project> {
                 val extension = project.extensions.create("javaQA", JavaQAExtension::class.java, this)
                 with(plugins) {
                     apply(CheckstylePlugin::class)
+                    apply(CpdPlugin::class)
                     apply(PmdPlugin::class)
                     apply(JacocoPlugin::class)
                     apply(SpotBugsPlugin::class)
                 }
+                // SpotBugs
                 configureExtension<SpotBugsExtension> {
                     toolVersion.set(versionOf("spotbugs"))
                     setEffort("max")
@@ -50,6 +57,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     val excludes = createFromResource(spotbugsExcludes, File(javaQADestination, "spotbugs-excludes"))
                     excludeFilter.set(excludes)
                 }
+                // Checkstyle
                 configureExtension<CheckstyleExtension> {
                     toolVersion = versionOf("checkstyle")
                     fun String.fromFileOrItself() = File(this).takeIf { it.exists() }?.readText() ?: this
@@ -65,11 +73,36 @@ open class JavaQAPlugin : Plugin<Project> {
                         .replace(Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"), additionalRules)
                     config = resources.text.fromString(configuration)
                 }
+                // PMD
+                val pmdVersion = versionOf("pmd")
                 configureExtension<PmdExtension> {
-                    toolVersion = versionOf("pmd")
+                    toolVersion = pmdVersion
                     ruleSets = listOf()
                     ruleSetConfig = resources.text.fromString(loadResource(pmdPath))
                 }
+                // CPD
+                configureExtension<CpdExtension> {
+                    toolVersion = pmdVersion
+                }
+                tasks.create<de.aaschmid.gradle.plugins.cpd.Cpd>("cpdJavaCheck") {
+                    language = "java"
+                    source = project.extensions.findByType<JavaPluginExtension>()
+                        ?.sourceSets
+                        ?.flatMap { it.allSource }
+                        ?.map {
+                            fileTree(it) {
+                                include("**/*.java")
+                            }
+                        }
+                        ?.reduce(FileTree::plus)
+                        ?: files().asFileTree
+                    minimumTokenCount = 100
+                    ignoreFailures = false
+                    tasks.findByName("check")?.dependsOn(this)
+                }
+                // Disable the default cpdCheck to prevent conflict or double execution
+                tasks.findByName("cpdCheck")?.enabled = false
+                // Jacoco
                 configureExtension<JacocoPluginExtension> {
                     toolVersion = versionOf("jacoco")
                 }

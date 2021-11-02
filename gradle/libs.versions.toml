@@ -13,6 +13,7 @@ spotbugs-gradle = "4.7.9"
 [libraries]
 checkstyle = { module = "com.puppycrawl.tools:checkstyle", version.ref = "checkstyle" }
 classgraph = "io.github.classgraph:classgraph:4.8.129"
+cpd-gradle = { module = "de.aaschmid:gradle-cpd-plugin", version.ref = "cpd-gradle" }
 jacoco = { module = "org.jacoco:org.jacoco.core", version.ref = "jacoco" }
 konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
 kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }

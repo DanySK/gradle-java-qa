@@ -88,6 +88,7 @@ dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
     api(libs.spotbugs.gradle)
+    api(libs.cpd.gradle)
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
     testImplementation(libs.konf.yaml)
