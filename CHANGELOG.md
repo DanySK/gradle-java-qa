@@ -1,3 +1,8 @@
+# 0.3.0
+
+* Add support for CPD
+* Remove leftovers from the template project
+
 # 0.2.2
 
 * Update SpotBugs to 4.4.2
