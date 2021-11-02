@@ -22,7 +22,7 @@ import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
 import java.io.File
-import java.util.*
+import java.util.Properties
 
 /**
  * Just a template.
