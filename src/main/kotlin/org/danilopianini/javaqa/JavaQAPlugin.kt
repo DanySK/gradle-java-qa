@@ -81,10 +81,6 @@ open class JavaQAPlugin : Plugin<Project> {
                 }
             }
         }
-        val extension = project.extensions.create<HelloExtension>("hello")
-        project.tasks.register<HelloTask>("hello") {
-            author.set(extension.author)
-        }
     }
 
     companion object {
