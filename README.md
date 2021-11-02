@@ -1,6 +1,6 @@
 # Java Automated Quality Assurance
 
-This Gradle plugin applies Checkstyle, PMD, SpotBugs, and JaCoCo under the hood.
+This Gradle plugin applies Checkstyle, PMD, CPD, SpotBugs, and JaCoCo under the hood.
 More static checkers may come in the future.
 All checkers' configuration have been customized to match my requirements.
 
@@ -14,6 +14,15 @@ plugins {
     id("org.danilopianini.gradle-java-qa") version "<SELECT THE VERSION>"
 }
 ```
+
+Once done, checkstyle, PMD, FindBugs, and CPD will be applied and pre-configured aggressively,
+but not exceedingly so, in particular, most rules with arbitrary numbers
+(e.g. "too many methods")
+have been either suppressed or configured permissively.
+
+The default configuration can be modified as would have for the normal plugin application.
+Moreover, in the case of checkstyle,
+it is possible to add rules and exception without the need to overwrite the proposed default.
 
 ### Adding configuration to checkstyle
 
