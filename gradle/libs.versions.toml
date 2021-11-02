@@ -1,4 +1,5 @@
 [versions]
+cpd-gradle = "3.3"
 checkstyle = "9.1"
 jacoco = "0.8.7"
 mockito = "4.0.0"
@@ -25,6 +26,7 @@ spotbugs-gradle = { module = "com.github.spotbugs.snom:spotbugs-gradle-plugin", 
 kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm", "mockito-core" ]
 
 [plugins]
+cpd = { id = "de.aaschmid.cpd", version.ref = "cpd-gradle" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "kotlin" }
 gitSemVer = { id = "org.danilopianini.git-sensitive-semantic-versioning", version = "0.3.0" }
 gradlePluginPublish = { id = "com.gradle.plugin-publish", version = "0.16.0" }

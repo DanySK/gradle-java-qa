@@ -4,6 +4,7 @@ import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSI
 plugins {
     jacoco
     `java-gradle-plugin`
+    alias(libs.plugins.cpd)
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
     alias(libs.plugins.gradlePluginPublish)
@@ -125,6 +126,30 @@ tasks.withType<Test> {
         events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
     }
+}
+
+cpd {
+    toolVersion = "6.39.0"
+}
+
+tasks.create<de.aaschmid.gradle.plugins.cpd.Cpd>("cpdKotlinCheck") {
+    language = "kotlin"
+    source = sourceSets
+        .flatMap { it.allSource }
+        .map {
+            fileTree(it) {
+                include("**/*.kt")
+                include("**/*.kts")
+            }
+        }
+        .reduce(FileTree::plus)
+    minimumTokenCount = 25
+    ignoreFailures = false
+    tasks.check.orNull?.dependsOn(this)
+}
+
+tasks.cpdCheck {
+    enabled = false
 }
 
 jacoco {
