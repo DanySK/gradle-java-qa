@@ -87,8 +87,7 @@ tasks.withType<Test> {
 dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
-    api(libs.spotbugs.gradle)
-    api(libs.cpd.gradle)
+    api(libs.bundles.qa.plugins)
     implementation(kotlin("stdlib-jdk8"))
     testImplementation(gradleTestKit())
     testImplementation(libs.konf.yaml)

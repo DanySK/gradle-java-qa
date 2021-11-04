@@ -25,6 +25,7 @@ spotbugs-gradle = { module = "com.github.spotbugs.snom:spotbugs-gradle-plugin", 
 
 [bundles]
 kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm", "mockito-core" ]
+qa-plugins = [  "cpd-gradle", "spotbugs-gradle" ]
 
 [plugins]
 cpd = { id = "de.aaschmid.cpd", version.ref = "cpd-gradle" }
