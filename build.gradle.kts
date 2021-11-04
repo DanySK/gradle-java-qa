@@ -128,41 +128,6 @@ tasks.withType<Test> {
     }
 }
 
-cpd {
-    toolVersion = "6.39.0"
-}
-
-tasks.create<de.aaschmid.gradle.plugins.cpd.Cpd>("cpdKotlinCheck") {
-    language = "kotlin"
-    source = sourceSets
-        .flatMap { it.allSource }
-        .map {
-            fileTree(it) {
-                include("**/*.kt")
-                include("**/*.kts")
-            }
-        }
-        .reduce(FileTree::plus)
-    minimumTokenCount = 25
-    ignoreFailures = false
-    tasks.check.orNull?.dependsOn(this)
-}
-
-tasks.cpdCheck {
-    enabled = false
-}
-
-jacoco {
-    toolVersion = libs.versions.jacoco.getOrElse(toolVersion)
-}
-
-tasks.jacocoTestReport {
-    reports {
-        // Used by Codecov.io
-        xml.required.set(true)
-    }
-}
-
 signing {
     if (System.getenv()["CI"].equals("true", ignoreCase = true)) {
         val signingKey: String? by project
