@@ -2,6 +2,7 @@ package org.danilopianini.javaqa
 
 import com.github.spotbugs.snom.SpotBugsExtension
 import com.github.spotbugs.snom.SpotBugsPlugin
+import com.github.spotbugs.snom.SpotBugsTask
 import de.aaschmid.gradle.plugins.cpd.CpdExtension
 import de.aaschmid.gradle.plugins.cpd.CpdPlugin
 import org.gradle.api.Plugin
@@ -9,6 +10,7 @@ import org.gradle.api.Project
 import org.gradle.api.file.FileTree
 import org.gradle.api.plugins.JavaPlugin
 import org.gradle.api.plugins.JavaPluginExtension
+import org.gradle.api.plugins.quality.Checkstyle
 import org.gradle.api.plugins.quality.CheckstyleExtension
 import org.gradle.api.plugins.quality.CheckstylePlugin
 import org.gradle.api.plugins.quality.PmdExtension
@@ -18,6 +20,7 @@ import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.findByType
+import org.gradle.kotlin.dsl.withType
 import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
@@ -33,15 +36,9 @@ open class JavaQAPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         with(project) {
             // Resources from the classpath must be loaded upfront
-            val javaQADestination = File(buildDir, "javaqa").apply { mkdirs() }
-            val spotbugsExcludesFile: File = createFromResource(
-                spotbugsSuppressionsResource,
-                File(javaQADestination, spotbugsSuppressionsFileName)
-            )
-            val checkstyleSuppressionsFile: File = createFromResource(
-                checkstyleSuppressionsResource,
-                File(javaQADestination, checkstyleSuppressionsFileName)
-            )
+            val javaQADestination = File(project.buildDir, "javaqa").apply { mkdirs() }
+            val baseSpotBugsExcludes = loadResource(spotbugsSuppressionsResource)
+            val baseCheckstyleExcludes = loadResource(checkstyleSuppressionsResource)
             val checkstyleConfiguration = loadResource(checkstylePath)
             val pmdConfiguration = loadResource(pmdPath)
             plugins.withType(JavaPlugin::class.java) {
@@ -56,6 +53,16 @@ open class JavaQAPlugin : Plugin<Project> {
                 }
                 // SpotBugs
                 configureExtension<SpotBugsExtension> {
+                    // Create a task creating the default configuration
+                    val spotbugsExcludesFile: File = File(javaQADestination, spotbugsSuppressionsFileName)
+                    val populateDefaultSpotBugsExcludes = tasks.create("populateDefaultSpotBugsExcludes") {
+                        it.doLast {
+                            spotbugsExcludesFile.createWithContent(baseSpotBugsExcludes)
+                        }
+                    }
+                    tasks.withType<SpotBugsTask> {
+                        dependsOn(populateDefaultSpotBugsExcludes)
+                    }
                     toolVersion.set(spotBugsVersion)
                     setEffort("max")
                     setReportLevel("low")
@@ -67,24 +74,30 @@ open class JavaQAPlugin : Plugin<Project> {
                     File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
                 }
                 configureExtension<CheckstyleExtension> {
+                    // Create a task creating the default configuration
+                    val checkstyleSuppressionsFile = File(javaQADestination, checkstyleSuppressionsFileName)
+                    val populateDefaultCheckstyleExclusions = tasks.create("populateDefaultCheckstyleExclusions") {
+                        it.doLast {
+                            val additionalSuppressions = extension.checkstyle.additionalSuppressions.fromFileOrItself()
+                            checkstyleSuppressionsFile.createWithContent(
+                                baseCheckstyleExcludes.replace(
+                                    Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"),
+                                    additionalSuppressions
+                                )
+                            )
+                        }
+                    }
+                    tasks.withType<Checkstyle> {
+                        dependsOn(populateDefaultCheckstyleExclusions)
+                    }
                     toolVersion = checkstyleVersion
                     val configuration = checkstyleConfiguration
-                        .replace(
-                            Regex("<!--\\s*SUPPRESSIONS_FILE\\s*-->"),
-                            checkstyleSuppressionsFile.absolutePath.replace('\\', '/')
-                        )
                         .replace(
                             Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
                             extension.checkstyle.additionalConfiguration.fromFileOrItself()
                         )
                     config = resources.text.fromString(configuration)
-                }
-                afterEvaluate {
-                    // Inject the additional suppressions
-                    val additionalSuppressions: String = extension.checkstyle.additionalSuppressions.fromFileOrItself()
-                    val actualSuppressions = checkstyleSuppressionsFile.readText()
-                        .replace(Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"), additionalSuppressions)
-                    checkstyleSuppressionsFile.writeText(actualSuppressions)
+                    configDirectory.set(checkstyleSuppressionsFile.parentFile)
                 }
                 // PMD
                 configureExtension<PmdExtension> {
@@ -159,8 +172,9 @@ open class JavaQAPlugin : Plugin<Project> {
             extensions.configure(T::class) { it.action() }
         }
 
-        private fun createFromResource(source: String, destination: File): File = destination.apply {
-            writeText(loadResource(source))
+        private fun File.createWithContent(source: String): File = apply {
+            parentFile.mkdirs()
+            writeText(source)
         }
 
         private fun resource(path: String) = Thread.currentThread().contextClassLoader.getResource(path)
