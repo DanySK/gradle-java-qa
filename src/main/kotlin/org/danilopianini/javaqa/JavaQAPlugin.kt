@@ -88,7 +88,7 @@ open class JavaQAPlugin : Plugin<Project> {
                                 include("**/*.java")
                             }
                         }
-                        ?.reduce(FileTree::plus)
+                        ?.fold(files().asFileTree, FileTree::plus)
                         ?: files().asFileTree
                     minimumTokenCount = 100
                     ignoreFailures = false
