@@ -128,6 +128,10 @@ tasks.withType<Test> {
     }
 }
 
+tasks.cpdKotlinCheck {
+    exclude("**/*.kts")
+}
+
 signing {
     if (System.getenv()["CI"].equals("true", ignoreCase = true)) {
         val signingKey: String? by project
