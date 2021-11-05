@@ -46,7 +46,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     setEffort("max")
                     setReportLevel("low")
                     showProgress.set(false)
-                    val excludes = createFromResource(
+                    val excludes: File = createFromResource(
                         spotbugsExcludes,
                         File(javaQADestination, "spotbugs-excludes.xml")
                     )
