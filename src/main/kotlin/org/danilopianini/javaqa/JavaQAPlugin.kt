@@ -13,7 +13,7 @@ import org.gradle.api.plugins.quality.CheckstyleExtension
 import org.gradle.api.plugins.quality.CheckstylePlugin
 import org.gradle.api.plugins.quality.PmdExtension
 import org.gradle.api.plugins.quality.PmdPlugin
-import org.gradle.api.provider.Property
+import org.gradle.api.provider.Provider
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.create
@@ -32,13 +32,21 @@ open class JavaQAPlugin : Plugin<Project> {
     @Suppress("UnstableApiUsage")
     override fun apply(project: Project) {
         with(project) {
-            val javaQADestination = File(rootProject.buildDir, "javaqa").apply { mkdirs() }
+            // Resources from the classpath must be loaded upfront
+            val javaQADestination = File(buildDir, "javaqa").apply { mkdirs() }
             val spotbugsExcludesFile: File = createFromResource(
-                "$root/spotbugs-excludes.xml",
-                File(javaQADestination, "spotbugs-excludes.xml")
+                spotbugsSuppressionsResource,
+                File(javaQADestination, spotbugsSuppressionsFileName)
             )
+            val checkstyleSuppressionsFile: File = createFromResource(
+                checkstyleSuppressionsResource,
+                File(javaQADestination, checkstyleSuppressionsFileName)
+            )
+            val checkstyleConfiguration = loadResource(checkstylePath)
+            val pmdConfiguration = loadResource(pmdPath)
             plugins.withType(JavaPlugin::class.java) {
-                val extension = project.extensions.create("javaQA", JavaQAExtension::class.java, this)
+                val extension: JavaQAExtension =
+                    project.extensions.create("javaQA", JavaQAExtension::class.java, this)
                 with(plugins) {
                     apply(CheckstylePlugin::class)
                     apply(CpdPlugin::class)
@@ -55,26 +63,34 @@ open class JavaQAPlugin : Plugin<Project> {
                     excludeFilter.set(spotbugsExcludesFile)
                 }
                 // Checkstyle
+                fun Provider<String>.fromFileOrItself(): String = getOrElse("").let { maybePath ->
+                    File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
+                }
                 configureExtension<CheckstyleExtension> {
                     toolVersion = checkstyleVersion
-                    fun String.fromFileOrItself() = File(this).takeIf { it.exists() }?.readText() ?: this
-                    fun Property<String>.fromFileOrItself() = getOrElse("").fromFileOrItself()
-                    val additionalSuppressions = extension.checkstyle.additionalSuppressions.fromFileOrItself()
-                    val suppressions = loadResource(checkstyleSuppressionsPath)
-                        .replace(Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"), additionalSuppressions)
-                    val suppressionsFile = File(javaQADestination, "checkstyle-suppressions.xml")
-                    suppressionsFile.writeText(suppressions)
-                    val additionalRules = extension.checkstyle.additionalConfiguration.fromFileOrItself()
-                    val configuration = loadResource(checkstylePath)
-                        .replace(Regex("<!--\\s*SUPPRESSIONS_FILE\\s*-->"), suppressionsFile.path.replace('\\', '/'))
-                        .replace(Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"), additionalRules)
+                    val configuration = checkstyleConfiguration
+                        .replace(
+                            Regex("<!--\\s*SUPPRESSIONS_FILE\\s*-->"),
+                            checkstyleSuppressionsFile.absolutePath.replace('\\', '/')
+                        )
+                        .replace(
+                            Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
+                            extension.checkstyle.additionalConfiguration.fromFileOrItself()
+                        )
                     config = resources.text.fromString(configuration)
+                }
+                afterEvaluate {
+                    // Inject the additional suppressions
+                    val additionalSuppressions: String = extension.checkstyle.additionalSuppressions.fromFileOrItself()
+                    val actualSuppressions = checkstyleSuppressionsFile.readText()
+                        .replace(Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"), additionalSuppressions)
+                    checkstyleSuppressionsFile.writeText(actualSuppressions)
                 }
                 // PMD
                 configureExtension<PmdExtension> {
                     toolVersion = pmdVersion
                     ruleSets = listOf()
-                    ruleSetConfig = resources.text.fromString(loadResource(pmdPath))
+                    ruleSetConfig = resources.text.fromString(pmdConfiguration)
                 }
                 // CPD
                 configureExtension<CpdExtension> {
@@ -114,10 +130,13 @@ open class JavaQAPlugin : Plugin<Project> {
 
     companion object {
 
-        private const val root = "org/danilopianini/javaqa"
-        private const val checkstylePath = "$root/checkstyle.xml"
-        private const val checkstyleSuppressionsPath = "$root/checkstyle-suppressions.xml"
-        private const val pmdPath = "$root/pmd.xml"
+        private const val packageRoot = "org/danilopianini/javaqa"
+        private const val checkstylePath = "$packageRoot/checkstyle.xml"
+        private const val checkstyleSuppressionsFileName = "checkstyle-suppressions.xml"
+        private const val checkstyleSuppressionsResource = "$packageRoot/$checkstyleSuppressionsFileName"
+        private const val pmdPath = "$packageRoot/pmd.xml"
+        private const val spotbugsSuppressionsFileName = "spotbugs-excludes.xml"
+        private const val spotbugsSuppressionsResource = "$packageRoot/$spotbugsSuppressionsFileName"
 
         /**
          * The default version of SpotBugs.
@@ -137,7 +156,7 @@ open class JavaQAPlugin : Plugin<Project> {
         val pmdVersion = versionOf("pmd")
 
         private inline fun <reified T : Any> Project.configureExtension(crossinline action: T.() -> Unit) {
-            project.extensions.configure(T::class) { it.action() }
+            extensions.configure(T::class) { it.action() }
         }
 
         private fun createFromResource(source: String, destination: File): File = destination.apply {
@@ -150,7 +169,7 @@ open class JavaQAPlugin : Plugin<Project> {
         private fun loadResource(path: String): String = resource(path).readText()
 
         private fun versionOf(library: String): String = Properties().run {
-            load(resource("$root/versions.properties").openStream())
+            load(resource("$packageRoot/versions.properties").openStream())
             get(library)?.toString() ?: throw IllegalStateException("Unable to load version for $library")
         }
     }
