@@ -28,6 +28,7 @@ import java.util.Properties
  * Just a template.
  */
 open class JavaQAPlugin : Plugin<Project> {
+
     @Suppress("UnstableApiUsage")
     override fun apply(project: Project) {
         with(project) {
@@ -42,7 +43,7 @@ open class JavaQAPlugin : Plugin<Project> {
                 }
                 // SpotBugs
                 configureExtension<SpotBugsExtension> {
-                    toolVersion.set(versionOf("spotbugs"))
+                    toolVersion.set(spotBugsVersion)
                     setEffort("max")
                     setReportLevel("low")
                     showProgress.set(false)
@@ -54,7 +55,7 @@ open class JavaQAPlugin : Plugin<Project> {
                 }
                 // Checkstyle
                 configureExtension<CheckstyleExtension> {
-                    toolVersion = versionOf("checkstyle")
+                    toolVersion = checkstyleVersion
                     fun String.fromFileOrItself() = File(this).takeIf { it.exists() }?.readText() ?: this
                     fun Property<String>.fromFileOrItself() = getOrElse("").fromFileOrItself()
                     val additionalSuppressions = extension.checkstyle.additionalSuppressions.fromFileOrItself()
@@ -69,7 +70,6 @@ open class JavaQAPlugin : Plugin<Project> {
                     config = resources.text.fromString(configuration)
                 }
                 // PMD
-                val pmdVersion = versionOf("pmd")
                 configureExtension<PmdExtension> {
                     toolVersion = pmdVersion
                     ruleSets = listOf()
@@ -99,7 +99,7 @@ open class JavaQAPlugin : Plugin<Project> {
                 tasks.findByName("cpdCheck")?.enabled = false
                 // Jacoco
                 configureExtension<JacocoPluginExtension> {
-                    toolVersion = versionOf("jacoco")
+                    toolVersion = jacocoVersion
                 }
                 tasks.withType(JacocoReport::class.java) { jacocoReport ->
                     jacocoReport.reports {
@@ -120,6 +120,23 @@ open class JavaQAPlugin : Plugin<Project> {
         private const val spotbugsExcludes = "$root/spotbugs-excludes.xml"
 
         private val Project.javaQADestination get() = File(rootProject.buildDir, "javaqa").apply { mkdirs() }
+
+        /**
+         * The default version of SpotBugs.
+         */
+        val spotBugsVersion = versionOf("spotbugs")
+        /**
+         * The default version of checkstyle.
+         */
+        val checkstyleVersion = versionOf("checkstyle")
+        /**
+         * The default version of JaCoCo.
+         */
+        val jacocoVersion = versionOf("jacoco")
+        /**
+         * The default version of PMD.
+         */
+        val pmdVersion = versionOf("pmd")
 
         private inline fun <reified T : Any> Project.configureExtension(crossinline action: T.() -> Unit) {
             project.extensions.configure(T::class) { it.action() }
