@@ -28,6 +28,7 @@ import java.util.Properties
  * Just a template.
  */
 open class JavaQAPlugin : Plugin<Project> {
+    @Suppress("UnstableApiUsage")
     override fun apply(project: Project) {
         with(project) {
             plugins.withType(JavaPlugin::class.java) {
