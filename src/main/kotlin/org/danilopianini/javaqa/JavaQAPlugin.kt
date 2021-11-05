@@ -115,7 +115,7 @@ open class JavaQAPlugin : Plugin<Project> {
         private const val pmdPath = "$root/pmd.xml"
         private const val spotbugsExcludes = "$root/spotbugs-excludes.xml"
 
-        private val Project.javaQADestination get() = File(buildDir, "javaqa").apply { mkdirs() }
+        private val Project.javaQADestination get() = File(rootProject.buildDir, "javaqa").apply { mkdirs() }
 
         private inline fun <reified T : Any> Project.configureExtension(crossinline action: T.() -> Unit) {
             project.extensions.configure(T::class) { it.action() }
