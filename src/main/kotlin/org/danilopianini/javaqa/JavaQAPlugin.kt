@@ -32,6 +32,11 @@ open class JavaQAPlugin : Plugin<Project> {
     @Suppress("UnstableApiUsage")
     override fun apply(project: Project) {
         with(project) {
+            val javaQADestination = File(rootProject.buildDir, "javaqa").apply { mkdirs() }
+            val spotbugsExcludesFile: File = createFromResource(
+                "$root/spotbugs-excludes.xml",
+                File(javaQADestination, "spotbugs-excludes.xml")
+            )
             plugins.withType(JavaPlugin::class.java) {
                 val extension = project.extensions.create("javaQA", JavaQAExtension::class.java, this)
                 with(plugins) {
@@ -47,11 +52,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     setEffort("max")
                     setReportLevel("low")
                     showProgress.set(false)
-                    val excludes: File = createFromResource(
-                        spotbugsExcludes,
-                        File(javaQADestination, "spotbugs-excludes.xml")
-                    )
-                    excludeFilter.set(excludes)
+                    excludeFilter.set(spotbugsExcludesFile)
                 }
                 // Checkstyle
                 configureExtension<CheckstyleExtension> {
@@ -117,9 +118,6 @@ open class JavaQAPlugin : Plugin<Project> {
         private const val checkstylePath = "$root/checkstyle.xml"
         private const val checkstyleSuppressionsPath = "$root/checkstyle-suppressions.xml"
         private const val pmdPath = "$root/pmd.xml"
-        private const val spotbugsExcludes = "$root/spotbugs-excludes.xml"
-
-        private val Project.javaQADestination get() = File(rootProject.buildDir, "javaqa").apply { mkdirs() }
 
         /**
          * The default version of SpotBugs.
