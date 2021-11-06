@@ -1,6 +1,9 @@
 {
-  "template": "keepachangelog",
-  "unreleased": true,
+  "backfillLimit": false,
+  "breakingPattern": "!:",
   "commitLimit": false,
-  "breakingPattern": "!:"
+  "ignoreCommitPattern": "^(chore|build|ci|style|):",
+  "sortCommits": "subject",
+  "template": "keepachangelog",
+  "unreleased": true
 }
