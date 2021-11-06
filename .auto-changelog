@@ -4,6 +4,5 @@
   "commitLimit": false,
   "ignoreCommitPattern": "^(chore|build|ci|style|):",
   "sortCommits": "subject",
-  "template": "keepachangelog",
   "unreleased": true
 }
