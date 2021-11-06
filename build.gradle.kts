@@ -4,7 +4,6 @@ import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSI
 plugins {
     jacoco
     `java-gradle-plugin`
-    alias(libs.plugins.cpd)
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
     alias(libs.plugins.gradlePluginPublish)
