@@ -16,7 +16,7 @@ on:
 
 jobs:
   Build:
-    uses: DanySK/workflows/.github/workflows/build-and-deploy-gradle-project.yml@0.1.3
+    uses: DanySK/workflows/.github/workflows/build-and-deploy-gradle-project.yml@0.1.3-dev3
     with:
       deploy-command: |
         ./gradlew publishPluginMavenPublicationToMavenCentralRepository publishKotlinMavenPublicationToMavenCentralRepository
