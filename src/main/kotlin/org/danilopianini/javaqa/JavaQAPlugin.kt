@@ -84,11 +84,10 @@ open class JavaQAPlugin : Plugin<Project> {
                                 "Creating configuration file for checkstyle {}",
                                 checkstyleConfigurationFile.absolutePath
                             )
-                            val additionalRaw = extension.checkstyle.additionalConfiguration.fromFileOrItself()
-                            val additionalActual = additionalRaw.replace("\\", "\\\\")
+                            fun String.doublyBackslashed() = replace("\\", "\\\\")
                             val actualConfiguration = checkstyleConfiguration.replace(
                                 Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
-                                additionalActual
+                                extension.checkstyle.additionalConfiguration.fromFileOrItself().doublyBackslashed()
                             )
                             checkstyleConfigurationFile.createWithContent(actualConfiguration)
                             logger.debug(
@@ -98,7 +97,7 @@ open class JavaQAPlugin : Plugin<Project> {
                             checkstyleSuppressionsFile.createWithContent(
                                 baseCheckstyleExcludes.replace(
                                     Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"),
-                                    extension.checkstyle.additionalSuppressions.fromFileOrItself()
+                                    extension.checkstyle.additionalSuppressions.fromFileOrItself().doublyBackslashed()
                                 )
                             )
                         }
