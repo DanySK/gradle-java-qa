@@ -77,7 +77,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     val checkstyleConfigurationFile = File(javaQADestination, checkstyleConfigurationFileName)
                     // Create a task creating the default configuration
                     val checkstyleSuppressionsFile = File(javaQADestination, checkstyleSuppressionsFileName)
-                    val populateDefaultCheckstyleConfiguration = tasks.create("populateDefaultCheckstyleConfiguration") {
+                    val generateCheckstyleConfiguration = tasks.create("generateCheckstyleConfiguration") {
                         it.outputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
                         it.doLast {
                             logger.debug(
@@ -104,7 +104,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     }
                     tasks.withType<Checkstyle> {
                         inputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
-                        dependsOn(populateDefaultCheckstyleConfiguration)
+                        dependsOn(generateCheckstyleConfiguration)
                     }
                     toolVersion = checkstyleVersion
                     configDirectory.set(javaQADestination)
