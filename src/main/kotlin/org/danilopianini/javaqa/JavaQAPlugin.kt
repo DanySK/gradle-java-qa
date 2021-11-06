@@ -54,7 +54,7 @@ open class JavaQAPlugin : Plugin<Project> {
                 // SpotBugs
                 configureExtension<SpotBugsExtension> {
                     // Create a task creating the default configuration
-                    val spotbugsExcludesFile: File = File(javaQADestination, spotbugsSuppressionsFileName)
+                    val spotbugsExcludesFile = File(javaQADestination, spotbugsSuppressionsFileName)
                     val populateDefaultSpotBugsExcludes = tasks.create("populateDefaultSpotBugsExcludes") {
                         it.doLast {
                             spotbugsExcludesFile.createWithContent(baseSpotBugsExcludes)
