@@ -74,30 +74,42 @@ open class JavaQAPlugin : Plugin<Project> {
                     File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
                 }
                 configureExtension<CheckstyleExtension> {
+                    val checkstyleConfigurationFile = File(javaQADestination, checkstyleConfigurationFileName)
                     // Create a task creating the default configuration
                     val checkstyleSuppressionsFile = File(javaQADestination, checkstyleSuppressionsFileName)
-                    val populateDefaultCheckstyleExclusions = tasks.create("populateDefaultCheckstyleExclusions") {
+                    val populateDefaultCheckstyleConfiguration = tasks.create("populateDefaultCheckstyleConfiguration") {
+                        it.outputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
                         it.doLast {
-                            val additionalSuppressions = extension.checkstyle.additionalSuppressions.fromFileOrItself()
+                            logger.debug(
+                                "Creating configuration file for checkstyle {}",
+                                checkstyleConfigurationFile.absolutePath
+                            )
+                            val additionalRaw = extension.checkstyle.additionalConfiguration.fromFileOrItself()
+                            val additionalActual = additionalRaw.replace("\\", "\\\\")
+                            val actualConfiguration = checkstyleConfiguration.replace(
+                                Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
+                                additionalActual
+                            )
+                            checkstyleConfigurationFile.createWithContent(actualConfiguration)
+                            logger.debug(
+                                "Creating suppressions file for checkstyle {}",
+                                checkstyleSuppressionsFile.absolutePath
+                            )
                             checkstyleSuppressionsFile.createWithContent(
                                 baseCheckstyleExcludes.replace(
                                     Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"),
-                                    additionalSuppressions
+                                    extension.checkstyle.additionalSuppressions.fromFileOrItself()
                                 )
                             )
                         }
                     }
                     tasks.withType<Checkstyle> {
-                        dependsOn(populateDefaultCheckstyleExclusions)
+                        inputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
+                        dependsOn(populateDefaultCheckstyleConfiguration)
                     }
                     toolVersion = checkstyleVersion
-                    val configuration = checkstyleConfiguration
-                        .replace(
-                            Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
-                            extension.checkstyle.additionalConfiguration.fromFileOrItself()
-                        )
-                    config = resources.text.fromString(configuration)
-                    configDirectory.set(checkstyleSuppressionsFile.parentFile)
+                    configDirectory.set(javaQADestination)
+                    config = resources.text.fromFile(checkstyleConfigurationFile)
                 }
                 // PMD
                 configureExtension<PmdExtension> {
@@ -145,6 +157,7 @@ open class JavaQAPlugin : Plugin<Project> {
 
         private const val packageRoot = "org/danilopianini/javaqa"
         private const val checkstylePath = "$packageRoot/checkstyle.xml"
+        private const val checkstyleConfigurationFileName = "checkstyle.xml"
         private const val checkstyleSuppressionsFileName = "checkstyle-suppressions.xml"
         private const val checkstyleSuppressionsResource = "$packageRoot/$checkstyleSuppressionsFileName"
         private const val pmdPath = "$packageRoot/pmd.xml"
