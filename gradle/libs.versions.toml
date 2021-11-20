@@ -12,7 +12,7 @@ spotbugs-gradle = "4.7.10"
 
 [libraries]
 checkstyle = { module = "com.puppycrawl.tools:checkstyle", version.ref = "checkstyle" }
-classgraph = "io.github.classgraph:classgraph:4.8.133"
+classgraph = "io.github.classgraph:classgraph:4.8.134"
 cpd-gradle = { module = "de.aaschmid:gradle-cpd-plugin", version.ref = "cpd-gradle" }
 jacoco = { module = "org.jacoco:org.jacoco.core", version.ref = "jacoco" }
 konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
