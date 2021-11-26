@@ -2,5 +2,19 @@
    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
    "extends": [
       "github>DanySK/renovate-config"
+   ],
+   "packageRules": [
+      {
+         "description": "Trigger a minor update on some dependencies",
+         "matchPackageNames": [
+            "com.github.spotbugs:spotbugs",
+            "com.puppycrawl.tools:checkstyle",
+            "com.github.spotbugs.snom:spotbugs-gradle-plugin",
+            "de.aaschmid:gradle-cpd-plugin",
+            "de.aaschmid.cpd",
+            "net.sourceforge.pmd:pmd-java"
+         ],
+         "semanticCommitType": "feat"
+      }
    ]
 }
