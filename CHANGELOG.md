@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/DanySK/gradle-java-qa/compare/0.4.3...0.5.0) (2021-11-27)
+
+
+### Features
+
+* **deps:** update dependency net.sourceforge.pmd:pmd-java to v6.41.0 ([10ebb9b](https://github.com/DanySK/gradle-java-qa/commit/10ebb9b861285149b5145bd9879a500a6e07514c))
+
 ### Changelog
 
 All notable changes to this project will be documented in this file. Dates are displayed in UTC.
