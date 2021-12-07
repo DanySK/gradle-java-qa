@@ -1,3 +1,10 @@
+# [0.7.0](https://github.com/DanySK/gradle-java-qa/compare/0.6.0...0.7.0) (2021-12-07)
+
+
+### Features
+
+* **deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5 ([3b5ecbe](https://github.com/DanySK/gradle-java-qa/commit/3b5ecbe0c76e52ae86d588d3f606b0d82499f67d))
+
 # [0.6.0](https://github.com/DanySK/gradle-java-qa/compare/0.5.0...0.6.0) (2021-11-28)
 
 
