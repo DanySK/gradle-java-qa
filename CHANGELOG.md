@@ -1,3 +1,10 @@
+# [0.8.0](https://github.com/DanySK/gradle-java-qa/compare/0.7.0...0.8.0) (2021-12-08)
+
+
+### Features
+
+* **deps:** update dependency com.github.spotbugs:spotbugs to v4.5.1 ([b599946](https://github.com/DanySK/gradle-java-qa/commit/b59994638ca3720f2023b67ee8b052528276e3c8))
+
 # [0.7.0](https://github.com/DanySK/gradle-java-qa/compare/0.6.0...0.7.0) (2021-12-07)
 
 
