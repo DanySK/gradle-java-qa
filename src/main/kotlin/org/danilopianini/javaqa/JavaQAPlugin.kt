@@ -16,6 +16,8 @@ import org.gradle.api.plugins.quality.CheckstylePlugin
 import org.gradle.api.plugins.quality.PmdExtension
 import org.gradle.api.plugins.quality.PmdPlugin
 import org.gradle.api.provider.Provider
+import org.gradle.api.tasks.javadoc.Javadoc
+import org.gradle.external.javadoc.CoreJavadocOptions
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.create
@@ -50,6 +52,10 @@ open class JavaQAPlugin : Plugin<Project> {
                     apply(PmdPlugin::class)
                     apply(JacocoPlugin::class)
                     apply(SpotBugsPlugin::class)
+                }
+                // Javadoc
+                tasks.withType<Javadoc> {
+                    (options as? CoreJavadocOptions)?.addStringOption("Xwerror", "-quiet")
                 }
                 // SpotBugs
                 configureExtension<SpotBugsExtension> {
