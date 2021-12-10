@@ -1,3 +1,10 @@
+# [0.11.0](https://github.com/DanySK/gradle-java-qa/compare/0.10.0...0.11.0) (2021-12-10)
+
+
+### Features
+
+* set javadoc to be aggressive ([8db3fd6](https://github.com/DanySK/gradle-java-qa/commit/8db3fd6658dba232f13138641fb2dd09e42f7be0))
+
 # [0.10.0](https://github.com/DanySK/gradle-java-qa/compare/0.9.0...0.10.0) (2021-12-09)
 
 
