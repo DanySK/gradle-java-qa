@@ -1,3 +1,10 @@
+# [0.14.0](https://github.com/DanySK/gradle-java-qa/compare/0.13.0...0.14.0) (2021-12-27)
+
+
+### Features
+
+* **deps:** update dependency com.puppycrawl.tools:checkstyle to v9.2.1 ([54a62fd](https://github.com/DanySK/gradle-java-qa/commit/54a62fdea0539c5434f78b55f08158fe8853cad9))
+
 # [0.13.0](https://github.com/DanySK/gradle-java-qa/compare/0.12.0...0.13.0) (2021-12-15)
 
 
