@@ -14,7 +14,7 @@
             "de.aaschmid.cpd",
             "net.sourceforge.pmd:pmd-java"
          ],
-         "semanticCommitType": "feat"
+         "semanticCommitScope": "api-deps"
       }
    ]
 }
