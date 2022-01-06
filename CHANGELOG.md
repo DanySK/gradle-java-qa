@@ -1,3 +1,30 @@
+## [0.15.0](https://github.com/DanySK/gradle-java-qa/compare/0.14.0...0.15.0) (2022-01-06)
+
+
+### Build and continuous integration
+
+* **release:** enable commit-analyzer ([d817d8f](https://github.com/DanySK/gradle-java-qa/commit/d817d8f74645fd8e5a3ed6f86331b10378bac822))
+* **release:** inherit the configuration from the shared preset ([#92](https://github.com/DanySK/gradle-java-qa/issues/92)) ([af08ef2](https://github.com/DanySK/gradle-java-qa/commit/af08ef216665fb323c2f7db9762cffce29ed6223))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.5.3 ([12c0951](https://github.com/DanySK/gradle-java-qa/commit/12c095175ef670c2345de36d5885906118d44add))
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.0.4 ([2c2490d](https://github.com/DanySK/gradle-java-qa/commit/2c2490d10a369eca94482254885260e9914c5de2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.1 ([b41a562](https://github.com/DanySK/gradle-java-qa/commit/b41a562d48cfbe1fb339c033dc22cc651c762989))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.3 ([96d0228](https://github.com/DanySK/gradle-java-qa/commit/96d02284b5dc03b23f145410f579e0eaa5927700))
+* **deps:** update plugin gradlepluginpublish to v0.19.0 ([3c67d7f](https://github.com/DanySK/gradle-java-qa/commit/3c67d7f23a19f512c3ba28e2601332870098d6ab))
+* **deps:** update plugin kotlin-qa to v0.8.3 ([c4620cf](https://github.com/DanySK/gradle-java-qa/commit/c4620cfa95a32d9d6c43d01857c1c5be432733a4))
+* **deps:** update plugin kotlin-qa to v0.9.0 ([6ac44d7](https://github.com/DanySK/gradle-java-qa/commit/6ac44d7d9dca2fed39ba702b7db4b489d0b16448))
+* **deps:** update plugin multijvmtesting to v0.3.3 ([e777b9d](https://github.com/DanySK/gradle-java-qa/commit/e777b9d7e71805135e469b6efe9c396c683ebac4))
+* **deps:** update plugin publishoncentral to v0.7.9 ([2c595ca](https://github.com/DanySK/gradle-java-qa/commit/2c595cab28b09872a038822ab29fbb6959e9256f))
+
+
+### General maintenance
+
+* ignore node_modules ([84a69eb](https://github.com/DanySK/gradle-java-qa/commit/84a69ebce695f02f7fcf6bbd0a343a5457467693))
+* **release:** correctly enable semantic commit conventions ([3775c18](https://github.com/DanySK/gradle-java-qa/commit/3775c18486b1d07c1d0f7f7b040e574dcf3f7831))
+
 # [0.14.0](https://github.com/DanySK/gradle-java-qa/compare/0.13.0...0.14.0) (2021-12-27)
 
 
