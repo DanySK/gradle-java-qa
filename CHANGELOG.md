@@ -1,3 +1,22 @@
+## [0.16.0](https://github.com/DanySK/gradle-java-qa/compare/0.15.0...0.16.0) (2022-01-21)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.1.3 ([7e47354](https://github.com/DanySK/gradle-java-qa/commit/7e47354717d6035c5d9df83b15c6cabe5a009dd8))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.0 ([0102ab0](https://github.com/DanySK/gradle-java-qa/commit/0102ab0136e750a4480e6bb4f91ed64a4195dd84))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.0.5 ([acb74bc](https://github.com/DanySK/gradle-java-qa/commit/acb74bc1d7572a1c9d4b9c16f506ff2794e2aa57))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.4 ([4944004](https://github.com/DanySK/gradle-java-qa/commit/49440041333594b4fbf092c9aa0d01e593311325))
+* **deps:** update plugin com.gradle.enterprise to v3.8.1 ([cfc1a74](https://github.com/DanySK/gradle-java-qa/commit/cfc1a74c9edb3d19fa80f889a4285ba4b41b1b31))
+* **deps:** update plugin gradlepluginpublish to v0.20.0 ([8b69ae3](https://github.com/DanySK/gradle-java-qa/commit/8b69ae34458a3ee863df1f637927f2056da88acc))
+* **deps:** update plugin multijvmtesting to v0.3.4 ([6e99e93](https://github.com/DanySK/gradle-java-qa/commit/6e99e937d4722cfea4ee4978f6acf6617eaf1f65))
+* **deps:** update plugin publishoncentral to v0.7.10 ([1a1e6b3](https://github.com/DanySK/gradle-java-qa/commit/1a1e6b3a9d5557e0454e9ff975984375d9037f9e))
+* **deps:** update plugin publishoncentral to v0.7.11 ([c8b98b2](https://github.com/DanySK/gradle-java-qa/commit/c8b98b2961d8e332c6df3580d9a81c4f33226f64))
+
 ## [0.15.0](https://github.com/DanySK/gradle-java-qa/compare/0.14.0...0.15.0) (2022-01-06)
 
 
