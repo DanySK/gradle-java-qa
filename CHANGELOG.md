@@ -1,3 +1,26 @@
+## [0.17.0](https://github.com/DanySK/gradle-java-qa/compare/0.16.0...0.17.0) (2022-01-31)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.42.0 ([7c6347c](https://github.com/DanySK/gradle-java-qa/commit/7c6347cdb2e38e00592a9e0048f89b81da4d37f9))
+* **deps:** update dependency org.mockito:mockito-core to v4.3.0 ([dd372c9](https://github.com/DanySK/gradle-java-qa/commit/dd372c98e2733adab3d1b75a3662bcb9f0607e10))
+* **deps:** update dependency org.mockito:mockito-core to v4.3.1 ([6893dfe](https://github.com/DanySK/gradle-java-qa/commit/6893dfe4ac81a331c0ba3498af0906efc4abe413))
+* **deps:** update io.kotest to v5 ([f7e18c2](https://github.com/DanySK/gradle-java-qa/commit/f7e18c264646f2dd069427391ed937e90bd5a7b5))
+* **deps:** update plugin publishoncentral to v0.7.12 ([23aa13b](https://github.com/DanySK/gradle-java-qa/commit/23aa13b53a776b1e3949967d6a3d4de7e3108fa8))
+
+
+### Revert previous changes
+
+* **deps:** revert update io.kotest to v5, [#46](https://github.com/DanySK/gradle-java-qa/issues/46) ([#114](https://github.com/DanySK/gradle-java-qa/issues/114)) ([1c88a0d](https://github.com/DanySK/gradle-java-qa/commit/1c88a0d1641254bdbb4e3cf8ab0a7ebd00a462b0))
+
+
+### Build and continuous integration
+
+* checkout the repo with appropriate permissions when releasing ([cb05627](https://github.com/DanySK/gradle-java-qa/commit/cb056270ee49e28e4b845c285b7831ee781bbc77))
+* deploy with a higher permission token ([6c2434e](https://github.com/DanySK/gradle-java-qa/commit/6c2434e674ced1848ceb4c8d3c04ccd4daeb335c))
+* limit job concurrency ([5f3a45f](https://github.com/DanySK/gradle-java-qa/commit/5f3a45f3557b26ee76dbcbff133e974cbfa551c1))
+
 ## [0.16.0](https://github.com/DanySK/gradle-java-qa/compare/0.15.0...0.16.0) (2022-01-21)
 
 
