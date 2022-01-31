@@ -1,3 +1,10 @@
+## [0.18.0](https://github.com/DanySK/gradle-java-qa/compare/0.17.0...0.18.0) (2022-01-31)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v9.3 ([a990a6c](https://github.com/DanySK/gradle-java-qa/commit/a990a6cac745bbd16c06b47be1d142695a6bbca8))
+
 ## [0.17.0](https://github.com/DanySK/gradle-java-qa/compare/0.16.0...0.17.0) (2022-01-31)
 
 
