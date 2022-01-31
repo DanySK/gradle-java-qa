@@ -39,6 +39,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.4.0
+        with:
+          submodules: recursive
+          token: ${{ secrets.DEPLOYMENT_TOKEN }}
       - uses: DanySK/build-check-deploy-gradle-action@1.2.0
         with:
           build-command: true
