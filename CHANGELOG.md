@@ -1,3 +1,17 @@
+## [0.19.0](https://github.com/DanySK/gradle-java-qa/compare/0.18.0...0.19.0) (2022-02-17)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.0.6 ([1706ac0](https://github.com/DanySK/gradle-java-qa/commit/1706ac06ee995ca18160ee70d7f40c2eb6be098c))
+* **deps:** update dependency gradle to v7.4 ([c721404](https://github.com/DanySK/gradle-java-qa/commit/c721404634bcdc6c62baaae1ba6fff56383099ba))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.139 ([4ee1489](https://github.com/DanySK/gradle-java-qa/commit/4ee1489b2d8f750eca8242f5f0e0b1fb7bbb86a3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.5 ([e09a90c](https://github.com/DanySK/gradle-java-qa/commit/e09a90c6a9a0e23922c9e37dbf6fb6c4be8ba9ef))
+* **deps:** update node.js to 16.14 ([1db9292](https://github.com/DanySK/gradle-java-qa/commit/1db9292b349939b6064ec5166f9311fe0e737995))
+* **deps:** update plugin kotlin-qa to v0.10.0 ([b88f743](https://github.com/DanySK/gradle-java-qa/commit/b88f74387c2db830c632179c3d2da6796deea225))
+* **deps:** update plugin kotlin-qa to v0.10.1 ([d732b53](https://github.com/DanySK/gradle-java-qa/commit/d732b53ef7d19bbbff1b0407df93f5920564decc))
+* **deps:** update plugin publishoncentral to v0.7.13 ([e11014e](https://github.com/DanySK/gradle-java-qa/commit/e11014e1f27fe87682d75fe821014300af9e110c))
+
 ## [0.18.0](https://github.com/DanySK/gradle-java-qa/compare/0.17.0...0.18.0) (2022-01-31)
 
 
