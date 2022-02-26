@@ -1,3 +1,16 @@
+## [0.20.0](https://github.com/DanySK/gradle-java-qa/compare/0.19.0...0.20.0) (2022-02-26)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.43.0 ([c3c1fb1](https://github.com/DanySK/gradle-java-qa/commit/c3c1fb195acbdcb885620d60486314a37206d519))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.140 ([020dca1](https://github.com/DanySK/gradle-java-qa/commit/020dca1750e3330d611742bb1810d7cb9c1d5c96))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.1 ([bf4456e](https://github.com/DanySK/gradle-java-qa/commit/bf4456e10d305da52ede9e963dc387be578f3e87))
+
 ## [0.19.0](https://github.com/DanySK/gradle-java-qa/compare/0.18.0...0.19.0) (2022-02-17)
 
 
