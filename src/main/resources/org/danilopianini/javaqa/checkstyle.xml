@@ -46,8 +46,8 @@
     </module>
     <module name="TreeWalker">
         <module name="SuppressionCommentFilter">
-            <property name="offCommentFormat" value="CHECKSTYLE: ([\w\|]+) OFF"/>
-            <property name="onCommentFormat" value="CHECKSTYLE: ([\w\|]+) ON"/>
+            <property name="offCommentFormat" value="CHECKSTYLE\: ([\w\|]+) OFF"/>
+            <property name="onCommentFormat" value="CHECKSTYLE\: ([\w\|]+) ON"/>
             <property name="checkFormat" value="$1"/>
         </module>
         <!-- Checks for missing Javadoc comments. -->
