@@ -1,3 +1,21 @@
+### [0.20.1](https://github.com/DanySK/gradle-java-qa/compare/0.20.0...0.20.1) (2022-03-05)
+
+
+### Bug Fixes
+
+* **checkstyle:** escape the colons with \ in SuppressionCommentFilter ([f44efcb](https://github.com/DanySK/gradle-java-qa/commit/f44efcb80d7003b2ae7553c3e2af6fde60d97c3f))
+
+
+### Dependency updates
+
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.141 ([8245393](https://github.com/DanySK/gradle-java-qa/commit/82453935ed4b7bd8a7df46acfb11267c499301fd))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3 ([f1d468c](https://github.com/DanySK/gradle-java-qa/commit/f1d468c362dce9011da9c2cd794839d7fcda949f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.4 ([1076be9](https://github.com/DanySK/gradle-java-qa/commit/1076be940d9215cdfdfd934919ddacc03b75a364))
+
 ## [0.20.0](https://github.com/DanySK/gradle-java-qa/compare/0.19.0...0.20.0) (2022-02-26)
 
 
