@@ -1,3 +1,25 @@
+## [0.22.0](https://github.com/DanySK/gradle-java-qa/compare/0.21.0...0.22.0) (2022-03-28)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.7 ([1e4247f](https://github.com/DanySK/gradle-java-qa/commit/1e4247f0b3aa2cbc570f853b65ac13cb541b84a9))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.44.0 ([04f401b](https://github.com/DanySK/gradle-java-qa/commit/04f401b864c50643c29ac8d1186a1a50eb24fa44))
+* **deps:** update dependency gradle to v7.4.1 ([1d57fcd](https://github.com/DanySK/gradle-java-qa/commit/1d57fcd6895d1abb6e85a7f0c2e66988382acb46))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.143 ([5cbd521](https://github.com/DanySK/gradle-java-qa/commit/5cbd521bf0c80bcea2d5a3484384fd483ef7387f))
+* **deps:** update dependency io.kotest:kotest-runner-junit5-jvm to v5.2.1 ([0593493](https://github.com/DanySK/gradle-java-qa/commit/0593493163472a4b3ff33c46dd870cb5125879ec))
+* **deps:** update dependency org.mockito:mockito-core to v4.4.0 ([7c88dfc](https://github.com/DanySK/gradle-java-qa/commit/7c88dfcae6131a0c582e8ab9f7b1c36371c6960e))
+* **deps:** update io.kotest ([21a6500](https://github.com/DanySK/gradle-java-qa/commit/21a65009e1a2e1ebb90dd4d97563d5d1cd921307))
+* **deps:** update io.kotest to v5.2.2 ([86fd047](https://github.com/DanySK/gradle-java-qa/commit/86fd04792f8aff27a8d9e9622c4a4dbfc24d3650))
+* **deps:** update plugin com.gradle.enterprise to v3.9 ([c896b6e](https://github.com/DanySK/gradle-java-qa/commit/c896b6e5fa5fa6e15acf4dd903b48c87285b5c3f))
+* **deps:** update plugin kotlin-qa to v0.12.1 ([d81df7e](https://github.com/DanySK/gradle-java-qa/commit/d81df7e629add177f1d1e1da54a49095672bda77))
+* **deps:** update plugin kotlin-qa to v0.13.0 ([148f83b](https://github.com/DanySK/gradle-java-qa/commit/148f83b6942c511059883f125152d1f639a35e79))
+* **deps:** update plugin publishoncentral to v0.7.14 ([aad4c92](https://github.com/DanySK/gradle-java-qa/commit/aad4c92d3ed1309bd1b70a33939973741e24fd7f))
+
 ## [0.21.0](https://github.com/DanySK/gradle-java-qa/compare/0.20.1...0.21.0) (2022-03-08)
 
 
