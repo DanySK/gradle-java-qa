@@ -1,6 +1,7 @@
 [versions]
 cpd-gradle = "3.3"
 checkstyle = "9.3"
+dokka = "1.6.10"
 jacoco = "0.8.7"
 mockito = "4.4.0"
 konf = "1.1.2"
@@ -29,7 +30,7 @@ qa-plugins = [  "cpd-gradle", "spotbugs-gradle" ]
 
 [plugins]
 cpd = { id = "de.aaschmid.cpd", version.ref = "cpd-gradle" }
-dokka = { id = "org.jetbrains.dokka", version.ref = "kotlin" }
+dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
 gitSemVer = { id = "org.danilopianini.git-sensitive-semantic-versioning", version = "0.3.0" }
 gradlePluginPublish = { id = "com.gradle.plugin-publish", version = "0.21.0" }
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
