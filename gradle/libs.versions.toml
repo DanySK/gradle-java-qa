@@ -2,7 +2,7 @@
 cpd-gradle = "3.3"
 checkstyle = "9.3"
 dokka = "1.6.10"
-jacoco = "0.8.7"
+jacoco = "0.8.8"
 mockito = "4.4.0"
 konf = "1.1.2"
 kotlin = "1.6.20"
