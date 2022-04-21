@@ -38,7 +38,7 @@ jobs:
     if: github.event_name == 'push'
     steps:
       - name: Checkout
-        uses: actions/checkout@v3.0.1
+        uses: actions/checkout@v3.0.2
         with:
           submodules: recursive
           token: ${{ secrets.DEPLOYMENT_TOKEN }}
