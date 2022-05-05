@@ -1,3 +1,18 @@
+## [0.24.0](https://github.com/DanySK/gradle-java-qa/compare/0.23.0...0.24.0) (2022-05-05)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.15 ([9e2559b](https://github.com/DanySK/gradle-java-qa/commit/9e2559b9c2371749e50305562a3e26b24e18b213))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.7.0 ([06af8cc](https://github.com/DanySK/gradle-java-qa/commit/06af8cc4abd1c5fc2620c814265d85d19e695348))
+* **deps:** update io.kotest to v5.3.0 ([16b1a84](https://github.com/DanySK/gradle-java-qa/commit/16b1a84ecd9fdd00cf8462a96ffa4c1594ed67f4))
+* **deps:** update plugin kotlin-qa to v0.17.0 ([d8ec30e](https://github.com/DanySK/gradle-java-qa/commit/d8ec30e835e68c87d29d6cc191d43649fd6c6848))
+* **deps:** update plugin kotlin-qa to v0.18.0 ([e32e8e8](https://github.com/DanySK/gradle-java-qa/commit/e32e8e8a96f6f4197bbc648387c5b877f5e7cf21))
+
 ## [0.23.0](https://github.com/DanySK/gradle-java-qa/compare/0.22.0...0.23.0) (2022-04-30)
 
 
