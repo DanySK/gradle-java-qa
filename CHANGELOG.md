@@ -1,3 +1,15 @@
+## [0.26.0](https://github.com/DanySK/gradle-java-qa/compare/0.25.0...0.26.0) (2022-05-28)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.46.0 ([16346e3](https://github.com/DanySK/gradle-java-qa/commit/16346e3617c74d826c9ca2925d13dd542a7a617d))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.147 ([5b14eee](https://github.com/DanySK/gradle-java-qa/commit/5b14eeeed26d2674f6bd68b70e365560f9b936a9))
+* **deps:** update dependency org.mockito:mockito-core to v4.6.0 ([24fce87](https://github.com/DanySK/gradle-java-qa/commit/24fce87290145098bcb268f2368592f857f9f010))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.7 ([0bde5c6](https://github.com/DanySK/gradle-java-qa/commit/0bde5c616d78811882c7aef5b4a55ead1bb419d0))
+* **deps:** update plugin com.gradle.enterprise to v3.10.1 ([b9d7100](https://github.com/DanySK/gradle-java-qa/commit/b9d71007a191ff07d3b377c6ee8ddf2e20b1714e))
+* **deps:** update plugin multijvmtesting to v0.4.0 ([fde3f41](https://github.com/DanySK/gradle-java-qa/commit/fde3f41d6bd9fb28d34946d2d5b4b5a92191ed9f))
+
 ## [0.25.0](https://github.com/DanySK/gradle-java-qa/compare/0.24.0...0.25.0) (2022-05-13)
 
 
