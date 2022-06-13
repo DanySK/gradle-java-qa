@@ -1,3 +1,30 @@
+## [0.27.0](https://github.com/DanySK/gradle-java-qa/compare/0.26.0...0.27.0) (2022-06-13)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v1.2.16 ([f484324](https://github.com/DanySK/gradle-java-qa/commit/f484324b01c8c5b26c5dd4208619e5e08230b5cd))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2 ([bd7acdf](https://github.com/DanySK/gradle-java-qa/commit/bd7acdf1b84628363b82399aaed9576cadf0f51c))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.0.1 ([a3239f8](https://github.com/DanySK/gradle-java-qa/commit/a3239f8f2e6ed741d10aca7a2addde7eb2c46587))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.0.2 ([d854aed](https://github.com/DanySK/gradle-java-qa/commit/d854aed74e117aefe182e96e0c798a0a101bbd25))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.0.8 ([9935973](https://github.com/DanySK/gradle-java-qa/commit/993597319e4808c194a491f3f8edc80bb6c93731))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.7.0 ([36605ad](https://github.com/DanySK/gradle-java-qa/commit/36605ada5c3c0d1f219e77af56d206957f8cd0ef))
+* **deps:** update dependency org.mockito:mockito-core to v4.6.1 ([b670f02](https://github.com/DanySK/gradle-java-qa/commit/b670f0235ffe1e99f499fcfd0886e7cb18f0d85c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.8 ([4117411](https://github.com/DanySK/gradle-java-qa/commit/411741122dc352e50964c418172c28ea494e107b))
+* **deps:** update plugin com.gradle.enterprise to v3.10.2 ([849ac66](https://github.com/DanySK/gradle-java-qa/commit/849ac66067226a4c16abeec5b89edd0d6c1e70c2))
+* **deps:** update plugin kotlin-qa to v0.19.0 ([6fca928](https://github.com/DanySK/gradle-java-qa/commit/6fca9281579c74f7516ba8069dd6f31b0800435f))
+* **deps:** update plugin kotlin-qa to v0.19.1 ([022350b](https://github.com/DanySK/gradle-java-qa/commit/022350bf93104493ae37c5006e1949c4655bcb40))
+* **deps:** update plugin multijvmtesting to v0.4.1 ([98722ab](https://github.com/DanySK/gradle-java-qa/commit/98722abb0d1210122c3d7e2bf6b80226a2a1f6e8))
+* **deps:** update plugin multijvmtesting to v0.4.2 ([a16fc13](https://github.com/DanySK/gradle-java-qa/commit/a16fc1344e4117722c9e775fefd3f6589fc0d4fe))
+* **deps:** update plugin multijvmtesting to v0.4.3 ([d9412bb](https://github.com/DanySK/gradle-java-qa/commit/d9412bb0fbeb70abf86a25a529d701da8b1b4288))
+* **deps:** update plugin publishoncentral to v0.8.0 ([a7ee567](https://github.com/DanySK/gradle-java-qa/commit/a7ee567cd8ae146a0049fad9887915c27a23c5a6))
+* **deps:** update plugin publishoncentral to v0.8.2 ([bc48fc6](https://github.com/DanySK/gradle-java-qa/commit/bc48fc6802b1577e2cc95a5fec1a3e7c1a05679e))
+* **deps:** update plugin publishoncentral to v0.8.3 ([2e72aa3](https://github.com/DanySK/gradle-java-qa/commit/2e72aa391817ae42fa3612ffb5b7f78dbf8ccea3))
+
 ## [0.26.0](https://github.com/DanySK/gradle-java-qa/compare/0.25.0...0.26.0) (2022-05-28)
 
 
