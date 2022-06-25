@@ -1,3 +1,12 @@
+## [0.28.0](https://github.com/DanySK/gradle-java-qa/compare/0.27.0...0.28.0) (2022-06-25)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.47.0 ([bc12710](https://github.com/DanySK/gradle-java-qa/commit/bc12710a39653b0198f8d01404fc8ade218fa21d))
+* **deps:** update dependency org.jetbrains.dokka to v1.7.0 ([55855c4](https://github.com/DanySK/gradle-java-qa/commit/55855c40af80353ee27362aeec0ccbd75a72ba34))
+* **deps:** update plugin publishoncentral to v1 ([ccd50a0](https://github.com/DanySK/gradle-java-qa/commit/ccd50a0be22ef141078acb185b05cc126c125009))
+
 ## [0.27.0](https://github.com/DanySK/gradle-java-qa/compare/0.26.0...0.27.0) (2022-06-13)
 
 
