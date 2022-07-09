@@ -177,7 +177,7 @@ pluginBundle {
 
 gradlePlugin {
     plugins {
-        create("java-qa") {
+        create("") {
             id = "$group.${project.name}"
             displayName = info.longName
             description = project.description
