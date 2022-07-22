@@ -17,12 +17,6 @@ import java.io.File
 
 class Tests : StringSpec(
     {
-        val pluginClasspathResource = ClassLoader.getSystemClassLoader()
-            .getResource("plugin-classpath.txt")
-            ?: throw IllegalStateException("Did not find plugin classpath resource, run \"testClasses\" build task.")
-        val classpath = pluginClasspathResource.openStream().bufferedReader().use { reader ->
-            reader.readLines().map { File(it) }
-        }
         val scan = ClassGraph()
             .enableAllInfo()
             .acceptPackages(Tests::class.java.`package`.name)
@@ -72,10 +66,9 @@ class Tests : StringSpec(
     companion object {
         val log = LoggerFactory.getLogger(Tests::class.java)
 
-        private fun BuildResult.outcomeOf(name: String) = task(":$name")
-            ?.outcome
-            ?: throw IllegalStateException("Task $name was not present among the executed tasks")
-
+        private fun BuildResult.outcomeOf(name: String) = checkNotNull(task(":$name")?.outcome) {
+            "Task $name was not present among the executed tasks"
+        }
         private fun folder(closure: TemporaryFolder.() -> Unit) = TemporaryFolder().apply {
             create()
             closure()

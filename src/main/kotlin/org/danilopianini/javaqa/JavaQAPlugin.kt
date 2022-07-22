@@ -195,14 +195,17 @@ open class JavaQAPlugin : Plugin<Project> {
             writeText(source)
         }
 
-        private fun resource(path: String) = Thread.currentThread().contextClassLoader.getResource(path)
-            ?: throw IllegalStateException("Unable to access resource $path in the current classpath")
+        private fun resource(path: String) = checkNotNull(Thread.currentThread().contextClassLoader.getResource(path)) {
+            "Unable to access resource $path in the current classpath"
+        }
 
         private fun loadResource(path: String): String = resource(path).readText()
 
         private fun versionOf(library: String): String = Properties().run {
             load(resource("$packageRoot/versions.properties").openStream())
-            get(library)?.toString() ?: throw IllegalStateException("Unable to load version for $library")
+            checkNotNull(get(library)?.toString()) {
+                "Unable to load version for $library"
+            }
         }
     }
 }
