@@ -39,7 +39,7 @@ class Tests : StringSpec(
                 test.description {
                     val result = GradleRunner.create()
                         .withProjectDir(testFolder.root)
-                        .withPluginClasspath(classpath)
+                        .withPluginClasspath()
                         .withArguments(test.configuration.tasks + test.configuration.options)
                         .run { if (test.expectation.failure.isEmpty()) build() else buildAndFail() }
                     println(result.tasks)
