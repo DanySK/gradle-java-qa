@@ -1,3 +1,17 @@
+## [0.30.2](https://github.com/DanySK/gradle-java-qa/compare/0.30.1...0.30.2) (2022-07-28)
+
+
+### Bug Fixes
+
+* **release:** fix the name of the marker publishing task ([27825d9](https://github.com/DanySK/gradle-java-qa/commit/27825d98eaeb140121e3ee0f55562f4e1af0ec5a))
+
+
+### Dependency updates
+
+* **deps:** update plugin kotlin-qa to v0.22.1 ([6639c9d](https://github.com/DanySK/gradle-java-qa/commit/6639c9d2d451b70d027f6ea4b384c5e4f61d1713))
+* **deps:** update plugin multijvmtesting to v0.4.9 ([7e24fd0](https://github.com/DanySK/gradle-java-qa/commit/7e24fd00383e71d32fb186521c87e1707bd35d7c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.18 ([fb511aa](https://github.com/DanySK/gradle-java-qa/commit/fb511aaa3510bcc5e72773001ed378560f3fc1b5))
+
 ## [0.30.1](https://github.com/DanySK/gradle-java-qa/compare/0.30.0...0.30.1) (2022-07-28)
 
 
