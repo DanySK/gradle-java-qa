@@ -1,3 +1,61 @@
+## [0.30.1](https://github.com/DanySK/gradle-java-qa/compare/0.30.0...0.30.1) (2022-07-28)
+
+
+### Bug Fixes
+
+* **deps:** update kotest to v5.4.1 ([bf93c0c](https://github.com/DanySK/gradle-java-qa/commit/bf93c0c77aca3288c87275ef9bc04ddfc287459d))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.0.3 ([a43cc3d](https://github.com/DanySK/gradle-java-qa/commit/a43cc3debc3df18ca2b78036018f6867e5034c6f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.0 ([f632310](https://github.com/DanySK/gradle-java-qa/commit/f63231075cc381ef21096187ec7607322a8888b1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.1 ([d2d7991](https://github.com/DanySK/gradle-java-qa/commit/d2d7991396065ab5a63f7f27985d8dfdd16a08ae))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.2 ([6d29218](https://github.com/DanySK/gradle-java-qa/commit/6d29218eb3e5d25c685932484e24daf628bb59c7))
+* update the ci for publish-on-central v2 ([8db7624](https://github.com/DanySK/gradle-java-qa/commit/8db762410af894a71aad08d8320f20d6e6d83138))
+
+
+### Style improvements
+
+* prefer calls to check over throwing exceptions ([d00e3f2](https://github.com/DanySK/gradle-java-qa/commit/d00e3f28612b73b551f1090b1d13a407abe249e4))
+
+
+### General maintenance
+
+* **build:** drop the manual configuration of the plugin test classpath ([f1b2ce3](https://github.com/DanySK/gradle-java-qa/commit/f1b2ce311013928647b018ff9ecc4a590ff34524))
+* **build:** fix the plugin marker task ([4342a9a](https://github.com/DanySK/gradle-java-qa/commit/4342a9a77d728a470da7c6b58aa6929bc33c8757))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v7.5 ([5547017](https://github.com/DanySK/gradle-java-qa/commit/55470172939ccb32ecfe99759a4cc53ce2b15ddc))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.148 ([e2ab6c0](https://github.com/DanySK/gradle-java-qa/commit/e2ab6c0c55f9b647805fefc02690fe80408a455f))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.149 ([41e542c](https://github.com/DanySK/gradle-java-qa/commit/41e542cf6a3c15d7413a2a165033ee0c1ed9dfa6))
+* **deps:** update dependency org.jetbrains.dokka to v1.7.10 ([92f4a95](https://github.com/DanySK/gradle-java-qa/commit/92f4a9547c11eb79a7c228e3b4364aa2e7bfd5ec))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.7.10 ([d0a7ff7](https://github.com/DanySK/gradle-java-qa/commit/d0a7ff734a5f5ac5bf13ad746c324ff4f8a4ed07))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.9 ([ff2ef64](https://github.com/DanySK/gradle-java-qa/commit/ff2ef642649f481f00a7ea14a5f4741ecd45fc24))
+* **deps:** update kotest to v5.3.2 ([217200f](https://github.com/DanySK/gradle-java-qa/commit/217200f7fbea48d339a0fe1fd4d052406adc4b54))
+* **deps:** update kotest to v5.4.0 ([d60600d](https://github.com/DanySK/gradle-java-qa/commit/d60600d51f945c62d71852882ac39594a1aa61a0))
+* **deps:** update node.js to 16.16 ([b3f76f1](https://github.com/DanySK/gradle-java-qa/commit/b3f76f14ce70e9b1413e863ba21faa494365d805))
+* **deps:** update plugin com.gradle.enterprise to v3.10.3 ([78865ec](https://github.com/DanySK/gradle-java-qa/commit/78865ec32c13705dbcc225a74558ef05e4810a4f))
+* **deps:** update plugin gradlepluginpublish to v1 ([9d7eb85](https://github.com/DanySK/gradle-java-qa/commit/9d7eb85f9fa03f9c359676d301def4a5b3706452))
+* **deps:** update plugin kotlin-qa to v0.20.3 ([98f1b9c](https://github.com/DanySK/gradle-java-qa/commit/98f1b9c0b5aed21f32ae50f578560c87bc4c2664))
+* **deps:** update plugin kotlin-qa to v0.20.4 ([78a7d3c](https://github.com/DanySK/gradle-java-qa/commit/78a7d3c1b3dedb6051e5d767c6fb0bd7f0da30a3))
+* **deps:** update plugin kotlin-qa to v0.21.0 ([1f73373](https://github.com/DanySK/gradle-java-qa/commit/1f733732c4c6f02adb13d9e93da598287e978ea8))
+* **deps:** update plugin kotlin-qa to v0.22.0 ([7bc66c9](https://github.com/DanySK/gradle-java-qa/commit/7bc66c99a2cf518796461ad838da888673a5510a))
+* **deps:** update plugin multijvmtesting to v0.4.4 ([f08a3c7](https://github.com/DanySK/gradle-java-qa/commit/f08a3c7b207e57cd3932b340768cdd4dcd458e7d))
+* **deps:** update plugin multijvmtesting to v0.4.5 ([6e77a17](https://github.com/DanySK/gradle-java-qa/commit/6e77a17dcaf6c6933b58e093c6aaae422f081d65))
+* **deps:** update plugin multijvmtesting to v0.4.6 ([ff60331](https://github.com/DanySK/gradle-java-qa/commit/ff6033191b4932e4ec300974c0f8f8830d885294))
+* **deps:** update plugin multijvmtesting to v0.4.7 ([172a0c1](https://github.com/DanySK/gradle-java-qa/commit/172a0c15ef83fdd8d67582a3f13fb6d83ba9126b))
+* **deps:** update plugin multijvmtesting to v0.4.8 ([14a1184](https://github.com/DanySK/gradle-java-qa/commit/14a11845f55d282eddde132c42b7db8764f71c2e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.15 ([28bf5b0](https://github.com/DanySK/gradle-java-qa/commit/28bf5b04458fb0698f1f48c1cd79e360ca223bb0))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.16 ([f18a64b](https://github.com/DanySK/gradle-java-qa/commit/f18a64b23946e674d080a62984e94d63b855078a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.17 ([e80a8d5](https://github.com/DanySK/gradle-java-qa/commit/e80a8d528a34f7174d346807db89b9ca65b97ce7))
+* **deps:** update plugin publishoncentral to v2 ([b8b28d0](https://github.com/DanySK/gradle-java-qa/commit/b8b28d006309b002018ae824a5eaec737e0489a5))
+* **deps:** update plugin publishoncentral to v2.0.3 ([982e971](https://github.com/DanySK/gradle-java-qa/commit/982e9716f1890b83eb2b4203affca37c54d0adde))
+* **deps:** update plugin publishoncentral to v2.0.4 ([a28a434](https://github.com/DanySK/gradle-java-qa/commit/a28a434ccfa651008963e6dcde5dc7fd60ea7f3c))
+* **deps:** update plugin publishoncentral to v2.0.5 ([1352227](https://github.com/DanySK/gradle-java-qa/commit/1352227162fdc301d57b1a89f9363a667fd87e6b))
+
 ## [0.30.0](https://github.com/DanySK/gradle-java-qa/compare/0.29.0...0.30.0) (2022-06-28)
 
 
