@@ -10,11 +10,6 @@
     <Match>
         <Source name="~.*\.kt"/>
     </Match>
-    <!--	Selectively disable checks generating false positives-->
-    <Match>
-        <Bug pattern="NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE"/>
-        <Source name="~.*\.kt"/>
-    </Match>
     <Match>
         <Bug pattern="CN_IDIOM_NO_SUPER_CALL"/>
     </Match>
@@ -23,6 +18,9 @@
     </Match>
     <Match>
         <Bug pattern="IMA_INEFFICIENT_MEMBER_ACCESS"/>
+    </Match>
+    <Match>
+        <Bug pattern="PZLA_PREFER_ZERO_LENGTH_ARRAYS"/>
     </Match>
     <Match>
         <Bug pattern="SE_INNER_CLASS"/>
@@ -34,13 +32,13 @@
         <Bug pattern="SIC_INNER_SHOULD_BE_STATIC_ANON"/>
     </Match>
     <Match>
-        <Bug pattern="PZLA_PREFER_ZERO_LENGTH_ARRAYS"/>
-    </Match>
-    <Match>
-        <Bug pattern="UWF_NULL_FIELD"/>
+        <Bug pattern="THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION"/>
     </Match>
     <Match>
         <Bug pattern="UPM_UNCALLED_PRIVATE_METHOD"/>
+    </Match>
+    <Match>
+        <Bug pattern="UWF_NULL_FIELD"/>
     </Match>
     <Match>
         <Package name="~.*\.biochemistrydsl"/>
