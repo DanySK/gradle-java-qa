@@ -1,3 +1,17 @@
+## [0.31.1](https://github.com/DanySK/gradle-java-qa/compare/0.31.0...0.31.1) (2022-07-30)
+
+
+### Bug Fixes
+
+* **spotbugs:** disable THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION as is generating many false positives ([cf924a6](https://github.com/DanySK/gradle-java-qa/commit/cf924a61a906f2eff334a03128d57fecb00b322e))
+* **spotbugs:** disable THROWS_METHOD_THROWS_CLAUSE_THROWABLE causing many false positives ([b8072d5](https://github.com/DanySK/gradle-java-qa/commit/b8072d504fe7f8928d74cb6d31c5491b15dfa6ba))
+
+
+### Build and continuous integration
+
+* configure mergify ([d3721ee](https://github.com/DanySK/gradle-java-qa/commit/d3721ee28782cb23615fdc907335e27d6f0db3a2))
+* do not run builds on mergify configuration changes ([70b3adf](https://github.com/DanySK/gradle-java-qa/commit/70b3adfd15ed4dab60dad201b599bbd547a342e3))
+
 ## [0.31.0](https://github.com/DanySK/gradle-java-qa/compare/0.30.2...0.31.0) (2022-07-30)
 
 
