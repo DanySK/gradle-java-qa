@@ -35,6 +35,9 @@
         <Bug pattern="THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION"/>
     </Match>
     <Match>
+        <Bug pattern="THROWS_METHOD_THROWS_CLAUSE_THROWABLE"/>
+    </Match>
+    <Match>
         <Bug pattern="UPM_UNCALLED_PRIVATE_METHOD"/>
     </Match>
     <Match>
