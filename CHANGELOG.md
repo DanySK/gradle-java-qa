@@ -1,3 +1,17 @@
+## [0.33.0](https://github.com/DanySK/gradle-java-qa/compare/0.32.0...0.33.0) (2022-09-01)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.5 ([70ad663](https://github.com/DanySK/gradle-java-qa/commit/70ad66343be2119fbf4811d02be5bef0f78d0df4))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.49.0 ([6ec8a3a](https://github.com/DanySK/gradle-java-qa/commit/6ec8a3a437a7c053d29272b3a2ca9ce53ac80466))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.11 ([3bda507](https://github.com/DanySK/gradle-java-qa/commit/3bda50782806e1aab66a744dfc8b7b594997c90d))
+* **deps:** update plugin kotlin-qa to v0.24.0 ([7a059c7](https://github.com/DanySK/gradle-java-qa/commit/7a059c7801031d3e12555f55afcecab21e03e8f5))
+
 ## [0.32.0](https://github.com/DanySK/gradle-java-qa/compare/0.31.1...0.32.0) (2022-08-22)
 
 
