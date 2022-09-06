@@ -1,3 +1,10 @@
+## [0.35.0](https://github.com/DanySK/gradle-java-qa/compare/0.34.0...0.35.0) (2022-09-06)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.7.2 ([96ef3e6](https://github.com/DanySK/gradle-java-qa/commit/96ef3e6351a1e1e169d9628d665d525de049070b))
+
 ## [0.34.0](https://github.com/DanySK/gradle-java-qa/compare/0.33.0...0.34.0) (2022-09-05)
 
 
