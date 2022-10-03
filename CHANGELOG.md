@@ -1,3 +1,23 @@
+## [0.37.0](https://github.com/DanySK/gradle-java-qa/compare/0.36.0...0.37.0) (2022-10-03)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/action-checkout action to v0.2.2 ([29733d2](https://github.com/DanySK/gradle-java-qa/commit/29733d2f444790640c5f34b323bf1a1774bf36b8))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.6 ([25e1038](https://github.com/DanySK/gradle-java-qa/commit/25e103818267fafa8ce7e7afa448c4531fdbbd65))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.7 ([6661e55](https://github.com/DanySK/gradle-java-qa/commit/6661e551f52f47bb372aa7b3abe3922e13c3fdfd))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.8 ([8f8bbe7](https://github.com/DanySK/gradle-java-qa/commit/8f8bbe758e019a4df8dfaaa179edef44adb3fc6f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.9 ([74f73cd](https://github.com/DanySK/gradle-java-qa/commit/74f73cdbe7864e650d99e2c0afa4b4a2d7a1843a))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.50.0 ([6aaa6a2](https://github.com/DanySK/gradle-java-qa/commit/6aaa6a2e51aa17990fffd53e8335d4ab6e23906a))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.7.20 ([b513a33](https://github.com/DanySK/gradle-java-qa/commit/b513a335efac1d742e2a1710cb3d6d0e553248dd))
+* **deps:** update dependency org.mockito:mockito-core to v4.8.0 ([115f578](https://github.com/DanySK/gradle-java-qa/commit/115f578d3cd90a855a2d7c4e0ded022441b4b3e7))
+* **deps:** update plugin multijvmtesting to v0.4.10 ([6284647](https://github.com/DanySK/gradle-java-qa/commit/62846471fa2e7d1d21a5734b6785cba370b07406))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.0.20 ([ccf1f90](https://github.com/DanySK/gradle-java-qa/commit/ccf1f908310188980e4c613763c662524c3448ca))
+
 ## [0.36.0](https://github.com/DanySK/gradle-java-qa/compare/0.35.0...0.36.0) (2022-09-07)
 
 
