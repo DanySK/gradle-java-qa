@@ -1,3 +1,11 @@
+## [0.39.0](https://github.com/DanySK/gradle-java-qa/compare/0.38.0...0.39.0) (2022-10-21)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.0.13 ([c443858](https://github.com/DanySK/gradle-java-qa/commit/c44385856657cc470e20f5b134cbeefc95045f21))
+* **deps:** update dependency org.mockito:mockito-core to v4.8.1 ([3d7bbad](https://github.com/DanySK/gradle-java-qa/commit/3d7bbad14d36c05562dbaa69aebfd19380ade306))
+
 ## [0.38.0](https://github.com/DanySK/gradle-java-qa/compare/0.37.0...0.38.0) (2022-10-20)
 
 
