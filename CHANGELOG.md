@@ -1,3 +1,22 @@
+## [0.40.0](https://github.com/DanySK/gradle-java-qa/compare/0.39.0...0.40.0) (2022-11-01)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.12 ([3c2a8dc](https://github.com/DanySK/gradle-java-qa/commit/3c2a8dcd3bd9ea6fcda9a228af6d245ebfb5dec1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.13 ([fa20c4a](https://github.com/DanySK/gradle-java-qa/commit/fa20c4a32498e18ea30b5cffd58105dcede69703))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.51.0 ([ae678e2](https://github.com/DanySK/gradle-java-qa/commit/ae678e241e7e41ca755b31978e0db3a8b3e755f4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.14 ([53afcf2](https://github.com/DanySK/gradle-java-qa/commit/53afcf220192663d7478508160398c00b24881a3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.15 ([8b8e63e](https://github.com/DanySK/gradle-java-qa/commit/8b8e63e1394f8521bcf8aa7808a0cb0e2010812c))
+* **deps:** update kotest to v5.5.2 ([35c9b24](https://github.com/DanySK/gradle-java-qa/commit/35c9b241de0d48207c212d053bbfded4e130b52e))
+* **deps:** update kotest to v5.5.3 ([1d81c20](https://github.com/DanySK/gradle-java-qa/commit/1d81c20370fc6ce4487102652a4f4ff3103c0ce2))
+* **deps:** update node.js to 18.12 ([68d9565](https://github.com/DanySK/gradle-java-qa/commit/68d95658e2c85265b41e2be09ab1f47382bc519c))
+* **deps:** update node.js to v18 ([fbd554b](https://github.com/DanySK/gradle-java-qa/commit/fbd554be1bdc1e8bd808ec61ae6360f34bb05f6f))
+
 ## [0.39.0](https://github.com/DanySK/gradle-java-qa/compare/0.38.0...0.39.0) (2022-10-21)
 
 
