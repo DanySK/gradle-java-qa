@@ -7,7 +7,7 @@ mockito = "4.11.0"
 konf = "1.1.2"
 kotlin = "1.8.0"
 kotest = "5.5.4"
-pmd = "6.52.0"
+pmd = "6.53.0"
 spotbugs = "4.7.3"
 spotbugs-gradle = "5.0.13"
 
