@@ -1,3 +1,20 @@
+## [0.43.0](https://github.com/DanySK/gradle-java-qa/compare/0.42.0...0.43.0) (2023-01-31)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/action-checkout action to v0.2.5 ([6d5736f](https://github.com/DanySK/gradle-java-qa/commit/6d5736f75ec8d154c9a539089e835ba069ef7888))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.1.21 ([fadf42a](https://github.com/DanySK/gradle-java-qa/commit/fadf42a8f497712b097cb0022982e8d96b72f3ef))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.54.0 ([5e04adb](https://github.com/DanySK/gradle-java-qa/commit/5e04adbf8e5800ba1ec3a034aac8ff6ffa1201eb))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.154 ([b4bff3f](https://github.com/DanySK/gradle-java-qa/commit/b4bff3f6c51f2d135229224bcd528d7b5fee751f))
+* **deps:** update dependency org.mockito:mockito-core to v5 ([3de50a6](https://github.com/DanySK/gradle-java-qa/commit/3de50a6e57bde1f075735f89943bb25af27e5892))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.16 ([71ea522](https://github.com/DanySK/gradle-java-qa/commit/71ea522dd4e055fde0b9f63fd9f58b7198a84236))
+* **deps:** update node.js to 18.13 ([5f09718](https://github.com/DanySK/gradle-java-qa/commit/5f09718a33bbe8c58cd827495f93d5ebd303a7a8))
+
 ## [0.42.0](https://github.com/DanySK/gradle-java-qa/compare/0.41.0...0.42.0) (2023-01-05)
 
 
