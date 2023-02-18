@@ -22,7 +22,8 @@ description = "Automated Quality Assurance configuration for Java Projects built
 inner class ProjectInfo {
     val longName = "Java Quality Assurance Gradle plugin"
     val website = "https://github.com/DanySK/$name"
-    val scm = "git@github.com:DanySK/$name.git"
+    val vcsUrl = "$website.git"
+    val scm = "scm:git:$website.git"
     val pluginImplementationClass = "$group.javaqa.JavaQAPlugin"
     val tags = listOf("java", "static analysis", "quality assurance", "qa", "style", "bugs")
 }
@@ -150,19 +151,16 @@ publishing {
     }
 }
 
-pluginBundle {
-    website = info.website
-    vcsUrl = info.website
-    tags = info.tags
-}
-
 gradlePlugin {
     plugins {
+        website.set(info.website)
+        vcsUrl.set(info.vcsUrl)
         create("") {
             id = "$group.${project.name}"
             displayName = info.longName
             description = project.description
             implementationClass = info.pluginImplementationClass
+            tags.set(info.tags)
         }
     }
 }
