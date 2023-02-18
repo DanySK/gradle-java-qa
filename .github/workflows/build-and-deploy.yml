@@ -40,7 +40,7 @@ jobs:
   release:
     concurrency:
       # Only one release job at a time. Strictly sequential.
-      group: release
+      group: release-${{ github.workflow }}-${{ github.event.number || github.ref }}
     needs:
       - build
     runs-on: ubuntu-latest
