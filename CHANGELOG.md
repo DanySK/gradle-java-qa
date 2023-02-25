@@ -1,3 +1,12 @@
+## [0.44.0](https://github.com/DanySK/gradle-java-qa/compare/0.43.1...0.44.0) (2023-02-25)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v6.55.0 ([4dd0ced](https://github.com/DanySK/gradle-java-qa/commit/4dd0cede328255a1ed5cd1d965b5de277e3d6a3f))
+* **deps:** update plugin gitsemver to v1.1.1 ([4e57990](https://github.com/DanySK/gradle-java-qa/commit/4e57990002052933bb7610799a943bd6474d9d09))
+* **deps:** update plugin publishoncentral to v3.3.0 ([dd3d01d](https://github.com/DanySK/gradle-java-qa/commit/dd3d01d2b9e13b7bbb4c56c2c91416dc8d8b37f5))
+
 ## [0.43.1](https://github.com/DanySK/gradle-java-qa/compare/0.43.0...0.43.1) (2023-02-21)
 
 
