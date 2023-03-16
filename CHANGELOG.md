@@ -1,3 +1,18 @@
+## [1.1.0](https://github.com/DanySK/gradle-java-qa/compare/1.0.0...1.1.0) (2023-03-16)
+
+
+### Build and continuous integration
+
+* **mergify:** disable auto-rebasing due to Mergifyio/mergify[#5074](https://github.com/DanySK/gradle-java-qa/issues/5074) ([9ff68da](https://github.com/DanySK/gradle-java-qa/commit/9ff68daba6a3b86b578a2b09558ffece0ada4f94))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.8.1 ([32ce2f7](https://github.com/DanySK/gradle-java-qa/commit/32ce2f7a74c1649da37ece0cf7b2e834d233a532))
+* **deps:** update dependency org.mockito:mockito-core to v5.2.0 ([beeea61](https://github.com/DanySK/gradle-java-qa/commit/beeea61cbb4f35c34ba487a3312ed6b94dfd1edb))
+* **deps:** update node.js to 18.15 ([021627f](https://github.com/DanySK/gradle-java-qa/commit/021627ff77aeddbfa3ff7f3a9965f767571d5b3d))
+* **deps:** update plugin publishoncentral to v3.4.0 ([72a64fa](https://github.com/DanySK/gradle-java-qa/commit/72a64fa2dc21cddf194559b6154868d05c281f93))
+
 ## [1.0.0](https://github.com/DanySK/gradle-java-qa/compare/0.44.0...1.0.0) (2023-03-05)
 
 
