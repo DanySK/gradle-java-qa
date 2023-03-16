@@ -1,3 +1,17 @@
+## [1.2.0](https://github.com/DanySK/gradle-java-qa/compare/1.1.0...1.2.0) (2023-03-16)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.4.0 ([462e84e](https://github.com/DanySK/gradle-java-qa/commit/462e84eea0f2f1a9960deb91ce24456c69f9df88))
+* **deps:** update danysk/action-checkout action to v0.2.6 ([275856e](https://github.com/DanySK/gradle-java-qa/commit/275856e2a13357f495cc08ca5f4c4d9819963e4e))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.9.0 ([68d50f7](https://github.com/DanySK/gradle-java-qa/commit/68d50f7c05d52671aef4f116f3801c410729a471))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.157 ([a25ea4e](https://github.com/DanySK/gradle-java-qa/commit/a25ea4e466ccaa65bc11cc08ae3f42f67c3befb4))
+
 ## [1.1.0](https://github.com/DanySK/gradle-java-qa/compare/1.0.0...1.1.0) (2023-03-16)
 
 
