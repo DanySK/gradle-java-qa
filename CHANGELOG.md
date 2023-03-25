@@ -1,3 +1,19 @@
+## [1.6.0](https://github.com/DanySK/gradle-java-qa/compare/1.5.0...1.6.0) (2023-03-25)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.5.0 ([57875c8](https://github.com/DanySK/gradle-java-qa/commit/57875c8a7d7e4db3e911a4d7052078466abdf37f))
+* **deps:** update danysk/action-checkout action to v0.2.7 ([7268700](https://github.com/DanySK/gradle-java-qa/commit/72687007efae8ba4b7d3884097f538305616930b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.1 ([b8ce646](https://github.com/DanySK/gradle-java-qa/commit/b8ce6464986167564a816ea7954a027a85136a70))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.9.3 ([7d77ae5](https://github.com/DanySK/gradle-java-qa/commit/7d77ae538c3b4ab3a96083a0beea6e221b9e473a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.19 ([b21b45f](https://github.com/DanySK/gradle-java-qa/commit/b21b45f925fced888664f2a0cdc297d51762e9e6))
+* **deps:** update plugin com.gradle.enterprise to v3.12.6 ([0cf2029](https://github.com/DanySK/gradle-java-qa/commit/0cf20296c1010bbce854493a603f5c168c753eea))
+
 ## [1.5.0](https://github.com/DanySK/gradle-java-qa/compare/1.4.0...1.5.0) (2023-03-22)
 
 
