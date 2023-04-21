@@ -1,3 +1,53 @@
+## [1.7.0](https://github.com/DanySK/gradle-java-qa/compare/1.6.0...1.7.0) (2023-04-21)
+
+
+### Features
+
+* **checkstyle:** search the Javadoc for imports ([161394a](https://github.com/DanySK/gradle-java-qa/commit/161394ae6ca131e119f1cb6a1c889af4a9038e5b))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.5.2 ([25f9b45](https://github.com/DanySK/gradle-java-qa/commit/25f9b45b9e20509b8d5c45c97be6056344055f9e))
+* **deps:** update danysk/action-checkout action to v0.2.8 ([85fed9c](https://github.com/DanySK/gradle-java-qa/commit/85fed9c45488ec63390b8bf638317a882e16e4c6))
+* **deps:** update danysk/action-checkout action to v0.2.9 ([771ccf4](https://github.com/DanySK/gradle-java-qa/commit/771ccf411c1132466d31cd0dad1619a002fca5c8))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.2 ([365ff97](https://github.com/DanySK/gradle-java-qa/commit/365ff976c4801f43ef5d0faf330545ed315f9a6e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.3 ([17de590](https://github.com/DanySK/gradle-java-qa/commit/17de590892e24a5118de661375fce3b51ab89e41))
+
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.1 ([f65ee07](https://github.com/DanySK/gradle-java-qa/commit/f65ee07191b7c4e0fc64bd15cf1689cbc28aa4e4))
+* **deps:** update dependency gradle to v8.1.1 ([266d63e](https://github.com/DanySK/gradle-java-qa/commit/266d63e56255214785b0d8022718795b8868d723))
+* **deps:** update dependency org.jacoco:org.jacoco.core to v0.8.9 ([a698302](https://github.com/DanySK/gradle-java-qa/commit/a698302235c6e987865ab9a707cde41ba20c5ea1))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.20 ([9b1c61e](https://github.com/DanySK/gradle-java-qa/commit/9b1c61e97d7c748ffe4e776508183ff8c73fe5b6))
+* **deps:** update dependency org.mockito:mockito-core to v5.3.0 ([4f60261](https://github.com/DanySK/gradle-java-qa/commit/4f60261dee4f26316172d679fbb3aa45e663e80f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.20 ([67997dd](https://github.com/DanySK/gradle-java-qa/commit/67997dd12d0152acf8d0064c3f1c2066ac65a7b3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.21 ([75b92d0](https://github.com/DanySK/gradle-java-qa/commit/75b92d05fbe6b2234b0d22c0c8aecc7113d022bb))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.22 ([6a6e383](https://github.com/DanySK/gradle-java-qa/commit/6a6e3834baf84cf5d57ab8633e04d115aadf3577))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.23 ([1bfd2c0](https://github.com/DanySK/gradle-java-qa/commit/1bfd2c006b2f574f58d2db8fc1d8c51e9113aee4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.24 ([98d2f12](https://github.com/DanySK/gradle-java-qa/commit/98d2f126b0d018aab784f3143e86711ea9734d0f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.25 ([cb14ab3](https://github.com/DanySK/gradle-java-qa/commit/cb14ab320bc9e16205404e45a3ea818aadc49e25))
+* **deps:** update kotest to v5.6.0 ([0006697](https://github.com/DanySK/gradle-java-qa/commit/000669743a3147aa6b0ca4ba88d84512c8d0eaa1))
+* **deps:** update kotest to v5.6.1 ([354670e](https://github.com/DanySK/gradle-java-qa/commit/354670e460c4e00ef50ba6b781cb3d73efdb4a8e))
+* **deps:** update node.js to 18.16 ([f0811f8](https://github.com/DanySK/gradle-java-qa/commit/f0811f89f4583790875de6c3525585ccdc59c737))
+* **deps:** update plugin com.gradle.enterprise to v3.13 ([663138a](https://github.com/DanySK/gradle-java-qa/commit/663138aca608eab7d16b304e827ea030ffa16890))
+* **deps:** update plugin gitsemver to v1.1.5 ([a82f8b8](https://github.com/DanySK/gradle-java-qa/commit/a82f8b8d7929437d46b6a5ac1dd3fd6f55d45983))
+* **deps:** update plugin gitsemver to v1.1.6 ([497dc95](https://github.com/DanySK/gradle-java-qa/commit/497dc95410b1a3712557f14c81d7cfdd4617bb64))
+* **deps:** update plugin gitsemver to v1.1.7 ([b2c137f](https://github.com/DanySK/gradle-java-qa/commit/b2c137fccae05aed507ba29a30adee2a649f6787))
+* **deps:** update plugin gitsemver to v1.1.8 ([38bd7ed](https://github.com/DanySK/gradle-java-qa/commit/38bd7ede674612b8831525586b6a6de8806776a0))
+* **deps:** update plugin gradlepluginpublish to v1.2.0 ([27f02fd](https://github.com/DanySK/gradle-java-qa/commit/27f02fd029faacd4b92767c74cf24a9aaebeaa7a))
+* **deps:** update plugin multijvmtesting to v0.4.20 ([10ffad4](https://github.com/DanySK/gradle-java-qa/commit/10ffad42b6da95ed53eded59fc929a75dc723f28))
+* **deps:** update plugin multijvmtesting to v0.4.21 ([fae36b9](https://github.com/DanySK/gradle-java-qa/commit/fae36b961d53ab42ad3e8b6ee9bb0f3d197d3bb9))
+* **deps:** update plugin multijvmtesting to v0.4.22 ([76ea9e9](https://github.com/DanySK/gradle-java-qa/commit/76ea9e9267edb5beee5b5669c5205e0352e6baa3))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.6 ([094397b](https://github.com/DanySK/gradle-java-qa/commit/094397b9df4768fc1101de18900679bf1a94b28e))
+* **deps:** update plugin publishoncentral to v4 ([99bb42e](https://github.com/DanySK/gradle-java-qa/commit/99bb42eb22b5378a38aab6ab0e5ce89f6769c789))
+* **deps:** update plugin publishoncentral to v4.0.1 ([84c8dc1](https://github.com/DanySK/gradle-java-qa/commit/84c8dc1dc589411c1825ea2f6a3f1864547d785c))
+* **deps:** update plugin publishoncentral to v4.1.0 ([3f7f68f](https://github.com/DanySK/gradle-java-qa/commit/3f7f68fac4c9831ff23c60022dc5ccefc773d04d))
+* **deps:** update plugin publishoncentral to v4.1.1 ([389f3c4](https://github.com/DanySK/gradle-java-qa/commit/389f3c4f3a71a3c6ac2f1dd431d18c0beca32bba))
+* **deps:** update plugin publishoncentral to v5 ([6edba03](https://github.com/DanySK/gradle-java-qa/commit/6edba0355243980550583a1575f365d78d5f3564))
+* **deps:** update plugin publishoncentral to v5.0.2 ([0d95cd0](https://github.com/DanySK/gradle-java-qa/commit/0d95cd060df8f9e1a4033e743cd9be4411ba237f))
+
 ## [1.6.0](https://github.com/DanySK/gradle-java-qa/compare/1.5.0...1.6.0) (2023-03-25)
 
 
