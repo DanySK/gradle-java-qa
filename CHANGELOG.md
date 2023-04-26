@@ -1,3 +1,25 @@
+## [1.8.0](https://github.com/DanySK/gradle-java-qa/compare/1.7.0...1.8.0) (2023-04-26)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.4 ([5934bf4](https://github.com/DanySK/gradle-java-qa/commit/5934bf442391ae5ae5f9668a5c99756b9d34bfdd))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.10.0 ([def1972](https://github.com/DanySK/gradle-java-qa/commit/def1972320ee19485087704a3d97df8380a5657b))
+* **deps:** update dependency org.jacoco:org.jacoco.core to v0.8.10 ([c20c6a8](https://github.com/DanySK/gradle-java-qa/commit/c20c6a8e20e7e40cd67c64069821b044721425c7))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.8.21 ([b1555f0](https://github.com/DanySK/gradle-java-qa/commit/b1555f0f2e1e51ace780ff1a42f7ad4053841bda))
+* **deps:** update dependency org.mockito:mockito-core to v5.3.1 ([d6fb45d](https://github.com/DanySK/gradle-java-qa/commit/d6fb45ddb8e39298750eb1bdf628792ba1129c09))
+* **deps:** update plugin gitsemver to v1.1.9 ([8dcf2da](https://github.com/DanySK/gradle-java-qa/commit/8dcf2da20804a20eb945a61ca33436729b770a49))
+* **deps:** update plugin multijvmtesting to v0.4.23 ([79e32c1](https://github.com/DanySK/gradle-java-qa/commit/79e32c10ba7fd58f5784f5286420306e323feb55))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.7 ([b677dca](https://github.com/DanySK/gradle-java-qa/commit/b677dca38313066187bdde7e64ddfe1c5a9f0a44))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.5.0 ([2a9b89f](https://github.com/DanySK/gradle-java-qa/commit/2a9b89ffff510d36745baa87e6be0a94e290b0bb))
+* **deps:** update plugin publishoncentral to v5.0.3 ([17d4888](https://github.com/DanySK/gradle-java-qa/commit/17d48886c647ef30a80cb965c9cb61d3d974243d))
+* **deps:** update plugin publishoncentral to v5.0.4 ([f950cc1](https://github.com/DanySK/gradle-java-qa/commit/f950cc1254b3d8e932d864d3403990b6b5e080c5))
+* **deps:** update plugin publishoncentral to v5.0.5 ([b54016f](https://github.com/DanySK/gradle-java-qa/commit/b54016f51b7f9ea0eab0c74f915c30334cbf618f))
+
 ## [1.7.0](https://github.com/DanySK/gradle-java-qa/compare/1.6.0...1.7.0) (2023-04-21)
 
 
