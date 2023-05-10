@@ -1,3 +1,15 @@
+## [1.9.0](https://github.com/DanySK/gradle-java-qa/compare/1.8.0...1.9.0) (2023-05-10)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.11.0 ([635c79c](https://github.com/DanySK/gradle-java-qa/commit/635c79ca857f4dcf2ae8b0c1f9fb89a59c96edc2))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.158 ([6236931](https://github.com/DanySK/gradle-java-qa/commit/62369312eb2a7aba5b6a824b7475e83a946c341e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.26 ([9f26833](https://github.com/DanySK/gradle-java-qa/commit/9f268330b30640dcc6adf8790a079a170daf08ae))
+* **deps:** update plugin com.gradle.enterprise to v3.13.1 ([ed7efd4](https://github.com/DanySK/gradle-java-qa/commit/ed7efd46103f9575b4b4626f0fc340dbf4c2061d))
+* **deps:** update plugin com.gradle.enterprise to v3.13.2 ([66a4ab2](https://github.com/DanySK/gradle-java-qa/commit/66a4ab24315cdd7507cbce6429be2fae215998cb))
+* **deps:** update plugin multijvmtesting to v0.5.0 ([d179968](https://github.com/DanySK/gradle-java-qa/commit/d1799685134783e0bc21823cbb83f44c73a17604))
+
 ## [1.8.0](https://github.com/DanySK/gradle-java-qa/compare/1.7.0...1.8.0) (2023-04-26)
 
 
