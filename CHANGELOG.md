@@ -1,3 +1,21 @@
+## [1.10.0](https://github.com/DanySK/gradle-java-qa/compare/1.9.0...1.10.0) (2023-05-27)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.5 ([c8b0efb](https://github.com/DanySK/gradle-java-qa/commit/c8b0efbbcff43fc6fbe832761a9080f0d6bdfa17))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.6 ([52fda17](https://github.com/DanySK/gradle-java-qa/commit/52fda1731de92f646474dc066ff97e366e935b3f))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.12.0 ([c595192](https://github.com/DanySK/gradle-java-qa/commit/c5951928f29cb587b3a4a883e71b1bd76da4d46a))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.159 ([118ccb7](https://github.com/DanySK/gradle-java-qa/commit/118ccb7b9f10205007bcc1481cb3bc06dbf2277e))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.160 ([1786c93](https://github.com/DanySK/gradle-java-qa/commit/1786c9382e04c1f2e9f3a0b1dfc298a3691b50d0))
+* **deps:** update kotest to v5.6.2 ([0f94c26](https://github.com/DanySK/gradle-java-qa/commit/0f94c2657ba623e8eb4708a3bec39b3a7b78c0c3))
+* **deps:** update plugin com.gradle.enterprise to v3.13.3 ([45e6dad](https://github.com/DanySK/gradle-java-qa/commit/45e6dadac84904de408a7f694a75a4071bd60418))
+* **deps:** update plugin multijvmtesting to v0.5.1 ([16954fa](https://github.com/DanySK/gradle-java-qa/commit/16954fad6e571501f3abf86f9f27b2c9816ac7a9))
+
 ## [1.9.0](https://github.com/DanySK/gradle-java-qa/compare/1.8.0...1.9.0) (2023-05-10)
 
 
