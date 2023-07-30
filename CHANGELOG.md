@@ -1,3 +1,33 @@
+## [1.12.0](https://github.com/DanySK/gradle-java-qa/compare/1.11.0...1.12.0) (2023-07-30)
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.7 ([ed957a0](https://github.com/DanySK/gradle-java-qa/commit/ed957a0f54310f1e834ee7ae1a8da29063c1df13))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.8 ([b83068b](https://github.com/DanySK/gradle-java-qa/commit/b83068b5a2dcc88d190d2fba5d594aaa871fa109))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.12.2 ([c16829b](https://github.com/DanySK/gradle-java-qa/commit/c16829b676999fe2b7799dc73cb013c2430cdcbd))
+* **deps:** update dependency gradle to v8.2 ([d0c5a69](https://github.com/DanySK/gradle-java-qa/commit/d0c5a69b1b90f5222d035b3d4f0575829c9f4906))
+* **deps:** update dependency gradle to v8.2.1 ([2f2340f](https://github.com/DanySK/gradle-java-qa/commit/2f2340f479d19549333391036a650d147ae979d5))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.161 ([c8ab0aa](https://github.com/DanySK/gradle-java-qa/commit/c8ab0aab5c143f7dc2633f7f89c49276696255b3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.39 ([6bf93ca](https://github.com/DanySK/gradle-java-qa/commit/6bf93caee4d4a03ca64db5b2803130f64af1769f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.40 ([b8e130d](https://github.com/DanySK/gradle-java-qa/commit/b8e130dbd6e2f09f965d461602789660d3674233))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.41 ([1b5ad69](https://github.com/DanySK/gradle-java-qa/commit/1b5ad69f469db7f86b276a111b01e7df83e5415a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.42 ([2a90d65](https://github.com/DanySK/gradle-java-qa/commit/2a90d65c6bcc3ce4ed928661277d52fa3583449a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.43 ([0aef672](https://github.com/DanySK/gradle-java-qa/commit/0aef6725d164fabfbeb72cc8d94326dee3f38ce7))
+* **deps:** update node.js to 18.17 ([4e3372b](https://github.com/DanySK/gradle-java-qa/commit/4e3372b4c211227b7b5ac8c75f944e94c8baf8b0))
+* **deps:** update plugin com.gradle.enterprise to v3.14 ([dc36c81](https://github.com/DanySK/gradle-java-qa/commit/dc36c81d9601ace393db9b5ee45c0ba6e52a9420))
+* **deps:** update plugin com.gradle.enterprise to v3.14.1 ([4bbba14](https://github.com/DanySK/gradle-java-qa/commit/4bbba14772e99430354e974eae0821ff98b5629a))
+* **deps:** update plugin multijvmtesting to v0.5.3 ([fe26d43](https://github.com/DanySK/gradle-java-qa/commit/fe26d43d6e800841553f8e0ab494876def5b1914))
+* **deps:** update plugin multijvmtesting to v0.5.4 ([f66c06b](https://github.com/DanySK/gradle-java-qa/commit/f66c06b143173fd86d7dacab032b615acedfa15d))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.6.0 ([48fe25a](https://github.com/DanySK/gradle-java-qa/commit/48fe25a9bf06e3348dbca27cc033e628c6701033))
+* **deps:** update plugin publishoncentral to v5.0.10 ([5db3a62](https://github.com/DanySK/gradle-java-qa/commit/5db3a6289551bb477c586fdf96fcbda0709d613c))
+* **deps:** update plugin publishoncentral to v5.0.8 ([7fe227d](https://github.com/DanySK/gradle-java-qa/commit/7fe227d61aba9f57e19d7db198e0c68336e453d3))
+* **deps:** update plugin publishoncentral to v5.0.9 ([4600981](https://github.com/DanySK/gradle-java-qa/commit/460098139764f7516c53d2d55efcbf4378d090ee))
+
 ## [1.11.0](https://github.com/DanySK/gradle-java-qa/compare/1.10.0...1.11.0) (2023-06-25)
 
 
