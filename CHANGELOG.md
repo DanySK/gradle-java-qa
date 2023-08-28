@@ -1,3 +1,22 @@
+## [1.17.0](https://github.com/DanySK/gradle-java-qa/compare/1.16.0...1.17.0) (2023-08-28)
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v3.6.0 ([818af9a](https://github.com/DanySK/gradle-java-qa/commit/818af9a8383d5a0b24d309a48c228296661cb1d1))
+* **deps:** update danysk/action-checkout action to v0.2.11 ([1a3fe14](https://github.com/DanySK/gradle-java-qa/commit/1a3fe14f8c87cd586173c7d67e06b5892da54413))
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.12.3 ([888113a](https://github.com/DanySK/gradle-java-qa/commit/888113adc8e4e2a7601d1534adfd84475a469b67))
+* **deps:** update dependency org.mockito:mockito-core to v5.5.0 ([dd1a3ab](https://github.com/DanySK/gradle-java-qa/commit/dd1a3ab9d658662a11d17dc59a45f5ae355dc763))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.44 ([9350dd6](https://github.com/DanySK/gradle-java-qa/commit/9350dd60669b3cb70675b8c45a7229ff9f49d511))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.45 ([a170a90](https://github.com/DanySK/gradle-java-qa/commit/a170a900983a682e424389a2b13c53702fe9f587))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.46 ([c05bec1](https://github.com/DanySK/gradle-java-qa/commit/c05bec10228fff74a99be1729db87815797fd22c))
+* **deps:** update plugin gradlepluginpublish to v1.2.1 ([ede7e53](https://github.com/DanySK/gradle-java-qa/commit/ede7e53c4f8a93439a55cfc09b29fdc01c3ee07a))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.7.0 ([f5ad02e](https://github.com/DanySK/gradle-java-qa/commit/f5ad02ea425e29e0b5ec5e26d769563564fc4c25))
+
 ## [1.16.0](https://github.com/DanySK/gradle-java-qa/compare/1.15.0...1.16.0) (2023-08-15)
 
 
