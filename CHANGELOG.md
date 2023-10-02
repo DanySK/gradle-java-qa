@@ -1,3 +1,45 @@
+## [1.18.0](https://github.com/DanySK/gradle-java-qa/compare/1.17.0...1.18.0) (2023-10-02)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.12.4 ([fdd259f](https://github.com/DanySK/gradle-java-qa/commit/fdd259ffab38b16a65e06cb0cf0f373e62ec1458))
+* **deps:** update dependency org.jetbrains.dokka to v1.9.0 ([d6112c7](https://github.com/DanySK/gradle-java-qa/commit/d6112c7cacd31c269233c7bfc721f10b1a5ef424))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.47 ([13e35ac](https://github.com/DanySK/gradle-java-qa/commit/13e35ac3698943cf29fe4da222d34c6b7d2d7e83))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.48 ([8e7c5e4](https://github.com/DanySK/gradle-java-qa/commit/8e7c5e4f5af4d8e2940ed84c1093f625d68e2a40))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.50 ([10cd3be](https://github.com/DanySK/gradle-java-qa/commit/10cd3be951df3679fa2828d4d7b6822e88020802))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.51 ([7a9dcca](https://github.com/DanySK/gradle-java-qa/commit/7a9dccae8a4adcd1c57bfb6cfa2ed03e82c9c8e8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.52 ([b2bbc8e](https://github.com/DanySK/gradle-java-qa/commit/b2bbc8e5a60be68d69d557871c6c5369f8c7b349))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.53 ([5f97547](https://github.com/DanySK/gradle-java-qa/commit/5f97547cc4a7740607bd4f75e2f7251638d564ea))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.54 ([edd6fe5](https://github.com/DanySK/gradle-java-qa/commit/edd6fe55f6459c15c84a1d323e90fb371b8fb643))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.55 ([f598510](https://github.com/DanySK/gradle-java-qa/commit/f598510b3ea2b3d160806ee6558bbbfeafe35aa8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.56 ([8802997](https://github.com/DanySK/gradle-java-qa/commit/88029970a4132b1ebbbf107eef4d57bba1aee3d5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.58 ([cf582c9](https://github.com/DanySK/gradle-java-qa/commit/cf582c9a8e5227a37525aab6472413e9e6526e44))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.59 ([462277a](https://github.com/DanySK/gradle-java-qa/commit/462277a7b1e66c125ec6097b1e59eeb6d3704158))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.60 ([d337e6f](https://github.com/DanySK/gradle-java-qa/commit/d337e6fe6cfc34397845c20fa9ea8767f4923205))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.61 ([6e96aee](https://github.com/DanySK/gradle-java-qa/commit/6e96aee7eae2abdee71a1c38ead4ac350591c306))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.62 ([9be3a1d](https://github.com/DanySK/gradle-java-qa/commit/9be3a1d1db4184f31ff1ae12d5b5655ffad80a8f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.63 ([fa13909](https://github.com/DanySK/gradle-java-qa/commit/fa13909bd084d57fed37c9db6d372588b074123d))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.64 ([f033496](https://github.com/DanySK/gradle-java-qa/commit/f033496e744c2ddfeb96ffed4873fb21aa53f418))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.65 ([4f2fbb7](https://github.com/DanySK/gradle-java-qa/commit/4f2fbb75d9cb4f83a3cc6289ba1f2b19779466d7))
+* **deps:** update kotest to v5.7.0 ([665dd4f](https://github.com/DanySK/gradle-java-qa/commit/665dd4f9daf097bca8e3689e5eaa19686baf10ea))
+* **deps:** update kotest to v5.7.1 ([99dfdcd](https://github.com/DanySK/gradle-java-qa/commit/99dfdcdd42839743cffacd66865757ec8d9620c3))
+* **deps:** update kotest to v5.7.2 ([15699d0](https://github.com/DanySK/gradle-java-qa/commit/15699d08e77a8b53caaf70178066d0bf5a3c6759))
+* **deps:** update node.js to 18.18 ([89449c0](https://github.com/DanySK/gradle-java-qa/commit/89449c04a8739497725ed54235a6da17a7b3bd56))
+* **deps:** update plugin com.gradle.enterprise to v3.15 ([3c78a80](https://github.com/DanySK/gradle-java-qa/commit/3c78a80c7a3c067a9dcc3d59ac1cbc40bd527e27))
+* **deps:** update plugin multijvmtesting to v0.5.5 ([f82ca2d](https://github.com/DanySK/gradle-java-qa/commit/f82ca2df29146b5d3127a47a391bcc8f6c0c950f))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.10 ([2380824](https://github.com/DanySK/gradle-java-qa/commit/238082441bf46de1227fce35de156bfb3f8232c6))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4 ([f0e8f3a](https://github.com/DanySK/gradle-java-qa/commit/f0e8f3aa2254c93c9cb8423339a32feedbbeb86e))
+* **deps:** update actions/checkout action to v4.1.0 ([be5ae45](https://github.com/DanySK/gradle-java-qa/commit/be5ae45e4c540f39bd6608a195d5f4f5d6295dd4))
+* **deps:** update danysk/action-checkout action to v0.2.12 ([930f8fc](https://github.com/DanySK/gradle-java-qa/commit/930f8fca6daaffabc4aa89a9c4590a847dfb1df1))
+* **deps:** update danysk/action-checkout action to v0.2.13 ([b1af3c2](https://github.com/DanySK/gradle-java-qa/commit/b1af3c2a08c496499b75775d40432e683afb6d33))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.10 ([81eb27c](https://github.com/DanySK/gradle-java-qa/commit/81eb27cacfc10028fa6f60da3ddbf6956cd9eb8f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.9 ([9039f9a](https://github.com/DanySK/gradle-java-qa/commit/9039f9a323b7d9e0d959c57336d17a3aade15eeb))
+
 ## [1.17.0](https://github.com/DanySK/gradle-java-qa/compare/1.16.0...1.17.0) (2023-08-28)
 
 
