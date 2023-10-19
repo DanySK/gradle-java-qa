@@ -1,3 +1,24 @@
+## [1.22.0](https://github.com/DanySK/gradle-java-qa/compare/1.21.0...1.22.0) (2023-10-19)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.2.1 ([78981f7](https://github.com/DanySK/gradle-java-qa/commit/78981f7aa4f5eb7b445d529601eec6f0e666613a))
+* **deps:** update dependency org.jacoco:org.jacoco.core to v0.8.11 ([1b4c5ce](https://github.com/DanySK/gradle-java-qa/commit/1b4c5ceb98112250b7d520a11c00daff141a8a30))
+* **deps:** update dependency org.jetbrains.dokka to v1.9.10 ([67bd0f7](https://github.com/DanySK/gradle-java-qa/commit/67bd0f718b7f457e8be0738490571b13be6f8f1f))
+* **deps:** update plugin gitsemver to v1.1.11 ([3fdb78b](https://github.com/DanySK/gradle-java-qa/commit/3fdb78bd31fcf09386d6c487be91add7a6360fed))
+* **deps:** update plugin gitsemver to v1.1.13 ([04945cc](https://github.com/DanySK/gradle-java-qa/commit/04945ccb291ea0bf557cc5581c6d45359140dd99))
+* **deps:** update plugin gitsemver to v1.1.14 ([2180d38](https://github.com/DanySK/gradle-java-qa/commit/2180d384a6864517b048198afb3798bad0a5113b))
+* **deps:** update plugin multijvmtesting to v0.5.6 ([5f51a34](https://github.com/DanySK/gradle-java-qa/commit/5f51a34ea810f19500c3fc49ff7f7492afde84b8))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.11 ([62f4efb](https://github.com/DanySK/gradle-java-qa/commit/62f4efb3efa11ce6d735ec7bc01b1e7ec05cefb5))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.1 ([f1131cd](https://github.com/DanySK/gradle-java-qa/commit/f1131cd48c8b658cbde2eb4c7a4386360c5af899))
+* **deps:** update danysk/action-checkout action to v0.2.14 ([a707149](https://github.com/DanySK/gradle-java-qa/commit/a7071498ba87796e785ed75e6de039efb4c9cdc9))
+* **mergify:** point to the shared configuration ([566c664](https://github.com/DanySK/gradle-java-qa/commit/566c66442aedbbba5423bbf0ba554ea949209517))
+
 ## [1.21.0](https://github.com/DanySK/gradle-java-qa/compare/1.20.0...1.21.0) (2023-10-15)
 
 
