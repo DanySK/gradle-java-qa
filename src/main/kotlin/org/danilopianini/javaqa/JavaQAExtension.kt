@@ -7,7 +7,7 @@ import org.gradle.api.provider.Property
  * Extension for the Java QA plugin.
  */
 open class JavaQAExtension(
-    private val project: Project
+    private val project: Project,
 ) {
     internal val checkstyle = Checkstyle()
 
