@@ -88,23 +88,23 @@ open class JavaQAPlugin : Plugin<Project> {
                         it.doLast {
                             logger.debug(
                                 "Creating configuration file for checkstyle {}",
-                                checkstyleConfigurationFile.absolutePath
+                                checkstyleConfigurationFile.absolutePath,
                             )
                             fun String.doublyBackslashed() = replace("\\", "\\\\")
                             val actualConfiguration = checkstyleConfiguration.replace(
                                 Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
-                                extension.checkstyle.additionalConfiguration.fromFileOrItself().doublyBackslashed()
+                                extension.checkstyle.additionalConfiguration.fromFileOrItself().doublyBackslashed(),
                             )
                             checkstyleConfigurationFile.createWithContent(actualConfiguration)
                             logger.debug(
                                 "Creating suppressions file for checkstyle {}",
-                                checkstyleSuppressionsFile.absolutePath
+                                checkstyleSuppressionsFile.absolutePath,
                             )
                             checkstyleSuppressionsFile.createWithContent(
                                 baseCheckstyleExcludes.replace(
                                     Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"),
-                                    extension.checkstyle.additionalSuppressions.fromFileOrItself().doublyBackslashed()
-                                )
+                                    extension.checkstyle.additionalSuppressions.fromFileOrItself().doublyBackslashed(),
+                                ),
                             )
                         }
                     }
@@ -173,14 +173,17 @@ open class JavaQAPlugin : Plugin<Project> {
          * The default version of SpotBugs.
          */
         val spotBugsVersion = versionOf("spotbugs")
+
         /**
          * The default version of checkstyle.
          */
         val checkstyleVersion = versionOf("checkstyle")
+
         /**
          * The default version of JaCoCo.
          */
         val jacocoVersion = versionOf("jacoco")
+
         /**
          * The default version of PMD.
          */
