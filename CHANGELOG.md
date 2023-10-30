@@ -1,3 +1,32 @@
+## [1.22.1](https://github.com/DanySK/gradle-java-qa/compare/1.22.0...1.22.1) (2023-10-30)
+
+
+### Dependency updates
+
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.10 ([12e6f32](https://github.com/DanySK/gradle-java-qa/commit/12e6f3287f9226b163cee2df29dec6c6bf375f75))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.69 ([916046c](https://github.com/DanySK/gradle-java-qa/commit/916046c84ef5c0f7af5e722fd8e211b35fe0cedf))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.70 ([482fba6](https://github.com/DanySK/gradle-java-qa/commit/482fba6251e221511b41ee088a88315416992856))
+* **deps:** update node.js to 20.9 ([983b01a](https://github.com/DanySK/gradle-java-qa/commit/983b01a5533adb5515444499878d8e8fafbafbe4))
+* **deps:** update node.js to v20 ([9bbee07](https://github.com/DanySK/gradle-java-qa/commit/9bbee0706a472d9ee99ba0048e151df7a5364ad3))
+* **deps:** update plugin gitsemver to v1.1.15 ([f620604](https://github.com/DanySK/gradle-java-qa/commit/f6206040a954acfd29897d93661f948e1dcde61d))
+* **deps:** update plugin gitsemver to v2 ([61d77dd](https://github.com/DanySK/gradle-java-qa/commit/61d77dd8216a9e2290701c7074d765480720dd52))
+* **deps:** update plugin kotlin-qa to v0.52.0 and fix all related style errors ([#387](https://github.com/DanySK/gradle-java-qa/issues/387)) ([940b53c](https://github.com/DanySK/gradle-java-qa/commit/940b53c061aaa2df5e2226a2122f43350e86c6fe))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.13 ([7b73a82](https://github.com/DanySK/gradle-java-qa/commit/7b73a82bd30ab5ad3527ba35141166797909a425))
+* **deps:** update plugin publishoncentral to v5.0.16 ([6b63dab](https://github.com/DanySK/gradle-java-qa/commit/6b63dab95cb8d7e3065785a4913afe12db100bab))
+
+
+### Bug Fixes
+
+* move the `versions.properties` file into the `META-INF` jar folder ([dbc0896](https://github.com/DanySK/gradle-java-qa/commit/dbc0896935bfffc1dac116809ac21dd84d4f2c83))
+
+
+### Build and continuous integration
+
+* disable the fail-fast ([60f535b](https://github.com/DanySK/gradle-java-qa/commit/60f535be40b920b52bf1dd50c67e4e69e47adfe5))
+* drop kotlinc option `-XXLanguage:+InlineClasses` ([cb79570](https://github.com/DanySK/gradle-java-qa/commit/cb79570602f77c54a87873ab3d32163af7fac903))
+* exclude detekt from the kotlin version enforcement ([dbfe492](https://github.com/DanySK/gradle-java-qa/commit/dbfe49268c99c18e42807c4fdc520f3014b045b0))
+* replace deprecated method with `lowercase` ([e3fb445](https://github.com/DanySK/gradle-java-qa/commit/e3fb445b6516d1937194e7d82305f690893bb480))
+
 ## [1.22.0](https://github.com/DanySK/gradle-java-qa/compare/1.21.0...1.22.0) (2023-10-19)
 
 
