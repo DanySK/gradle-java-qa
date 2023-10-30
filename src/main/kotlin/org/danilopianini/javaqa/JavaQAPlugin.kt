@@ -205,7 +205,7 @@ open class JavaQAPlugin : Plugin<Project> {
         private fun loadResource(path: String): String = resource(path).readText()
 
         private fun versionOf(library: String): String = Properties().run {
-            load(resource("$packageRoot/versions.properties").openStream())
+            load(resource("META-INF/javaqa/tool-versions.properties").openStream())
             checkNotNull(get(library)?.toString()) {
                 "Unable to load version for $library"
             }
