@@ -38,7 +38,7 @@ open class JavaQAPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         with(project) {
             // Resources from the classpath must be loaded upfront
-            val javaQADestination = File(project.buildDir, "javaqa").apply { mkdirs() }
+            val javaQADestination = project.layout.buildDirectory.dir("javaqa").get().asFile.apply { mkdirs() }
             val baseSpotBugsExcludes = loadResource(spotbugsSuppressionsResource)
             val baseCheckstyleExcludes = loadResource(checkstyleSuppressionsResource)
             val checkstyleConfiguration = loadResource(checkstylePath)
