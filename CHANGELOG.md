@@ -1,3 +1,16 @@
+## [1.24.0](https://github.com/DanySK/gradle-java-qa/compare/1.23.0...1.24.0) (2023-11-07)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.2.3 ([64c51bc](https://github.com/DanySK/gradle-java-qa/commit/64c51bccf27e178a285f7a8467bdc98ffb7e4d04))
+* **deps:** update dependency gradle to v8.4 ([fe1451d](https://github.com/DanySK/gradle-java-qa/commit/fe1451d7f58bead622cc477723f77b7df187ce77))
+
+
+### General maintenance
+
+* remove deprecated call to Gradle's `Project.buildDir` ([375a98b](https://github.com/DanySK/gradle-java-qa/commit/375a98b4e7c8f926a70790f52248acfa5566bf25))
+
 ## [1.23.0](https://github.com/DanySK/gradle-java-qa/compare/1.22.1...1.23.0) (2023-11-07)
 
 
