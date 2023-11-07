@@ -1,3 +1,27 @@
+## [1.23.0](https://github.com/DanySK/gradle-java-qa/compare/1.22.1...1.23.0) (2023-11-07)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.8.1 ([8d02d51](https://github.com/DanySK/gradle-java-qa/commit/8d02d5190e931bf9df9f97663d8ba19e746b73ac))
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.2.2 ([d5e9bc8](https://github.com/DanySK/gradle-java-qa/commit/d5e9bc8f4509f1fe05775089877a21c981525014))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.164 ([1ff73ce](https://github.com/DanySK/gradle-java-qa/commit/1ff73ce17ac95e09dca7a33a0618b788383d1a79))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.20 ([74f51f3](https://github.com/DanySK/gradle-java-qa/commit/74f51f39ee186da4a787415bc670ac8e4942ceb5))
+* **deps:** update dependency org.mockito:mockito-core to v5.7.0 ([1ecfc77](https://github.com/DanySK/gradle-java-qa/commit/1ecfc771de3a75f9e987c0aa57609b9405bd4caa))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.71 ([813bd22](https://github.com/DanySK/gradle-java-qa/commit/813bd222f2897102083f1b8d20b02e98a036a776))
+* **deps:** update kotest to v5.8.0 ([9d6c4f4](https://github.com/DanySK/gradle-java-qa/commit/9d6c4f41ad00d68f088014f120d656f3612943d5))
+* **deps:** update plugin gitsemver to v2.0.1 ([04ffb3c](https://github.com/DanySK/gradle-java-qa/commit/04ffb3c6f7c4bf15599e38c9dcb470747ab792fa))
+* **deps:** update plugin kotlin-qa to v0.53.0 ([a863c58](https://github.com/DanySK/gradle-java-qa/commit/a863c58a3aa2d223481b393048403588220c60a0))
+* **deps:** update plugin kotlin-qa to v0.54.0 ([caf4f58](https://github.com/DanySK/gradle-java-qa/commit/caf4f58c67e4b65af4a324ad4b1cfd7b0261bdfe))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.14 ([455c795](https://github.com/DanySK/gradle-java-qa/commit/455c7953e026531a47528b69ff75f080261d317e))
+* **deps:** update plugin publishoncentral to v5.0.17 ([6c47ff1](https://github.com/DanySK/gradle-java-qa/commit/6c47ff1c1886ee68ea1124467890d6c200fa49ac))
+* **deps:** update plugin publishoncentral to v5.0.18 ([74aad2e](https://github.com/DanySK/gradle-java-qa/commit/74aad2e627264f33ebeba44471a96e1ac6be5acf))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.11 ([8077a7f](https://github.com/DanySK/gradle-java-qa/commit/8077a7f0f47bbc18ec5a9af8d540264bfcad4d87))
+
 ## [1.22.1](https://github.com/DanySK/gradle-java-qa/compare/1.22.0...1.22.1) (2023-10-30)
 
 
