@@ -40,13 +40,13 @@ repositories {
 
 tasks.create("copyToolVersions") {
     inputs.file(File(rootProject.rootDir, "gradle/libs.versions.toml"))
+    val outputDir = project.layout.buildDirectory
+        .dir("resources/main/META-INF/javaqa/")
+        .map { it.asFile }
+    outputs.dir(outputDir)
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> { dependsOn(this@create) }
     doLast {
-        val destinationDir = project.layout.buildDirectory
-            .dir("resources/main/META-INF/javaqa/")
-            .map { it.asFile }
-            .get()
-            .also { it.mkdirs() }
+        val destinationDir = outputDir.get().also { it.mkdirs() }
         val destination = File(destinationDir, "tool-versions.properties")
         val catalog = file("${rootProject.rootDir.absolutePath}/gradle/libs.versions.toml").readText()
         val libraries = listOf("checkstyle", "jacoco", "pmd", "spotbugs")
