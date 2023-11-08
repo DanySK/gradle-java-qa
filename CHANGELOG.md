@@ -1,3 +1,10 @@
+## [1.24.1](https://github.com/DanySK/gradle-java-qa/compare/1.24.0...1.24.1) (2023-11-08)
+
+
+### Bug Fixes
+
+* disable Spotbug's `CT_CONSTRUCTOR_THROW` ([b09ebf9](https://github.com/DanySK/gradle-java-qa/commit/b09ebf9711db942d459190c7e7bc19fd60c25ea0))
+
 ## [1.24.0](https://github.com/DanySK/gradle-java-qa/compare/1.23.0...1.24.0) (2023-11-07)
 
 
