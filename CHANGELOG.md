@@ -1,3 +1,20 @@
+## [1.25.0](https://github.com/DanySK/gradle-java-qa/compare/1.24.1...1.25.0) (2023-11-14)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.12.5 ([c4ff767](https://github.com/DanySK/gradle-java-qa/commit/c4ff76786dcf3608eafa437acb1d307fee621f8b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.72 ([8044206](https://github.com/DanySK/gradle-java-qa/commit/8044206e5bb8113193280957e861ae89def0d972))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.73 ([adb0c12](https://github.com/DanySK/gradle-java-qa/commit/adb0c125122769160e98fe1823a54d68b2ca19b9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.74 ([97799a9](https://github.com/DanySK/gradle-java-qa/commit/97799a965352570322e16e5438b422afac4f16b4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.75 ([683cebb](https://github.com/DanySK/gradle-java-qa/commit/683cebb157e82135c2d5a76d63d2176ca433a682))
+* **deps:** update plugin publishoncentral to v5.0.19 ([a7ddf75](https://github.com/DanySK/gradle-java-qa/commit/a7ddf751168f4cd2065bd2df6000c50560630b1d))
+
+
+### Build and continuous integration
+
+* declare the ouput of task `copyToolVersions` ([a6fe7aa](https://github.com/DanySK/gradle-java-qa/commit/a6fe7aa47b369f73142158f8f124d57eaca44e66))
+
 ## [1.24.1](https://github.com/DanySK/gradle-java-qa/compare/1.24.0...1.24.1) (2023-11-08)
 
 
