@@ -1,3 +1,11 @@
+## [1.27.0](https://github.com/DanySK/gradle-java-qa/compare/1.26.0...1.27.0) (2023-11-29)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.8.2 ([295ed24](https://github.com/DanySK/gradle-java-qa/commit/295ed246f9d0047048f026ddf82e47016b879fd5))
+* **deps:** update plugin multijvmtesting to v0.5.7 ([758be7c](https://github.com/DanySK/gradle-java-qa/commit/758be7c0aa8b3f33bb23a4441d5942bcfc340f26))
+
 ## [1.26.0](https://github.com/DanySK/gradle-java-qa/compare/1.25.0...1.26.0) (2023-11-27)
 
 
