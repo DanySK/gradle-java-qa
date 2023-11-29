@@ -8,7 +8,7 @@ konf = "1.1.2"
 kotlin = "1.9.21"
 kotest = "5.8.0"
 pmd = "6.55.0"
-spotbugs = "4.8.1"
+spotbugs = "4.8.2"
 spotbugs-gradle = "5.2.4"
 
 [libraries]
