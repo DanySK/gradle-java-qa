@@ -1,3 +1,19 @@
+## [1.28.0](https://github.com/DanySK/gradle-java-qa/compare/1.27.0...1.28.0) (2023-11-30)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v5.2.5 ([127997d](https://github.com/DanySK/gradle-java-qa/commit/127997d6cf6f2f348b23f004f10699ef10691904))
+* **deps:** update dependency gradle to v8.5 ([f825512](https://github.com/DanySK/gradle-java-qa/commit/f82551224b3debc860b0ee7fa14d0793a6eae6a2))
+* **deps:** update plugin gitsemver to v2.0.4 ([580921b](https://github.com/DanySK/gradle-java-qa/commit/580921b4149a606bbfe086fd03e550860e7a62dd))
+* **deps:** update plugin kotlin-qa to v0.55.2 ([c07851f](https://github.com/DanySK/gradle-java-qa/commit/c07851fe8df633837af104456e9815d542cc3b99))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.16 ([bd93383](https://github.com/DanySK/gradle-java-qa/commit/bd933833851d1d28bc24cacfe4259d52d2ceac14))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.12 ([db3aef5](https://github.com/DanySK/gradle-java-qa/commit/db3aef5a8ab68a0e328047fa457df8f6c049ab46))
+
 ## [1.27.0](https://github.com/DanySK/gradle-java-qa/compare/1.26.0...1.27.0) (2023-11-29)
 
 
