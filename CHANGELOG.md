@@ -1,3 +1,17 @@
+## [1.29.0](https://github.com/DanySK/gradle-java-qa/compare/1.28.0...1.29.0) (2023-12-13)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.8.3 ([29da253](https://github.com/DanySK/gradle-java-qa/commit/29da2535598b180bd73be5cde2de5cd4e4fb3247))
+* **deps:** update dependency org.mockito:mockito-core to v5.8.0 ([7326106](https://github.com/DanySK/gradle-java-qa/commit/732610652e36f710eb4d4bc08cd64eea633b98a4))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.79 ([97e6dba](https://github.com/DanySK/gradle-java-qa/commit/97e6dba658ef158569ad72333e7c7afa3cdee8ca))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.80 ([90f0e0d](https://github.com/DanySK/gradle-java-qa/commit/90f0e0dc1bff51e63274682388ed43eba3e9a18b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.81 ([f276958](https://github.com/DanySK/gradle-java-qa/commit/f27695830595e215c1eebfebc3b1460a1fbd3ed5))
+* **deps:** update plugin com.gradle.enterprise to v3.16 ([52f16f8](https://github.com/DanySK/gradle-java-qa/commit/52f16f8d9eac7d96b5c6b6c8b125144074cbdf63))
+* **deps:** update plugin kotlin-qa to v0.56.0 ([6e95968](https://github.com/DanySK/gradle-java-qa/commit/6e95968f1e231bb08d0e277dfc469bf7fcf0596d))
+* **deps:** update plugin kotlin-qa to v0.57.0 ([6ece728](https://github.com/DanySK/gradle-java-qa/commit/6ece728584380ef65a037cda39a80353e9b9733c))
+
 ## [1.28.0](https://github.com/DanySK/gradle-java-qa/compare/1.27.0...1.28.0) (2023-11-30)
 
 
