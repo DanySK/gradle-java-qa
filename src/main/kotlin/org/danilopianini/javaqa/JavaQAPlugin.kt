@@ -1,5 +1,7 @@
 package org.danilopianini.javaqa
 
+import com.github.spotbugs.snom.Confidence
+import com.github.spotbugs.snom.Effort
 import com.github.spotbugs.snom.SpotBugsExtension
 import com.github.spotbugs.snom.SpotBugsPlugin
 import com.github.spotbugs.snom.SpotBugsTask
@@ -70,8 +72,8 @@ open class JavaQAPlugin : Plugin<Project> {
                         dependsOn(populateDefaultSpotBugsExcludes)
                     }
                     toolVersion.set(spotBugsVersion)
-                    setEffort("max")
-                    setReportLevel("low")
+                    effort.set(Effort.MAX)
+                    reportLevel.set(Confidence.LOW)
                     showProgress.set(false)
                     excludeFilter.set(spotbugsExcludesFile)
                 }
