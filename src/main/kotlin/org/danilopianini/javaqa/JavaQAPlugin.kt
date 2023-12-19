@@ -23,6 +23,7 @@ import org.gradle.external.javadoc.CoreJavadocOptions
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.create
+import org.gradle.kotlin.dsl.exclude
 import org.gradle.kotlin.dsl.findByType
 import org.gradle.kotlin.dsl.withType
 import org.gradle.testing.jacoco.plugins.JacocoPlugin
@@ -109,6 +110,9 @@ open class JavaQAPlugin : Plugin<Project> {
                                 ),
                             )
                         }
+                    }
+                    configurations.named("checkstyle").configure { checkstyleConfiguration ->
+                        checkstyleConfiguration.exclude(group = "com.google.collections", module = "google-collections")
                     }
                     tasks.withType<Checkstyle> {
                         inputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
