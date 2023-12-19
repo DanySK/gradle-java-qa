@@ -1,3 +1,14 @@
+## [1.30.0](https://github.com/DanySK/gradle-java-qa/compare/1.29.0...1.30.0) (2023-12-19)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6 ([86b4564](https://github.com/DanySK/gradle-java-qa/commit/86b4564963de34a26278f56e60a2825972667539))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.82 ([a62a6a0](https://github.com/DanySK/gradle-java-qa/commit/a62a6a06f12e93506ceb63f476aafc9c40402333))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.83 ([5f1f3ea](https://github.com/DanySK/gradle-java-qa/commit/5f1f3ea6728351a52e982ce421b588e5ad61dd96))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.84 ([651c6ad](https://github.com/DanySK/gradle-java-qa/commit/651c6ad748ee354807f3f290e9c0e30f11f39900))
+* **deps:** update plugin com.gradle.enterprise to v3.16.1 ([ab4c3fb](https://github.com/DanySK/gradle-java-qa/commit/ab4c3fb075a1ad60ae59d3e55962a01c99e3d01f))
+
 ## [1.29.0](https://github.com/DanySK/gradle-java-qa/compare/1.28.0...1.29.0) (2023-12-13)
 
 
