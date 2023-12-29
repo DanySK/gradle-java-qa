@@ -201,7 +201,9 @@ open class JavaQAPlugin : Plugin<Project> {
 
         private fun File.createWithContent(source: String): File = apply {
             parentFile.mkdirs()
-            writeText(source)
+            if (!exists() || readText() != source) {
+                writeText(source)
+            }
         }
 
         private fun resource(path: String) = checkNotNull(Thread.currentThread().contextClassLoader.getResource(path)) {
