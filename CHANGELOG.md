@@ -1,3 +1,20 @@
+## [1.31.1](https://github.com/DanySK/gradle-java-qa/compare/1.31.0...1.31.1) (2023-12-29)
+
+
+### Dependency updates
+
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.22 ([fe3c51a](https://github.com/DanySK/gradle-java-qa/commit/fe3c51a08806035cb5ba30eeebdf1a81d6a1f3f3))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.85 ([832b857](https://github.com/DanySK/gradle-java-qa/commit/832b85770870d96dbb4107488b0043e0a899cd27))
+* **deps:** update plugin gitsemver to v2.0.5 ([353029e](https://github.com/DanySK/gradle-java-qa/commit/353029ec6d2edcb08c3d651d2e47e19b768c8500))
+* **deps:** update plugin kotlin-qa to v0.57.1 ([5200111](https://github.com/DanySK/gradle-java-qa/commit/52001117165f9ba58ebbd044eb598b3ac6428f8d))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v1.1.17 ([c40728c](https://github.com/DanySK/gradle-java-qa/commit/c40728c3ca0f61b370bb7e11f38a63293ce9351c))
+* **deps:** update plugin publishoncentral to v5.0.22 ([c322ea7](https://github.com/DanySK/gradle-java-qa/commit/c322ea78b9b9cfee69042742d61fde25d5019306))
+
+
+### Bug Fixes
+
+* do not rewrite the configuration files if the content is unchanged. It should help with Gradle's caching system. ([c16d2cf](https://github.com/DanySK/gradle-java-qa/commit/c16d2cfac157c76f15ca467816771b3d827f29b5))
+
 ## [1.31.0](https://github.com/DanySK/gradle-java-qa/compare/1.30.0...1.31.0) (2023-12-19)
 
 
