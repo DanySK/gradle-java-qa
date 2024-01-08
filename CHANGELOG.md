@@ -1,3 +1,11 @@
+## [1.34.0](https://github.com/DanySK/gradle-java-qa/compare/1.33.0...1.34.0) (2024-01-08)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.6 ([86b501e](https://github.com/DanySK/gradle-java-qa/commit/86b501eb9569f810d89ac5662ac8f8b2c8affe00))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2 ([85592d8](https://github.com/DanySK/gradle-java-qa/commit/85592d8f3d8c54884abe3174f63b89a0519e50a3))
+
 ## [1.33.0](https://github.com/DanySK/gradle-java-qa/compare/1.32.0...1.33.0) (2024-01-04)
 
 
