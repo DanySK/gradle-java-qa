@@ -1,3 +1,22 @@
+## [1.35.0](https://github.com/DanySK/gradle-java-qa/compare/1.34.0...1.35.0) (2024-01-23)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.7 ([af5b92f](https://github.com/DanySK/gradle-java-qa/commit/af5b92f172195f435c72fe49bf831f8a457ccaf2))
+* **deps:** update dependency org.mockito:mockito-core to v5.9.0 ([1d8ef2c](https://github.com/DanySK/gradle-java-qa/commit/1d8ef2c68fb1238ad1c29da7737eaf67e00b9ce4))
+* **deps:** update node.js to 20.11 ([3a42641](https://github.com/DanySK/gradle-java-qa/commit/3a42641bdae2f6f874342a52bf54fa0eddfaf500))
+* **deps:** update plugin gitsemver to v3 ([744ea54](https://github.com/DanySK/gradle-java-qa/commit/744ea54483b3146910c5980324f4e3fb4dd93229))
+* **deps:** update plugin gitsemver to v3.1.0 ([c8a05f7](https://github.com/DanySK/gradle-java-qa/commit/c8a05f7f95b41af75ab1ce607622720afff54847))
+* **deps:** update plugin kotlin-qa to v0.58.0 ([1e199ec](https://github.com/DanySK/gradle-java-qa/commit/1e199ec88f35502aa36d22621953664b172ec348))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.8.0 ([00cfdd6](https://github.com/DanySK/gradle-java-qa/commit/00cfdd687cb4726ad5b67e78bae90f86a0366dd9))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.13 ([9e7ee0a](https://github.com/DanySK/gradle-java-qa/commit/9e7ee0a45d0eefa541891fec084b1bb324070653))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.14 ([9be2295](https://github.com/DanySK/gradle-java-qa/commit/9be22950d23b73565cd7354c76da5a28520cb7ce))
+
 ## [1.34.0](https://github.com/DanySK/gradle-java-qa/compare/1.33.0...1.34.0) (2024-01-08)
 
 
