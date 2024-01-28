@@ -1,3 +1,17 @@
+## [1.36.0](https://github.com/DanySK/gradle-java-qa/compare/1.35.0...1.36.0) (2024-01-28)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.13.0 ([a883236](https://github.com/DanySK/gradle-java-qa/commit/a88323634c3eb96ee5b1bc8ea678b95699599c75))
+* **deps:** update dependency org.mockito:mockito-core to v5.10.0 ([43a2d38](https://github.com/DanySK/gradle-java-qa/commit/43a2d3805f7bfe38fb2e77569f304d5b3e7121cd))
+* **deps:** update plugin com.gradle.enterprise to v3.16.2 ([a24df29](https://github.com/DanySK/gradle-java-qa/commit/a24df295cefd5ccf9d2c6af83212d8d8e2c2a49e))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.15 ([34b2e99](https://github.com/DanySK/gradle-java-qa/commit/34b2e99d2312431d57114458f2ffda91fed2c3d3))
+
 ## [1.35.0](https://github.com/DanySK/gradle-java-qa/compare/1.34.0...1.35.0) (2024-01-23)
 
 
