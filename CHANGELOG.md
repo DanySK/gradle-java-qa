@@ -1,3 +1,37 @@
+## [1.37.0](https://github.com/DanySK/gradle-java-qa/compare/1.36.0...1.37.0) (2024-02-28)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.14.0 ([49f962e](https://github.com/DanySK/gradle-java-qa/commit/49f962e2273d13140aca4a9ea5b428bd52a0103e))
+* **deps:** update dependency gradle to v8.6 ([ed29bb4](https://github.com/DanySK/gradle-java-qa/commit/ed29bb46f27d38cb649395038e38a67dd998a247))
+* **deps:** update plugin gitsemver to v3.1.1 ([824660b](https://github.com/DanySK/gradle-java-qa/commit/824660b7155b7583676cf6ba4ce51ff8558f63f8))
+* **deps:** update plugin kotlin-qa to v0.59.0 ([a35be47](https://github.com/DanySK/gradle-java-qa/commit/a35be4726d8e5b2efed83c5a5e3f2ddfe49c8d81))
+* **deps:** update plugin kotlin-qa to v0.59.1 ([60a8049](https://github.com/DanySK/gradle-java-qa/commit/60a8049971c79989a7f7e6530b4071f0c70fdfa9))
+* **deps:** update plugin kotlin-qa to v0.60.0 ([6d10c0f](https://github.com/DanySK/gradle-java-qa/commit/6d10c0fdc4cf1d9a5bc9f378daaca058e9b714e0))
+* **deps:** update plugin kotlin-qa to v0.60.1 ([99f47b0](https://github.com/DanySK/gradle-java-qa/commit/99f47b0c59eac16db6b46a46d2a197418f35ced0))
+* **deps:** update plugin multijvmtesting to v0.5.8 ([a16cea6](https://github.com/DanySK/gradle-java-qa/commit/a16cea62fd1985accadc1fc43d0da3ad704948d1))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.1 ([77e9c63](https://github.com/DanySK/gradle-java-qa/commit/77e9c632666aa3983249df5be352a4f8fec964d7))
+* **deps:** update plugin publishoncentral to v5.0.23 ([b44c945](https://github.com/DanySK/gradle-java-qa/commit/b44c94584b3b19a3a53d4597a3c0908bc19eddf9))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.16 ([311b114](https://github.com/DanySK/gradle-java-qa/commit/311b114fc621a56ab45c3bbd7b06bf9b5134d5da))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.17 ([4042741](https://github.com/DanySK/gradle-java-qa/commit/4042741fb647ebc28a7c09f12e5a7f735d4abbd5))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.18 ([280f839](https://github.com/DanySK/gradle-java-qa/commit/280f839798082599d26d017fddcfe599f2b24984))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.19 ([61b686b](https://github.com/DanySK/gradle-java-qa/commit/61b686bf1160f4886ea8e638a2e1bd6ee0e07722))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.2.20 ([e64e888](https://github.com/DanySK/gradle-java-qa/commit/e64e888d8a44fc179e6934d9b61a3b5ba0bd6597))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.0 ([d89283c](https://github.com/DanySK/gradle-java-qa/commit/d89283c84f1eaa58c523f494fb758f1284fa7919))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.1 ([#711](https://github.com/DanySK/gradle-java-qa/issues/711)) ([8ecb82d](https://github.com/DanySK/gradle-java-qa/commit/8ecb82def077ff5f1e2eba6b7d85d55bb2fc3bca))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.3.2 ([f605f44](https://github.com/DanySK/gradle-java-qa/commit/f605f4408dec1e187a18e9a9440b51edae83237e))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.0 ([51af597](https://github.com/DanySK/gradle-java-qa/commit/51af597b8015a01b7f02787a2d0e16c4e9808ef2))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.1 ([43876e5](https://github.com/DanySK/gradle-java-qa/commit/43876e5b36571861d11df0130b821a28a143309f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.2 ([19819ec](https://github.com/DanySK/gradle-java-qa/commit/19819ecbc8008145a4e9863f0726ab3e7686446b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.3 ([5360efc](https://github.com/DanySK/gradle-java-qa/commit/5360efc4f59650e4f6bcdf8fd6c8f61db21e8b5d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.4 ([0e2d212](https://github.com/DanySK/gradle-java-qa/commit/0e2d2127fcafa7075021d72b1e8e19ac157a28de))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.5 ([9257433](https://github.com/DanySK/gradle-java-qa/commit/9257433271ed35a5900b1b54f9d465904c038189))
+
 ## [1.36.0](https://github.com/DanySK/gradle-java-qa/compare/1.35.0...1.36.0) (2024-01-28)
 
 
