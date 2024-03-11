@@ -1,3 +1,23 @@
+## [1.39.0](https://github.com/DanySK/gradle-java-qa/compare/1.38.0...1.39.0) (2024-03-11)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.14.1 ([e664b49](https://github.com/DanySK/gradle-java-qa/commit/e664b495547ebccba504b198df77dbaf79c0e97f))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.167 ([d92733d](https://github.com/DanySK/gradle-java-qa/commit/d92733dd4d6184b5f383a88b7eeb8fa43ed21e6a))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.168 ([3da89bb](https://github.com/DanySK/gradle-java-qa/commit/3da89bb1fb22598f5550a0e7fdb2fb9a8c4eb2d1))
+* **deps:** update dependency org.jetbrains.dokka to v1.9.20 ([f184269](https://github.com/DanySK/gradle-java-qa/commit/f18426941f8ae985c8375b2a5300f5979c68b61b))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v1.9.23 ([456dfd8](https://github.com/DanySK/gradle-java-qa/commit/456dfd8bf23fa455caefc8d8355676342f738bb8))
+* **deps:** update kotest to v5.8.1 ([9727f41](https://github.com/DanySK/gradle-java-qa/commit/9727f41f5ae94efb9428ca8916adcb20fecc292f))
+* **deps:** update plugin gitsemver to v3.1.2 ([2cc0db8](https://github.com/DanySK/gradle-java-qa/commit/2cc0db89aa9e37d79614d1f322286876d16db290))
+* **deps:** update plugin gitsemver to v3.1.3 ([bccb659](https://github.com/DanySK/gradle-java-qa/commit/bccb6599cf2cbf95b173ab583f013b600ff8a6b0))
+* **deps:** update plugin kotlin-qa to v0.60.2 ([791de18](https://github.com/DanySK/gradle-java-qa/commit/791de183e59026ce1ac6dbf83260a26560264d9d))
+* **deps:** update plugin kotlin-qa to v0.60.3 ([a54adc6](https://github.com/DanySK/gradle-java-qa/commit/a54adc61d61b4181bfc59d7d1d0044acca1a6d19))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.2 ([39cb59c](https://github.com/DanySK/gradle-java-qa/commit/39cb59c18a7f1dd1b15c38c46fade6d8d6972337))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.3 ([4ec266f](https://github.com/DanySK/gradle-java-qa/commit/4ec266f0e619b96ee21fff65badc812191b84a74))
+* **deps:** update plugin publishoncentral to v5.0.24 ([d26a712](https://github.com/DanySK/gradle-java-qa/commit/d26a7127de98fd51fecce81b342e03c1dce719ac))
+* **deps:** update plugin publishoncentral to v5.0.25 ([bc91051](https://github.com/DanySK/gradle-java-qa/commit/bc91051a04b8f2c7dfc92f2e87036d638092ff03))
+
 ## [1.38.0](https://github.com/DanySK/gradle-java-qa/compare/1.37.0...1.38.0) (2024-03-01)
 
 
