@@ -1,3 +1,15 @@
+## [1.43.1](https://github.com/DanySK/gradle-java-qa/compare/1.43.0...1.43.1) (2024-04-08)
+
+
+### Dependency updates
+
+* **deps:** update plugin publishoncentral to v5.1.0 ([ce9f633](https://github.com/DanySK/gradle-java-qa/commit/ce9f63382166b34fc1abc71d7fdea55f0c48ab56))
+
+
+### Bug Fixes
+
+* **spotbugs:** disable `MC_OVERRIDABLE_METHOD_CALL_IN_READ_OBJECT`, causing too many false positives by marking as problematic also calls to overridable methods which are *not* members of the class being deserialized. ([aef3b0b](https://github.com/DanySK/gradle-java-qa/commit/aef3b0b8de94469f4933963df40cf6f20711b8d3))
+
 ## [1.43.0](https://github.com/DanySK/gradle-java-qa/compare/1.42.0...1.43.0) (2024-04-08)
 
 
