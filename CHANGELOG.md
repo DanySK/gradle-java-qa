@@ -1,3 +1,18 @@
+## [1.43.0](https://github.com/DanySK/gradle-java-qa/compare/1.42.0...1.43.0) (2024-04-08)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.8.4 ([878b78d](https://github.com/DanySK/gradle-java-qa/commit/878b78df0758be4f6a918a5493f8a8525b94e70f))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.170 ([e7c6df9](https://github.com/DanySK/gradle-java-qa/commit/e7c6df9e07b4535729adc81c3e8bd15cc883e1c8))
+* **deps:** update dependency org.jacoco:org.jacoco.core to v0.8.12 ([a419045](https://github.com/DanySK/gradle-java-qa/commit/a41904529a4faebd3d87cbb74084eea418854d14))
+* **deps:** update plugin com.gradle.enterprise to v3.17 ([4ca9815](https://github.com/DanySK/gradle-java-qa/commit/4ca9815bfd0de5d7497b2a5c801bad9ed4f8ad85))
+
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.12 ([70bb19d](https://github.com/DanySK/gradle-java-qa/commit/70bb19d5ae70b6fd8ae68db33ca94b78a64e1d47))
+
 ## [1.42.0](https://github.com/DanySK/gradle-java-qa/compare/1.41.0...1.42.0) (2024-04-01)
 
 
