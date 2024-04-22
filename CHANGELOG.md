@@ -1,3 +1,24 @@
+## [1.46.1](https://github.com/DanySK/gradle-java-qa/compare/1.46.0...1.46.1) (2024-04-22)
+
+
+### Dependency updates
+
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.171 ([1d0ad03](https://github.com/DanySK/gradle-java-qa/commit/1d0ad03e937adf56e4a45c989c300d17b259e60c))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.172 ([e6e45d1](https://github.com/DanySK/gradle-java-qa/commit/e6e45d16c4d52493d5d9c8ff65bddcb2816870ad))
+* **deps:** update plugin com.gradle.enterprise to v3.17.2 ([907549c](https://github.com/DanySK/gradle-java-qa/commit/907549cccb6a1b985750f1e1361f427009528ac6))
+
+
+### Bug Fixes
+
+* disable `SING_SINGLETON_GETTER_NOT_SYNCHRONIZED` causing false positives ([e711369](https://github.com/DanySK/gradle-java-qa/commit/e711369f8419fdbd3bd12201c63a768c3a26763b))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.3 ([44b4459](https://github.com/DanySK/gradle-java-qa/commit/44b4459654bbb499015dd1fca2615bf547026282))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.15 ([b04aa17](https://github.com/DanySK/gradle-java-qa/commit/b04aa17050f62db66f7e9cc9bc1a66d340aec2e2))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.16 ([112b844](https://github.com/DanySK/gradle-java-qa/commit/112b844e4b9e8a348c443852306f994219886bd2))
+
 ## [1.46.0](https://github.com/DanySK/gradle-java-qa/compare/1.45.0...1.46.0) (2024-04-12)
 
 
