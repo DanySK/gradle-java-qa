@@ -1,3 +1,12 @@
+## [1.52.0](https://github.com/DanySK/gradle-java-qa/compare/1.51.0...1.52.0) (2024-05-26)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.17.0 ([25670cb](https://github.com/DanySK/gradle-java-qa/commit/25670cbd77dccef9c67305f4ede1406c2840de8d))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2 ([520b726](https://github.com/DanySK/gradle-java-qa/commit/520b7269b98c21da46ccf14083cc8767a1e6fc3b))
+* **deps:** update plugin gitsemver to v3.1.6 ([eebe326](https://github.com/DanySK/gradle-java-qa/commit/eebe326d0d605ab7020243f69de643de96e429e5))
+
 ## [1.51.0](https://github.com/DanySK/gradle-java-qa/compare/1.50.0...1.51.0) (2024-05-21)
 
 
