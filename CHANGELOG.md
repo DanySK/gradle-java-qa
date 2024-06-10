@@ -1,3 +1,20 @@
+## [1.53.0](https://github.com/DanySK/gradle-java-qa/compare/1.52.0...1.53.0) (2024-06-10)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.16 ([2ebee12](https://github.com/DanySK/gradle-java-qa/commit/2ebee1235ebb26abc2d94a429973a0c60ec7af73))
+* **deps:** update dependency gradle to v8.8 ([8ad15cf](https://github.com/DanySK/gradle-java-qa/commit/8ad15cf106f53bf4271d8f472495463d007fc3b0))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.173 ([ef5f02f](https://github.com/DanySK/gradle-java-qa/commit/ef5f02fa463750231460308eb1f4c666f7ac2d5d))
+* **deps:** update kotest to v5.9.1 ([2911a19](https://github.com/DanySK/gradle-java-qa/commit/2911a1915aa778f6ba9f793a09f6221765418de8))
+* **deps:** update node.js to 20.14 ([07b429e](https://github.com/DanySK/gradle-java-qa/commit/07b429ef8412feadd7541eb14eb6d06029a1793f))
+* **deps:** update plugin gitsemver to v3.1.7 ([df94422](https://github.com/DanySK/gradle-java-qa/commit/df94422de53685f895333caa32348b8dd09b4313))
+* **deps:** update plugin kotlin-qa to v0.62.1 ([aea611a](https://github.com/DanySK/gradle-java-qa/commit/aea611a0f57cfbfe5f556a872e57f0ef62a5ee2c))
+* **deps:** update plugin kotlin-qa to v0.62.3 ([c82daf4](https://github.com/DanySK/gradle-java-qa/commit/c82daf45ff98424127cbbc766cd20968dea3effa))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.7 ([2ace127](https://github.com/DanySK/gradle-java-qa/commit/2ace1276bf59209d4b665b03f878ee6672b83207))
+* **deps:** update plugin publishoncentral to v5.1.2 ([3d9147c](https://github.com/DanySK/gradle-java-qa/commit/3d9147cc32dcfb2a6327ea9041d7b38c36063375))
+* **deps:** update plugin publishoncentral to v5.1.3 ([294b692](https://github.com/DanySK/gradle-java-qa/commit/294b692bef6d1968b0ad617592c3e1f511b98f1f))
+
 ## [1.52.0](https://github.com/DanySK/gradle-java-qa/compare/1.51.0...1.52.0) (2024-05-26)
 
 
