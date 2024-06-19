@@ -1,3 +1,10 @@
+## [1.55.0](https://github.com/DanySK/gradle-java-qa/compare/1.54.0...1.55.0) (2024-06-19)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.17 ([1149940](https://github.com/DanySK/gradle-java-qa/commit/11499407cab047a1d55a8e53da1c9ac5e0f534a9))
+
 ## [1.54.0](https://github.com/DanySK/gradle-java-qa/compare/1.53.0...1.54.0) (2024-06-19)
 
 
