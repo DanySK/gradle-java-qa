@@ -1,3 +1,22 @@
+## [1.54.0](https://github.com/DanySK/gradle-java-qa/compare/1.53.0...1.54.0) (2024-06-19)
+
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.8.6 ([debf438](https://github.com/DanySK/gradle-java-qa/commit/debf438e057de677f8020957ef5122c82089e232))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.174 ([517e335](https://github.com/DanySK/gradle-java-qa/commit/517e3355f9b6e5591e7eaa3dffc8daf6b7094c9c))
+* **deps:** update plugin com.gradle.enterprise to v3.17.5 ([c356d75](https://github.com/DanySK/gradle-java-qa/commit/c356d7520943918d29381005048a15e4d55cf573))
+* **deps:** update plugin tasktree to v4 ([1361acc](https://github.com/DanySK/gradle-java-qa/commit/1361acc74c1b780a6e5b8496606fedc6451a015e))
+
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.1.7 ([b690641](https://github.com/DanySK/gradle-java-qa/commit/b6906419d5825730539cd1e97803f0bfc80b829e))
+* **deps:** update danysk/action-checkout action to v0.2.19 ([1d10b98](https://github.com/DanySK/gradle-java-qa/commit/1d10b98b513f64b0123df25802cc5de0b398fb8f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.21 ([c11ddf3](https://github.com/DanySK/gradle-java-qa/commit/c11ddf3c86b4e2c58791832f1c427fa49ced2a88))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v2.4.22 ([b9f7086](https://github.com/DanySK/gradle-java-qa/commit/b9f70862a56fcbd277827f8c9e520f94fc754511))
+* explicitly provide a Central username via actions secrets ([a4d98f9](https://github.com/DanySK/gradle-java-qa/commit/a4d98f96e8841f33799f2dc94622faece687ccf8))
+
 ## [1.53.0](https://github.com/DanySK/gradle-java-qa/compare/1.52.0...1.53.0) (2024-06-10)
 
 
