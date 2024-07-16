@@ -1,3 +1,19 @@
+## [1.57.0](https://github.com/DanySK/gradle-java-qa/compare/1.56.0...1.57.0) (2024-07-16)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.19 ([f0a4772](https://github.com/DanySK/gradle-java-qa/commit/f0a4772a90c442f80c2ae845e18d4939f0b40a39))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.86 ([9993fd3](https://github.com/DanySK/gradle-java-qa/commit/9993fd388a383a18c8ff037a51d34a495c5001d6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.87 ([1b0d07f](https://github.com/DanySK/gradle-java-qa/commit/1b0d07f08ae646bfe9d4fa453eaab82d55e67249))
+* **deps:** update node.js to 20.15 ([967d040](https://github.com/DanySK/gradle-java-qa/commit/967d0400b59db335aa94a76aecf533e64e82d973))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.1.0 ([903d0ce](https://github.com/DanySK/gradle-java-qa/commit/903d0ce76da6e54b53616795c1db910019ee30ae))
+* install the version of node from the package.json ([fcb34de](https://github.com/DanySK/gradle-java-qa/commit/fcb34de0bd6ea4eee63955397613fc551265cbf9))
+* **release:** switch to a ECMA6-compliant semantic release configuration ([3089fb5](https://github.com/DanySK/gradle-java-qa/commit/3089fb53004627813e97e6728502b82d4a914603))
+* use the token when publishing on codecov ([efcd31b](https://github.com/DanySK/gradle-java-qa/commit/efcd31be57358936da9d6245cd87fa2e18e030f4))
+
 ## [1.56.0](https://github.com/DanySK/gradle-java-qa/compare/1.55.0...1.56.0) (2024-06-22)
 
 
