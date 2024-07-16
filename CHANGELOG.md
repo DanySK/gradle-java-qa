@@ -1,3 +1,9 @@
+## [1.57.1](https://github.com/DanySK/gradle-java-qa/compare/1.57.0...1.57.1) (2024-07-16)
+
+### Bug Fixes
+
+* **release:** use the Central username also on releases ([1caa8e2](https://github.com/DanySK/gradle-java-qa/commit/1caa8e20456b8aa4afd7803299903e83ab197d68))
+
 ## [1.57.0](https://github.com/DanySK/gradle-java-qa/compare/1.56.0...1.57.0) (2024-07-16)
 
 ### Dependency updates
