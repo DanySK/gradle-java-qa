@@ -26,6 +26,7 @@ jobs:
             uploadPluginMarkerMavenToMavenCentralNexus
             close
           should-run-codecov: ${{ runner.os == 'Linux' }}
+          codecov-token: ${{ secrets.CODECOV_TOKEN }}
           should-deploy: >-
             ${{
               runner.os == 'Linux'
