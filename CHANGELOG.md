@@ -1,3 +1,26 @@
+## [1.58.0](https://github.com/DanySK/gradle-java-qa/compare/1.57.1...1.58.0) (2024-07-17)
+
+### ⚠ BREAKING CHANGES
+
+* **api-deps:** migrate to PMD 7
+
+### Dependency updates
+
+* **api-deps:** migrate to PMD 7 ([3bf390d](https://github.com/DanySK/gradle-java-qa/commit/3bf390dbaf9e0b6a4120b9ff5eca2e380fd886dd))
+* **deps:** update dependency gradle to v8.9 ([5fad2c7](https://github.com/DanySK/gradle-java-qa/commit/5fad2c73fd3f155df0c893733a757f0d3f3721f6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.91 ([62e6f7a](https://github.com/DanySK/gradle-java-qa/commit/62e6f7a67e98db15f99950ed734f5701aec64e46))
+* **deps:** update plugin kotlin-qa to v0.62.4 ([bdd2b64](https://github.com/DanySK/gradle-java-qa/commit/bdd2b64a650f0b36b19333880a752de4aef3fa91))
+* **deps:** update plugin multijvmtesting to v1 ([e63d5e5](https://github.com/DanySK/gradle-java-qa/commit/e63d5e512a841f667b5f75cf7a55fcf96a5c2e56))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.8 ([73d4477](https://github.com/DanySK/gradle-java-qa/commit/73d4477dc499f5dda3a85b70d4744f9ae05ec568))
+* **deps:** update plugin publishoncentral to v5.1.4 ([6d20c1f](https://github.com/DanySK/gradle-java-qa/commit/6d20c1fe6badf9da4e3d416755a8fc4cec60266e))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.3.0 ([cd9b688](https://github.com/DanySK/gradle-java-qa/commit/cd9b688c1380033f0bad0acc88359cb0f59edd1c))
+* migrate to Develocity ([356c63a](https://github.com/DanySK/gradle-java-qa/commit/356c63ab6b3de78fbb7cfb39f0333065cc7655fe))
+* migrate to the compilerOptions DSL. More details are here: https://kotl.in/u1r8ln ([99f4d1f](https://github.com/DanySK/gradle-java-qa/commit/99f4d1fbbe6991228320bbfbcbce9cd696789319))
+* switch to develocity ([#842](https://github.com/DanySK/gradle-java-qa/issues/842)) ([3288981](https://github.com/DanySK/gradle-java-qa/commit/3288981cdca40a7078e58a5e12c6f9e4a6977de4))
+
 ## [1.57.1](https://github.com/DanySK/gradle-java-qa/compare/1.57.0...1.57.1) (2024-07-16)
 
 ### Bug Fixes
