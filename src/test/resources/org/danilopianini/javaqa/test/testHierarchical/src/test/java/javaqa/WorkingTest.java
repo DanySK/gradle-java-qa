@@ -7,6 +7,6 @@ class WorkingTest {
 
     @Test
     void workingTest() {
-        Assertions.assertTrue(true);
+        Assertions.assertFalse(System.getenv().isEmpty());
     }
 }

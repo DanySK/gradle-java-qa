@@ -1,5 +1,5 @@
 tests:
-  - description: "Base Java QA tasks should execute"
+  - description: "Java QA tasks on a hierarchical project should execute"
     configuration:
       tasks: check
       options: --stacktrace

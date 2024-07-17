@@ -13,8 +13,6 @@
         <exclude name="JUnitTestContainsTooManyAsserts" />
         <exclude name="JUnitTestsShouldIncludeAssert" />
         <exclude name="OneDeclarationPerLine" />
-        <exclude name="PositionLiteralsFirstInCaseInsensitiveComparisons" />
-        <exclude name="PositionLiteralsFirstInComparisons" />
         <exclude name="UseVarargs" />
     </rule>
     <rule ref="category/java/bestpractices.xml/AvoidReassigningLoopVariables">
@@ -24,10 +22,7 @@
         </properties>
     </rule>
     <rule ref="category/java/codestyle.xml">
-        <exclude name="AbstractNaming" />
         <exclude name="AtLeastOneConstructor" />
-        <exclude name="AvoidFinalLocalVariable" />
-        <exclude name="AvoidPrefixingMethodParameters" />
         <exclude name="AvoidUsingNativeCode" />
         <exclude name="CallSuperInConstructor" />
         <exclude name="CommentDefaultAccessModifier" />
@@ -53,21 +48,14 @@
         <exclude name="CouplingBetweenObjects" />
         <exclude name="CyclomaticComplexity" />
         <exclude name="DataClass" />
-        <exclude name="ExcessiveClassLength" />
         <exclude name="ExcessiveImports" />
-        <exclude name="ExcessiveMethodLength" />
         <exclude name="ExcessiveParameterList" />
         <exclude name="ExcessivePublicCount" />
         <exclude name="GodClass" />
         <exclude name="LawOfDemeter" />
         <exclude name="LoosePackageCoupling" />
-        <exclude name="ModifiedCyclomaticComplexity" />
-        <exclude name="NcssConstructorCount" />
         <exclude name="NcssCount" />
-        <exclude name="NcssMethodCount" />
-        <exclude name="NcssTypeCount" />
         <exclude name="NPathComplexity" />
-        <exclude name="StdCyclomaticComplexity" />
         <exclude name="SwitchDensity" />
         <exclude name="TooManyFields" />
         <exclude name="TooManyMethods" />
@@ -82,13 +70,11 @@
         <exclude name="AvoidFieldNameMatchingMethodName" />
         <exclude name="AvoidLiteralsInIfCondition" />
         <exclude name="CloseResource" />
-        <exclude name="DataflowAnomalyAnalysis" />
         <exclude name="DoNotTerminateVM" />
         <exclude name="ImplicitSwitchFallThrough" />
         <exclude name="NonSerializableClass" />
         <exclude name="NonStaticInitializer" />
         <exclude name="NullAssignment" />
-        <exclude name="ReturnEmptyArrayRatherThanNull" />
         <exclude name="TestClassWithoutTestCases" />
         <exclude name="UseProperClassLoader" />
     </rule>
@@ -101,8 +87,6 @@
     <rule ref="category/java/performance.xml">
         <exclude name="AvoidFileStream" />
         <exclude name="AvoidInstantiatingObjectsInLoops" />
-        <exclude name="AvoidUsingShortType" />
-        <exclude name="SimplifyStartsWith" />
         <exclude name="TooFewBranchesForASwitchStatement" />
     </rule>
     <rule ref="category/java/security.xml">
