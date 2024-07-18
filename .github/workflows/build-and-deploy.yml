@@ -18,6 +18,8 @@ jobs:
         uses: DanySK/action-checkout@0.2.19
       - uses: DanySK/build-check-deploy-gradle-action@3.3.0
         with:
+          retries-on-failure: 5
+          wait-between-retries: 120
           # Dry-deployment
           deploy-command: >-
             ./gradlew
@@ -25,6 +27,7 @@ jobs:
             uploadPluginMavenToMavenCentralNexus
             uploadPluginMarkerMavenToMavenCentralNexus
             close
+            drop
           should-run-codecov: ${{ runner.os == 'Linux' }}
           codecov-token: ${{ secrets.CODECOV_TOKEN }}
           should-deploy: >-
