@@ -1,3 +1,20 @@
+## [1.59.0](https://github.com/DanySK/gradle-java-qa/compare/1.58.0...1.59.0) (2024-07-26)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.4.0 ([f33043b](https://github.com/DanySK/gradle-java-qa/commit/f33043b5329d1f2d32877e5afe673de6171dd803))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.92 ([5efd3ad](https://github.com/DanySK/gradle-java-qa/commit/5efd3adc3a1af0d0987bb06b9a4cc635de119ab8))
+* **deps:** update plugin com.gradle.develocity to v3.17.6 ([b7c3f7b](https://github.com/DanySK/gradle-java-qa/commit/b7c3f7b8d93e2bee6fd3e34201311ee49c0561ba))
+* **deps:** update plugin kotlin-qa to v0.63.0 ([21d865f](https://github.com/DanySK/gradle-java-qa/commit/21d865f9121311f5331882ce741b890b5569bd78))
+* **deps:** update plugin multijvmtesting to v1.1.1 ([ca9b3af](https://github.com/DanySK/gradle-java-qa/commit/ca9b3afb97ce19a8ef12a1dfd9cd978c3e813596))
+* **deps:** update plugin multijvmtesting to v1.2.2 ([1562c9b](https://github.com/DanySK/gradle-java-qa/commit/1562c9b67ecf1a5cd0b8b83bc566a2060f1623e3))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.4.0 ([9cbef9c](https://github.com/DanySK/gradle-java-qa/commit/9cbef9c82127cabee8474d4be17b4ca3adc57d41))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.0 ([d351550](https://github.com/DanySK/gradle-java-qa/commit/d351550dea4bf9108b08f7aab641198e1dca5016))
+* retry the delivery up to 5 times ([#847](https://github.com/DanySK/gradle-java-qa/issues/847)) ([896cb79](https://github.com/DanySK/gradle-java-qa/commit/896cb799208eb9e52c5b17be9fe835592bc1d025))
+
 ## [1.58.0](https://github.com/DanySK/gradle-java-qa/compare/1.57.1...1.58.0) (2024-07-17)
 
 ### ⚠ BREAKING CHANGES
