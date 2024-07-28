@@ -1,3 +1,12 @@
+## [1.60.2](https://github.com/DanySK/gradle-java-qa/compare/1.60.1...1.60.2) (2024-07-28)
+
+### Bug Fixes
+
+* **pmd:** allow assigning variables to type `com.google.common.collect.ImmutableCollection` and `com.google.common.collect.ImmutableSet` ([1928fe1](https://github.com/DanySK/gradle-java-qa/commit/1928fe1cf245e4965ed5f43a1cf2643410925c6d))
+* **pmd:** allow assigning variables to type `com.google.common.collect.ImmutableList` ([3522fd6](https://github.com/DanySK/gradle-java-qa/commit/3522fd6f30c4a62d4c01cf38ac8dbc09d4c78bae))
+* **pmd:** allow assigning variables to type `com.google.common.collect.ImmutableMap` ([1dfd73e](https://github.com/DanySK/gradle-java-qa/commit/1dfd73e3247a1edeb50346db1a505899bb048446))
+* **pmd:** remove trailing comma in ruleset ([737f1da](https://github.com/DanySK/gradle-java-qa/commit/737f1da270a86f0074af670b13850674bccd9238))
+
 ## [1.60.1](https://github.com/DanySK/gradle-java-qa/compare/1.60.0...1.60.1) (2024-07-28)
 
 ### Bug Fixes
