@@ -1,3 +1,9 @@
+## [1.60.1](https://github.com/DanySK/gradle-java-qa/compare/1.60.0...1.60.1) (2024-07-28)
+
+### Bug Fixes
+
+* **pmd:** exclude rule `UseExplicitTypes` ([483e7fd](https://github.com/DanySK/gradle-java-qa/commit/483e7fd4e55c124bc5d60be9d78e315fb29dd159))
+
 ## [1.60.0](https://github.com/DanySK/gradle-java-qa/compare/1.59.0...1.60.0) (2024-07-28)
 
 ### Features
