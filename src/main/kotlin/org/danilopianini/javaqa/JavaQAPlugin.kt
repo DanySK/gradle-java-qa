@@ -124,6 +124,7 @@ open class JavaQAPlugin : Plugin<Project> {
                 }
                 // PMD
                 configureExtension<PmdExtension> {
+                    isConsoleOutput = true
                     toolVersion = pmdVersion
                     ruleSets = listOf()
                     ruleSetConfig = resources.text.fromString(pmdConfiguration)
