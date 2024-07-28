@@ -1,3 +1,14 @@
+## [1.60.0](https://github.com/DanySK/gradle-java-qa/compare/1.59.0...1.60.0) (2024-07-28)
+
+### Features
+
+* **pmd:** enable the error output on console by default ([5805258](https://github.com/DanySK/gradle-java-qa/commit/58052583b8c0caa3c3b6fdea3d0d71e87e60019d))
+
+### Dependency updates
+
+* **deps:** update node.js to 20.16 ([0c99fc7](https://github.com/DanySK/gradle-java-qa/commit/0c99fc78e2536ee2fbdf7afceb28416793f4c80e))
+* **deps:** update plugin kotlin-qa to v0.64.0 ([24b07a4](https://github.com/DanySK/gradle-java-qa/commit/24b07a44795c5d95e748821472672d4d8c72802a))
+
 ## [1.59.0](https://github.com/DanySK/gradle-java-qa/compare/1.58.0...1.59.0) (2024-07-26)
 
 ### Dependency updates
