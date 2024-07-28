@@ -21,6 +21,17 @@
             <property name="forReassign" value="allow" />
         </properties>
     </rule>
+    <rule ref="category/java/bestpractices.xml/LooseCoupling">
+        <properties>
+            <property
+                name="allowedTypes"
+                value="
+                    com.google.common.collect.ImmutableMap,
+                    java.util.Properties,
+                "
+            />
+        </properties>
+    </rule>
     <rule ref="category/java/codestyle.xml">
         <exclude name="AtLeastOneConstructor" />
         <exclude name="AvoidUsingNativeCode" />

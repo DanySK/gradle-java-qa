@@ -1,0 +1,10 @@
+tests:
+  - description: "Guava's ImmutableMap should be allowed"
+    configuration:
+      tasks: check
+      options: --stacktrace
+    expectation:
+      success:
+        - checkstyleMain
+        - pmdMain
+        - spotbugsMain
