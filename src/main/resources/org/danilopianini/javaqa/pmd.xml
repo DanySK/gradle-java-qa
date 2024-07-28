@@ -28,7 +28,7 @@
                 value="
                     com.google.common.collect.ImmutableList,
                     com.google.common.collect.ImmutableMap,
-                    java.util.Properties,
+                    java.util.Properties
                 "
             />
         </properties>
