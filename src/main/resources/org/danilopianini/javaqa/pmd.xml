@@ -26,8 +26,10 @@
             <property
                 name="allowedTypes"
                 value="
+                    com.google.common.collect.ImmutableCollection,
                     com.google.common.collect.ImmutableList,
                     com.google.common.collect.ImmutableMap,
+                    com.google.common.collect.ImmutableSet,
                     java.util.Properties
                 "
             />
