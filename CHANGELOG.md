@@ -1,3 +1,22 @@
+## [1.62.0](https://github.com/DanySK/gradle-java-qa/compare/1.61.0...1.62.0) (2024-09-01)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.5.0 ([3d842a6](https://github.com/DanySK/gradle-java-qa/commit/3d842a605e4f6ec05bc02f3f54c8686f8daa661c))
+* **deps:** update dependency gradle to v8.10 ([2705344](https://github.com/DanySK/gradle-java-qa/commit/2705344d11917f96cbae7e2fb3db0ac36b27141d))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.175 ([d5651f4](https://github.com/DanySK/gradle-java-qa/commit/d5651f4fa09c33125f2ca9b6535e635755b793a9))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.0.20 ([f685669](https://github.com/DanySK/gradle-java-qa/commit/f68566934f60273d7508164d7b60c10d57e9072f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.101 ([7cdbfaf](https://github.com/DanySK/gradle-java-qa/commit/7cdbfaf8287ddad1d20e036678742a9f29e1b7b8))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.96 ([b28271e](https://github.com/DanySK/gradle-java-qa/commit/b28271eccaddd29adbf38a48735df66ecf17a955))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.97 ([ffdf9bb](https://github.com/DanySK/gradle-java-qa/commit/ffdf9bb705793077bb50f106f008647e3dc83ed5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.98 ([f32a327](https://github.com/DanySK/gradle-java-qa/commit/f32a327b808ccbe9b7c14ff823b4a992b4cfe85f))
+* **deps:** update plugin com.gradle.develocity to v3.18 ([d0caef1](https://github.com/DanySK/gradle-java-qa/commit/d0caef1f36790269c7cf4023f9064f73dd8e5dd0))
+* **deps:** update plugin kotlin-qa to v0.65.2 ([5be9862](https://github.com/DanySK/gradle-java-qa/commit/5be98629e47c72d05c39fd0c38bfb99c70d213de))
+* **deps:** update plugin multijvmtesting to v1.2.4 ([698ccb7](https://github.com/DanySK/gradle-java-qa/commit/698ccb7d948898d5c3b7140f547fed7bb9d606fb))
+* **deps:** update plugin multijvmtesting to v1.2.5 ([63a2e6c](https://github.com/DanySK/gradle-java-qa/commit/63a2e6c026530a5ad28800181d12d328b0d7c57e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.9 ([48ba2f2](https://github.com/DanySK/gradle-java-qa/commit/48ba2f25d42195808e74b56733f0afddf51c45ec))
+* **deps:** update plugin publishoncentral to v5.1.6 ([0d9018c](https://github.com/DanySK/gradle-java-qa/commit/0d9018c6dbcc8384a65f66a6494d8b27c9ca3c91))
+
 ## [1.61.0](https://github.com/DanySK/gradle-java-qa/compare/1.60.2...1.61.0) (2024-08-09)
 
 ### Dependency updates
