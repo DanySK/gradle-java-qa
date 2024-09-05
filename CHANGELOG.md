@@ -1,3 +1,17 @@
+## [1.65.0](https://github.com/DanySK/gradle-java-qa/compare/1.64.0...1.65.0) (2024-09-05)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.22 ([1fe1f10](https://github.com/DanySK/gradle-java-qa/commit/1fe1f102b8c347319ee2c9885c27169e79c33b49))
+* **deps:** update dependency org.mockito:mockito-core to v5.13.0 ([293623c](https://github.com/DanySK/gradle-java-qa/commit/293623cf4ec3752d74e6a8204f1ef9215afbd219))
+* **deps:** update plugin gradlepluginpublish to v1.2.2 ([a0d5e23](https://github.com/DanySK/gradle-java-qa/commit/a0d5e2390fc3d592621eda741af608eb043026df))
+* **deps:** update plugin kotlin-qa to v0.66.0 ([e8c7af4](https://github.com/DanySK/gradle-java-qa/commit/e8c7af41638a3ee27e1ba888750191ef530092b1))
+* **deps:** update plugin kotlin-qa to v0.66.1 ([fcf99ae](https://github.com/DanySK/gradle-java-qa/commit/fcf99ae81cb830af5bfddaac4470fa42e81bacbf))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.4 ([9b268d2](https://github.com/DanySK/gradle-java-qa/commit/9b268d2eb78e226a08fd89e3ef1572d6a08ab778))
+
 ## [1.64.0](https://github.com/DanySK/gradle-java-qa/compare/1.63.0...1.64.0) (2024-09-01)
 
 ### Dependency updates
