@@ -165,6 +165,9 @@ open class JavaQAPlugin : Plugin<Project> {
         }
     }
 
+    /**
+     * Companion object for the plugin.
+     */
     companion object {
 
         private const val packageRoot = "org/danilopianini/javaqa"
