@@ -1,3 +1,26 @@
+## [1.65.1](https://github.com/DanySK/gradle-java-qa/compare/1.65.0...1.65.1) (2024-09-12)
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.10.1 ([802eddf](https://github.com/DanySK/gradle-java-qa/commit/802eddfa39f6ae4bf0ac4b322e64fe2c71da0099))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.102 ([d40b0c5](https://github.com/DanySK/gradle-java-qa/commit/d40b0c5e79735a44e5315f95d5d3879256b6d2e7))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.103 ([17c4b0e](https://github.com/DanySK/gradle-java-qa/commit/17c4b0efbacbceb5f77264f5865f17980c6ff2c2))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.104 ([84c672e](https://github.com/DanySK/gradle-java-qa/commit/84c672e9616d2d96442e53268c787dd72920e19a))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.105 ([2cb964b](https://github.com/DanySK/gradle-java-qa/commit/2cb964b00b68403df8556e30d3e87f3580b41d42))
+* **deps:** update plugin com.gradle.develocity to v3.18.1 ([84080e4](https://github.com/DanySK/gradle-java-qa/commit/84080e4b1006a3ee0ffdb18a5598327896014d08))
+* **deps:** update plugin gradlepluginpublish to v1.3.0 ([3f5b530](https://github.com/DanySK/gradle-java-qa/commit/3f5b530b76dcb39d0dd5ceb043cd73dd0403e6a2))
+* **deps:** update plugin multijvmtesting to v1.2.6 ([7592676](https://github.com/DanySK/gradle-java-qa/commit/759267632253cc6046f9af1b4662637613b3e0ba))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.10 ([26f940d](https://github.com/DanySK/gradle-java-qa/commit/26f940d26d5d92151bd0c9d7972866c49ba1978e))
+
+### Documentation
+
+* document `JavaQAPlugin.Companion` ([0aa255e](https://github.com/DanySK/gradle-java-qa/commit/0aa255e4d76a28a1a9653a5796ca04b862a0493d))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.5 ([3082848](https://github.com/DanySK/gradle-java-qa/commit/3082848d495bc8341cc5be233fc90cfe5e3d45bc))
+* simplify the dependencies syntax ([de309cb](https://github.com/DanySK/gradle-java-qa/commit/de309cbc3722bbbb1fff4ac257d361f29778b755))
+
 ## [1.65.0](https://github.com/DanySK/gradle-java-qa/compare/1.64.0...1.65.0) (2024-09-05)
 
 ### Dependency updates
