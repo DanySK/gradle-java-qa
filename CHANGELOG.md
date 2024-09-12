@@ -1,3 +1,13 @@
+## [1.65.2](https://github.com/DanySK/gradle-java-qa/compare/1.65.1...1.65.2) (2024-09-12)
+
+### Dependency updates
+
+* **deps:** update plugin kotlin-qa to v0.67.1 ([8c8c5c0](https://github.com/DanySK/gradle-java-qa/commit/8c8c5c08b1a07dd41ec967a624ba5496ce71a951))
+
+### Bug Fixes
+
+* **pmd:** disable [AvoidSynchronizedStatement](https://pmd.github.io/pmd/pmd_rules_java_multithreading.html[#avoidsynchronizedstatement](https://github.com/DanySK/gradle-java-qa/issues/avoidsynchronizedstatement)) by default ([60f9434](https://github.com/DanySK/gradle-java-qa/commit/60f9434b3c4d1a0263378a86f6120ed3b290a644))
+
 ## [1.65.1](https://github.com/DanySK/gradle-java-qa/compare/1.65.0...1.65.1) (2024-09-12)
 
 ### Dependency updates
