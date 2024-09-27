@@ -1,3 +1,15 @@
+## [1.67.0](https://github.com/DanySK/gradle-java-qa/compare/1.66.0...1.67.0) (2024-09-27)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.6.0 ([3da88ae](https://github.com/DanySK/gradle-java-qa/commit/3da88aee9d5bee4a16401f6c0400ae09c6fd40b9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.108 ([b17d9c3](https://github.com/DanySK/gradle-java-qa/commit/b17d9c39290828adb44bea6c43d67a86a92ffa07))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.0 ([517681c](https://github.com/DanySK/gradle-java-qa/commit/517681c4266309c1755af3120c199880d6a7d446))
+* **deps:** update danysk/action-checkout action to v0.2.20 ([7153fd2](https://github.com/DanySK/gradle-java-qa/commit/7153fd2c63de651ace554613a2ab27523999658b))
+
 ## [1.66.0](https://github.com/DanySK/gradle-java-qa/compare/1.65.2...1.66.0) (2024-09-25)
 
 ### Dependency updates
