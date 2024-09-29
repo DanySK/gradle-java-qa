@@ -1,3 +1,11 @@
+## [1.68.0](https://github.com/DanySK/gradle-java-qa/compare/1.67.0...1.68.0) (2024-09-29)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.18.2 ([9b051e4](https://github.com/DanySK/gradle-java-qa/commit/9b051e4be983496861b56c8b80e620ed3cf58a71))
+* **deps:** update dependency org.mockito:mockito-core to v5.14.0 ([9774d2e](https://github.com/DanySK/gradle-java-qa/commit/9774d2e782ac5fdf2dab9dd37db746a0416bfc82))
+* **deps:** update plugin kotlin-qa to v0.68.0 ([20f6b76](https://github.com/DanySK/gradle-java-qa/commit/20f6b76e6663827398f48428cf459551ca932d7e))
+
 ## [1.67.0](https://github.com/DanySK/gradle-java-qa/compare/1.66.0...1.67.0) (2024-09-27)
 
 ### Dependency updates
