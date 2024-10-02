@@ -1,3 +1,15 @@
+## [1.69.0](https://github.com/DanySK/gradle-java-qa/compare/1.68.0...1.69.0) (2024-10-02)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.24 ([261925b](https://github.com/DanySK/gradle-java-qa/commit/261925b55c3a4fd02d7b070d40c4fde958cfb736))
+* **deps:** update dependency org.mockito:mockito-core to v5.14.1 ([5281121](https://github.com/DanySK/gradle-java-qa/commit/52811217b278aa81e2614f12a5d6659e05dda73b))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.109 ([18b7a64](https://github.com/DanySK/gradle-java-qa/commit/18b7a6419a1b96dc963007d47bf3544b2559f0a6))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.8 ([f30650f](https://github.com/DanySK/gradle-java-qa/commit/f30650fde7693e462d28ef79f8b60fb454958f2a))
+
 ## [1.68.0](https://github.com/DanySK/gradle-java-qa/compare/1.67.0...1.68.0) (2024-09-29)
 
 ### Dependency updates
