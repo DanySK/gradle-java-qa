@@ -1,3 +1,20 @@
+## [1.71.0](https://github.com/DanySK/gradle-java-qa/compare/1.70.0...1.71.0) (2024-10-26)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.19.0 ([e65633b](https://github.com/DanySK/gradle-java-qa/commit/e65633b94fcf44ad784d937180b63ae6d18e58c6))
+* **deps:** update dependency org.mockito:mockito-core to v5.14.2 ([d203867](https://github.com/DanySK/gradle-java-qa/commit/d203867bb74ab07c4e53da70e4f515c9aaf3a2ea))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.112 ([542291c](https://github.com/DanySK/gradle-java-qa/commit/542291c3e5a2949e0b3e6197abe7a200f6c433b0))
+* **deps:** update plugin kotlin-qa to v0.69.0 ([df209b5](https://github.com/DanySK/gradle-java-qa/commit/df209b5b6f6d3d4ed7e6037a1360f3381908dac8))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v4.2.2 ([39ebfc4](https://github.com/DanySK/gradle-java-qa/commit/39ebfc4ca224068cea39f69a3a6adca59141af3b))
+* **deps:** update actions/setup-node action to v4.1.0 ([848f7d6](https://github.com/DanySK/gradle-java-qa/commit/848f7d6d92b722e51a8e8ce1dc553ae5015abac4))
+* **deps:** update danysk/action-checkout action to v0.2.22 ([b6192d6](https://github.com/DanySK/gradle-java-qa/commit/b6192d694379576123ec762fb7d919478ca8c400))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.11 ([afe64be](https://github.com/DanySK/gradle-java-qa/commit/afe64bebaaaf9dbf7dd4cf46afb0ca970a470c2d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.12 ([a3f1b8b](https://github.com/DanySK/gradle-java-qa/commit/a3f1b8bdb795f80edbf02039b4bc3a119c3527e3))
+
 ## [1.70.0](https://github.com/DanySK/gradle-java-qa/compare/1.69.0...1.70.0) (2024-10-14)
 
 ### Dependency updates
