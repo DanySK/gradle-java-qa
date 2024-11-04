@@ -9,9 +9,9 @@
         <exclude name="AccessorMethodGeneration" />
         <exclude name="ConstantsInInterface" />
         <exclude name="GuardLogStatement" />
-        <exclude name="JUnitAssertionsShouldIncludeMessage" />
-        <exclude name="JUnitTestContainsTooManyAsserts" />
-        <exclude name="JUnitTestsShouldIncludeAssert" />
+        <exclude name="UnitTestAssertionsShouldIncludeMessage" />
+        <exclude name="UnitTestContainsTooManyAsserts" />
+        <exclude name="UnitTestShouldIncludeAssert" />
         <exclude name="OneDeclarationPerLine" />
         <exclude name="UseVarargs" />
     </rule>
@@ -103,7 +103,7 @@
     <rule ref="category/java/performance.xml">
         <exclude name="AvoidFileStream" />
         <exclude name="AvoidInstantiatingObjectsInLoops" />
-        <exclude name="TooFewBranchesForASwitchStatement" />
+        <exclude name="TooFewBranchesForSwitch" />
     </rule>
     <rule ref="category/java/security.xml">
     </rule>
