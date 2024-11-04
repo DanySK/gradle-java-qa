@@ -1,3 +1,10 @@
+## [1.74.0](https://github.com/DanySK/gradle-java-qa/compare/1.73.0...1.74.0) (2024-11-04)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.7.0 ([#951](https://github.com/DanySK/gradle-java-qa/issues/951)) ([3238c7b](https://github.com/DanySK/gradle-java-qa/commit/3238c7b1efc2a25100a9b2eabd279de9277b38ae))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.114 ([83b5304](https://github.com/DanySK/gradle-java-qa/commit/83b5304dbf06e1fcdb8677dc3ac9cce99bb4a868))
+
 ## [1.73.0](https://github.com/DanySK/gradle-java-qa/compare/1.72.0...1.73.0) (2024-11-01)
 
 ### Dependency updates
