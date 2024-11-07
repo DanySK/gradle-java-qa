@@ -1,3 +1,14 @@
+## [1.75.0](https://github.com/DanySK/gradle-java-qa/compare/1.74.0...1.75.0) (2024-11-07)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.20.1 ([#960](https://github.com/DanySK/gradle-java-qa/issues/960)) ([f02ef29](https://github.com/DanySK/gradle-java-qa/commit/f02ef2959abae8ca545b2f3310f8754a3a1af6ac))
+* **deps:** update node.js to v22 ([503393e](https://github.com/DanySK/gradle-java-qa/commit/503393eb96390fc63528ab5fd6a3b6b7fcaae323))
+
+### Build and continuous integration
+
+* **renovate:**  use `with` when importing the configuration instead of `assert` ([4fb5a92](https://github.com/DanySK/gradle-java-qa/commit/4fb5a9288a2ef571445cdf3da04390a3407c1ee3))
+
 ## [1.74.0](https://github.com/DanySK/gradle-java-qa/compare/1.73.0...1.74.0) (2024-11-04)
 
 ### Dependency updates
