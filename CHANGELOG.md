@@ -1,3 +1,36 @@
+## [1.76.0](https://github.com/DanySK/gradle-java-qa/compare/1.75.0...1.76.0) (2024-11-29)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.8.0 ([#990](https://github.com/DanySK/gradle-java-qa/issues/990)) ([4038052](https://github.com/DanySK/gradle-java-qa/commit/40380525eae5ff71ad97f13ff72d1d9be5c75a6f))
+* **deps:** update cpd.gradle to v3.5 ([#971](https://github.com/DanySK/gradle-java-qa/issues/971)) ([800ba49](https://github.com/DanySK/gradle-java-qa/commit/800ba49cea6f278941aa522c0f748cc6123ad8c0))
+* **deps:** update dependency gradle to v8.11 ([#962](https://github.com/DanySK/gradle-java-qa/issues/962)) ([a6db973](https://github.com/DanySK/gradle-java-qa/commit/a6db97362e50777025d0daafdce06e3f1612db4f))
+* **deps:** update dependency gradle to v8.11.1 ([#979](https://github.com/DanySK/gradle-java-qa/issues/979)) ([3ac28a9](https://github.com/DanySK/gradle-java-qa/commit/3ac28a9af876a7c167457f0ba57616820629e002))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.179 ([#963](https://github.com/DanySK/gradle-java-qa/issues/963)) ([67bd54b](https://github.com/DanySK/gradle-java-qa/commit/67bd54b5cccc30cc1949a5fefcea20cd7e64b565))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.115 ([#964](https://github.com/DanySK/gradle-java-qa/issues/964)) ([df9e02a](https://github.com/DanySK/gradle-java-qa/commit/df9e02a2938d63693561c5ddd97407dd506d6472))
+* **deps:** update plugin com.gradle.develocity to v3.18.2 ([#966](https://github.com/DanySK/gradle-java-qa/issues/966)) ([5a49c24](https://github.com/DanySK/gradle-java-qa/commit/5a49c249b4b486956670eaf3468b82f310eb3f26))
+* **deps:** update plugin kotlin-qa to v0.70.0 ([#972](https://github.com/DanySK/gradle-java-qa/issues/972)) ([2a96bd7](https://github.com/DanySK/gradle-java-qa/commit/2a96bd753d3ba8d59f76bff4de8a786c36784108))
+* **deps:** update plugin kotlin-qa to v0.70.1 ([#973](https://github.com/DanySK/gradle-java-qa/issues/973)) ([5e5b724](https://github.com/DanySK/gradle-java-qa/commit/5e5b7242f54417f231660d093120ea575e164a38))
+* **deps:** update plugin kotlin-qa to v0.70.2 ([#981](https://github.com/DanySK/gradle-java-qa/issues/981)) ([5f491ec](https://github.com/DanySK/gradle-java-qa/commit/5f491ec090fd91d8e4b64b2f9fca2ec73abb2cbd))
+* **deps:** update plugin multijvmtesting to v1.3.0 ([#961](https://github.com/DanySK/gradle-java-qa/issues/961)) ([3e2a5dc](https://github.com/DanySK/gradle-java-qa/commit/3e2a5dc4e2983ded82f24ee2f1b5fa2182da5b53))
+* **deps:** update plugin multijvmtesting to v1.3.1 ([#974](https://github.com/DanySK/gradle-java-qa/issues/974)) ([0302f8a](https://github.com/DanySK/gradle-java-qa/commit/0302f8a44803d5a2686edbbede0605facf481e90))
+* **deps:** update plugin multijvmtesting to v1.3.2 ([#980](https://github.com/DanySK/gradle-java-qa/issues/980)) ([fb3b04d](https://github.com/DanySK/gradle-java-qa/commit/fb3b04dc01ba859be428e70e8c524b1169424976))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.14 ([#976](https://github.com/DanySK/gradle-java-qa/issues/976)) ([0b54de3](https://github.com/DanySK/gradle-java-qa/commit/0b54de3ef7aca9d5ba478cce4d7f64ccc58e556e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.15 ([#982](https://github.com/DanySK/gradle-java-qa/issues/982)) ([645a54f](https://github.com/DanySK/gradle-java-qa/commit/645a54fdb46685b752861d6546e27bd018aa2321))
+* **deps:** update plugin publishoncentral to v5.1.10 ([#975](https://github.com/DanySK/gradle-java-qa/issues/975)) ([de2e565](https://github.com/DanySK/gradle-java-qa/commit/de2e565a031ca6ea0e9fd3e7807defcb7345476d))
+* **deps:** update plugin publishoncentral to v5.1.11 ([#983](https://github.com/DanySK/gradle-java-qa/issues/983)) ([04b19b9](https://github.com/DanySK/gradle-java-qa/commit/04b19b99dcfd91343efd416f62221cf92fd76986))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.13 ([#965](https://github.com/DanySK/gradle-java-qa/issues/965)) ([832fc69](https://github.com/DanySK/gradle-java-qa/commit/832fc6966604b21941b28187002daf4f84726dcb))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.14 ([#967](https://github.com/DanySK/gradle-java-qa/issues/967)) ([49475dc](https://github.com/DanySK/gradle-java-qa/commit/49475dc876a88f956bee7824617f226dd1c388f3))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.15 ([#968](https://github.com/DanySK/gradle-java-qa/issues/968)) ([928b228](https://github.com/DanySK/gradle-java-qa/commit/928b228d29bfdbafbf857ed558a773fb85332f7f))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.16 ([#969](https://github.com/DanySK/gradle-java-qa/issues/969)) ([dcde2a1](https://github.com/DanySK/gradle-java-qa/commit/dcde2a1fe9ccdc5f062f3cdcc76be689e35e5f84))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.17 ([#970](https://github.com/DanySK/gradle-java-qa/issues/970)) ([a4ee38b](https://github.com/DanySK/gradle-java-qa/commit/a4ee38bfe1e529413d22503961a6cf90c879d71a))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.18 ([#977](https://github.com/DanySK/gradle-java-qa/issues/977)) ([5ccde1f](https://github.com/DanySK/gradle-java-qa/commit/5ccde1f9c5adb133a5e9f6b500094ef632662d80))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.22 ([#978](https://github.com/DanySK/gradle-java-qa/issues/978)) ([b04e78f](https://github.com/DanySK/gradle-java-qa/commit/b04e78f7b823182ff80b05282f0ca876521b90f5))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.23 ([#984](https://github.com/DanySK/gradle-java-qa/issues/984)) ([f6e1598](https://github.com/DanySK/gradle-java-qa/commit/f6e1598e07ccd44e3e79db69c94c30058cf05d82))
+
 ## [1.75.0](https://github.com/DanySK/gradle-java-qa/compare/1.74.0...1.75.0) (2024-11-07)
 
 ### Dependency updates
