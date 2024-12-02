@@ -18,31 +18,35 @@ import java.io.File
 
 class Tests : StringSpec(
     {
-        val scan = ClassGraph()
-            .enableAllInfo()
-            .acceptPackages(Tests::class.java.`package`.name)
-            .scan()
+        val scan =
+            ClassGraph()
+                .enableAllInfo()
+                .acceptPackages(Tests::class.java.`package`.name)
+                .scan()
         scan.getResourcesWithLeafName("test.yaml")
             .flatMap { resource ->
                 log.debug("Found test list in {}", resource)
                 val yamlFile = File(resource.classpathElementFile.absolutePath + "/" + resource.path)
-                val testConfiguration = Config {
-                    addSpec(Root)
-                }.from.yaml.inputStream(resource.open())
+                val testConfiguration =
+                    Config {
+                        addSpec(Root)
+                    }.from.yaml.inputStream(resource.open())
                 testConfiguration[Root.tests].map { it to yamlFile.parentFile }
             }
             .forEach { (test, location) ->
                 log.debug("Test to be executed: {} from {}", test, location)
-                val testFolder = folder {
-                    location.copyRecursively(this.root)
-                }
+                val testFolder =
+                    folder {
+                        location.copyRecursively(this.root)
+                    }
                 log.debug("Test has been copied into {} and is ready to get executed", testFolder)
                 test.description {
-                    val result = GradleRunner.create()
-                        .withProjectDir(testFolder.root)
-                        .withPluginClasspath()
-                        .withArguments(test.configuration.tasks + test.configuration.options)
-                        .run { if (test.expectation.failure.isEmpty()) build() else buildAndFail() }
+                    val result =
+                        GradleRunner.create()
+                            .withProjectDir(testFolder.root)
+                            .withPluginClasspath()
+                            .withArguments(test.configuration.tasks + test.configuration.options)
+                            .run { if (test.expectation.failure.isEmpty()) build() else buildAndFail() }
                     println(result.tasks)
                     println(result.output)
                     test.expectation.output_contains.forEach {
@@ -67,12 +71,15 @@ class Tests : StringSpec(
     companion object {
         val log: Logger = LoggerFactory.getLogger(Tests::class.java)
 
-        private fun BuildResult.outcomeOf(name: String) = checkNotNull(task(":$name")?.outcome) {
-            "Task $name was not present among the executed tasks"
-        }
-        private fun folder(closure: TemporaryFolder.() -> Unit) = TemporaryFolder().apply {
-            create()
-            closure()
-        }
+        private fun BuildResult.outcomeOf(name: String) =
+            checkNotNull(task(":$name")?.outcome) {
+                "Task $name was not present among the executed tasks"
+            }
+
+        private fun folder(closure: TemporaryFolder.() -> Unit) =
+            TemporaryFolder().apply {
+                create()
+                closure()
+            }
     }
 }

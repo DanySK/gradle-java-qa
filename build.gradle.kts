@@ -20,6 +20,7 @@ plugins {
  */
 group = "org.danilopianini"
 description = "Automated Quality Assurance configuration for Java Projects built with Gradle"
+
 inner class ProjectInfo {
     val longName = "Java Quality Assurance Gradle plugin"
     val website = "https://github.com/DanySK/$name"
@@ -41,26 +42,29 @@ repositories {
 
 tasks.create("copyToolVersions") {
     inputs.file(File(rootProject.rootDir, "gradle/libs.versions.toml"))
-    val outputDir = project.layout.buildDirectory
-        .dir("resources/main/META-INF/javaqa/")
-        .map { it.asFile }
+    val outputDir =
+        project.layout.buildDirectory
+            .dir("resources/main/META-INF/javaqa/")
+            .map { it.asFile }
     outputs.dir(outputDir)
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> { dependsOn(this@create) }
     doLast {
         val destinationDir = outputDir.get().also { it.mkdirs() }
         val destination = File(destinationDir, "tool-versions.properties")
         val catalog = file("${rootProject.rootDir.absolutePath}/gradle/libs.versions.toml").readText()
-        val libraries = listOf("checkstyle", "jacoco", "pmd", "spotbugs")
-            .map { library ->
-                val version = Regex("""^$library\s*=\s*"([\d\w\.\-\+]+)"\s*$""", RegexOption.MULTILINE)
-                    .findAll(catalog)
-                    .firstOrNull()
-                    ?.destructured
-                    ?.component1()
-                    ?: throw IllegalStateException("No version available for $library in:\n$catalog")
-                "$library=$version"
-            }
-            .joinToString("\n")
+        val libraries =
+            listOf("checkstyle", "jacoco", "pmd", "spotbugs")
+                .map { library ->
+                    val version =
+                        Regex("""^$library\s*=\s*"([\d\w\.\-\+]+)"\s*$""", RegexOption.MULTILINE)
+                            .findAll(catalog)
+                            .firstOrNull()
+                            ?.destructured
+                            ?.component1()
+                            ?: throw IllegalStateException("No version available for $library in:\n$catalog")
+                    "$library=$version"
+                }
+                .joinToString("\n")
         destination.writeText(libraries)
     }
 }

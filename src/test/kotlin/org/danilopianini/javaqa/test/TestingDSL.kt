@@ -25,7 +25,9 @@ data class Expectation(
 
 data class ExistingFile(val name: String, val contents: String = ".*", val everyLine: Boolean = false) {
     private fun Sequence<Boolean>.matches(): Boolean = if (everyLine) all { it } else any { it }
-    fun isValid() = with(File(name)) {
-        exists() && readLines().asSequence().map { it.matches(Regex(contents)) }.matches()
-    }
+
+    fun isValid() =
+        with(File(name)) {
+            exists() && readLines().asSequence().map { it.matches(Regex(contents)) }.matches()
+        }
 }
