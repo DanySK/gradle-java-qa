@@ -14,7 +14,9 @@ open class JavaQAExtension(
     /**
      * DSL access to the checkstyle configuration.
      */
-    fun checkstyle(action: Checkstyle.() -> Unit) { checkstyle.action() }
+    fun checkstyle(action: Checkstyle.() -> Unit) {
+        checkstyle.action()
+    }
 
     /**
      * Option collection for checkstyle.

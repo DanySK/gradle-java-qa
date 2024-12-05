@@ -36,16 +36,15 @@ import java.util.Properties
  * Just a template.
  */
 open class JavaQAPlugin : Plugin<Project> {
-
     @Suppress("UnstableApiUsage")
     override fun apply(project: Project) {
         with(project) {
             // Resources from the classpath must be loaded upfront
             val javaQADestination = project.layout.buildDirectory.dir("javaqa").get().asFile.apply { mkdirs() }
-            val baseSpotBugsExcludes = loadResource(spotbugsSuppressionsResource)
-            val baseCheckstyleExcludes = loadResource(checkstyleSuppressionsResource)
-            val checkstyleConfiguration = loadResource(checkstylePath)
-            val pmdConfiguration = loadResource(pmdPath)
+            val baseSpotBugsExcludes = loadResource(SPOTBUGS_SUPPRESSIONS_RESOURCE)
+            val baseCheckstyleExcludes = loadResource(CHECKSTYLE_SUPPRESSIONS_RESOURCE)
+            val checkstyleConfiguration = loadResource(CHECKSTYLE_PATH)
+            val pmdConfiguration = loadResource(PMD_PATH)
             plugins.withType(JavaPlugin::class.java) {
                 val extension: JavaQAExtension =
                     project.extensions.create("javaQA", JavaQAExtension::class.java, this)
@@ -63,12 +62,13 @@ open class JavaQAPlugin : Plugin<Project> {
                 // SpotBugs
                 configureExtension<SpotBugsExtension> {
                     // Create a task creating the default configuration
-                    val spotbugsExcludesFile = File(javaQADestination, spotbugsSuppressionsFileName)
-                    val populateDefaultSpotBugsExcludes = tasks.create("populateDefaultSpotBugsExcludes") {
-                        it.doLast {
-                            spotbugsExcludesFile.createWithContent(baseSpotBugsExcludes)
+                    val spotbugsExcludesFile = File(javaQADestination, SPOTBUGS_SUPPRESSIONS_FILE_NAME)
+                    val populateDefaultSpotBugsExcludes =
+                        tasks.create("populateDefaultSpotBugsExcludes") {
+                            it.doLast {
+                                spotbugsExcludesFile.createWithContent(baseSpotBugsExcludes)
+                            }
                         }
-                    }
                     tasks.withType<SpotBugsTask> {
                         dependsOn(populateDefaultSpotBugsExcludes)
                     }
@@ -78,39 +78,48 @@ open class JavaQAPlugin : Plugin<Project> {
                     showProgress.set(false)
                     excludeFilter.set(spotbugsExcludesFile)
                 }
+
                 // Checkstyle
-                fun Provider<String>.fromFileOrItself(): String = getOrElse("").let { maybePath ->
-                    File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
-                }
-                configureExtension<CheckstyleExtension> {
-                    val checkstyleConfigurationFile = File(javaQADestination, checkstyleConfigurationFileName)
-                    // Create a task creating the default configuration
-                    val checkstyleSuppressionsFile = File(javaQADestination, checkstyleSuppressionsFileName)
-                    val generateCheckstyleConfiguration = tasks.create("generateCheckstyleConfiguration") {
-                        it.outputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
-                        it.doLast {
-                            logger.debug(
-                                "Creating configuration file for checkstyle {}",
-                                checkstyleConfigurationFile.absolutePath,
-                            )
-                            fun String.doublyBackslashed() = replace("\\", "\\\\")
-                            val actualConfiguration = checkstyleConfiguration.replace(
-                                Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
-                                extension.checkstyle.additionalConfiguration.fromFileOrItself().doublyBackslashed(),
-                            )
-                            checkstyleConfigurationFile.createWithContent(actualConfiguration)
-                            logger.debug(
-                                "Creating suppressions file for checkstyle {}",
-                                checkstyleSuppressionsFile.absolutePath,
-                            )
-                            checkstyleSuppressionsFile.createWithContent(
-                                baseCheckstyleExcludes.replace(
-                                    Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"),
-                                    extension.checkstyle.additionalSuppressions.fromFileOrItself().doublyBackslashed(),
-                                ),
-                            )
-                        }
+                fun Provider<String>.fromFileOrItself(): String =
+                    getOrElse("").let { maybePath ->
+                        File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
                     }
+                configureExtension<CheckstyleExtension> {
+                    val checkstyleConfigurationFile = File(javaQADestination, CHECKSTYLE_CONFIGURATION_NAME)
+                    // Create a task creating the default configuration
+                    val checkstyleSuppressionsFile = File(javaQADestination, CHECKSTYLE_SUPPRESSIONS_FILE_NAME)
+                    val generateCheckstyleConfiguration =
+                        tasks.create("generateCheckstyleConfiguration") {
+                            it.outputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
+                            it.doLast {
+                                logger.debug(
+                                    "Creating configuration file for checkstyle {}",
+                                    checkstyleConfigurationFile.absolutePath,
+                                )
+
+                                fun String.doublyBackslashed() = replace("\\", "\\\\")
+                                val actualConfiguration =
+                                    checkstyleConfiguration.replace(
+                                        Regex("<!--\\s*ADDITIONAL_CONFIGURATION\\s*-->"),
+                                        extension.checkstyle.additionalConfiguration
+                                            .fromFileOrItself()
+                                            .doublyBackslashed(),
+                                    )
+                                checkstyleConfigurationFile.createWithContent(actualConfiguration)
+                                logger.debug(
+                                    "Creating suppressions file for checkstyle {}",
+                                    checkstyleSuppressionsFile.absolutePath,
+                                )
+                                checkstyleSuppressionsFile.createWithContent(
+                                    baseCheckstyleExcludes.replace(
+                                        Regex("<!--\\s*ADDITIONAL_SUPPRESSIONS\\s*-->"),
+                                        extension.checkstyle.additionalSuppressions
+                                            .fromFileOrItself()
+                                            .doublyBackslashed(),
+                                    ),
+                                )
+                            }
+                        }
                     configurations.named("checkstyle").configure { checkstyleConfiguration ->
                         checkstyleConfiguration.exclude(group = "com.google.collections", module = "google-collections")
                     }
@@ -169,15 +178,14 @@ open class JavaQAPlugin : Plugin<Project> {
      * Companion object for the plugin.
      */
     companion object {
-
-        private const val packageRoot = "org/danilopianini/javaqa"
-        private const val checkstylePath = "$packageRoot/checkstyle.xml"
-        private const val checkstyleConfigurationFileName = "checkstyle.xml"
-        private const val checkstyleSuppressionsFileName = "checkstyle-suppressions.xml"
-        private const val checkstyleSuppressionsResource = "$packageRoot/$checkstyleSuppressionsFileName"
-        private const val pmdPath = "$packageRoot/pmd.xml"
-        private const val spotbugsSuppressionsFileName = "spotbugs-excludes.xml"
-        private const val spotbugsSuppressionsResource = "$packageRoot/$spotbugsSuppressionsFileName"
+        private const val PACKAGE_ROOT = "org/danilopianini/javaqa"
+        private const val CHECKSTYLE_PATH = "$PACKAGE_ROOT/checkstyle.xml"
+        private const val CHECKSTYLE_CONFIGURATION_NAME = "checkstyle.xml"
+        private const val CHECKSTYLE_SUPPRESSIONS_FILE_NAME = "checkstyle-suppressions.xml"
+        private const val CHECKSTYLE_SUPPRESSIONS_RESOURCE = "$PACKAGE_ROOT/$CHECKSTYLE_SUPPRESSIONS_FILE_NAME"
+        private const val PMD_PATH = "$PACKAGE_ROOT/pmd.xml"
+        private const val SPOTBUGS_SUPPRESSIONS_FILE_NAME = "spotbugs-excludes.xml"
+        private const val SPOTBUGS_SUPPRESSIONS_RESOURCE = "$PACKAGE_ROOT/$SPOTBUGS_SUPPRESSIONS_FILE_NAME"
 
         /**
          * The default version of SpotBugs.
@@ -203,24 +211,27 @@ open class JavaQAPlugin : Plugin<Project> {
             extensions.configure(T::class) { it.action() }
         }
 
-        private fun File.createWithContent(source: String): File = apply {
-            parentFile.mkdirs()
-            if (!exists() || readText() != source) {
-                writeText(source)
+        private fun File.createWithContent(source: String): File =
+            apply {
+                parentFile.mkdirs()
+                if (!exists() || readText() != source) {
+                    writeText(source)
+                }
             }
-        }
 
-        private fun resource(path: String) = checkNotNull(Thread.currentThread().contextClassLoader.getResource(path)) {
-            "Unable to access resource $path in the current classpath"
-        }
+        private fun resource(path: String) =
+            checkNotNull(Thread.currentThread().contextClassLoader.getResource(path)) {
+                "Unable to access resource $path in the current classpath"
+            }
 
         private fun loadResource(path: String): String = resource(path).readText()
 
-        private fun versionOf(library: String): String = Properties().run {
-            load(resource("META-INF/javaqa/tool-versions.properties").openStream())
-            checkNotNull(get(library)?.toString()) {
-                "Unable to load version for $library"
+        private fun versionOf(library: String): String =
+            Properties().run {
+                load(resource("META-INF/javaqa/tool-versions.properties").openStream())
+                checkNotNull(get(library)?.toString()) {
+                    "Unable to load version for $library"
+                }
             }
-        }
     }
 }
