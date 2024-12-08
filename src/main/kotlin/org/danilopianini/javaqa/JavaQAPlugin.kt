@@ -40,7 +40,12 @@ open class JavaQAPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         with(project) {
             // Resources from the classpath must be loaded upfront
-            val javaQADestination = project.layout.buildDirectory.dir("javaqa").get().asFile.apply { mkdirs() }
+            val javaQADestination =
+                project.layout.buildDirectory
+                    .dir("javaqa")
+                    .get()
+                    .asFile
+                    .apply { mkdirs() }
             val baseSpotBugsExcludes = loadResource(SPOTBUGS_SUPPRESSIONS_RESOURCE)
             val baseCheckstyleExcludes = loadResource(CHECKSTYLE_SUPPRESSIONS_RESOURCE)
             val checkstyleConfiguration = loadResource(CHECKSTYLE_PATH)
@@ -144,15 +149,15 @@ open class JavaQAPlugin : Plugin<Project> {
                 }
                 tasks.create<de.aaschmid.gradle.plugins.cpd.Cpd>("cpdJavaCheck") {
                     language = "java"
-                    source = project.extensions.findByType<JavaPluginExtension>()
+                    source = project.extensions
+                        .findByType<JavaPluginExtension>()
                         ?.sourceSets
                         ?.flatMap { it.allSource }
                         ?.map {
                             fileTree(it) {
                                 include("**/*.java")
                             }
-                        }
-                        ?.fold(files().asFileTree, FileTree::plus)
+                        }?.fold(files().asFileTree, FileTree::plus)
                         ?: files().asFileTree
                     minimumTokenCount = 100
                     ignoreFailures = false

@@ -1,5 +1,6 @@
+@file:Suppress("UnstableApiUsage")
+
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
-import org.jetbrains.kotlin.config.KotlinCompilerVersion.VERSION as KOTLIN_VERSION
 
 @Suppress("DSL_SCOPE_VIOLATION")
 plugins {
@@ -63,8 +64,7 @@ tasks.create("copyToolVersions") {
                             ?.component1()
                             ?: throw IllegalStateException("No version available for $library in:\n$catalog")
                     "$library=$version"
-                }
-                .joinToString("\n")
+                }.joinToString("\n")
         destination.writeText(libraries)
     }
 }
@@ -85,16 +85,6 @@ dependencies {
     testImplementation(libs.bundles.kotlin.testing)
 }
 
-// Enforce Kotlin version coherence
-configurations.matching { it.name != "detekt" }.all {
-    resolutionStrategy.eachDependency {
-        if (requested.group == "org.jetbrains.kotlin" && requested.name.startsWith("kotlin")) {
-            useVersion(KOTLIN_VERSION)
-            because("All Kotlin modules should use the same version, and compiler uses $KOTLIN_VERSION")
-        }
-    }
-}
-
 tasks.withType<KotlinCompilationTask<*>>().configureEach {
     compilerOptions {
         allWarningsAsErrors = true
@@ -108,7 +98,10 @@ tasks.withType<Test> {
         showStandardStreams = true
         showCauses = true
         showStackTraces = true
-        events(*org.gradle.api.tasks.testing.logging.TestLogEvent.values())
+        events(
+            *org.gradle.api.tasks.testing.logging.TestLogEvent
+                .values(),
+        )
         exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
     }
 }
