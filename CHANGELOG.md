@@ -1,3 +1,36 @@
+## [1.78.0](https://github.com/DanySK/gradle-java-qa/compare/1.77.0...1.78.0) (2024-12-12)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.21.0 ([#1010](https://github.com/DanySK/gradle-java-qa/issues/1010)) ([8ac8437](https://github.com/DanySK/gradle-java-qa/commit/8ac84372123255e068ae9cbb9f12bd0c4ff73846))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.0 ([#989](https://github.com/DanySK/gradle-java-qa/issues/989)) ([80501e1](https://github.com/DanySK/gradle-java-qa/commit/80501e10db202df2efe98282edf2787690008898))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.116 ([#1005](https://github.com/DanySK/gradle-java-qa/issues/1005)) ([5ded444](https://github.com/DanySK/gradle-java-qa/commit/5ded444c4a1a219b22cabd84c8a3dc7a52bbf460))
+* **deps:** update node.js to 22.12 ([#995](https://github.com/DanySK/gradle-java-qa/issues/995)) ([5ef859e](https://github.com/DanySK/gradle-java-qa/commit/5ef859e34b03725d3d916a93cdbf5ae1535894cb))
+* **deps:** update plugin com.gradle.develocity to v3.19 ([#1009](https://github.com/DanySK/gradle-java-qa/issues/1009)) ([205e358](https://github.com/DanySK/gradle-java-qa/commit/205e35856465da351a9043843033f24d32031da5))
+* **deps:** update plugin kotlin-qa to v0.75.0 ([#991](https://github.com/DanySK/gradle-java-qa/issues/991)) ([7c65aa1](https://github.com/DanySK/gradle-java-qa/commit/7c65aa19cbe7c049a985bd9a36d648533fc07aba))
+* **deps:** update plugin kotlin-qa to v0.77.1 ([4859d39](https://github.com/DanySK/gradle-java-qa/commit/4859d3981917fe503d4e9c3174aed78d4d3bfdda))
+* **deps:** update plugin kotlin-qa to v0.78.0 ([#1007](https://github.com/DanySK/gradle-java-qa/issues/1007)) ([f49b3de](https://github.com/DanySK/gradle-java-qa/commit/f49b3de50445f87afae413a0767d1fb9a54ee60e))
+* **deps:** update plugin multijvmtesting to v2 ([#997](https://github.com/DanySK/gradle-java-qa/issues/997)) ([4b6a6d5](https://github.com/DanySK/gradle-java-qa/commit/4b6a6d5a0f9741f27d0204979cfa544237fa1c9c))
+* **deps:** update plugin multijvmtesting to v3 ([#1003](https://github.com/DanySK/gradle-java-qa/issues/1003)) ([201f4db](https://github.com/DanySK/gradle-java-qa/commit/201f4dbfc42672e210ad03c95b4f1683e10c6070))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.16 ([#1008](https://github.com/DanySK/gradle-java-qa/issues/1008)) ([43789e9](https://github.com/DanySK/gradle-java-qa/commit/43789e938feef7993df33eb50f1c1cc62ac09186))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.9.0 ([#993](https://github.com/DanySK/gradle-java-qa/issues/993)) ([af603d1](https://github.com/DanySK/gradle-java-qa/commit/af603d139cb3d3aa651c780121ef071b2c2e848b))
+* **deps:** update plugin publishoncentral to v6 ([#994](https://github.com/DanySK/gradle-java-qa/issues/994)) ([994494a](https://github.com/DanySK/gradle-java-qa/commit/994494ab4b92590e6f3f98dd147fee81cf36e3c0))
+* **deps:** update plugin publishoncentral to v6.0.1 ([#1004](https://github.com/DanySK/gradle-java-qa/issues/1004)) ([c099eac](https://github.com/DanySK/gradle-java-qa/commit/c099eacd5ded4b03c78b0edb13c0ff4f971b4fe0))
+* **deps:** update plugin publishoncentral to v7 ([#1006](https://github.com/DanySK/gradle-java-qa/issues/1006)) ([d13453c](https://github.com/DanySK/gradle-java-qa/commit/d13453c26b67d3d2f25dc55043602fd0384b38b5))
+
+### Build and continuous integration
+
+* cancel entire workflows, and not on master ([ae396e9](https://github.com/DanySK/gradle-java-qa/commit/ae396e9674785aae0dd8e183d658e8c49c91a2e5))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.24 ([#1000](https://github.com/DanySK/gradle-java-qa/issues/1000)) ([9347174](https://github.com/DanySK/gradle-java-qa/commit/9347174583971577426d2f8a7d15229cab9191bb))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.25 ([#1001](https://github.com/DanySK/gradle-java-qa/issues/1001)) ([7489319](https://github.com/DanySK/gradle-java-qa/commit/7489319a942470a4999dbf44dc6938832a954844))
+* disambiguate the drop task name ([b0808f2](https://github.com/DanySK/gradle-java-qa/commit/b0808f24095f8c6e45e590bb9ef88a6b61da8aad))
+* do not retry to release in case of failure ([61b273d](https://github.com/DanySK/gradle-java-qa/commit/61b273d6eb833770b1e20aca9cb382d9f6ae5c5b))
+* **release:** disambiguate the release task name ([a2de391](https://github.com/DanySK/gradle-java-qa/commit/a2de391abc8856b8a3c41b598c6dd569a3061f77))
+
+### General maintenance
+
+* ignore `.kotlin/` ([c2df738](https://github.com/DanySK/gradle-java-qa/commit/c2df73851bbdc72baf6db7a126feab5167d63ea1))
+
 ## [1.77.0](https://github.com/DanySK/gradle-java-qa/compare/1.76.0...1.77.0) (2024-11-30)
 
 ### Dependency updates
