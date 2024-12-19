@@ -1,3 +1,19 @@
+## [1.79.0](https://github.com/DanySK/gradle-java-qa/compare/1.78.0...1.79.0) (2024-12-19)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.27 ([#1018](https://github.com/DanySK/gradle-java-qa/issues/1018)) ([eb61bfd](https://github.com/DanySK/gradle-java-qa/commit/eb61bfdb906b77beaaf439a478b6c7a4c7cce693))
+* **deps:** update dependency org.jetbrains.dokka to v2 ([#1011](https://github.com/DanySK/gradle-java-qa/issues/1011)) ([857b597](https://github.com/DanySK/gradle-java-qa/commit/857b5973b56cb547c89be356c4910b59a511820c))
+* **deps:** update plugin multijvmtesting to v3.0.1 ([#1012](https://github.com/DanySK/gradle-java-qa/issues/1012)) ([8175582](https://github.com/DanySK/gradle-java-qa/commit/81755824efe1d6653434cd0a695306f77328218a))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.17 ([#1013](https://github.com/DanySK/gradle-java-qa/issues/1013)) ([0d56b27](https://github.com/DanySK/gradle-java-qa/commit/0d56b273b25310f1080c3d77a04a08dda259672e))
+* **deps:** update plugin publishoncentral to v7.0.1 ([#1014](https://github.com/DanySK/gradle-java-qa/issues/1014)) ([6863304](https://github.com/DanySK/gradle-java-qa/commit/68633043ba5cb966c68fcac1fe199ed2dcdba7a2))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.26 ([#1015](https://github.com/DanySK/gradle-java-qa/issues/1015)) ([4b30e1e](https://github.com/DanySK/gradle-java-qa/commit/4b30e1ebc35364faf6c1926c70935e353ef262ed))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.27 ([#1016](https://github.com/DanySK/gradle-java-qa/issues/1016)) ([fa36a41](https://github.com/DanySK/gradle-java-qa/commit/fa36a41a267a8e475d80dd69d36a75682efa7c20))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.28 ([#1017](https://github.com/DanySK/gradle-java-qa/issues/1017)) ([43e33ff](https://github.com/DanySK/gradle-java-qa/commit/43e33ffe48a8a2fbc4260516c3e1e2a60ea71ef6))
+
 ## [1.78.0](https://github.com/DanySK/gradle-java-qa/compare/1.77.0...1.78.0) (2024-12-12)
 
 ### Dependency updates
