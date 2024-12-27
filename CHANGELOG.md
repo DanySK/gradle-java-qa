@@ -1,3 +1,15 @@
+## [1.80.0](https://github.com/DanySK/gradle-java-qa/compare/1.79.0...1.80.0) (2024-12-27)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.9.0 ([#1027](https://github.com/DanySK/gradle-java-qa/issues/1027)) ([969fb91](https://github.com/DanySK/gradle-java-qa/commit/969fb91e9f5f4ace4954a648b8536ba1dd65ea03))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.117 ([#1025](https://github.com/DanySK/gradle-java-qa/issues/1025)) ([b16de35](https://github.com/DanySK/gradle-java-qa/commit/b16de35638f8f16ec4f57969bfbdd0baff1508c2))
+* **deps:** update plugin multijvmtesting to v3.0.2 ([#1022](https://github.com/DanySK/gradle-java-qa/issues/1022)) ([42deb84](https://github.com/DanySK/gradle-java-qa/commit/42deb84cde3527f78d897679432bba1c43a907ac))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.18 ([#1024](https://github.com/DanySK/gradle-java-qa/issues/1024)) ([14418c3](https://github.com/DanySK/gradle-java-qa/commit/14418c38600d9d86a9131597a240d8aad1e887c5))
+* **deps:** update plugin publishoncentral to v7.0.2 ([#1019](https://github.com/DanySK/gradle-java-qa/issues/1019)) ([eb6a97f](https://github.com/DanySK/gradle-java-qa/commit/eb6a97fa9a74b8c04ca0bea87026358c5c30eb84))
+* **deps:** update plugin publishoncentral to v7.0.3 ([#1020](https://github.com/DanySK/gradle-java-qa/issues/1020)) ([50ff9f0](https://github.com/DanySK/gradle-java-qa/commit/50ff9f059179e1c9e67e974c64ccf6b0a325e8b0))
+* **deps:** update plugin publishoncentral to v7.0.4 ([#1023](https://github.com/DanySK/gradle-java-qa/issues/1023)) ([7397ce8](https://github.com/DanySK/gradle-java-qa/commit/7397ce82ddfaa8bf7870f4bba990a22f0dc0b0b7))
+
 ## [1.79.0](https://github.com/DanySK/gradle-java-qa/compare/1.78.0...1.79.0) (2024-12-19)
 
 ### Dependency updates
