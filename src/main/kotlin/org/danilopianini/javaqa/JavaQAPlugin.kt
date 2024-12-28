@@ -50,9 +50,9 @@ open class JavaQAPlugin : Plugin<Project> {
             val baseCheckstyleExcludes = loadResource(CHECKSTYLE_SUPPRESSIONS_RESOURCE)
             val checkstyleConfiguration = loadResource(CHECKSTYLE_PATH)
             val pmdConfiguration = loadResource(PMD_PATH)
+            val extension: JavaQAExtension =
+                project.extensions.create("javaQA", JavaQAExtension::class.java, this)
             plugins.withType(JavaPlugin::class.java) {
-                val extension: JavaQAExtension =
-                    project.extensions.create("javaQA", JavaQAExtension::class.java, this)
                 with(plugins) {
                     apply(CheckstylePlugin::class)
                     apply(CpdPlugin::class)
