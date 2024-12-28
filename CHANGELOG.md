@@ -1,3 +1,14 @@
+## [1.81.0](https://github.com/DanySK/gradle-java-qa/compare/1.80.0...1.81.0) (2024-12-28)
+
+### Features
+
+* always create the `javaQA` extension on plugin application ([0cb3985](https://github.com/DanySK/gradle-java-qa/commit/0cb39858cec58ea319ac031a06319ff1fa19e46b))
+
+### Dependency updates
+
+* **deps:** update plugin multijvmtesting to v3.1.1 ([#1028](https://github.com/DanySK/gradle-java-qa/issues/1028)) ([f2344e5](https://github.com/DanySK/gradle-java-qa/commit/f2344e5a538c2509de0dc3c5a260b5c1596f52f0))
+* **deps:** update plugin multijvmtesting to v3.1.2 ([#1029](https://github.com/DanySK/gradle-java-qa/issues/1029)) ([6521885](https://github.com/DanySK/gradle-java-qa/commit/6521885de167f9a6f4424d017b3c91515376c435))
+
 ## [1.80.0](https://github.com/DanySK/gradle-java-qa/compare/1.79.0...1.80.0) (2024-12-27)
 
 ### Dependency updates
