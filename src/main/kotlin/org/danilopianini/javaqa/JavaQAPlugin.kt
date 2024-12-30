@@ -5,6 +5,7 @@ import com.github.spotbugs.snom.Effort
 import com.github.spotbugs.snom.SpotBugsExtension
 import com.github.spotbugs.snom.SpotBugsPlugin
 import com.github.spotbugs.snom.SpotBugsTask
+import de.aaschmid.gradle.plugins.cpd.Cpd
 import de.aaschmid.gradle.plugins.cpd.CpdExtension
 import de.aaschmid.gradle.plugins.cpd.CpdPlugin
 import org.gradle.api.Plugin
@@ -22,9 +23,9 @@ import org.gradle.api.tasks.javadoc.Javadoc
 import org.gradle.external.javadoc.CoreJavadocOptions
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
-import org.gradle.kotlin.dsl.create
 import org.gradle.kotlin.dsl.exclude
 import org.gradle.kotlin.dsl.findByType
+import org.gradle.kotlin.dsl.register
 import org.gradle.kotlin.dsl.withType
 import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
@@ -69,7 +70,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     // Create a task creating the default configuration
                     val spotbugsExcludesFile = File(javaQADestination, SPOTBUGS_SUPPRESSIONS_FILE_NAME)
                     val populateDefaultSpotBugsExcludes =
-                        tasks.create("populateDefaultSpotBugsExcludes") {
+                        tasks.register("populateDefaultSpotBugsExcludes") {
                             it.doLast {
                                 spotbugsExcludesFile.createWithContent(baseSpotBugsExcludes)
                             }
@@ -94,7 +95,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     // Create a task creating the default configuration
                     val checkstyleSuppressionsFile = File(javaQADestination, CHECKSTYLE_SUPPRESSIONS_FILE_NAME)
                     val generateCheckstyleConfiguration =
-                        tasks.create("generateCheckstyleConfiguration") {
+                        tasks.register("generateCheckstyleConfiguration") {
                             it.outputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
                             it.doLast {
                                 logger.debug(
@@ -147,20 +148,20 @@ open class JavaQAPlugin : Plugin<Project> {
                 configureExtension<CpdExtension> {
                     toolVersion = pmdVersion
                 }
-                tasks.create<de.aaschmid.gradle.plugins.cpd.Cpd>("cpdJavaCheck") {
-                    language = "java"
-                    source = project.extensions
+                tasks.register("cpdJavaCheck", Cpd::class) { cpd ->
+                    cpd.language = "java"
+                    cpd.source = project.extensions
                         .findByType<JavaPluginExtension>()
                         ?.sourceSets
                         ?.flatMap { it.allSource }
                         ?.map {
-                            fileTree(it) {
-                                include("**/*.java")
+                            project.fileTree(it) { fileTree ->
+                                fileTree.include("**/*.java")
                             }
                         }?.fold(files().asFileTree, FileTree::plus)
                         ?: files().asFileTree
-                    minimumTokenCount = 100
-                    ignoreFailures = false
+                    cpd.minimumTokenCount = 100
+                    cpd.ignoreFailures = false
                     tasks.findByName("check")?.dependsOn(this)
                 }
                 // Disable the default cpdCheck to prevent conflict or double execution
