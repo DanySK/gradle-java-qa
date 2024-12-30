@@ -1,3 +1,9 @@
+## [1.82.1](https://github.com/DanySK/gradle-java-qa/compare/1.82.0...1.82.1) (2024-12-30)
+
+### Performance improvements
+
+* replace `create` with configuration-avoidant `register` ([#1031](https://github.com/DanySK/gradle-java-qa/issues/1031)) ([a3a2c26](https://github.com/DanySK/gradle-java-qa/commit/a3a2c269d1503d38632ff311f01520f4486b1b9f))
+
 ## [1.82.0](https://github.com/DanySK/gradle-java-qa/compare/1.81.0...1.82.0) (2024-12-28)
 
 ### Dependency updates
