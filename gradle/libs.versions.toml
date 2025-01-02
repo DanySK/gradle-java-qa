@@ -3,7 +3,6 @@ cpd-gradle = "3.5"
 checkstyle = "10.21.1"
 dokka = "2.0.0"
 jacoco = "0.8.12"
-mockito = "5.15.2"
 konf = "1.1.2"
 kotlin = "2.1.0"
 kotest = "5.9.1"
@@ -19,7 +18,6 @@ jacoco = { module = "org.jacoco:org.jacoco.core", version.ref = "jacoco" }
 konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
 kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }
 kotest-assertions-core-jvm = { module = "io.kotest:kotest-assertions-core-jvm", version.ref = "kotest" }
-mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
 pmd-java = { module = "net.sourceforge.pmd:pmd-java", version.ref = "pmd" }
 spotbugs = { module = "com.github.spotbugs:spotbugs", version.ref = "spotbugs" }
 spotbugs-gradle = { module = "com.github.spotbugs.snom:spotbugs-gradle-plugin", version.ref = "spotbugs-gradle" }
