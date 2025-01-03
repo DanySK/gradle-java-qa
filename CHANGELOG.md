@@ -1,3 +1,14 @@
+## [1.82.2](https://github.com/DanySK/gradle-java-qa/compare/1.82.1...1.82.2) (2025-01-03)
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.12 ([#1021](https://github.com/DanySK/gradle-java-qa/issues/1021)) ([345cac4](https://github.com/DanySK/gradle-java-qa/commit/345cac44c61a32352d0cf4221364c6d7e8e60f8d))
+* **deps:** update dependency org.mockito:mockito-core to v5.15.2 ([#1032](https://github.com/DanySK/gradle-java-qa/issues/1032)) ([268191b](https://github.com/DanySK/gradle-java-qa/commit/268191bef50cfc218226f7766fa789d051e36ca6))
+
+### Bug Fixes
+
+* enable `THROWS_METHOD_THROWS_CLAUSE_BASIC_EXCEPTION` as spotbugs/spotbugs[#2127](https://github.com/DanySK/gradle-java-qa/issues/2127) is marked as solved ([#1034](https://github.com/DanySK/gradle-java-qa/issues/1034)) ([43e36b6](https://github.com/DanySK/gradle-java-qa/commit/43e36b6f0702b7a50fb55823499b78cb81ca40a1))
+
 ## [1.82.1](https://github.com/DanySK/gradle-java-qa/compare/1.82.0...1.82.1) (2024-12-30)
 
 ### Performance improvements
