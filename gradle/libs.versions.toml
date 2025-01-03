@@ -23,7 +23,7 @@ spotbugs = { module = "com.github.spotbugs:spotbugs", version.ref = "spotbugs" }
 spotbugs-gradle = { module = "com.github.spotbugs.snom:spotbugs-gradle-plugin", version.ref = "spotbugs-gradle" }
 
 [bundles]
-kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm", "mockito-core" ]
+kotlin-testing = [ "kotest-junit5-jvm", "kotest-assertions-core-jvm" ]
 qa-plugins = [  "cpd-gradle", "spotbugs-gradle" ]
 
 [plugins]
