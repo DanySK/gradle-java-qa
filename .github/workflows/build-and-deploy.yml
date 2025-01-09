@@ -24,9 +24,7 @@ jobs:
           # Dry-deployment
           deploy-command: >-
             ./gradlew
-            uploadKotlinOSSRHToMavenCentralNexus
-            uploadPluginMavenToMavenCentralNexus
-            uploadPluginMarkerMavenToMavenCentralNexus
+            uploadAllToMavenCentralNexus
             close
             dropStagingRepositoryOnMavenCentral
           should-run-codecov: ${{ runner.os == 'Linux' }}
