@@ -1,3 +1,12 @@
+## [1.83.0](https://github.com/DanySK/gradle-java-qa/compare/1.82.2...1.83.0) (2025-01-10)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.0.28 ([#1038](https://github.com/DanySK/gradle-java-qa/issues/1038)) ([b9d3a43](https://github.com/DanySK/gradle-java-qa/commit/b9d3a43b59c4f4deb8867c6407372bb289b5f96f))
+* **deps:** drop mockito ([#1033](https://github.com/DanySK/gradle-java-qa/issues/1033)) ([a6dee54](https://github.com/DanySK/gradle-java-qa/commit/a6dee54f13ee468754470a9693087e7caf2a0b15))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.118 ([#1037](https://github.com/DanySK/gradle-java-qa/issues/1037)) ([33266d0](https://github.com/DanySK/gradle-java-qa/commit/33266d0547bef1a5c4e355cb59ccdc5254c7bfd2))
+* **deps:** update node.js to 22.13 ([#1035](https://github.com/DanySK/gradle-java-qa/issues/1035)) ([12ead29](https://github.com/DanySK/gradle-java-qa/commit/12ead29638b2ff6ee22b839ae835a7674e6e2117))
+
 ## [1.82.2](https://github.com/DanySK/gradle-java-qa/compare/1.82.1...1.82.2) (2025-01-03)
 
 ### Dependency updates
