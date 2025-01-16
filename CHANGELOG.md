@@ -1,3 +1,16 @@
+## [1.85.0](https://github.com/DanySK/gradle-java-qa/compare/1.84.0...1.85.0) (2025-01-16)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.9.0 ([#1043](https://github.com/DanySK/gradle-java-qa/issues/1043)) ([d80e4ac](https://github.com/DanySK/gradle-java-qa/commit/d80e4acebae761bb8e5ea026fcc1b9dfda439486))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.119 ([#1042](https://github.com/DanySK/gradle-java-qa/issues/1042)) ([39402e6](https://github.com/DanySK/gradle-java-qa/commit/39402e695446aab5aafb1313fc9a9e87fb550814))
+* **deps:** update plugin publishoncentral to v8 ([#1036](https://github.com/DanySK/gradle-java-qa/issues/1036)) ([15a80d2](https://github.com/DanySK/gradle-java-qa/commit/15a80d251607c703b92f10357d1a54102dd39e1a))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.6.0 ([#1040](https://github.com/DanySK/gradle-java-qa/issues/1040)) ([9b380d9](https://github.com/DanySK/gradle-java-qa/commit/9b380d9a391f1208b93d9a2168f8b0684cddf2d6))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.0 ([#1041](https://github.com/DanySK/gradle-java-qa/issues/1041)) ([dde9650](https://github.com/DanySK/gradle-java-qa/commit/dde96509d5d94bde80e6aa50565846a8632eaf50))
+
 ## [1.84.0](https://github.com/DanySK/gradle-java-qa/compare/1.83.0...1.84.0) (2025-01-10)
 
 ### Dependency updates
