@@ -3,10 +3,6 @@ on:
   workflow_call:
   workflow_dispatch:
 
-concurrency:
-  group: build-${{ github.workflow }}-${{ github.event.number || github.ref }}
-  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
-
 jobs:
   build:
     strategy:
@@ -43,9 +39,6 @@ jobs:
           signing-key: ${{ secrets.SIGNING_KEY }}
           signing-password: ${{ secrets.SIGNING_PASSWORD }}
   release:
-    concurrency:
-      # Only one release job at a time. Strictly sequential.
-      group: release-${{ github.workflow }}-${{ github.event.number || github.ref }}
     needs:
       - build
     runs-on: ubuntu-22.04
