@@ -1,3 +1,29 @@
+## [1.88.0](https://github.com/DanySK/gradle-java-qa/compare/1.87.0...1.88.0) (2025-01-25)
+
+### Features
+
+* control the java version used to run the quality control task via toolchains ([#1054](https://github.com/DanySK/gradle-java-qa/issues/1054)) ([fe44725](https://github.com/DanySK/gradle-java-qa/commit/fe4472594cb3b092036d7dd766f8e10c8a6b657c))
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.12.1 ([#1050](https://github.com/DanySK/gradle-java-qa/issues/1050)) ([52ec278](https://github.com/DanySK/gradle-java-qa/commit/52ec278ab36c4249ae13494f9d84eb5c9f5b21a7))
+* **deps:** update plugin com.gradle.develocity to v3.19.1 ([#1047](https://github.com/DanySK/gradle-java-qa/issues/1047)) ([74c3376](https://github.com/DanySK/gradle-java-qa/commit/74c337624fb99e98bf3290cce4ba0f9c97df69e9))
+* **deps:** update plugin multijvmtesting to v3.2.0 ([#1049](https://github.com/DanySK/gradle-java-qa/issues/1049)) ([d83d10d](https://github.com/DanySK/gradle-java-qa/commit/d83d10dee4691b2bc1077c4c4dc8fbf775de1875))
+* **deps:** update plugin multijvmtesting to v3.2.1 ([#1051](https://github.com/DanySK/gradle-java-qa/issues/1051)) ([1f162c5](https://github.com/DanySK/gradle-java-qa/commit/1f162c5736400e8eadeed006718afd5603785a3f))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.19 ([#1052](https://github.com/DanySK/gradle-java-qa/issues/1052)) ([14d5957](https://github.com/DanySK/gradle-java-qa/commit/14d59579d22859d9e3d7b7843f687fbadfaaa4fc))
+* **deps:** update plugin publishoncentral to v8.0.2 ([#1058](https://github.com/DanySK/gradle-java-qa/issues/1058)) ([3b04414](https://github.com/DanySK/gradle-java-qa/commit/3b04414c19ab45a079e69b0813fdcf9e891042f0))
+
+### Build and continuous integration
+
+* add Gradle's `distributionSha256Sum` ([39786eb](https://github.com/DanySK/gradle-java-qa/commit/39786eb5394f6b65b3a773c9680522257ca2f8c5))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.1 ([#1046](https://github.com/DanySK/gradle-java-qa/issues/1046)) ([3dde603](https://github.com/DanySK/gradle-java-qa/commit/3dde603e9ade99bd13407c30b1973b1cd96c0546))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.2 ([#1048](https://github.com/DanySK/gradle-java-qa/issues/1048)) ([af6ce6a](https://github.com/DanySK/gradle-java-qa/commit/af6ce6a39bddc1c914163954fdd58612912dc677))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.3 ([#1053](https://github.com/DanySK/gradle-java-qa/issues/1053)) ([7b2e2f2](https://github.com/DanySK/gradle-java-qa/commit/7b2e2f2f1814e96116b1eddb7da50fb3c075a447))
+* **deps:** update dependency ubuntu github actions runner to v24 ([#1055](https://github.com/DanySK/gradle-java-qa/issues/1055)) ([35328a1](https://github.com/DanySK/gradle-java-qa/commit/35328a12a51d337f9c06dc5c28e7c41b74f7e355))
+* **deps:** update dependency ubuntu to v24 ([#1056](https://github.com/DanySK/gradle-java-qa/issues/1056)) ([fcd80f1](https://github.com/DanySK/gradle-java-qa/commit/fcd80f1a737b703f0b32c2e0905cb356353db910))
+* manage concurrency at the workflow level ([b72472d](https://github.com/DanySK/gradle-java-qa/commit/b72472d2642b6e08ebfff50b2158eb2637b6658d))
+* pin the GitHub Actions runners' versions ([fbee153](https://github.com/DanySK/gradle-java-qa/commit/fbee153b62fae9f21b0bcc41922997a29c0815df))
+
 ## [1.87.0](https://github.com/DanySK/gradle-java-qa/compare/1.86.0...1.87.0) (2025-01-17)
 
 ### Dependency updates
