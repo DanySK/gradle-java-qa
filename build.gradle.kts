@@ -41,6 +41,15 @@ repositories {
     gradlePluginPortal()
 }
 
+val copyJavaVersion by tasks.registering(Copy::class) {
+    from(".java-version")
+    into(
+        project.layout.buildDirectory
+            .dir("resources/main/org/danilopianini/javaqa")
+            .map { it.asFile },
+    )
+}
+
 val copyToolVersions by tasks.registering {
     inputs.file(File(rootProject.rootDir, "gradle/libs.versions.toml"))
     val outputDir =
@@ -69,6 +78,7 @@ val copyToolVersions by tasks.registering {
 
 tasks.withType<KotlinCompile>().configureEach { dependsOn(copyToolVersions) }
 tasks.withType<KotlinCompilationTask<*>>().configureEach { dependsOn(copyToolVersions) }
+tasks.withType<ProcessResources>().configureEach { dependsOn(copyJavaVersion) }
 
 multiJvm {
     jvmVersionForCompilation.set(11)
