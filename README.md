@@ -9,6 +9,19 @@ this plugin pre-configures them, but does not force anything.
 
 ## How to use
 
+This plugin auto-configures Checkstyle, PMD, CPD, SpotBugs, and JaCoCo and the JVM to use them.
+The JVM is configured via the Gradle's toolchains.
+Thus, the first step is to make sure that you can resolve the JVM version required by this plugin.
+Unless you have very specific requirements, we suggest to apply the Foojay Convention plugin to your `settings.gradle.kts`:
+
+```kotlin
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0" // Pick the most recent version
+}
+```
+
+Now, you can enable the plugin in your `build.gradle.kts`:
+
 ```kotlin
 plugins {
     id("org.danilopianini.gradle-java-qa") version "<SELECT THE VERSION>"

@@ -16,11 +16,14 @@ import org.gradle.api.plugins.JavaPluginExtension
 import org.gradle.api.plugins.quality.Checkstyle
 import org.gradle.api.plugins.quality.CheckstyleExtension
 import org.gradle.api.plugins.quality.CheckstylePlugin
+import org.gradle.api.plugins.quality.Pmd
 import org.gradle.api.plugins.quality.PmdExtension
 import org.gradle.api.plugins.quality.PmdPlugin
 import org.gradle.api.provider.Provider
 import org.gradle.api.tasks.javadoc.Javadoc
 import org.gradle.external.javadoc.CoreJavadocOptions
+import org.gradle.jvm.toolchain.JavaLanguageVersion
+import org.gradle.jvm.toolchain.JavaToolchainService
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.exclude
@@ -32,11 +35,16 @@ import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
 import java.io.File
 import java.util.Properties
+import javax.inject.Inject
 
 /**
  * Just a template.
  */
-open class JavaQAPlugin : Plugin<Project> {
+@Suppress("unused")
+abstract class JavaQAPlugin : Plugin<Project> {
+    @get:Inject
+    internal abstract val javaToolchains: JavaToolchainService
+
     @Suppress("UnstableApiUsage")
     override fun apply(project: Project) {
         with(project) {
@@ -50,10 +58,12 @@ open class JavaQAPlugin : Plugin<Project> {
             val baseSpotBugsExcludes = loadResource(SPOTBUGS_SUPPRESSIONS_RESOURCE)
             val baseCheckstyleExcludes = loadResource(CHECKSTYLE_SUPPRESSIONS_RESOURCE)
             val checkstyleConfiguration = loadResource(CHECKSTYLE_PATH)
+            val javaVersion = loadResource(JAVA_VERSION_RESOURCE).trim().substringBefore('.').toInt()
             val pmdConfiguration = loadResource(PMD_PATH)
             val extension: JavaQAExtension =
                 project.extensions.create("javaQA", JavaQAExtension::class.java, this)
-            plugins.withType(JavaPlugin::class.java) {
+            plugins.withType(JavaPlugin::class.java) { _ ->
+                // Apply the Java QA plugins
                 with(plugins) {
                     apply(CheckstylePlugin::class)
                     apply(CpdPlugin::class)
@@ -61,6 +71,11 @@ open class JavaQAPlugin : Plugin<Project> {
                     apply(JacocoPlugin::class)
                     apply(SpotBugsPlugin::class)
                 }
+                // Prepare the Java launcher
+                val javaLauncher =
+                    javaToolchains.launcherFor {
+                        it.languageVersion.set(JavaLanguageVersion.of(javaVersion))
+                    }
                 // Javadoc
                 tasks.withType<Javadoc> {
                     (options as? CoreJavadocOptions)?.addStringOption("Xwerror", "-quiet")
@@ -75,8 +90,9 @@ open class JavaQAPlugin : Plugin<Project> {
                                 spotbugsExcludesFile.createWithContent(baseSpotBugsExcludes)
                             }
                         }
-                    tasks.withType<SpotBugsTask> {
-                        dependsOn(populateDefaultSpotBugsExcludes)
+                    tasks.withType<SpotBugsTask>().configureEach { spotBugsTask ->
+                        spotBugsTask.dependsOn(populateDefaultSpotBugsExcludes)
+                        spotBugsTask.launcher.set(javaLauncher)
                     }
                     toolVersion.set(spotBugsVersion)
                     effort.set(Effort.MAX)
@@ -129,9 +145,10 @@ open class JavaQAPlugin : Plugin<Project> {
                     configurations.named("checkstyle").configure { checkstyleConfiguration ->
                         checkstyleConfiguration.exclude(group = "com.google.collections", module = "google-collections")
                     }
-                    tasks.withType<Checkstyle> {
-                        inputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
-                        dependsOn(generateCheckstyleConfiguration)
+                    tasks.withType<Checkstyle>().configureEach { checkstyleTask ->
+                        checkstyleTask.javaLauncher.set(javaLauncher)
+                        checkstyleTask.inputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
+                        checkstyleTask.dependsOn(generateCheckstyleConfiguration)
                     }
                     toolVersion = checkstyleVersion
                     configDirectory.set(javaQADestination)
@@ -144,6 +161,7 @@ open class JavaQAPlugin : Plugin<Project> {
                     ruleSets = listOf()
                     ruleSetConfig = resources.text.fromString(pmdConfiguration)
                 }
+                tasks.withType<Pmd>().configureEach { pmdTask -> pmdTask.javaLauncher.set(javaLauncher) }
                 // CPD
                 configureExtension<CpdExtension> {
                     toolVersion = pmdVersion
@@ -192,6 +210,7 @@ open class JavaQAPlugin : Plugin<Project> {
         private const val PMD_PATH = "$PACKAGE_ROOT/pmd.xml"
         private const val SPOTBUGS_SUPPRESSIONS_FILE_NAME = "spotbugs-excludes.xml"
         private const val SPOTBUGS_SUPPRESSIONS_RESOURCE = "$PACKAGE_ROOT/$SPOTBUGS_SUPPRESSIONS_FILE_NAME"
+        private const val JAVA_VERSION_RESOURCE = "$PACKAGE_ROOT/.java-version"
 
         /**
          * The default version of SpotBugs.
