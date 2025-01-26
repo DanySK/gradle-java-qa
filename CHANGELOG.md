@@ -1,3 +1,21 @@
+## [1.89.0](https://github.com/DanySK/gradle-java-qa/compare/1.88.0...1.89.0) (2025-01-26)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.21.2 ([#1068](https://github.com/DanySK/gradle-java-qa/issues/1068)) ([4fdb297](https://github.com/DanySK/gradle-java-qa/commit/4fdb297fefaa4545688cc97ed67de9d3be7bddd6))
+* **deps:** update dependency java to v22 ([bc0eb1e](https://github.com/DanySK/gradle-java-qa/commit/bc0eb1ec145d4916da1bbb1f9e81024365c9db63))
+* **deps:** update dependency java to v23 ([#1064](https://github.com/DanySK/gradle-java-qa/issues/1064)) ([a5bac05](https://github.com/DanySK/gradle-java-qa/commit/a5bac054154215f3ad14d1bbc6e47149e45fcf9a))
+
+### Tests
+
+* reduce testing to the oldest and newest supported JVMs ([8c392d3](https://github.com/DanySK/gradle-java-qa/commit/8c392d3f64d74eb239e7e4e492399c4e59158225))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.4 ([#1065](https://github.com/DanySK/gradle-java-qa/issues/1065)) ([b5b01a8](https://github.com/DanySK/gradle-java-qa/commit/b5b01a81ca5e186b91538c9f5206a59dd9a17ee0))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.5 ([#1066](https://github.com/DanySK/gradle-java-qa/issues/1066)) ([beb9bf0](https://github.com/DanySK/gradle-java-qa/commit/beb9bf0c4b88933637a7ff011ceda00f2a5188e1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.6 ([#1067](https://github.com/DanySK/gradle-java-qa/issues/1067)) ([7fcaf88](https://github.com/DanySK/gradle-java-qa/commit/7fcaf88ffbdc9dfadf869fb2c0154966dbde7b84))
+
 ## [1.88.0](https://github.com/DanySK/gradle-java-qa/compare/1.87.0...1.88.0) (2025-01-25)
 
 ### Features
