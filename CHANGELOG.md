@@ -1,3 +1,10 @@
+## [1.90.0](https://github.com/DanySK/gradle-java-qa/compare/1.89.0...1.90.0) (2025-01-27)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.1.3 ([#1069](https://github.com/DanySK/gradle-java-qa/issues/1069)) ([c8e98ae](https://github.com/DanySK/gradle-java-qa/commit/c8e98ae722beff5bc8e8ae8372e2b315329f7948))
+* **deps:** update plugin gitsemver to v3.1.8 ([#1070](https://github.com/DanySK/gradle-java-qa/issues/1070)) ([4d90b44](https://github.com/DanySK/gradle-java-qa/commit/4d90b44062be7f908c35fcc78cf44d924e56d26d))
+
 ## [1.89.0](https://github.com/DanySK/gradle-java-qa/compare/1.88.0...1.89.0) (2025-01-26)
 
 ### Dependency updates
