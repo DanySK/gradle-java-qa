@@ -6,7 +6,7 @@ jacoco = "0.8.12"
 konf = "1.1.2"
 kotlin = "2.1.10"
 kotest = "5.9.1"
-pmd = "7.9.0"
+pmd = "7.10.0"
 spotbugs = "4.9.0"
 spotbugs-gradle = "6.1.3"
 
