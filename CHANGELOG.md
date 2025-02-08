@@ -1,3 +1,12 @@
+## [1.92.0](https://github.com/DanySK/gradle-java-qa/compare/1.91.0...1.92.0) (2025-02-08)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.9.1 ([#1087](https://github.com/DanySK/gradle-java-qa/issues/1087)) ([19c9e4e](https://github.com/DanySK/gradle-java-qa/commit/19c9e4ebfaf2c9809fc205ef75ffc2de60768c4c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.120 ([#1085](https://github.com/DanySK/gradle-java-qa/issues/1085)) ([9cef750](https://github.com/DanySK/gradle-java-qa/commit/9cef75094f2629e20ecfe868fe6d777d8e2924e1))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.121 ([#1086](https://github.com/DanySK/gradle-java-qa/issues/1086)) ([b380dda](https://github.com/DanySK/gradle-java-qa/commit/b380dda99f157df39060337b5bb68fb08121bc34))
+* **deps:** update plugin publishoncentral to v8.0.3 ([#1084](https://github.com/DanySK/gradle-java-qa/issues/1084)) ([c991dd2](https://github.com/DanySK/gradle-java-qa/commit/c991dd219adb0829fec2398cb2cec94cbf6118ad))
+
 ## [1.91.0](https://github.com/DanySK/gradle-java-qa/compare/1.90.0...1.91.0) (2025-01-31)
 
 ### Dependency updates
