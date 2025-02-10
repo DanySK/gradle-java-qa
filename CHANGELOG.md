@@ -1,3 +1,13 @@
+## [1.93.0](https://github.com/DanySK/gradle-java-qa/compare/1.92.0...1.93.0) (2025-02-10)
+
+### Features
+
+* make the plugin compatible with Java 8 builds ([b6180c3](https://github.com/DanySK/gradle-java-qa/commit/b6180c3550257f6330403cde4a699b547d5cce74))
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.122 ([#1088](https://github.com/DanySK/gradle-java-qa/issues/1088)) ([dbb72db](https://github.com/DanySK/gradle-java-qa/commit/dbb72db49fb7219a716c8304b569607a1459cfe4))
+
 ## [1.92.0](https://github.com/DanySK/gradle-java-qa/compare/1.91.0...1.92.0) (2025-02-08)
 
 ### Dependency updates
