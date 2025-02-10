@@ -81,7 +81,7 @@ tasks.withType<KotlinCompilationTask<*>>().configureEach { dependsOn(copyToolVer
 tasks.withType<ProcessResources>().configureEach { dependsOn(copyJavaVersion) }
 
 multiJvm {
-    val minJavaVersion = 11
+    val minJavaVersion = 8
     jvmVersionForCompilation.set(minJavaVersion)
     maximumSupportedJvmVersion.set(latestJavaSupportedByGradle)
     testByDefaultWith(minJavaVersion, latestJavaSupportedByGradle)
