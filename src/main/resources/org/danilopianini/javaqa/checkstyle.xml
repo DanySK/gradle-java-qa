@@ -146,6 +146,7 @@
         <module name="JavadocLeadingAsteriskAlign"/>
         <module name="JavadocMethod"/>
         <module name="JavadocMissingLeadingAsterisk"/>
+        <module name="JavadocMissingWhitespaceAfterAsterisk"/>
         <module name="JavadocType"/>
         <module name="JavadocStyle"/>
         <module name="MissingJavadocMethod">
