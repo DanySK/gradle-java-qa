@@ -75,6 +75,7 @@
         <module name="InterfaceIsType"/>
         <module name="MutableException"/>
         <module name="OneTopLevelClass"/>
+        <module name="SealedShouldHavePermitsList"/>
         <module name="VisibilityModifier"/>
 
         <!-- Checks for missing Javadoc comments. -->
