@@ -213,6 +213,7 @@
         <module name="TypeName"/>
 
         <!-- Whitespace, https://checkstyle.sourceforge.io/checks/whitespace/index.html -->
+        <module name="EmptyForInitializerPad"/>
         <module name="EmptyForIteratorPad"/>
         <module name="GenericWhitespace"/>
         <module name="MethodParamPad"/>
