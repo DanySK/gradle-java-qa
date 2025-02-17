@@ -177,6 +177,7 @@
         </module>
         <module name="CommentsIndentation"/>
         <module name="FinalParameters"/>
+        <module name="NewlineAtEndOfFile"/>
         <module name="TodoComment">
             <property name="severity" value="info"/>
         </module>
