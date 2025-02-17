@@ -1,3 +1,14 @@
+## [1.97.1](https://github.com/DanySK/gradle-java-qa/compare/1.97.0...1.97.1) (2025-02-17)
+
+### Bug Fixes
+
+* **checkstyle:** disable `SeparatorWrap` ([043cb8d](https://github.com/DanySK/gradle-java-qa/commit/043cb8db1d113378495cdfda7667603db2d85635))
+* **checkstyle:** ignore string literals frequently used as separators ([b2ad975](https://github.com/DanySK/gradle-java-qa/commit/b2ad975749eaf5ab7ce21ebcd3b0135229ad74f5))
+
+### Tests
+
+* add stream manipulation ([ae7eaeb](https://github.com/DanySK/gradle-java-qa/commit/ae7eaeb2667aa295142189c719a79ebb15eeed81))
+
 ## [1.97.0](https://github.com/DanySK/gradle-java-qa/compare/1.96.0...1.97.0) (2025-02-17)
 
 ### Features
