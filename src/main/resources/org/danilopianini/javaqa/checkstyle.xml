@@ -74,6 +74,7 @@
         <module name="InnerTypeLast"/>
         <module name="InterfaceIsType"/>
         <module name="MutableException"/>
+        <module name="OneTopLevelClass"/>
         <module name="VisibilityModifier"/>
 
         <!-- Checks for missing Javadoc comments. -->
