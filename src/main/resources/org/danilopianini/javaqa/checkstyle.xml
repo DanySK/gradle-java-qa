@@ -143,6 +143,7 @@
         <module name="AtclauseOrder"/>
         <module name="InvalidJavadocPosition"/>
         <module name="JavadocContentLocation"/>
+        <module name="JavadocLeadingAsteriskAlign"/>
         <module name="MissingJavadocMethod">
             <property name="scope" value="protected"/>
         </module>
