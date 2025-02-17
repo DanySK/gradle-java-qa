@@ -115,6 +115,7 @@
             <property name="allowedDuplicates" value="2"/>
         </module>
         <module name="MultipleVariableDeclarations"/>
+        <module name="OneStatementPerLine"/>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
 
