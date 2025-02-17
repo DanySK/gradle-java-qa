@@ -127,6 +127,7 @@
         <module name="UnnecessaryParentheses"/>
         <module name="UnnecessarySemicolonAfterOuterTypeDeclaration"/>
         <module name="UnnecessarySemicolonAfterTypeMemberDeclaration"/>
+        <module name="UnnecessarySemicolonInEnumeration"/>
 
         <!-- Checks for missing Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
