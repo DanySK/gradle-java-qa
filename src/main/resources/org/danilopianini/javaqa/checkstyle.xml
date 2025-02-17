@@ -183,6 +183,7 @@
         <module name="TodoComment">
             <property name="severity" value="info"/>
         </module>
+        <module name="UncommentedMain"/>
         <module name="UpperEll"/>
 
         <!-- Miscellaneous, https://checkstyle.sourceforge.io/checks/misc/index.html -->
