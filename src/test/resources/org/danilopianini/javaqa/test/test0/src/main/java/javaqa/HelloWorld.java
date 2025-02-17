@@ -16,5 +16,6 @@ final class HelloWorld {
             .map(it -> it + 1)
             .forEach(System.out::println);
         System.out.println("Hello, World -> " + anotherVar); // NOPMD
+        System.out.println("[ " + System.out + " " + System.class + " " + Runtime.class + " " + anotherVar + " ]"); // NOPMD
     }
 }
