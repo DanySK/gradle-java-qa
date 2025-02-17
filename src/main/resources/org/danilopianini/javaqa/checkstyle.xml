@@ -164,6 +164,7 @@
             <property name="scope" value="protected"/>
         </module>
         <module name="NonEmptyAtclauseDescription"/>
+        <module name="RequireEmptyLineBeforeBlockTagGroup"/>
         <!-- Checks for Naming Conventions. -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
         <module name="ConstantName"/>
