@@ -53,6 +53,7 @@
         </module>
         <!-- Annotations -->
         <module name="AnnotationLocation"/>
+        <module name="AnnotationUseStyle"/>
         <!-- Checks for missing Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
         <module name="MissingJavadocMethod">
