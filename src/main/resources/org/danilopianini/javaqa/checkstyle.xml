@@ -168,6 +168,8 @@
         <module name="SingleLineJavadoc"/>
 
         <!-- Metrics, https://checkstyle.sourceforge.io/checks/metrics/index.html -->
+
+        <!-- Miscellaneous, https://checkstyle.sourceforge.io/checks/misc/index.html -->
         <module name="ArrayTypeStyle"/>
         <module name="AvoidEscapedUnicodeCharacters">
             <property name="allowByTailComment" value="true"/>
@@ -187,10 +189,12 @@
         <module name="UniqueProperties"/>
         <module name="UpperEll"/>
 
-        <!-- Miscellaneous, https://checkstyle.sourceforge.io/checks/misc/index.html -->
+        <!-- Modifiers, https://checkstyle.sourceforge.io/checks/modifier/index.html -->
+        <module name="ModifierOrder"/>
+        <module name="RedundantModifier"/>
 
-        <!-- Checks for Naming Conventions. -->
-        <!-- See http://checkstyle.sf.net/config_naming.html -->
+        <!-- Naming Conventions, https://checkstyle.sourceforge.io/checks/naming/index.html -->
+        <module name="AbstractClassName"/>
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
@@ -215,9 +219,5 @@
         <module name="TypecastParenPad"/>
         <module name="WhitespaceAfter"/>
         <module name="WhitespaceAround"/>
-        <!-- Modifier Checks -->
-        <!-- See http://checkstyle.sf.net/config_modifiers.html -->
-        <module name="ModifierOrder"/>
-        <module name="RedundantModifier"/>
     </module>
 </module>
