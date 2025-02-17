@@ -206,6 +206,7 @@
         <module name="MethodTypeParameterName"/>
         <module name="PackageName"/>
         <module name="ParameterName"/>
+        <module name="PatternVariableName"/>
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
 
