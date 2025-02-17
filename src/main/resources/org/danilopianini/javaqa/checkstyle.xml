@@ -179,6 +179,7 @@
         <module name="FinalParameters"/>
         <module name="NewlineAtEndOfFile"/>
         <module name="OrderedProperties"/>
+        <module name="OuterTypeFilename"/>
         <module name="TodoComment">
             <property name="severity" value="info"/>
         </module>
