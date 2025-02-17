@@ -196,6 +196,7 @@
         <!-- Naming Conventions, https://checkstyle.sourceforge.io/checks/naming/index.html -->
         <module name="AbstractClassName"/>
         <module name="CatchParameterName"/>
+        <module name="ClassTypeParameterName"/>
         <module name="ConstantName"/>
         <module name="IllegalIdentifierName"/>
         <module name="LocalFinalVariableName"/>
@@ -206,6 +207,7 @@
         <module name="ParameterName"/>
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
+
         <!-- Checks for whitespace -->
         <!-- See http://checkstyle.sf.net/config_whitespace.html -->
         <module name="EmptyForIteratorPad"/>
