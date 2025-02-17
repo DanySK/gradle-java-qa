@@ -49,6 +49,7 @@
         <exclude name="ShortMethodName" />
         <exclude name="ShortVariable" />
         <exclude name="TooManyStaticImports" />
+        <exclude name="UnnecessaryConstructor" />
         <exclude name="UseExplicitTypes" />
     </rule>
     <rule ref="category/java/codestyle.xml/ClassNamingConventions">
