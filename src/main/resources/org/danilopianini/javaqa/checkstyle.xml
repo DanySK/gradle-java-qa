@@ -179,7 +179,6 @@
         </module>
         <module name="CommentsIndentation"/>
         <module name="FinalParameters"/>
-        <module name="NewlineAtEndOfFile"/>
         <module name="OrderedProperties"/>
         <module name="OuterTypeFilename"/>
         <module name="TodoComment">
