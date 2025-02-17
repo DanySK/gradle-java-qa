@@ -158,7 +158,6 @@
             <property name="scope" value="protected"/>
         </module>
         <module name="MissingJavadocType">
-            <property name="severity" value="error"/>
             <property name="scope" value="protected"/>
         </module>
         <module name="JavadocVariable">
