@@ -151,6 +151,9 @@
         <module name="JavadocStyle"/>
         <module name="JavadocTagContinuationIndentation"/>
         <module name="JavadocType"/>
+        <module name="JavadocVariable">
+            <property name="scope" value="protected"/>
+        </module>
         <module name="MissingJavadocMethod">
             <property name="scope" value="protected"/>
         </module>
