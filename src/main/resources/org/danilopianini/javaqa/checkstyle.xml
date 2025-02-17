@@ -103,6 +103,7 @@
         <module name="IllegalCatch"/>
         <module name="IllegalInstantiation"/>
         <module name="IllegalThrows"/>
+        <module name="IllegalToken"/>
         <module name="InnerAssignment"/>
         <module name="MagicNumber">
             <property name="ignoreNumbers"
