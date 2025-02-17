@@ -102,6 +102,7 @@
         </module>
         <module name="IllegalCatch"/>
         <module name="IllegalInstantiation"/>
+        <module name="IllegalThrows"/>
         <module name="InnerAssignment"/>
         <module name="MagicNumber">
             <property name="ignoreNumbers"
