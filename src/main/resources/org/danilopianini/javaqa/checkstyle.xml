@@ -51,7 +51,7 @@
             <property name="onCommentFormat" value="CHECKSTYLE\: ([\w\|]+) ON"/>
             <property name="checkFormat" value="$1"/>
         </module>
-        <!-- Annotations -->
+        <!-- Annotations, see https://checkstyle.sourceforge.io/checks/annotation/index.html -->
         <module name="AnnotationLocation"/>
         <module name="AnnotationUseStyle"/>
         <module name="MissingDeprecated"/>
