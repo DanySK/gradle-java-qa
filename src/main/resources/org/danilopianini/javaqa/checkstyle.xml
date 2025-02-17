@@ -84,6 +84,7 @@
 
         <!-- Coding, https://checkstyle.sourceforge.io/checks/coding/index.html -->
         <module name="ArrayTrailingComma"/>
+        <module name="ConstructorsDeclarationGrouping"/>
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <module name="IllegalInstantiation"/>
