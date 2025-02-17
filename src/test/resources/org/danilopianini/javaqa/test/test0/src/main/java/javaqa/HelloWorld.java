@@ -6,6 +6,8 @@ final class HelloWorld {
     }
 
     public static void main(final String... a) {
-        System.out.println("Hello, World"); // NOPMD
+        final double something = Math.random();
+        final double anotherVar = something + 1;
+        System.out.println("Hello, World -> " + anotherVar); // NOPMD
     }
 }

@@ -215,6 +215,11 @@
         <!-- Whitespace, https://checkstyle.sourceforge.io/checks/whitespace/index.html -->
         <module name="EmptyForInitializerPad"/>
         <module name="EmptyForIteratorPad"/>
+        <module name="EmptyLineSeparator">
+            <property name="allowMultipleEmptyLines" value="false"/>
+            <property name="allowMultipleEmptyLinesInsideClassMembers" value="false"/>
+            <property name="allowNoEmptyLineBetweenFields" value="true"/>
+        </module>
         <module name="GenericWhitespace"/>
         <module name="MethodParamPad"/>
         <module name="NoWhitespaceAfter">
