@@ -12,11 +12,13 @@
     <!-- Provides support for additional configuration. -->
     <!-- ADDITIONAL_CONFIGURATION -->
 
-    <!-- Checks whether files end with a new line. -->
-    <!-- See http://checkstyle.sf.net/config_misc.html#NewlineAtEndOfFile -->
+    <!-- Miscellaneous, https://checkstyle.sourceforge.io/checks/misc/index.html -->
     <module name="NewlineAtEndOfFile">
         <property name="lineSeparator" value="lf"/>
     </module>
+    <module name="OrderedProperties"/>
+    <module name="UniqueProperties"/>
+
     <module name="LineLength">
         <property name="max" value="130"/>
     </module>
@@ -179,13 +181,11 @@
         </module>
         <module name="CommentsIndentation"/>
         <module name="FinalParameters"/>
-        <module name="OrderedProperties"/>
         <module name="OuterTypeFilename"/>
         <module name="TodoComment">
             <property name="severity" value="info"/>
         </module>
         <module name="UncommentedMain"/>
-        <module name="UniqueProperties"/>
         <module name="UpperEll"/>
 
         <!-- Modifiers, https://checkstyle.sourceforge.io/checks/modifier/index.html -->
