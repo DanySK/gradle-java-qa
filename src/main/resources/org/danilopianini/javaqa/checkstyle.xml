@@ -117,6 +117,7 @@
         <module name="MultipleVariableDeclarations"/>
         <module name="OneStatementPerLine"/>
         <module name="OverloadMethodsDeclarationOrder"/>
+        <module name="PackageDeclaration"/>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
 
