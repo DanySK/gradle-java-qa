@@ -67,6 +67,12 @@
             <property name="allowEmptyLoopBody" value="true"/>
         </module>
         <module name="RightCurly"/>
+        <!-- Class design, https://checkstyle.sourceforge.io/checks/design/index.html -->
+        <module name="DesignForExtension" />
+        <module name="FinalClass" />
+        <module name="HideUtilityClassConstructor"/>
+        <module name="InterfaceIsType"/>
+        <module name="VisibilityModifier"/>
 
         <!-- Checks for missing Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
@@ -133,16 +139,6 @@
         </module>
         <module name="SimplifyBooleanExpression"/>
         <module name="SimplifyBooleanReturn"/>
-        <!-- Checks for class design -->
-        <!-- See http://checkstyle.sf.net/config_design.html -->
-        <module name="DesignForExtension">
-        </module>
-        <module name="FinalClass">
-            <property name="severity" value="warning"/>
-        </module>
-        <module name="HideUtilityClassConstructor"/>
-        <module name="InterfaceIsType"/>
-        <module name="VisibilityModifier"/>
         <!-- Miscellaneous other checks. -->
         <!-- See http://checkstyle.sf.net/config_misc.html -->
         <module name="ArrayTypeStyle"/>
