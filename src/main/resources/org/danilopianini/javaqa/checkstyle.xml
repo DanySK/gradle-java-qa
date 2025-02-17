@@ -207,6 +207,8 @@
         <module name="PackageName"/>
         <module name="ParameterName"/>
         <module name="PatternVariableName"/>
+        <module name="PatternVariableName"/>
+        <module name="RecordComponentName"/>
         <module name="StaticVariableName"/>
         <module name="TypeName"/>
 
