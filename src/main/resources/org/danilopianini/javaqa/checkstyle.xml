@@ -83,6 +83,7 @@
         <module name="VisibilityModifier"/>
 
         <!-- Coding, https://checkstyle.sourceforge.io/checks/coding/index.html -->
+        <module name="ArrayTrailingComma"/>
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <module name="IllegalInstantiation"/>
