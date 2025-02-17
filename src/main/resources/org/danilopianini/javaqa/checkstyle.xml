@@ -125,6 +125,7 @@
         <module name="SuperClone"/>
         <module name="SuperFinalize"/>
         <module name="UnnecessaryParentheses"/>
+        <module name="UnnecessarySemicolonAfterOuterTypeDeclaration"/>
 
         <!-- Checks for missing Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
