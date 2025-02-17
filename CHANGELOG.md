@@ -1,3 +1,14 @@
+## [1.95.1](https://github.com/DanySK/gradle-java-qa/compare/1.95.0...1.95.1) (2025-02-17)
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.123 ([#1093](https://github.com/DanySK/gradle-java-qa/issues/1093)) ([c399d7e](https://github.com/DanySK/gradle-java-qa/commit/c399d7ed52fc4a8ab2023f412e0d5fec899c6b67))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.124 ([#1094](https://github.com/DanySK/gradle-java-qa/issues/1094)) ([56b335e](https://github.com/DanySK/gradle-java-qa/commit/56b335e2a309a084e73592693c313253c3448dda))
+
+### Bug Fixes
+
+* disable checkstyle's [`MissingSwitchDefault`](https://checkstyle.sourceforge.io/checks/coding/missingswitchdefault.html) as it conflicts with exhaustive switch checks from Java 21+ ([#1095](https://github.com/DanySK/gradle-java-qa/issues/1095)) ([417e070](https://github.com/DanySK/gradle-java-qa/commit/417e070159933d033e6401e790f167a2bd908c9d))
+
 ## [1.95.0](https://github.com/DanySK/gradle-java-qa/compare/1.94.0...1.95.0) (2025-02-14)
 
 ### Dependency updates
