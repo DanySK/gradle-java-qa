@@ -63,7 +63,9 @@
         <module name="EmptyBlock"/>
         <module name="EmptyCatchBlock"/>
         <module name="LeftCurly"/>
-        <module name="NeedBraces"/>
+        <module name="NeedBraces">
+            <property name="allowEmptyLoopBody" value="true"/>
+        </module>
         <module name="RightCurly"/>
 
         <!-- Checks for missing Javadoc comments. -->
