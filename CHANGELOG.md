@@ -1,3 +1,42 @@
+## [1.96.0](https://github.com/DanySK/gradle-java-qa/compare/1.95.1...1.96.0) (2025-02-17)
+
+### Features
+
+* **checkstyle:** enable `ArrayTrailingComma` ([b0bfc22](https://github.com/DanySK/gradle-java-qa/commit/b0bfc220e40e2caed61552f71b7f83134e5914f1))
+* **checkstyle:** enable `ConstructorsDeclarationGrouping` ([1c1fa30](https://github.com/DanySK/gradle-java-qa/commit/1c1fa3032de38aaf9f9b5b3c9a2a78f067ba55fb))
+* **checkstyle:** enable `CovariantEquals` ([9b1266a](https://github.com/DanySK/gradle-java-qa/commit/9b1266ad93afaf18a4a772eef7096a35d9818fe1))
+* **checkstyle:** enable `DeclarationOrder` ([443e185](https://github.com/DanySK/gradle-java-qa/commit/443e1858520e72fe16831e4969f0903b98b29b5f))
+* **checkstyle:** enable `DefaultComesLast` ([edcfc12](https://github.com/DanySK/gradle-java-qa/commit/edcfc12251096ca7178ed61f45c5af66ac3d3eb1))
+* **checkstyle:** enable `EmptyCatchBlock` ([4b5b9e8](https://github.com/DanySK/gradle-java-qa/commit/4b5b9e899a4bf10178bcce1e68b602e53141b01b))
+* **checkstyle:** enable `EqualsAvoidNull` ([c93925a](https://github.com/DanySK/gradle-java-qa/commit/c93925a01fa45b4690383c8e6fbe762a6c157704))
+* **checkstyle:** enable `ExplicitInitialization` ([d379667](https://github.com/DanySK/gradle-java-qa/commit/d37966723207dd6dfcefef38757ccae918573162))
+* **checkstyle:** enable `FinalLocalVariable` ([1d38469](https://github.com/DanySK/gradle-java-qa/commit/1d38469ef33cd34773fe433a97cf898e752b3792))
+* **checkstyle:** enable rule `InnerTypeLast` ([575c2e7](https://github.com/DanySK/gradle-java-qa/commit/575c2e7d7710ace818814d76cdf416d61ea34c24))
+* **checkstyle:** enable rule `MutableException` ([9f4a16c](https://github.com/DanySK/gradle-java-qa/commit/9f4a16c37907d013c7ad73fd440c67f87a99db43))
+* **checkstyle:** enable rule `OneTopLevelClass` ([054ac75](https://github.com/DanySK/gradle-java-qa/commit/054ac750d9cfce6f90dffa86bcfb82904d45b543))
+* **checkstyle:** enable rule `SealedShouldHavePermitsList` ([26b2664](https://github.com/DanySK/gradle-java-qa/commit/26b2664827de7d3629645f374b86b889a20fbb39))
+
+### Bug Fixes
+
+* **checkstyle:** add rule `AnnotationLocation` ([2cfc482](https://github.com/DanySK/gradle-java-qa/commit/2cfc4825c0d837acb43dd805f3638c004163d520))
+* **checkstyle:** add rule `AnnotationUseStyle` ([ed772cf](https://github.com/DanySK/gradle-java-qa/commit/ed772cf30a64d93cc45cbdfc21ced25dec32c313))
+* **checkstyle:** add rule `MissingDeprecated` ([d29c9b4](https://github.com/DanySK/gradle-java-qa/commit/d29c9b479cdb8272727b7fd572f58a4304795734))
+* **checkstyle:** add rule `MissingOverride` ([8c57391](https://github.com/DanySK/gradle-java-qa/commit/8c57391dae14faa1846e62bc54a242af10c4d739))
+* **checkstyle:** allow `allowEmptyLoopBody` ([babe23e](https://github.com/DanySK/gradle-java-qa/commit/babe23eeebcc85db29765fab72cf4b0ac6deea6c))
+* **checkstyle:** allow nested block in `switch` ([d2882da](https://github.com/DanySK/gradle-java-qa/commit/d2882daf84d93b081300ad64f7e7ad8786368b3c))
+* **checkstyle:** disable `MissingSwitchDefault` as it conflicts with Java 21+ exhaustive switch checks ([963370e](https://github.com/DanySK/gradle-java-qa/commit/963370e1acf4c47ec4ee37b76e15117cf7f06a95))
+* **pmd:** disable `UnnecessaryConstructor` as it conflicts with Java 21+ warning if auto-generated methods are not documented ([fb30615](https://github.com/DanySK/gradle-java-qa/commit/fb30615028253c2003e4f2ff7a7386378e83110d))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.9 ([#1096](https://github.com/DanySK/gradle-java-qa/issues/1096)) ([5d4267b](https://github.com/DanySK/gradle-java-qa/commit/5d4267bdf6a2d764f8621a6eb5051b25f71839e4))
+
+### Style improvements
+
+* **checkstyle:** add reference for annotation rules ([53094da](https://github.com/DanySK/gradle-java-qa/commit/53094da41c61d5ec050086011025e6068c9c2461))
+* **checkstyle:** simplify rules declaration ([51fd9b1](https://github.com/DanySK/gradle-java-qa/commit/51fd9b11148ca3f23010f22e46296c6759140c51))
+* **checkstyle:** sort rules declaration ([53a5b33](https://github.com/DanySK/gradle-java-qa/commit/53a5b336a44ca78ef5c217a67d71fb949659f7f9))
+
 ## [1.95.1](https://github.com/DanySK/gradle-java-qa/compare/1.95.0...1.95.1) (2025-02-17)
 
 ### Dependency updates
