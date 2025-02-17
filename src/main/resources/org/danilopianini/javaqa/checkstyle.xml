@@ -141,6 +141,7 @@
 
         <!-- Javadoc Comments, https://checkstyle.sourceforge.io/checks/javadoc/index.html -->
         <module name="AtclauseOrder"/>
+        <module name="InvalidJavadocPosition"/>
         <module name="MissingJavadocMethod">
             <property name="scope" value="protected"/>
         </module>
