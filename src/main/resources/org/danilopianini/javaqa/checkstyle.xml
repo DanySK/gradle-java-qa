@@ -129,6 +129,7 @@
         <module name="UnnecessarySemicolonAfterTypeMemberDeclaration"/>
         <module name="UnnecessarySemicolonInEnumeration"/>
         <module name="UnnecessarySemicolonInTryWithResources"/>
+        <module name="UnusedLocalVariable"/>
 
         <!-- Checks for missing Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
