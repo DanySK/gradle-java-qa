@@ -42,7 +42,9 @@
     <module name="FileLength"/>
 
     <!-- Whitespace, https://checkstyle.sourceforge.io/checks/whitespace/index.html -->
-    <module name="FileTabCharacter"/>
+    <module name="FileTabCharacter">
+        <property name="fileExtensions" value="java, kt, kts"/>
+    </module>
 
     <!-- Tree Walker-->
     <module name="TreeWalker">
