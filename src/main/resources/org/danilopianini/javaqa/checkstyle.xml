@@ -45,11 +45,14 @@
         <property name="message" value="CRLF and CR line endings are prohibited, but this file uses them."/>
     </module>
     <module name="TreeWalker">
+        <!-- Custom suppressions-->
         <module name="SuppressionCommentFilter">
             <property name="offCommentFormat" value="CHECKSTYLE\: ([\w\|]+) OFF"/>
             <property name="onCommentFormat" value="CHECKSTYLE\: ([\w\|]+) ON"/>
             <property name="checkFormat" value="$1"/>
         </module>
+        <!-- Annotations -->
+        <module name="AnnotationLocation"/>
         <!-- Checks for missing Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
         <module name="MissingJavadocMethod">
