@@ -92,6 +92,10 @@
         <module name="EqualsAvoidNull"/>
         <module name="EqualsHashCode"/>
         <module name="ExplicitInitialization"/>
+        <module name="FinalLocalVariable">
+            <property name="tokens" value="VARIABLE_DEF,PARAMETER_DEF"/>
+            <property name="validateEnhancedForLoopVariable" value="true"/>
+        </module>
         <module name="IllegalInstantiation"/>
         <module name="InnerAssignment"/>
         <module name="MagicNumber">
