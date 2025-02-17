@@ -87,6 +87,7 @@
         <module name="ConstructorsDeclarationGrouping"/>
         <module name="CovariantEquals"/>
         <module name="DeclarationOrder"/>
+        <module name="DefaultComesLast"/>
         <module name="EmptyStatement"/>
         <module name="EqualsHashCode"/>
         <module name="IllegalInstantiation"/>
