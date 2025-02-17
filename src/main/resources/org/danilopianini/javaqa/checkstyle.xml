@@ -128,6 +128,7 @@
         <module name="UnnecessarySemicolonAfterOuterTypeDeclaration"/>
         <module name="UnnecessarySemicolonAfterTypeMemberDeclaration"/>
         <module name="UnnecessarySemicolonInEnumeration"/>
+        <module name="UnnecessarySemicolonInTryWithResources"/>
 
         <!-- Checks for missing Javadoc comments. -->
         <!-- See http://checkstyle.sf.net/config_javadoc.html -->
