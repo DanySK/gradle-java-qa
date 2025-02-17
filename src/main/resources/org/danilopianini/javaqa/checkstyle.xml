@@ -175,6 +175,7 @@
             <property name="allowIfAllCharactersEscaped" value="true"/>
             <property name="allowIfAllCharactersEscaped" value="true"/>
         </module>
+        <module name="CommentsIndentation"/>
         <module name="FinalParameters"/>
         <module name="TodoComment">
             <property name="severity" value="info"/>
