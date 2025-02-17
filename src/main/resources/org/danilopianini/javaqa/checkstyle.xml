@@ -166,6 +166,18 @@
         <module name="NonEmptyAtclauseDescription"/>
         <module name="RequireEmptyLineBeforeBlockTagGroup"/>
         <module name="SingleLineJavadoc"/>
+
+        <!-- Metrics, https://checkstyle.sourceforge.io/checks/metrics/index.html -->
+        <module name="ArrayTypeStyle"/>
+        <module name="AvoidEscapedUnicodeCharacters"/>
+        <module name="FinalParameters"/>
+        <module name="TodoComment">
+            <property name="severity" value="info"/>
+        </module>
+        <module name="UpperEll"/>
+
+        <!-- Miscellaneous, https://checkstyle.sourceforge.io/checks/misc/index.html -->
+
         <!-- Checks for Naming Conventions. -->
         <!-- See http://checkstyle.sf.net/config_naming.html -->
         <module name="ConstantName"/>
@@ -196,13 +208,5 @@
         <!-- See http://checkstyle.sf.net/config_modifiers.html -->
         <module name="ModifierOrder"/>
         <module name="RedundantModifier"/>
-        <!-- Miscellaneous other checks. -->
-        <!-- See http://checkstyle.sf.net/config_misc.html -->
-        <module name="ArrayTypeStyle"/>
-        <module name="FinalParameters"/>
-        <module name="TodoComment">
-            <property name="severity" value="info"/>
-        </module>
-        <module name="UpperEll"/>
     </module>
 </module>
