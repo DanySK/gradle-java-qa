@@ -195,6 +195,7 @@
 
         <!-- Naming Conventions, https://checkstyle.sourceforge.io/checks/naming/index.html -->
         <module name="AbstractClassName"/>
+        <module name="CatchParameterName"/>
         <module name="ConstantName"/>
         <module name="LocalFinalVariableName"/>
         <module name="LocalVariableName"/>
