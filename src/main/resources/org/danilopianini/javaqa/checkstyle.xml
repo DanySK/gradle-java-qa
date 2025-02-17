@@ -184,6 +184,7 @@
             <property name="severity" value="info"/>
         </module>
         <module name="UncommentedMain"/>
+        <module name="UniqueProperties"/>
         <module name="UpperEll"/>
 
         <!-- Miscellaneous, https://checkstyle.sourceforge.io/checks/misc/index.html -->
