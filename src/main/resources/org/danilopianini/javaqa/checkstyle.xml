@@ -73,6 +73,7 @@
         <module name="HideUtilityClassConstructor"/>
         <module name="InnerTypeLast"/>
         <module name="InterfaceIsType"/>
+        <module name="MutableException"/>
         <module name="VisibilityModifier"/>
 
         <!-- Checks for missing Javadoc comments. -->
