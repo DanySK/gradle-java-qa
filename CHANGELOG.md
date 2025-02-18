@@ -1,3 +1,10 @@
+## [1.97.2](https://github.com/DanySK/gradle-java-qa/compare/1.97.1...1.97.2) (2025-02-18)
+
+### Bug Fixes
+
+* **checkstyle:** disable `MissingNullCaseInSwitch` ([f2d29d1](https://github.com/DanySK/gradle-java-qa/commit/f2d29d1a9e52d44d92538ded1a4beb5e6a6c6846))
+* **checkstyle:** permit `-`, `[`, `]`, `{`, and `}` ([9fcc566](https://github.com/DanySK/gradle-java-qa/commit/9fcc566d88398da498b75168d01397ef346550b9))
+
 ## [1.97.1](https://github.com/DanySK/gradle-java-qa/compare/1.97.0...1.97.1) (2025-02-17)
 
 ### Bug Fixes
