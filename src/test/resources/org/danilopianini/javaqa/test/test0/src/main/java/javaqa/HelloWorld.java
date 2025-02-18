@@ -17,5 +17,7 @@ final class HelloWorld {
             .forEach(System.out::println);
         System.out.println("Hello, World -> " + anotherVar); // NOPMD
         System.out.println("[ " + System.out + " " + System.class + " " + Runtime.class + " " + anotherVar + " ]"); // NOPMD
+        System.out.println("[ " + System.out + "-" + System.class + "-" + Runtime.class + "-" + anotherVar + " ]"); // NOPMD
+        System.out.println(Arrays.toString(new int[] {1, 2, 3, 8, 16, 32, 100})); // NOPMD
     }
 }
