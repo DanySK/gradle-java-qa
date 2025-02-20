@@ -117,7 +117,7 @@
         <!-- <module name="MissingNullCaseInSwitch"/> -->
         <module name="MultipleStringLiterals">
             <!-- ignore strings used as separators, like ", " -->
-            <property name="ignoreStringsRegexp" value='^("\s*(,|;|:|#|-|\[|\]|\{|\}|\|)*\s*")$'/>
+            <property name="ignoreStringsRegexp" value='^("\s*(,|;|:|#|-|\[|\]|\{|\}|\.|\|)*\s*")$'/>
             <property name="allowedDuplicates" value="2"/>
         </module>
         <module name="MultipleVariableDeclarations"/>
