@@ -1,3 +1,17 @@
+## [1.97.3](https://github.com/DanySK/gradle-java-qa/compare/1.97.2...1.97.3) (2025-02-20)
+
+### Dependency updates
+
+* **deps:** update plugin com.gradle.develocity to v3.19.2 ([#1097](https://github.com/DanySK/gradle-java-qa/issues/1097)) ([22e7d0a](https://github.com/DanySK/gradle-java-qa/commit/22e7d0a2346fa8861369af0397897ffbce29328e))
+
+### Bug Fixes
+
+* **checkstyle:** allow `.` as separator ([8206494](https://github.com/DanySK/gradle-java-qa/commit/8206494408c5926f73717a5e621b500e13c33028))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.10 ([#1098](https://github.com/DanySK/gradle-java-qa/issues/1098)) ([33341a9](https://github.com/DanySK/gradle-java-qa/commit/33341a9f327db7d40f992ff65f272b7f99bdac9f))
+
 ## [1.97.2](https://github.com/DanySK/gradle-java-qa/compare/1.97.1...1.97.2) (2025-02-18)
 
 ### Bug Fixes
