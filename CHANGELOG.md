@@ -1,3 +1,14 @@
+## [1.98.0](https://github.com/DanySK/gradle-java-qa/compare/1.97.3...1.98.0) (2025-02-23)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.21.3 ([#1100](https://github.com/DanySK/gradle-java-qa/issues/1100)) ([dce2fe3](https://github.com/DanySK/gradle-java-qa/commit/dce2fe3574654ca65dd9f6003215655fe33e3c36))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.125 ([#1099](https://github.com/DanySK/gradle-java-qa/issues/1099)) ([6247d65](https://github.com/DanySK/gradle-java-qa/commit/6247d656ecbc00e88204fc38798db6f275e8cd30))
+
+### Tests
+
+* add check on setter method ([8c57b10](https://github.com/DanySK/gradle-java-qa/commit/8c57b109ff9b6afd0d454de90ec569e69d1fd2c7))
+
 ## [1.97.3](https://github.com/DanySK/gradle-java-qa/compare/1.97.2...1.97.3) (2025-02-20)
 
 ### Dependency updates
