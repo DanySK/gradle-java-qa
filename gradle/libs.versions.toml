@@ -1,6 +1,6 @@
 [versions]
 cpd-gradle = "3.5"
-checkstyle = "10.21.2"
+checkstyle = "10.21.3"
 dokka = "2.0.0"
 jacoco = "0.8.12"
 konf = "1.1.2"
