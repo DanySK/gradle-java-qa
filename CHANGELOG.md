@@ -1,3 +1,12 @@
+## [1.99.0](https://github.com/DanySK/gradle-java-qa/compare/1.98.0...1.99.0) (2025-02-27)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.1.6 ([#1104](https://github.com/DanySK/gradle-java-qa/issues/1104)) ([2002630](https://github.com/DanySK/gradle-java-qa/commit/20026300e506acce1bd924c6e3028eb0dd0f8920))
+* **deps:** update dependency gradle to v8.13 ([#1103](https://github.com/DanySK/gradle-java-qa/issues/1103)) ([700152d](https://github.com/DanySK/gradle-java-qa/commit/700152d453b9d4eb3778ec938c1056a6424d5ca9))
+* **deps:** update plugin multijvmtesting to v3.2.3 ([#1101](https://github.com/DanySK/gradle-java-qa/issues/1101)) ([b4e3321](https://github.com/DanySK/gradle-java-qa/commit/b4e3321e71bea6c46b05ae98f05a107fc511eda4))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.21 ([#1102](https://github.com/DanySK/gradle-java-qa/issues/1102)) ([8633210](https://github.com/DanySK/gradle-java-qa/commit/8633210813272e25c85d54d9f8332f1a30d19f58))
+
 ## [1.98.0](https://github.com/DanySK/gradle-java-qa/compare/1.97.3...1.98.0) (2025-02-23)
 
 ### Dependency updates
