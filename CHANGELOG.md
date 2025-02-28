@@ -1,3 +1,14 @@
+## [1.100.0](https://github.com/DanySK/gradle-java-qa/compare/1.99.0...1.100.0) (2025-02-28)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.11.0 ([#1107](https://github.com/DanySK/gradle-java-qa/issues/1107)) ([98329e9](https://github.com/DanySK/gradle-java-qa/commit/98329e9abc921cf73d820aeeb6cf4457ac28c10b))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.11 ([#1105](https://github.com/DanySK/gradle-java-qa/issues/1105)) ([3cb8db5](https://github.com/DanySK/gradle-java-qa/commit/3cb8db589af478b21b6e0e1b5526ebaedc98a79b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.12 ([#1106](https://github.com/DanySK/gradle-java-qa/issues/1106)) ([cb4894b](https://github.com/DanySK/gradle-java-qa/commit/cb4894b70b74b6dd8c2269bdfc2eeb248eb8a0b4))
+
 ## [1.99.0](https://github.com/DanySK/gradle-java-qa/compare/1.98.0...1.99.0) (2025-02-27)
 
 ### Dependency updates
