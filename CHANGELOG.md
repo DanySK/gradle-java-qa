@@ -1,3 +1,10 @@
+## [1.101.0](https://github.com/DanySK/gradle-java-qa/compare/1.100.0...1.101.0) (2025-03-02)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.9.2 ([#1108](https://github.com/DanySK/gradle-java-qa/issues/1108)) ([686aa0d](https://github.com/DanySK/gradle-java-qa/commit/686aa0dbde55460f36679442b85fb9c54976e818))
+* **deps:** update plugin publishoncentral to v8.0.4 ([#1109](https://github.com/DanySK/gradle-java-qa/issues/1109)) ([2f18fdb](https://github.com/DanySK/gradle-java-qa/commit/2f18fdbcc1e76b9b3aa8c1fb634de9127106e56e))
+
 ## [1.100.0](https://github.com/DanySK/gradle-java-qa/compare/1.99.0...1.100.0) (2025-02-28)
 
 ### Dependency updates
