@@ -1,3 +1,9 @@
+## [1.102.0](https://github.com/DanySK/gradle-java-qa/compare/1.101.0...1.102.0) (2025-03-04)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.21.4 ([#1110](https://github.com/DanySK/gradle-java-qa/issues/1110)) ([866ad6e](https://github.com/DanySK/gradle-java-qa/commit/866ad6e01178cb76075920abaee47c20a36fde3a))
+
 ## [1.101.0](https://github.com/DanySK/gradle-java-qa/compare/1.100.0...1.101.0) (2025-03-02)
 
 ### Dependency updates
