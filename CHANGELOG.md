@@ -1,3 +1,10 @@
+## [1.104.0](https://github.com/DanySK/gradle-java-qa/compare/1.103.0...1.104.0) (2025-03-15)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.9.3 ([#1113](https://github.com/DanySK/gradle-java-qa/issues/1113)) ([a996c23](https://github.com/DanySK/gradle-java-qa/commit/a996c231341a8b6d342c17a85ad484a51fd25f6e))
+* **deps:** update plugin tasktree to v4.0.1 ([#1112](https://github.com/DanySK/gradle-java-qa/issues/1112)) ([9b52798](https://github.com/DanySK/gradle-java-qa/commit/9b5279884dcd07e707c9000985d6bec98612f295))
+
 ## [1.103.0](https://github.com/DanySK/gradle-java-qa/compare/1.102.0...1.103.0) (2025-03-05)
 
 ### Dependency updates
