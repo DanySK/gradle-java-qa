@@ -158,15 +158,12 @@
         <module name="JavadocTagContinuationIndentation"/>
         <module name="JavadocType"/>
         <module name="JavadocVariable">
-            <property name="scope" value="protected"/>
+            <property name="accessModifiers" value="protected"/>
         </module>
         <module name="MissingJavadocMethod">
             <property name="scope" value="protected"/>
         </module>
         <module name="MissingJavadocType">
-            <property name="scope" value="protected"/>
-        </module>
-        <module name="JavadocVariable">
             <property name="scope" value="protected"/>
         </module>
         <module name="NonEmptyAtclauseDescription"/>
