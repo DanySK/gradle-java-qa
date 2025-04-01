@@ -1,3 +1,10 @@
+## [1.106.0](https://github.com/DanySK/gradle-java-qa/compare/1.105.0...1.106.0) (2025-04-01)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.22.0 ([21c3c14](https://github.com/DanySK/gradle-java-qa/commit/21c3c1404f79f3c45cd947487df1afea0f21bc28))
+* **deps:** update plugin kotlin-qa to v0.85.0 ([#1130](https://github.com/DanySK/gradle-java-qa/issues/1130)) ([74e8247](https://github.com/DanySK/gradle-java-qa/commit/74e82476f67e76f041e8c8b564c4bcc63e3aebc8))
+
 ## [1.105.0](https://github.com/DanySK/gradle-java-qa/compare/1.104.0...1.105.0) (2025-03-28)
 
 ### Dependency updates
