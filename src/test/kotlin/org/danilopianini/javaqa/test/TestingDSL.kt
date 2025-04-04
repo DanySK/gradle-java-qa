@@ -7,16 +7,9 @@ object Root : ConfigSpec("") {
     val tests by required<List<Test>>()
 }
 
-data class Test(
-    val description: String,
-    val configuration: Configuration,
-    val expectation: Expectation,
-)
+data class Test(val description: String, val configuration: Configuration, val expectation: Expectation)
 
-data class Configuration(
-    val tasks: List<String>,
-    val options: List<String> = emptyList(),
-)
+data class Configuration(val tasks: List<String>, val options: List<String> = emptyList())
 
 @Suppress("ConstructorParameterNaming")
 data class Expectation(
@@ -26,15 +19,10 @@ data class Expectation(
     val output_contains: List<String> = emptyList(),
 )
 
-data class ExistingFile(
-    val name: String,
-    val contents: String = ".*",
-    val everyLine: Boolean = false,
-) {
+data class ExistingFile(val name: String, val contents: String = ".*", val everyLine: Boolean = false) {
     private fun Sequence<Boolean>.matches(): Boolean = if (everyLine) all { it } else any { it }
 
-    fun isValid() =
-        with(File(name)) {
-            exists() && readLines().asSequence().map { it.matches(Regex(contents)) }.matches()
-        }
+    fun isValid() = with(File(name)) {
+        exists() && readLines().asSequence().map { it.matches(Regex(contents)) }.matches()
+    }
 }

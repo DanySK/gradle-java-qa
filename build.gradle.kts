@@ -81,7 +81,7 @@ tasks.withType<KotlinCompilationTask<*>>().configureEach { dependsOn(copyToolVer
 tasks.withType<ProcessResources>().configureEach { dependsOn(copyJavaVersion) }
 
 multiJvm {
-    val minJavaVersion = 8
+    val minJavaVersion = 11
     jvmVersionForCompilation.set(minJavaVersion)
     maximumSupportedJvmVersion.set(latestJavaSupportedByGradle)
     testByDefaultWith(minJavaVersion, latestJavaSupportedByGradle)
@@ -91,7 +91,9 @@ dependencies {
     api(gradleApi())
     api(gradleKotlinDsl())
     api(libs.bundles.qa.plugins)
+
     implementation(kotlin("stdlib-jdk8"))
+
     testImplementation(gradleTestKit())
     testImplementation(libs.konf.yaml)
     testImplementation(libs.classgraph)

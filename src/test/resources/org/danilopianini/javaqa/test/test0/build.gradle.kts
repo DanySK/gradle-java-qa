@@ -8,6 +8,10 @@ dependencies {
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
 }
 
+javaQA {
+    javaVersion = 21
+}
+
 tasks.withType<Test>() {
     useJUnitPlatform()
 }

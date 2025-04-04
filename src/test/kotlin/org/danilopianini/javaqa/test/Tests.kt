@@ -73,15 +73,13 @@ class Tests :
     companion object {
         val log: Logger = LoggerFactory.getLogger(Tests::class.java)
 
-        private fun BuildResult.outcomeOf(name: String) =
-            checkNotNull(task(":$name")?.outcome) {
-                "Task $name was not present among the executed tasks"
-            }
+        private fun BuildResult.outcomeOf(name: String) = checkNotNull(task(":$name")?.outcome) {
+            "Task $name was not present among the executed tasks"
+        }
 
-        private fun folder(closure: TemporaryFolder.() -> Unit) =
-            TemporaryFolder().apply {
-                create()
-                closure()
-            }
+        private fun folder(closure: TemporaryFolder.() -> Unit) = TemporaryFolder().apply {
+            create()
+            closure()
+        }
     }
 }

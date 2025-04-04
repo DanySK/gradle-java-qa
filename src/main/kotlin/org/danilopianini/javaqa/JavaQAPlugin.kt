@@ -23,6 +23,7 @@ import org.gradle.api.provider.Provider
 import org.gradle.api.tasks.javadoc.Javadoc
 import org.gradle.external.javadoc.CoreJavadocOptions
 import org.gradle.jvm.toolchain.JavaLanguageVersion
+import org.gradle.jvm.toolchain.JavaLauncher
 import org.gradle.jvm.toolchain.JavaToolchainService
 import org.gradle.kotlin.dsl.apply
 import org.gradle.kotlin.dsl.configure
@@ -36,6 +37,8 @@ import org.gradle.testing.jacoco.tasks.JacocoReport
 import java.io.File
 import java.util.Properties
 import javax.inject.Inject
+import kotlin.reflect.KProperty1
+import kotlin.reflect.full.memberProperties
 
 /**
  * Just a template.
@@ -58,10 +61,23 @@ abstract class JavaQAPlugin : Plugin<Project> {
             val baseSpotBugsExcludes = loadResource(SPOTBUGS_SUPPRESSIONS_RESOURCE)
             val baseCheckstyleExcludes = loadResource(CHECKSTYLE_SUPPRESSIONS_RESOURCE)
             val checkstyleConfiguration = loadResource(CHECKSTYLE_PATH)
-            val javaVersion = loadResource(JAVA_VERSION_RESOURCE).trim().substringBefore('.').toInt()
+            val defaultJavaVersion = loadResource(JAVA_VERSION_RESOURCE).trim().substringBefore('.').toInt()
             val pmdConfiguration = loadResource(PMD_PATH)
             val extension: JavaQAExtension =
                 project.extensions.create("javaQA", JavaQAExtension::class.java, this)
+            runCatching {
+                project.extensions.findByName("multiJvm")?.let { multiJvm: Any ->
+                    logger.info("${this::class.simpleName} detected the application of the MultiJVMTesting plugin")
+                    val property = multiJvm::class.memberProperties.single { it.name == "jvmVersionForCompilation" }
+
+                    @Suppress("UNCHECKED_CAST")
+                    val jvmVersionProvider = (property as KProperty1<Any, *>).get(multiJvm) as Provider<Int>
+                    extension.javaVersion.convention(jvmVersionProvider)
+                    logger.info("${this::class.simpleName} is defaulting to the Java version from MultiJVMTesting")
+                }
+            }.onFailure {
+                logger.error("MultiJVMTestingPlugin configuration failed: ", it)
+            }
             plugins.withType(JavaPlugin::class.java) { _ ->
                 // Apply the Java QA plugins
                 with(plugins) {
@@ -72,9 +88,11 @@ abstract class JavaQAPlugin : Plugin<Project> {
                     apply(SpotBugsPlugin::class)
                 }
                 // Prepare the Java launcher
-                val javaLauncher =
+                val javaLauncher: Provider<JavaLauncher> =
                     javaToolchains.launcherFor {
-                        it.languageVersion.set(JavaLanguageVersion.of(javaVersion))
+                        it.languageVersion.set(
+                            JavaLanguageVersion.of(extension.javaVersion.getOrElse(defaultJavaVersion)),
+                        )
                     }
                 // Javadoc
                 tasks.withType<Javadoc> {
@@ -102,10 +120,9 @@ abstract class JavaQAPlugin : Plugin<Project> {
                 }
 
                 // Checkstyle
-                fun Provider<String>.fromFileOrItself(): String =
-                    getOrElse("").let { maybePath ->
-                        File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
-                    }
+                fun Provider<String>.fromFileOrItself(): String = getOrElse("").let { maybePath ->
+                    File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
+                }
                 configureExtension<CheckstyleExtension> {
                     val checkstyleConfigurationFile = File(javaQADestination, CHECKSTYLE_CONFIGURATION_NAME)
                     // Create a task creating the default configuration
@@ -236,27 +253,24 @@ abstract class JavaQAPlugin : Plugin<Project> {
             extensions.configure(T::class) { it.action() }
         }
 
-        private fun File.createWithContent(source: String): File =
-            apply {
-                parentFile.mkdirs()
-                if (!exists() || readText() != source) {
-                    writeText(source)
-                }
+        private fun File.createWithContent(source: String): File = apply {
+            parentFile.mkdirs()
+            if (!exists() || readText() != source) {
+                writeText(source)
             }
+        }
 
-        private fun resource(path: String) =
-            checkNotNull(Thread.currentThread().contextClassLoader.getResource(path)) {
-                "Unable to access resource $path in the current classpath"
-            }
+        private fun resource(path: String) = checkNotNull(Thread.currentThread().contextClassLoader.getResource(path)) {
+            "Unable to access resource $path in the current classpath"
+        }
 
         private fun loadResource(path: String): String = resource(path).readText()
 
-        private fun versionOf(library: String): String =
-            Properties().run {
-                load(resource("META-INF/javaqa/tool-versions.properties").openStream())
-                checkNotNull(get(library)?.toString()) {
-                    "Unable to load version for $library"
-                }
+        private fun versionOf(library: String): String = Properties().run {
+            load(resource("META-INF/javaqa/tool-versions.properties").openStream())
+            checkNotNull(get(library)?.toString()) {
+                "Unable to load version for $library"
             }
+        }
     }
 }
