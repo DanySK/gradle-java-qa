@@ -1,3 +1,13 @@
+## [1.108.0](https://github.com/DanySK/gradle-java-qa/compare/1.107.0...1.108.0) (2025-04-04)
+
+### Features
+
+* add configurability of the java version ([438c03d](https://github.com/DanySK/gradle-java-qa/commit/438c03d5c16afd7dac66dd9369599f67ab9ef261))
+
+### Dependency updates
+
+* **deps:** update dependency org.jacoco:org.jacoco.core to v0.8.13 ([#1133](https://github.com/DanySK/gradle-java-qa/issues/1133)) ([482c156](https://github.com/DanySK/gradle-java-qa/commit/482c15666e67cceea8a88039d24818dca9840c6d))
+
 ## [1.107.0](https://github.com/DanySK/gradle-java-qa/compare/1.106.0...1.107.0) (2025-04-02)
 
 ### Dependency updates
