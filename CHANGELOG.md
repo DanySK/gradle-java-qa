@@ -1,3 +1,23 @@
+## [1.109.0](https://github.com/DanySK/gradle-java-qa/compare/1.108.0...1.109.0) (2025-04-22)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.1.9 ([#1145](https://github.com/DanySK/gradle-java-qa/issues/1145)) ([3942b83](https://github.com/DanySK/gradle-java-qa/commit/3942b835c9b1e07efc691d52ee5af42fd110b738))
+* **deps:** update dependency java to v24.0.1+9 ([#1143](https://github.com/DanySK/gradle-java-qa/issues/1143)) ([a100dcf](https://github.com/DanySK/gradle-java-qa/commit/a100dcfa87ea2f8e18d12481d6a9df723d804f6b))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v3.4.0 ([#1144](https://github.com/DanySK/gradle-java-qa/issues/1144)) ([373b234](https://github.com/DanySK/gradle-java-qa/commit/373b234441f9b999cf36021d9512eb9d3974bfc1))
+* **deps:** update plugin com.gradle.develocity to v4 ([#1135](https://github.com/DanySK/gradle-java-qa/issues/1135)) ([d9e2667](https://github.com/DanySK/gradle-java-qa/commit/d9e2667310bf416003df96509b470e0bad683737))
+* **deps:** update plugin gitsemver to v5 ([#1141](https://github.com/DanySK/gradle-java-qa/issues/1141)) ([c19d12b](https://github.com/DanySK/gradle-java-qa/commit/c19d12bc115f90ed21253dc69f91da282ce2addb))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.10.0 ([#1139](https://github.com/DanySK/gradle-java-qa/issues/1139)) ([8fee014](https://github.com/DanySK/gradle-java-qa/commit/8fee0143f5f083b67964b61b50227c7ea65cd72c))
+* **deps:** update plugin publishoncentral to v8.0.6 ([#1134](https://github.com/DanySK/gradle-java-qa/issues/1134)) ([71fafcd](https://github.com/DanySK/gradle-java-qa/commit/71fafcd6b8d74a5b27e8b280259266bf4af27d92))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v4.4.0 ([#1140](https://github.com/DanySK/gradle-java-qa/issues/1140)) ([5f99fb7](https://github.com/DanySK/gradle-java-qa/commit/5f99fb7bc46fd78137e95cfd0955aa2d1a3bd9d5))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.15 ([#1136](https://github.com/DanySK/gradle-java-qa/issues/1136)) ([ff39a86](https://github.com/DanySK/gradle-java-qa/commit/ff39a861185b26fc62e205ed9d2ffd127c022ebc))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.16 ([#1138](https://github.com/DanySK/gradle-java-qa/issues/1138)) ([41a9701](https://github.com/DanySK/gradle-java-qa/commit/41a97010787d6de02b118895c3d50ca84f2d50af))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.17 ([#1142](https://github.com/DanySK/gradle-java-qa/issues/1142)) ([bc25a15](https://github.com/DanySK/gradle-java-qa/commit/bc25a1588a464dc8b33281b8e4cd1710e74521f0))
+* **deps:** update dependency windows github actions runner to v2025 ([#1137](https://github.com/DanySK/gradle-java-qa/issues/1137)) ([079ec81](https://github.com/DanySK/gradle-java-qa/commit/079ec81da8d2a1f7fc0d5cb6b9c712e6cb4d8e90))
+
 ## [1.108.0](https://github.com/DanySK/gradle-java-qa/compare/1.107.0...1.108.0) (2025-04-04)
 
 ### Features
