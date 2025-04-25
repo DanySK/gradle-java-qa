@@ -7,7 +7,7 @@ konf = "1.1.2"
 kotlin = "2.1.20"
 kotest = "5.9.1"
 multi-jvm = "3.4.0"
-pmd = "7.12.0"
+pmd = "7.13.0"
 spotbugs = "4.9.3"
 spotbugs-gradle = "6.1.9"
 
