@@ -1,3 +1,15 @@
+## [1.111.0](https://github.com/DanySK/gradle-java-qa/compare/1.110.0...1.111.0) (2025-04-26)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.1.10 ([#1154](https://github.com/DanySK/gradle-java-qa/issues/1154)) ([29e1a04](https://github.com/DanySK/gradle-java-qa/commit/29e1a0464d7d20484fb4eeab891c0a9358c02a11))
+* **deps:** update dependency gradle to v8.14 ([#1148](https://github.com/DanySK/gradle-java-qa/issues/1148)) ([d219e33](https://github.com/DanySK/gradle-java-qa/commit/d219e33bb56f61a6e167812a98cec28a18e0eed4))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v3.4.1 ([#1149](https://github.com/DanySK/gradle-java-qa/issues/1149)) ([e0a30a5](https://github.com/DanySK/gradle-java-qa/commit/e0a30a5a495782d993841c10a09361d2de550b53))
+* **deps:** update plugin com.gradle.develocity to v4.0.1 ([#1150](https://github.com/DanySK/gradle-java-qa/issues/1150)) ([c78c19f](https://github.com/DanySK/gradle-java-qa/commit/c78c19f31b8d2d6877f58f5b0583625f3196457d))
+* **deps:** update plugin gitsemver to v5.1.2 ([#1151](https://github.com/DanySK/gradle-java-qa/issues/1151)) ([abdd053](https://github.com/DanySK/gradle-java-qa/commit/abdd053e1b3450be9b99c7f1fa825cd8f86e0061))
+* **deps:** update plugin kotlin-qa to v0.86.1 ([#1152](https://github.com/DanySK/gradle-java-qa/issues/1152)) ([4bda733](https://github.com/DanySK/gradle-java-qa/commit/4bda7337f79f66b5e8e2948422b47bc5e0af6598))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.23 ([#1153](https://github.com/DanySK/gradle-java-qa/issues/1153)) ([e9def82](https://github.com/DanySK/gradle-java-qa/commit/e9def82c7bad7be9eeb7e5799185d1d1eb102ff2))
+
 ## [1.110.0](https://github.com/DanySK/gradle-java-qa/compare/1.109.0...1.110.0) (2025-04-25)
 
 ### Dependency updates
