@@ -1,3 +1,10 @@
+## [1.112.0](https://github.com/DanySK/gradle-java-qa/compare/1.111.0...1.112.0) (2025-04-28)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.23.1 ([#1155](https://github.com/DanySK/gradle-java-qa/issues/1155)) ([7cbdc41](https://github.com/DanySK/gradle-java-qa/commit/7cbdc416aa9b7d70890851d922b2fa3d02b5f700))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.126 ([#1156](https://github.com/DanySK/gradle-java-qa/issues/1156)) ([f93921f](https://github.com/DanySK/gradle-java-qa/commit/f93921f7dde5fca2b98b669b3d454f44c325a180))
+
 ## [1.111.0](https://github.com/DanySK/gradle-java-qa/compare/1.110.0...1.111.0) (2025-04-26)
 
 ### Dependency updates
