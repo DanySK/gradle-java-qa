@@ -1,3 +1,15 @@
+## [1.113.0](https://github.com/DanySK/gradle-java-qa/compare/1.112.0...1.113.0) (2025-05-08)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.1.11 ([#1160](https://github.com/DanySK/gradle-java-qa/issues/1160)) ([dffbd13](https://github.com/DanySK/gradle-java-qa/commit/dffbd132258dff8e108aee604a38555feab645d9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.127 ([#1157](https://github.com/DanySK/gradle-java-qa/issues/1157)) ([e3b647a](https://github.com/DanySK/gradle-java-qa/commit/e3b647aed36c4bb6608247a58bcc49634312d40d))
+* **deps:** update plugin publishoncentral to v8.0.7 ([#1158](https://github.com/DanySK/gradle-java-qa/issues/1158)) ([40b6083](https://github.com/DanySK/gradle-java-qa/commit/40b6083af2b2ca1f2fbdf06dc4ee900e25bd3404))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.18 ([#1159](https://github.com/DanySK/gradle-java-qa/issues/1159)) ([6e841b8](https://github.com/DanySK/gradle-java-qa/commit/6e841b88f90bdff1b5a10b2afffd90d4806de585))
+
 ## [1.112.0](https://github.com/DanySK/gradle-java-qa/compare/1.111.0...1.112.0) (2025-04-28)
 
 ### Dependency updates
