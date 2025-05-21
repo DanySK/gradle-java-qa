@@ -1,3 +1,22 @@
+## [1.114.0](https://github.com/DanySK/gradle-java-qa/compare/1.113.0...1.114.0) (2025-05-21)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.1.12 ([#1171](https://github.com/DanySK/gradle-java-qa/issues/1171)) ([bfa0a8a](https://github.com/DanySK/gradle-java-qa/commit/bfa0a8a79d53ffdbbe9cdac642ebd9ce9d14ac26))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v3.4.2 ([#1162](https://github.com/DanySK/gradle-java-qa/issues/1162)) ([451de59](https://github.com/DanySK/gradle-java-qa/commit/451de599994afd62ae2ac537b989e55d5c4583bd))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.1.21 ([#1161](https://github.com/DanySK/gradle-java-qa/issues/1161)) ([353d0bc](https://github.com/DanySK/gradle-java-qa/commit/353d0bc0bb63002e0b69af70ae4be5144cee9b55))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.128 ([#1166](https://github.com/DanySK/gradle-java-qa/issues/1166)) ([6ec3e97](https://github.com/DanySK/gradle-java-qa/commit/6ec3e97f79c6921ba908c9e5c6001f1b9e58ce90))
+* **deps:** update plugin gitsemver to v5.1.3 ([#1163](https://github.com/DanySK/gradle-java-qa/issues/1163)) ([b46e028](https://github.com/DanySK/gradle-java-qa/commit/b46e028a10cddc92ca45af20ff61359b67479a08))
+* **deps:** update plugin kotlin-qa to v0.86.2 ([#1164](https://github.com/DanySK/gradle-java-qa/issues/1164)) ([e960600](https://github.com/DanySK/gradle-java-qa/commit/e9606002a064dedac52d4fa6e3d7f82d9164d4ca))
+* **deps:** update plugin kotlin-qa to v0.87.0 ([#1170](https://github.com/DanySK/gradle-java-qa/issues/1170)) ([39777b7](https://github.com/DanySK/gradle-java-qa/commit/39777b7df8760c25ba9b95d53c00103e32613b77))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.24 ([#1165](https://github.com/DanySK/gradle-java-qa/issues/1165)) ([dcc6848](https://github.com/DanySK/gradle-java-qa/commit/dcc68482a0e226b7fc8eaba475617b5a176f61d1))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v1 ([#1169](https://github.com/DanySK/gradle-java-qa/issues/1169)) ([b6f191c](https://github.com/DanySK/gradle-java-qa/commit/b6f191c60c80a79bf4a6e22f2b1a625821f6b736))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.19 ([#1167](https://github.com/DanySK/gradle-java-qa/issues/1167)) ([37a1bcf](https://github.com/DanySK/gradle-java-qa/commit/37a1bcf9f81cf3d646c79baf389175ea57639626))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.20 ([#1168](https://github.com/DanySK/gradle-java-qa/issues/1168)) ([c5b6292](https://github.com/DanySK/gradle-java-qa/commit/c5b6292d6a177ab7aab3340ff5fe9b42f98b37e3))
+
 ## [1.113.0](https://github.com/DanySK/gradle-java-qa/compare/1.112.0...1.113.0) (2025-05-08)
 
 ### Dependency updates
