@@ -9,7 +9,7 @@ kotest = "5.9.1"
 multi-jvm = "3.4.2"
 pmd = "7.13.0"
 spotbugs = "4.9.3"
-spotbugs-gradle = "6.1.11"
+spotbugs-gradle = "6.1.12"
 
 [libraries]
 checkstyle = { module = "com.puppycrawl.tools:checkstyle", version.ref = "checkstyle" }
