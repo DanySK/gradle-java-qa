@@ -1,3 +1,11 @@
+## [1.117.0](https://github.com/DanySK/gradle-java-qa/compare/1.116.0...1.117.0) (2025-05-30)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.14.0 ([#1186](https://github.com/DanySK/gradle-java-qa/issues/1186)) ([d54dcde](https://github.com/DanySK/gradle-java-qa/commit/d54dcdee8059b7b7b1363c7a3fbf378c3143b707))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v3.5.0 ([#1184](https://github.com/DanySK/gradle-java-qa/issues/1184)) ([cf4f7a7](https://github.com/DanySK/gradle-java-qa/commit/cf4f7a77a4dd99fa3075c9283b4a9ebdd30df602))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.132 ([#1185](https://github.com/DanySK/gradle-java-qa/issues/1185)) ([b2e56a6](https://github.com/DanySK/gradle-java-qa/commit/b2e56a6b78533a2603ebdb78e3cd0da325c41c0e))
+
 ## [1.116.0](https://github.com/DanySK/gradle-java-qa/compare/1.115.0...1.116.0) (2025-05-29)
 
 ### Dependency updates
