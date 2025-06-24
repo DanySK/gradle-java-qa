@@ -1,3 +1,13 @@
+## [1.121.0](https://github.com/DanySK/gradle-java-qa/compare/1.120.0...1.121.0) (2025-06-24)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v10.26.0 ([#1204](https://github.com/DanySK/gradle-java-qa/issues/1204)) ([18e207c](https://github.com/DanySK/gradle-java-qa/commit/18e207cec7477b37aae966750cc4f601f2cb9187))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v3.5.2 ([#1201](https://github.com/DanySK/gradle-java-qa/issues/1201)) ([211173e](https://github.com/DanySK/gradle-java-qa/commit/211173ef0c13af1efdef32c1711b76ab44955273))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.0 ([#1200](https://github.com/DanySK/gradle-java-qa/issues/1200)) ([75b16b9](https://github.com/DanySK/gradle-java-qa/commit/75b16b956088b220e159cd7d318ba863c57c7f4c))
+* **deps:** update plugin kotlin-qa to v0.89.2 ([#1202](https://github.com/DanySK/gradle-java-qa/issues/1202)) ([30e98ba](https://github.com/DanySK/gradle-java-qa/commit/30e98ba1980d3d283cface0a03aac53fde3a40ab))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.27 ([#1203](https://github.com/DanySK/gradle-java-qa/issues/1203)) ([7d58b58](https://github.com/DanySK/gradle-java-qa/commit/7d58b583ac42f0fa95cb55e3609d5b334eabf52f))
+
 ## [1.120.0](https://github.com/DanySK/gradle-java-qa/compare/1.119.0...1.120.0) (2025-06-21)
 
 ### Dependency updates
