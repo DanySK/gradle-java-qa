@@ -1,3 +1,10 @@
+## [1.123.0](https://github.com/DanySK/gradle-java-qa/compare/1.122.0...1.123.0) (2025-06-27)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.15.0 ([#1208](https://github.com/DanySK/gradle-java-qa/issues/1208)) ([67f913c](https://github.com/DanySK/gradle-java-qa/commit/67f913cde07449424ea1373cd3a369ce4e18d8ac))
+* **deps:** update node.js to 22.17 ([#1207](https://github.com/DanySK/gradle-java-qa/issues/1207)) ([335e0eb](https://github.com/DanySK/gradle-java-qa/commit/335e0ebc98b47164664faab40104114f01b7e9bb))
+
 ## [1.122.0](https://github.com/DanySK/gradle-java-qa/compare/1.121.0...1.122.0) (2025-06-25)
 
 ### Dependency updates
