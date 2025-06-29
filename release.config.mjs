@@ -1,6 +1,6 @@
 const publishCmd = `
 git tag -a -f \${nextRelease.version} \${nextRelease.version} -F CHANGELOG.md
-./gradlew uploadAllToMavenCentralNexus releaseStagingRepositoryOnMavenCentral || exit 1
+./gradlew publishAllPublicationsToProjectLocalRepository zipMavenCentralPortalPublication releaseMavenCentralPortalPublication || exit 1
 ./gradlew publishPlugins -Pgradle.publish.key=$GRADLE_PUBLISH_KEY -Pgradle.publish.secret=$GRADLE_PUBLISH_SECRET || exit 2  
 git push --force origin \${nextRelease.version} || exit 3
 ./gradlew publishJavaOSSRHPublicationToGithubRepository || true
