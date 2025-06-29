@@ -1,3 +1,13 @@
+## [1.123.1](https://github.com/DanySK/gradle-java-qa/compare/1.123.0...1.123.1) (2025-06-29)
+
+### Dependency updates
+
+* **deps:** update plugin kotlin-qa to v0.90.0 ([#1209](https://github.com/DanySK/gradle-java-qa/issues/1209)) ([592e667](https://github.com/DanySK/gradle-java-qa/commit/592e667f30389f08d366535acba79a58f25e3dc3))
+
+### Bug Fixes
+
+* **ci:** switch to Maven Central Portal ([91c1763](https://github.com/DanySK/gradle-java-qa/commit/91c17638e3566c8e55412b8845e5f4d6387721ae))
+
 ## [1.123.0](https://github.com/DanySK/gradle-java-qa/compare/1.122.0...1.123.0) (2025-06-27)
 
 ### Dependency updates
