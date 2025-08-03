@@ -1,3 +1,13 @@
+## [1.127.0](https://github.com/DanySK/gradle-java-qa/compare/1.126.0...1.127.0) (2025-08-03)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.2.3 ([#1238](https://github.com/DanySK/gradle-java-qa/issues/1238)) ([591eaf3](https://github.com/DanySK/gradle-java-qa/commit/591eaf355dfe486bbc1c20ab4fc82a90b27cf5ec))
+* **deps:** update node.js to 22.18 ([#1239](https://github.com/DanySK/gradle-java-qa/issues/1239)) ([5fd2ec6](https://github.com/DanySK/gradle-java-qa/commit/5fd2ec629ca9db527845d2d3ee5246aad98a0471))
+* **deps:** update plugin kotlin-qa to v0.92.0 ([#1234](https://github.com/DanySK/gradle-java-qa/issues/1234)) ([a2d5aa0](https://github.com/DanySK/gradle-java-qa/commit/a2d5aa0ed5793f4d2ef503167f66c522eb2fdbb8))
+* **deps:** update plugin kotlin-qa to v0.93.0 ([#1236](https://github.com/DanySK/gradle-java-qa/issues/1236)) ([5cd3f42](https://github.com/DanySK/gradle-java-qa/commit/5cd3f425c1fab39638deb9c27339fa5f550f6d81))
+* **deps:** update plugin publishoncentral to v9.1.0 ([#1235](https://github.com/DanySK/gradle-java-qa/issues/1235)) ([a1bda4e](https://github.com/DanySK/gradle-java-qa/commit/a1bda4e631c1c52b5bf4912cff1ccf6a7c8d7742))
+
 ## [1.126.0](https://github.com/DanySK/gradle-java-qa/compare/1.125.0...1.126.0) (2025-07-25)
 
 ### Dependency updates
