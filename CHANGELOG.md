@@ -1,3 +1,14 @@
+## [1.128.0](https://github.com/DanySK/gradle-java-qa/compare/1.127.0...1.128.0) (2025-08-07)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v11 ([#1242](https://github.com/DanySK/gradle-java-qa/issues/1242)) ([794e322](https://github.com/DanySK/gradle-java-qa/commit/794e32208b323dd94640ff091774632e4d4a295c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.139 ([#1241](https://github.com/DanySK/gradle-java-qa/issues/1241)) ([2a9cfa1](https://github.com/DanySK/gradle-java-qa/commit/2a9cfa16d418279917210eba69159b9a78d92616))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.2 ([#1240](https://github.com/DanySK/gradle-java-qa/issues/1240)) ([24a80e3](https://github.com/DanySK/gradle-java-qa/commit/24a80e38d76e209c22794942a7fd1a238fc71623))
+
 ## [1.127.0](https://github.com/DanySK/gradle-java-qa/compare/1.126.0...1.127.0) (2025-08-03)
 
 ### Dependency updates
