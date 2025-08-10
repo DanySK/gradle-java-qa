@@ -8,7 +8,7 @@ kotlin = "2.2.0"
 kotest = "5.9.1"
 multi-jvm = "4.0.1"
 pmd = "7.16.0"
-spotbugs = "4.9.3"
+spotbugs = "4.9.4"
 spotbugs-gradle = "6.2.3"
 
 [libraries]
