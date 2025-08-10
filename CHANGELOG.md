@@ -1,3 +1,15 @@
+## [1.129.0](https://github.com/DanySK/gradle-java-qa/compare/1.128.0...1.129.0) (2025-08-10)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.9.4 ([#1246](https://github.com/DanySK/gradle-java-qa/issues/1246)) ([2000acf](https://github.com/DanySK/gradle-java-qa/commit/2000acf00f4451ba9a08af324332581b9886b3e8))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v3.6.1 ([#1244](https://github.com/DanySK/gradle-java-qa/issues/1244)) ([3267ac5](https://github.com/DanySK/gradle-java-qa/commit/3267ac52e0ddf77df80cf5d00107802f232838ca))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4 ([#1245](https://github.com/DanySK/gradle-java-qa/issues/1245)) ([b0b72bf](https://github.com/DanySK/gradle-java-qa/commit/b0b72bf3c8706a00a286eac1ae05088c24ed3880))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.3 ([#1243](https://github.com/DanySK/gradle-java-qa/issues/1243)) ([2c06bc9](https://github.com/DanySK/gradle-java-qa/commit/2c06bc9289aeb2daffb1eafff54b3e1f56eb194d))
+
 ## [1.128.0](https://github.com/DanySK/gradle-java-qa/compare/1.127.0...1.128.0) (2025-08-07)
 
 ### Dependency updates
