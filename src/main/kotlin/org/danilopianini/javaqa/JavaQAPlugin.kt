@@ -8,6 +8,11 @@ import com.github.spotbugs.snom.SpotBugsTask
 import de.aaschmid.gradle.plugins.cpd.Cpd
 import de.aaschmid.gradle.plugins.cpd.CpdExtension
 import de.aaschmid.gradle.plugins.cpd.CpdPlugin
+import java.io.File
+import java.util.Properties
+import javax.inject.Inject
+import kotlin.reflect.KProperty1
+import kotlin.reflect.full.memberProperties
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.file.FileTree
@@ -34,11 +39,6 @@ import org.gradle.kotlin.dsl.withType
 import org.gradle.testing.jacoco.plugins.JacocoPlugin
 import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
-import java.io.File
-import java.util.Properties
-import javax.inject.Inject
-import kotlin.reflect.KProperty1
-import kotlin.reflect.full.memberProperties
 
 /**
  * Just a template.
@@ -52,12 +52,7 @@ abstract class JavaQAPlugin : Plugin<Project> {
     override fun apply(project: Project) {
         with(project) {
             // Resources from the classpath must be loaded upfront
-            val javaQADestination =
-                project.layout.buildDirectory
-                    .dir("javaqa")
-                    .get()
-                    .asFile
-                    .apply { mkdirs() }
+            val javaQADestination = project.layout.buildDirectory.dir("javaqa").get().asFile.apply { mkdirs() }
             val baseSpotBugsExcludes = loadResource(SPOTBUGS_SUPPRESSIONS_RESOURCE)
             val baseCheckstyleExcludes = loadResource(CHECKSTYLE_SUPPRESSIONS_RESOURCE)
             val checkstyleConfiguration = loadResource(CHECKSTYLE_PATH)
