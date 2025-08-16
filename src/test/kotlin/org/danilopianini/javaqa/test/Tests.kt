@@ -9,7 +9,9 @@ import io.kotest.matchers.file.shouldExist
 import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.shouldContain
 import java.io.File
-import org.gradle.internal.impldep.org.junit.rules.TemporaryFolder
+import java.nio.file.Path
+import kotlin.io.path.absolutePathString
+import kotlin.io.path.createTempDirectory
 import org.gradle.testkit.runner.BuildResult
 import org.gradle.testkit.runner.GradleRunner
 import org.gradle.testkit.runner.TaskOutcome
@@ -21,21 +23,17 @@ class Tests : StringSpec({
     scan.getResourcesWithLeafName("test.yaml").flatMap { resource ->
         log.debug("Found test list in {}", resource)
         val yamlFile = File(resource.classpathElementFile.absolutePath + "/" + resource.path)
-        val testConfiguration =
-            Config {
-                addSpec(Root)
-            }.from.yaml.inputStream(resource.open())
+        val testConfiguration = Config { addSpec(Root) }.from.yaml.inputStream(resource.open())
         testConfiguration[Root.tests].map { it to yamlFile.parentFile }
     }.forEach { (test, location) ->
         log.debug("Test to be executed: {} from {}", test, location)
-        val testFolder =
-            folder {
-                location.copyRecursively(this.root)
-            }
+        val testFolder = folder {
+            location.copyRecursively(toFile())
+        }
         log.debug("Test has been copied into {} and is ready to get executed", testFolder)
         test.description {
             val result = GradleRunner.create()
-                .withProjectDir(testFolder.root)
+                .withProjectDir(testFolder.toFile())
                 .withPluginClasspath()
                 .withArguments(test.configuration.tasks + test.configuration.options)
                 .run { if (test.expectation.failure.isEmpty()) build() else buildAndFail() }
@@ -45,7 +43,7 @@ class Tests : StringSpec({
             test.expectation.success.forEach { result.outcomeOf(it) shouldBe TaskOutcome.SUCCESS }
             test.expectation.failure.forEach { result.outcomeOf(it) shouldBe TaskOutcome.FAILED }
             test.expectation.file_exists.forEach {
-                with(File("${testFolder.root.absolutePath}/$it")) {
+                with(File("${testFolder.absolutePathString()}/$it")) {
                     shouldExist()
                     shouldBeAFile()
                 }
@@ -60,9 +58,6 @@ class Tests : StringSpec({
             "Task $name was not present among the executed tasks"
         }
 
-        private fun folder(closure: TemporaryFolder.() -> Unit) = TemporaryFolder().apply {
-            create()
-            closure()
-        }
+        private fun folder(closure: Path.() -> Unit) = createTempDirectory("java-qa-testing").apply(closure)
     }
 }
