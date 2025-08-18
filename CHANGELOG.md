@@ -1,3 +1,42 @@
+## [1.131.0](https://github.com/DanySK/gradle-java-qa/compare/1.130.0...1.131.0) (2025-08-18)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.2.5 ([#1272](https://github.com/DanySK/gradle-java-qa/issues/1272)) ([9b3215e](https://github.com/DanySK/gradle-java-qa/commit/9b3215eb85d22e4bf2e462d76f339ce2913dec45))
+* **deps:** update dependency gradle to v9 ([#1237](https://github.com/DanySK/gradle-java-qa/issues/1237)) ([3bf77d9](https://github.com/DanySK/gradle-java-qa/commit/3bf77d9b4f85b0ab0d5d6a8626698b95a514e19a))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.0.2 ([#1255](https://github.com/DanySK/gradle-java-qa/issues/1255)) ([00e654d](https://github.com/DanySK/gradle-java-qa/commit/00e654d097ae1f5bba34fc09035c10e431f41fd9))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.1.0 ([#1261](https://github.com/DanySK/gradle-java-qa/issues/1261)) ([3908c39](https://github.com/DanySK/gradle-java-qa/commit/3908c39b4ca3062d3531e0de9ee436b995cfd8b4))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.10 ([#1256](https://github.com/DanySK/gradle-java-qa/issues/1256)) ([f4b2fde](https://github.com/DanySK/gradle-java-qa/commit/f4b2fde1632d84c5ef8cbfe2af4c989b243af183))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.140 ([#1270](https://github.com/DanySK/gradle-java-qa/issues/1270)) ([9d6dedd](https://github.com/DanySK/gradle-java-qa/commit/9d6dedd1747626eaf319597e369d9b55a89b46bf))
+* **deps:** update kotest to v6 ([#1271](https://github.com/DanySK/gradle-java-qa/issues/1271)) ([d08a22a](https://github.com/DanySK/gradle-java-qa/commit/d08a22acfd46fa442e058793390e72fc05554c87))
+* **deps:** update plugin gitsemver to v5.1.8 ([#1252](https://github.com/DanySK/gradle-java-qa/issues/1252)) ([8d898c0](https://github.com/DanySK/gradle-java-qa/commit/8d898c04eb515fb2970c27f2f4755c75b6288bbd))
+* **deps:** update plugin gitsemver to v6 ([#1253](https://github.com/DanySK/gradle-java-qa/issues/1253)) ([1d9ae8b](https://github.com/DanySK/gradle-java-qa/commit/1d9ae8bf1c8e863495067b2295be84bffc08f112))
+* **deps:** update plugin gitsemver to v6.0.1 ([#1260](https://github.com/DanySK/gradle-java-qa/issues/1260)) ([e834e1e](https://github.com/DanySK/gradle-java-qa/commit/e834e1e7172b5f3c3cfa678b4db3202f21e67b21))
+* **deps:** update plugin kotlin-qa to v0.93.1 ([#1257](https://github.com/DanySK/gradle-java-qa/issues/1257)) ([da50578](https://github.com/DanySK/gradle-java-qa/commit/da505780a1baf8e103cb3b1d3c734b0fbc5e30a4))
+* **deps:** update plugin kotlin-qa to v0.93.2 ([#1267](https://github.com/DanySK/gradle-java-qa/issues/1267)) ([effa754](https://github.com/DanySK/gradle-java-qa/commit/effa754d59b03eb71414c5b3cc0d2e8d46b20475))
+* **deps:** update plugin kotlin-qa to v0.93.3 ([#1269](https://github.com/DanySK/gradle-java-qa/issues/1269)) ([a4646ff](https://github.com/DanySK/gradle-java-qa/commit/a4646fff5a94d3edab2638ddf97003c6c4df1513))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.29 ([#1258](https://github.com/DanySK/gradle-java-qa/issues/1258)) ([9f63af7](https://github.com/DanySK/gradle-java-qa/commit/9f63af71e54e0fb53485d3ed78304a4b8376613e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.30 ([#1268](https://github.com/DanySK/gradle-java-qa/issues/1268)) ([5966270](https://github.com/DanySK/gradle-java-qa/commit/596627056c724b6d9d7d6e7bca41c7c3eddae292))
+* **deps:** update plugin publishoncentral to v9.1.3 ([#1254](https://github.com/DanySK/gradle-java-qa/issues/1254)) ([f246774](https://github.com/DanySK/gradle-java-qa/commit/f24677483267c30af745fca00f44f4580c4e64f1))
+
+### Tests
+
+* correctly import JUnit in the test projects ([#1264](https://github.com/DanySK/gradle-java-qa/issues/1264)) ([9c9b7e4](https://github.com/DanySK/gradle-java-qa/commit/9c9b7e48c3951ca20a9b830c789859ff4e5b3dd0))
+* drop usages of Gradle's internal `TemporaryFolder` ([55870de](https://github.com/DanySK/gradle-java-qa/commit/55870de9ae6242b7edf1d0a25c1049928ff872af))
+* update `foojay-resolver-convention` to 1.0.0 ([#1263](https://github.com/DanySK/gradle-java-qa/issues/1263)) ([5833193](https://github.com/DanySK/gradle-java-qa/commit/58331935f00e641c50794697a75e49ae38905ceb))
+
+### Build and continuous integration
+
+* automatically bind the minimum java version supported to Gradle's ([#1262](https://github.com/DanySK/gradle-java-qa/issues/1262)) ([52c8c6e](https://github.com/DanySK/gradle-java-qa/commit/52c8c6e9d3b1686843d7cf92813c7d8dec74f93d))
+* **deps:** update actions/checkout action to v4.3.0 ([#1248](https://github.com/DanySK/gradle-java-qa/issues/1248)) ([686baad](https://github.com/DanySK/gradle-java-qa/commit/686baad6cada44d1521463280d9effd618e74a62))
+* **deps:** update actions/checkout action to v5 ([#1249](https://github.com/DanySK/gradle-java-qa/issues/1249)) ([cb68631](https://github.com/DanySK/gradle-java-qa/commit/cb68631e1e3a837a549d6d99837b3e719d49a453))
+* **deps:** update danysk/action-checkout action to v0.2.23 ([#1250](https://github.com/DanySK/gradle-java-qa/issues/1250)) ([f5bc92d](https://github.com/DanySK/gradle-java-qa/commit/f5bc92db6e18d3e71657492ab354acf8e720525c))
+* **deps:** update danysk/action-checkout action to v0.2.24 ([#1251](https://github.com/DanySK/gradle-java-qa/issues/1251)) ([82ebf29](https://github.com/DanySK/gradle-java-qa/commit/82ebf29598084d231b36fa90fd009de677eeb57c))
+
+### Style improvements
+
+* import the formatting rules from AlchemistSimulator/Alchemist ([#1266](https://github.com/DanySK/gradle-java-qa/issues/1266)) ([2ffed52](https://github.com/DanySK/gradle-java-qa/commit/2ffed52fd96b859fb3d3bd9e6f9980181233f609))
+
 ## [1.130.0](https://github.com/DanySK/gradle-java-qa/compare/1.129.0...1.130.0) (2025-08-10)
 
 ### Dependency updates
