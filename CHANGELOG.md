@@ -1,3 +1,19 @@
+## [1.132.0](https://github.com/DanySK/gradle-java-qa/compare/1.131.0...1.132.0) (2025-08-29)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.2.6 ([#1281](https://github.com/DanySK/gradle-java-qa/issues/1281)) ([b644a07](https://github.com/DanySK/gradle-java-qa/commit/b644a0755484c4f182239050490087fce6b84736))
+* **deps:** update kotest to v6.0.1 ([#1280](https://github.com/DanySK/gradle-java-qa/issues/1280)) ([2c988f3](https://github.com/DanySK/gradle-java-qa/commit/2c988f37e5eb471fe21ecf8cb8e352e8f1dcca6c))
+* **deps:** update plugin com.gradle.develocity to v4.1.1 ([#1273](https://github.com/DanySK/gradle-java-qa/issues/1273)) ([31ffecc](https://github.com/DanySK/gradle-java-qa/commit/31ffecc831e6cddce12064f1b276f067e795a196))
+* **deps:** update plugin gitsemver to v7 ([#1275](https://github.com/DanySK/gradle-java-qa/issues/1275)) ([9384a86](https://github.com/DanySK/gradle-java-qa/commit/9384a86f3aa6d8d6be21dfec3828896e854de9d8))
+* **deps:** update plugin gitsemver to v7.0.2 ([#1277](https://github.com/DanySK/gradle-java-qa/issues/1277)) ([c370e9f](https://github.com/DanySK/gradle-java-qa/commit/c370e9fdd497245481b1a0bbc805632c0497d9f5))
+* **deps:** update plugin kotlin-qa to v0.94.0 ([#1279](https://github.com/DanySK/gradle-java-qa/issues/1279)) ([c6af873](https://github.com/DanySK/gradle-java-qa/commit/c6af8735edfec5f252db654b11cd7f2c71c5067a))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.4 ([#1276](https://github.com/DanySK/gradle-java-qa/issues/1276)) ([bb0f3b0](https://github.com/DanySK/gradle-java-qa/commit/bb0f3b05cc135b000b82342348ec8dfbb010b284))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.5 ([#1278](https://github.com/DanySK/gradle-java-qa/issues/1278)) ([74cb9af](https://github.com/DanySK/gradle-java-qa/commit/74cb9afd85e02b3cf150b067cba88899e941105e))
+
 ## [1.131.0](https://github.com/DanySK/gradle-java-qa/compare/1.130.0...1.131.0) (2025-08-18)
 
 ### Dependency updates
