@@ -1,3 +1,10 @@
+## [1.133.0](https://github.com/DanySK/gradle-java-qa/compare/1.132.0...1.133.0) (2025-08-31)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v11.0.1 ([#1283](https://github.com/DanySK/gradle-java-qa/issues/1283)) ([14ba347](https://github.com/DanySK/gradle-java-qa/commit/14ba347c39950a17724cca853c0619c939fcc4a6))
+* **deps:** update node.js to 22.19 ([#1282](https://github.com/DanySK/gradle-java-qa/issues/1282)) ([a183f7c](https://github.com/DanySK/gradle-java-qa/commit/a183f7c5b1dcb2afb0b6fe9cb5aa877ff5f32a18))
+
 ## [1.132.0](https://github.com/DanySK/gradle-java-qa/compare/1.131.0...1.132.0) (2025-08-29)
 
 ### Dependency updates
