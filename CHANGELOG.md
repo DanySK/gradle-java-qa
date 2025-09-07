@@ -1,3 +1,18 @@
+## [1.135.0](https://github.com/DanySK/gradle-java-qa/compare/1.134.0...1.135.0) (2025-09-07)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.3.0 ([#1288](https://github.com/DanySK/gradle-java-qa/issues/1288)) ([e3fa75e](https://github.com/DanySK/gradle-java-qa/commit/e3fa75e9d10a8e61f76191282dae886ad10767eb))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.141 ([#1285](https://github.com/DanySK/gradle-java-qa/issues/1285)) ([eadfdbd](https://github.com/DanySK/gradle-java-qa/commit/eadfdbdd3ef21e4ec7a2a61a73cda9ccffc87e0f))
+* **deps:** update kotest to v6.0.2 ([#1286](https://github.com/DanySK/gradle-java-qa/issues/1286)) ([2338a20](https://github.com/DanySK/gradle-java-qa/commit/2338a20e47389e205cc9a228a0e08340989073d1))
+* **deps:** update plugin gradlepluginpublish to v2 ([#1290](https://github.com/DanySK/gradle-java-qa/issues/1290)) ([7d40fbf](https://github.com/DanySK/gradle-java-qa/commit/7d40fbfc2bff1948c1c066cc9da67fefa7f63fd4))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.0 ([#1289](https://github.com/DanySK/gradle-java-qa/issues/1289)) ([8e5e3f9](https://github.com/DanySK/gradle-java-qa/commit/8e5e3f99a4743db788b3da63debfc514fda34097))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v5 ([#1291](https://github.com/DanySK/gradle-java-qa/issues/1291)) ([a9594c0](https://github.com/DanySK/gradle-java-qa/commit/a9594c0221bfe3e6db0ff9adc04c09049dd3d804))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.6 ([#1287](https://github.com/DanySK/gradle-java-qa/issues/1287)) ([d5164bb](https://github.com/DanySK/gradle-java-qa/commit/d5164bb44f1a56b0864539075718f3e9447a456c))
+
 ## [1.134.0](https://github.com/DanySK/gradle-java-qa/compare/1.133.0...1.134.0) (2025-09-06)
 
 ### Dependency updates
