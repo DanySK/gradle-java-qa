@@ -1,3 +1,18 @@
+## [1.143.0](https://github.com/DanySK/gradle-java-qa/compare/1.142.0...1.143.0) (2025-10-09)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v12 ([#1332](https://github.com/DanySK/gradle-java-qa/issues/1332)) ([aabf776](https://github.com/DanySK/gradle-java-qa/commit/aabf7763b6672738aa20ab1e539caf1130606713))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.147 ([#1328](https://github.com/DanySK/gradle-java-qa/issues/1328)) ([7b47c9d](https://github.com/DanySK/gradle-java-qa/commit/7b47c9d60cde318223abae7966e0f14f4392ace0))
+* **deps:** update plugin com.gradle.develocity to v4.2.1 ([#1331](https://github.com/DanySK/gradle-java-qa/issues/1331)) ([07382c0](https://github.com/DanySK/gradle-java-qa/commit/07382c04163e4193798c295e5aa208b81144e0d8))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.10 ([#1330](https://github.com/DanySK/gradle-java-qa/issues/1330)) ([8e924a5](https://github.com/DanySK/gradle-java-qa/commit/8e924a53f1c3d33621ec940746689effe035163c))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.9 ([b3b8aec](https://github.com/DanySK/gradle-java-qa/commit/b3b8aec6929dcc84b49503aa6738c15cb7987180))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.9 ([#1327](https://github.com/DanySK/gradle-java-qa/issues/1327)) ([062c28c](https://github.com/DanySK/gradle-java-qa/commit/062c28c5de9870356c0c149ec5b9ae30032ebbce))
+* use full commit SHA hash for actions in github workflows ([#1326](https://github.com/DanySK/gradle-java-qa/issues/1326)) ([9273e49](https://github.com/DanySK/gradle-java-qa/commit/9273e49aecd6cce6fc4133b54d3e5a6bf3f01262))
+
 ## [1.142.0](https://github.com/DanySK/gradle-java-qa/compare/1.141.0...1.142.0) (2025-09-28)
 
 ### Dependency updates
