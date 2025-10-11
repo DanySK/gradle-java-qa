@@ -1,3 +1,10 @@
+## [1.145.0](https://github.com/DanySK/gradle-java-qa/compare/1.144.0...1.145.0) (2025-10-11)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v12.0.1 ([#1335](https://github.com/DanySK/gradle-java-qa/issues/1335)) ([40904ca](https://github.com/DanySK/gradle-java-qa/commit/40904ca327786f95984d71bb8903581ff5218474))
+* **deps:** update dependency org.jacoco:org.jacoco.core to v0.8.14 ([#1336](https://github.com/DanySK/gradle-java-qa/issues/1336)) ([d1f761b](https://github.com/DanySK/gradle-java-qa/commit/d1f761b14607c421b21f89eb437a15b1baff2f2d))
+
 ## [1.144.0](https://github.com/DanySK/gradle-java-qa/compare/1.143.0...1.144.0) (2025-10-11)
 
 ### Features
