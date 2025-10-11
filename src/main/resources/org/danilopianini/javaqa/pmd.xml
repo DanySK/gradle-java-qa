@@ -91,6 +91,7 @@
         <exclude name="NonSerializableClass" />
         <exclude name="NonStaticInitializer" />
         <exclude name="NullAssignment" />
+        <exclude name="OverrideBothEqualsAndHashCodeOnComparable" />
         <exclude name="TestClassWithoutTestCases" />
         <exclude name="UseProperClassLoader" />
     </rule>
