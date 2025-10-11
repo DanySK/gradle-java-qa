@@ -1,3 +1,13 @@
+## [1.144.0](https://github.com/DanySK/gradle-java-qa/compare/1.143.0...1.144.0) (2025-10-11)
+
+### Features
+
+* **pmd:** disable `OverrideBothEqualsAndHashcodeOnComparable` rule in PMD as it is prone to false positives ([#1334](https://github.com/DanySK/gradle-java-qa/issues/1334)) ([f242195](https://github.com/DanySK/gradle-java-qa/commit/f24219558de38a47628bf1c23f441872be997047))
+
+### Dependency updates
+
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.184 ([#1333](https://github.com/DanySK/gradle-java-qa/issues/1333)) ([52f0215](https://github.com/DanySK/gradle-java-qa/commit/52f02153aac16c0235c85d52a45aff92ee594e56))
+
 ## [1.143.0](https://github.com/DanySK/gradle-java-qa/compare/1.142.0...1.143.0) (2025-10-09)
 
 ### Dependency updates
