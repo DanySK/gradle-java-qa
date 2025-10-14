@@ -1,3 +1,14 @@
+## [1.146.0](https://github.com/DanySK/gradle-java-qa/compare/1.145.0...1.146.0) (2025-10-14)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.9.7 ([#1339](https://github.com/DanySK/gradle-java-qa/issues/1339)) ([ff8fd8c](https://github.com/DanySK/gradle-java-qa/commit/ff8fd8cba7f8c5706888601e3dcd54a3dd4eb417))
+* **deps:** update plugin com.gradle.develocity to v4.2.2 ([#1337](https://github.com/DanySK/gradle-java-qa/issues/1337)) ([cb61d1a](https://github.com/DanySK/gradle-java-qa/commit/cb61d1a5a85356aa0e142e64a82091602212d21e))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v6 ([#1338](https://github.com/DanySK/gradle-java-qa/issues/1338)) ([994d332](https://github.com/DanySK/gradle-java-qa/commit/994d332c596b7b6ddadbe4d2762cfabac59b60fa))
+
 ## [1.145.0](https://github.com/DanySK/gradle-java-qa/compare/1.144.0...1.145.0) (2025-10-11)
 
 ### Dependency updates
