@@ -1,3 +1,10 @@
+## [1.148.0](https://github.com/DanySK/gradle-java-qa/compare/1.147.0...1.148.0) (2025-10-18)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs:spotbugs to v4.9.8 ([#1343](https://github.com/DanySK/gradle-java-qa/issues/1343)) ([07ae9ee](https://github.com/DanySK/gradle-java-qa/commit/07ae9eee6d3c73a07142154979d2b74bc9208398))
+* **deps:** update kotest to v6.0.4 ([#1341](https://github.com/DanySK/gradle-java-qa/issues/1341)) ([9939184](https://github.com/DanySK/gradle-java-qa/commit/99391849aaff558caa6b586aec2bfa0c24d9cf56))
+
 ## [1.147.0](https://github.com/DanySK/gradle-java-qa/compare/1.146.0...1.147.0) (2025-10-14)
 
 ### Dependency updates
