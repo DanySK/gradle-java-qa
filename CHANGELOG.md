@@ -1,3 +1,21 @@
+## [1.151.0](https://github.com/DanySK/gradle-java-qa/compare/1.150.0...1.151.0) (2025-10-26)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v12.1.1 ([#1359](https://github.com/DanySK/gradle-java-qa/issues/1359)) ([969a923](https://github.com/DanySK/gradle-java-qa/commit/969a9230477150804ee707db463b278513579f3a))
+* **deps:** update dependency java to v25.0.1+8.0.lts ([#1354](https://github.com/DanySK/gradle-java-qa/issues/1354)) ([50c01be](https://github.com/DanySK/gradle-java-qa/commit/50c01be583d721fab86ffc3c75ab25295602570c))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.2.21 ([#1349](https://github.com/DanySK/gradle-java-qa/issues/1349)) ([9a6d807](https://github.com/DanySK/gradle-java-qa/commit/9a6d8071216c8a37a4e634e963631e1af043986f))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.148 ([#1346](https://github.com/DanySK/gradle-java-qa/issues/1346)) ([6739595](https://github.com/DanySK/gradle-java-qa/commit/673959547b6ca8fd438d1d9747e842ed6d93634e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.149 ([#1347](https://github.com/DanySK/gradle-java-qa/issues/1347)) ([18843b0](https://github.com/DanySK/gradle-java-qa/commit/18843b07d19c62736864da9bb845abb473e997f5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.150 ([#1356](https://github.com/DanySK/gradle-java-qa/issues/1356)) ([96cbb9c](https://github.com/DanySK/gradle-java-qa/commit/96cbb9c22f158015e0a0ba37938d5586f7902936))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.151 ([#1357](https://github.com/DanySK/gradle-java-qa/issues/1357)) ([acb90dc](https://github.com/DanySK/gradle-java-qa/commit/acb90dc8ff43b95c1e2381421233a133759e9cfb))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.152 ([#1358](https://github.com/DanySK/gradle-java-qa/issues/1358)) ([97cc20d](https://github.com/DanySK/gradle-java-qa/commit/97cc20de950c64b2c609a66967bb74752b314594))
+* **deps:** update node.js to 22.21 ([#1348](https://github.com/DanySK/gradle-java-qa/issues/1348)) ([e65cc20](https://github.com/DanySK/gradle-java-qa/commit/e65cc2004e00638ff91a4e9a4b472eb64752de68))
+* **deps:** update plugin gitsemver to v7.0.5 ([#1350](https://github.com/DanySK/gradle-java-qa/issues/1350)) ([a106804](https://github.com/DanySK/gradle-java-qa/commit/a106804716577e0945dd3dddcd4d07e9e76d1630))
+* **deps:** update plugin kotlin-qa to v0.95.2 ([#1353](https://github.com/DanySK/gradle-java-qa/issues/1353)) ([71da853](https://github.com/DanySK/gradle-java-qa/commit/71da853f861320a519d0cb58b690924299bde904))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.3 ([#1351](https://github.com/DanySK/gradle-java-qa/issues/1351)) ([3fe028c](https://github.com/DanySK/gradle-java-qa/commit/3fe028c9b404e5e3e03ede82d74eedd750b5f8ee))
+* **deps:** update plugin publishoncentral to v9.1.6 ([#1352](https://github.com/DanySK/gradle-java-qa/issues/1352)) ([1dd66ba](https://github.com/DanySK/gradle-java-qa/commit/1dd66ba340c777f80bbc1d94519e5a3012c2dab3))
+
 ## [1.150.0](https://github.com/DanySK/gradle-java-qa/compare/1.149.0...1.150.0) (2025-10-19)
 
 ### Dependency updates
