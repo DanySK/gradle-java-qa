@@ -1,3 +1,15 @@
+## [1.152.0](https://github.com/DanySK/gradle-java-qa/compare/1.151.0...1.152.0) (2025-10-31)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.18.0 ([#1366](https://github.com/DanySK/gradle-java-qa/issues/1366)) ([151b1ce](https://github.com/DanySK/gradle-java-qa/commit/151b1ce0ab2578effeec632f58db0044470fa894))
+* **deps:** update gradle to v9.2.0 ([#1360](https://github.com/DanySK/gradle-java-qa/issues/1360)) ([f9bf658](https://github.com/DanySK/gradle-java-qa/commit/f9bf658c1c86e40d55cf833d27e07bfe18eb613e))
+* **deps:** update node.js to v24 ([#1365](https://github.com/DanySK/gradle-java-qa/issues/1365)) ([6e166e7](https://github.com/DanySK/gradle-java-qa/commit/6e166e772d86eaadcac18b73dc6718919a68aa7b))
+* **deps:** update plugin gitsemver to v7.0.6 ([#1361](https://github.com/DanySK/gradle-java-qa/issues/1361)) ([5507c44](https://github.com/DanySK/gradle-java-qa/commit/5507c44d8320ff93d4102aecbf11d04ddd160b82))
+* **deps:** update plugin kotlin-qa to v0.95.3 ([#1363](https://github.com/DanySK/gradle-java-qa/issues/1363)) ([513f223](https://github.com/DanySK/gradle-java-qa/commit/513f223c70f048e48a204563a8c32a5fa4135211))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.4 ([#1364](https://github.com/DanySK/gradle-java-qa/issues/1364)) ([380e8b7](https://github.com/DanySK/gradle-java-qa/commit/380e8b7ff8f0264b5b027e48a429f0edc64d1402))
+* **deps:** update plugin publishoncentral to v9.1.7 ([#1362](https://github.com/DanySK/gradle-java-qa/issues/1362)) ([ebd4d28](https://github.com/DanySK/gradle-java-qa/commit/ebd4d28899fbc08bfb295d0e78d01a3a4a287da2))
+
 ## [1.151.0](https://github.com/DanySK/gradle-java-qa/compare/1.150.0...1.151.0) (2025-10-26)
 
 ### Dependency updates
