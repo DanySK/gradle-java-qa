@@ -48,7 +48,6 @@ abstract class JavaQAPlugin : Plugin<Project> {
     @get:Inject
     internal abstract val javaToolchains: JavaToolchainService
 
-    @Suppress("UnstableApiUsage")
     override fun apply(project: Project) {
         with(project) {
             // Resources from the classpath must be loaded upfront
@@ -77,6 +76,7 @@ abstract class JavaQAPlugin : Plugin<Project> {
                 // Apply the Java QA plugins
                 with(plugins) {
                     apply(CheckstylePlugin::class)
+                    @Suppress("UnstableApiUsage")
                     apply(CpdPlugin::class)
                     apply(PmdPlugin::class)
                     apply(JacocoPlugin::class)
@@ -158,6 +158,7 @@ abstract class JavaQAPlugin : Plugin<Project> {
                         checkstyleConfiguration.exclude(group = "com.google.collections", module = "google-collections")
                     }
                     tasks.withType<Checkstyle>().configureEach { checkstyleTask ->
+                        @Suppress("UnstableApiUsage")
                         checkstyleTask.javaLauncher.set(javaLauncher)
                         checkstyleTask.inputs.files(files(checkstyleSuppressionsFile, checkstyleConfigurationFile))
                         checkstyleTask.dependsOn(generateCheckstyleConfiguration)
@@ -173,7 +174,10 @@ abstract class JavaQAPlugin : Plugin<Project> {
                     ruleSets = listOf()
                     ruleSetConfig = resources.text.fromString(pmdConfiguration)
                 }
-                tasks.withType<Pmd>().configureEach { pmdTask -> pmdTask.javaLauncher.set(javaLauncher) }
+                tasks.withType<Pmd>().configureEach { pmdTask ->
+                    @Suppress("UnstableApiUsage")
+                    pmdTask.javaLauncher.set(javaLauncher)
+                }
                 // CPD
                 configureExtension<CpdExtension> {
                     toolVersion = pmdVersion
