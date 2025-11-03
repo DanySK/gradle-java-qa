@@ -1,3 +1,19 @@
+## [1.152.1](https://github.com/DanySK/gradle-java-qa/compare/1.152.0...1.152.1) (2025-11-03)
+
+### Dependency updates
+
+* **deps:** update dependency org.jetbrains.dokka to v2.1.0 ([#1342](https://github.com/DanySK/gradle-java-qa/issues/1342)) ([dc27239](https://github.com/DanySK/gradle-java-qa/commit/dc27239914403e3f6938fe5ec2b1b75f57338585))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.153 ([#1369](https://github.com/DanySK/gradle-java-qa/issues/1369)) ([805fe1b](https://github.com/DanySK/gradle-java-qa/commit/805fe1ba34627271dff9b654739600e15f54de8e))
+* **deps:** update plugin kotlin-qa to v0.96.0 ([#1367](https://github.com/DanySK/gradle-java-qa/issues/1367)) ([5b89893](https://github.com/DanySK/gradle-java-qa/commit/5b89893fbabd796f529fe277b1b820f13bc757cc))
+
+### Documentation
+
+* enable Dokka V2 ([#1370](https://github.com/DanySK/gradle-java-qa/issues/1370)) ([9701b5c](https://github.com/DanySK/gradle-java-qa/commit/9701b5ca62deec88f4588e47db147d43aee754be))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.11 ([#1368](https://github.com/DanySK/gradle-java-qa/issues/1368)) ([fdcd1ae](https://github.com/DanySK/gradle-java-qa/commit/fdcd1ae835647ceb5ff5ff25b7b57ed91d029515))
+
 ## [1.152.0](https://github.com/DanySK/gradle-java-qa/compare/1.151.0...1.152.0) (2025-10-31)
 
 ### Dependency updates
