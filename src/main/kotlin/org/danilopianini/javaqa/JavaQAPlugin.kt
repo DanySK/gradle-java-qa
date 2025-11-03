@@ -180,15 +180,11 @@ abstract class JavaQAPlugin : Plugin<Project> {
                 }
                 tasks.register("cpdJavaCheck", Cpd::class) { cpd ->
                     cpd.language = "java"
-                    cpd.source = project.extensions
-                        .findByType<JavaPluginExtension>()
+                    cpd.source = project.extensions.findByType<JavaPluginExtension>()
                         ?.sourceSets
                         ?.flatMap { it.allSource }
-                        ?.map {
-                            project.fileTree(it) { fileTree ->
-                                fileTree.include("**/*.java")
-                            }
-                        }?.fold(files().asFileTree, FileTree::plus)
+                        ?.map { project.fileTree(it) { fileTree -> fileTree.include("**/*.java") } }
+                        ?.fold(files().asFileTree, FileTree::plus)
                         ?: files().asFileTree
                     cpd.minimumTokenCount = 100
                     cpd.ignoreFailures = false
@@ -201,9 +197,7 @@ abstract class JavaQAPlugin : Plugin<Project> {
                     toolVersion = jacocoVersion
                 }
                 tasks.withType(JacocoReport::class.java) { jacocoReport ->
-                    jacocoReport.reports {
-                        it.xml.required.set(true)
-                    }
+                    jacocoReport.reports { it.xml.required.set(true) }
                     project.tasks.findByName("check")?.finalizedBy(jacocoReport)
                 }
             }
