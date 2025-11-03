@@ -52,26 +52,23 @@ val copyJavaVersion by tasks.registering(Copy::class) {
 
 val copyToolVersions by tasks.registering {
     inputs.file(File(rootProject.rootDir, "gradle/libs.versions.toml"))
-    val outputDir =
-        project.layout.buildDirectory
-            .dir("resources/main/META-INF/javaqa/")
-            .map { it.asFile }
+    val outputDir = project.layout.buildDirectory
+        .dir("resources/main/META-INF/javaqa/")
+        .map { it.asFile }
     outputs.dir(outputDir)
     doLast {
         val destinationDir = outputDir.get().also { it.mkdirs() }
         val destination = File(destinationDir, "tool-versions.properties")
         val catalog = file("${rootProject.rootDir.absolutePath}/gradle/libs.versions.toml").readText()
-        val libraries =
-            listOf("checkstyle", "jacoco", "pmd", "spotbugs").joinToString("\n") { library ->
-                val version =
-                    Regex("""^$library\s*=\s*"([\d\w\.\-\+]+)"\s*$""", RegexOption.MULTILINE)
-                        .findAll(catalog)
-                        .firstOrNull()
-                        ?.destructured
-                        ?.component1()
-                        ?: throw IllegalStateException("No version available for $library in:\n$catalog")
-                "$library=$version"
-            }
+        val libraries = listOf("checkstyle", "jacoco", "pmd", "spotbugs").joinToString("\n") { library ->
+            val version = Regex("""^$library\s*=\s*"([\d\w\.\-\+]+)"\s*$""", RegexOption.MULTILINE)
+                .findAll(catalog)
+                .firstOrNull()
+                ?.destructured
+                ?.component1()
+                ?: throw IllegalStateException("No version available for $library in:\n$catalog")
+            "$library=$version"
+        }
         destination.writeText(libraries)
     }
 }
