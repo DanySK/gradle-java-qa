@@ -116,7 +116,7 @@ abstract class JavaQAPlugin : Plugin<Project> {
 
                 // Checkstyle
                 fun Provider<String>.fromFileOrItself(): String = getOrElse("").let { maybePath ->
-                    File(maybePath).takeIf { it.exists() }?.readText() ?: maybePath
+                    File(maybePath).takeIf { it.exists() && it.isFile }?.readText() ?: maybePath
                 }
                 configureExtension<CheckstyleExtension> {
                     val checkstyleConfigurationFile = File(javaQADestination, CHECKSTYLE_CONFIGURATION_NAME)
