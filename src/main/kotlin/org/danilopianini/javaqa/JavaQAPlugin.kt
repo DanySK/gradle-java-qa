@@ -41,7 +41,7 @@ import org.gradle.testing.jacoco.plugins.JacocoPluginExtension
 import org.gradle.testing.jacoco.tasks.JacocoReport
 
 /**
- * Just a template.
+ * A plugin applying and configuring common QA tools for Java projects.
  */
 @Suppress("unused")
 abstract class JavaQAPlugin : Plugin<Project> {
