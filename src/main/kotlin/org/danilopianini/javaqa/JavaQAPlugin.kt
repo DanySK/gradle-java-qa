@@ -137,7 +137,6 @@ abstract class JavaQAPlugin : Plugin<Project> {
                                     "Creating configuration file for checkstyle {}",
                                     checkstyleConfigurationFile.absolutePath,
                                 )
-
                                 fun String.doublyBackslashed() = replace("\\", "\\\\")
                                 val actualConfiguration =
                                     checkstyleConfiguration.replace(
