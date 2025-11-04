@@ -1,3 +1,35 @@
+## [1.153.0](https://github.com/DanySK/gradle-java-qa/compare/1.152.1...1.153.0) (2025-11-04)
+
+### Features
+
+* change the Java version fallback: before using the latest known version, rely on the version Java is configured to use ([#1372](https://github.com/DanySK/gradle-java-qa/issues/1372)) ([b098748](https://github.com/DanySK/gradle-java-qa/commit/b098748f7f37a61f84d38c97d055ca6d8aafd505))
+
+### Dependency updates
+
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.2.0 ([#1318](https://github.com/DanySK/gradle-java-qa/issues/1318)) ([added0b](https://github.com/DanySK/gradle-java-qa/commit/added0bf79cfb72153e845777aadb33874b0c665))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.3.2 ([#1355](https://github.com/DanySK/gradle-java-qa/issues/1355)) ([d55f7ef](https://github.com/DanySK/gradle-java-qa/commit/d55f7ef4acc52d72c6995138de057627290b13ab))
+
+### Bug Fixes
+
+* ensure `fromFileOrItself` only reads existing files ([#1379](https://github.com/DanySK/gradle-java-qa/issues/1379)) ([1ac91eb](https://github.com/DanySK/gradle-java-qa/commit/1ac91eb0193db7310fe990928765e45e1ecaa579))
+
+### Documentation
+
+* update plugin description for JavaQAPlugin to clarify its purpose ([#1381](https://github.com/DanySK/gradle-java-qa/issues/1381)) ([6024b23](https://github.com/DanySK/gradle-java-qa/commit/6024b236086133ee921d54b6e5056095cbbb6d68))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.12 ([#1371](https://github.com/DanySK/gradle-java-qa/issues/1371)) ([e1efc59](https://github.com/DanySK/gradle-java-qa/commit/e1efc59aeba07747bf8361353f011069ee76fc3a))
+* enable parallel execution in Gradle ([#1376](https://github.com/DanySK/gradle-java-qa/issues/1376)) ([37c9b7a](https://github.com/DanySK/gradle-java-qa/commit/37c9b7a42d227f77d77f8b2c7c81cbfa04d1580a))
+* remove unnecessary suppression for UnstableApiUsage ([#1375](https://github.com/DanySK/gradle-java-qa/issues/1375)) ([fa819de](https://github.com/DanySK/gradle-java-qa/commit/fa819dedb0623ca37d05da4aad48c34c6eec2c4b))
+
+### Style improvements
+
+* **build:** improve indentation for compactness ([#1373](https://github.com/DanySK/gradle-java-qa/issues/1373)) ([1f73093](https://github.com/DanySK/gradle-java-qa/commit/1f730934c140e42d59e76e7e6b528f719ea44286))
+* improve indentation ([#1377](https://github.com/DanySK/gradle-java-qa/issues/1377)) ([ea67082](https://github.com/DanySK/gradle-java-qa/commit/ea67082a361987fe5f165f20fe5ef88339be5af4))
+* **JavaQAPlugin:** move `UnstableApiUsage` suppressions to the specific statements ([#1380](https://github.com/DanySK/gradle-java-qa/issues/1380)) ([9f38686](https://github.com/DanySK/gradle-java-qa/commit/9f38686110fcdd234243bf83232945e5927f20a5))
+* remove unnecessary blank line in configuration file creation ([#1378](https://github.com/DanySK/gradle-java-qa/issues/1378)) ([8899f77](https://github.com/DanySK/gradle-java-qa/commit/8899f777c8d0c713981ae4030d6327a151e00640))
+
 ## [1.152.1](https://github.com/DanySK/gradle-java-qa/compare/1.152.0...1.152.1) (2025-11-03)
 
 ### Dependency updates
