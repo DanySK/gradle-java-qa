@@ -83,10 +83,17 @@ abstract class JavaQAPlugin : Plugin<Project> {
                     apply(SpotBugsPlugin::class)
                 }
                 // Prepare the Java launcher
+                val fallbackJavaVersion: Provider<JavaLanguageVersion> = provider {
+                    project.extensions.findByType<JavaPluginExtension>()
+                        ?.toolchain?.languageVersion?.orNull
+                        ?: JavaLanguageVersion.of(defaultJavaVersion)
+                }
                 val javaLauncher: Provider<JavaLauncher> =
                     javaToolchains.launcherFor {
                         it.languageVersion.set(
-                            JavaLanguageVersion.of(extension.javaVersion.getOrElse(defaultJavaVersion)),
+                            extension.javaVersion
+                                .map(JavaLanguageVersion::of)
+                                .orElse(fallbackJavaVersion),
                         )
                     }
                 // Javadoc
