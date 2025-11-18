@@ -30,7 +30,7 @@ qa-plugins = [  "cpd-gradle", "spotbugs-gradle" ]
 [plugins]
 cpd = { id = "de.aaschmid.cpd", version.ref = "cpd-gradle" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "dokka" }
-gitSemVer = "org.danilopianini.git-sensitive-semantic-versioning:7.0.6"
+gitSemVer = "org.danilopianini.git-sensitive-semantic-versioning:7.0.7"
 gradlePluginPublish = "com.gradle.plugin-publish:2.0.0"
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-qa = "org.danilopianini.gradle-kotlin-qa:0.98.1"
