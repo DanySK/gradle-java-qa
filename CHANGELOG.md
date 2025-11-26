@@ -1,3 +1,28 @@
+## [1.156.0](https://github.com/DanySK/gradle-java-qa/compare/1.155.0...1.156.0) (2025-11-26)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.4.6 ([#1402](https://github.com/DanySK/gradle-java-qa/issues/1402)) ([fb0fdbb](https://github.com/DanySK/gradle-java-qa/commit/fb0fdbbe4880f051464413d2bdac116b889bef41))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.155 ([#1386](https://github.com/DanySK/gradle-java-qa/issues/1386)) ([6734abe](https://github.com/DanySK/gradle-java-qa/commit/6734abe6a37aa69efb9f15d5afce72502ad44e86))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.156 ([#1388](https://github.com/DanySK/gradle-java-qa/issues/1388)) ([fe5bfb0](https://github.com/DanySK/gradle-java-qa/commit/fe5bfb004dbe315ac06d73412533cff606bdbf9c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.157 ([#1401](https://github.com/DanySK/gradle-java-qa/issues/1401)) ([900f1b8](https://github.com/DanySK/gradle-java-qa/commit/900f1b83d898d0d61f875724b5ca85a72a4a3f34))
+* **deps:** update gradle to v9.2.1 ([#1390](https://github.com/DanySK/gradle-java-qa/issues/1390)) ([5fb1e25](https://github.com/DanySK/gradle-java-qa/commit/5fb1e25a8196c6397041c9752e0188e05c0630aa))
+* **deps:** update kotest to v6.0.5 ([#1394](https://github.com/DanySK/gradle-java-qa/issues/1394)) ([6c71dff](https://github.com/DanySK/gradle-java-qa/commit/6c71dff6d37652b6d1e662c771f2c5571ad0276f))
+* **deps:** update plugin gitsemver to v7.0.7 ([#1395](https://github.com/DanySK/gradle-java-qa/issues/1395)) ([161294f](https://github.com/DanySK/gradle-java-qa/commit/161294f7265f1cbbc154d7628da829af18344f5f))
+* **deps:** update plugin kotlin-qa to v0.97.0 ([#1387](https://github.com/DanySK/gradle-java-qa/issues/1387)) ([5acce62](https://github.com/DanySK/gradle-java-qa/commit/5acce62d41af5d723a06a95e0dc1b4e963aa0db0))
+* **deps:** update plugin kotlin-qa to v0.98.0 ([#1389](https://github.com/DanySK/gradle-java-qa/issues/1389)) ([5118a6d](https://github.com/DanySK/gradle-java-qa/commit/5118a6dd09a3bfd19d2c78283bede2ba721e1b48))
+* **deps:** update plugin kotlin-qa to v0.98.1 ([#1391](https://github.com/DanySK/gradle-java-qa/issues/1391)) ([700618b](https://github.com/DanySK/gradle-java-qa/commit/700618b794f7503c8f4a69d63a5e34ffa6e44d8f))
+* **deps:** update plugin kotlin-qa to v0.98.2 ([843cbf1](https://github.com/DanySK/gradle-java-qa/commit/843cbf169ebc10e7ed3197d49535a54fa03b248e))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.5 ([#1397](https://github.com/DanySK/gradle-java-qa/issues/1397)) ([c55fca3](https://github.com/DanySK/gradle-java-qa/commit/c55fca34e796140b5af2a287a80262c82880e572))
+* **deps:** update plugin publishoncentral to v9.1.8 ([#1392](https://github.com/DanySK/gradle-java-qa/issues/1392)) ([e76b411](https://github.com/DanySK/gradle-java-qa/commit/e76b41106db09a030eec3d4332235f0da031231b))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v5.0.1 ([#1393](https://github.com/DanySK/gradle-java-qa/issues/1393)) ([0be20ec](https://github.com/DanySK/gradle-java-qa/commit/0be20ecd6700f4923a44f8df4941c2b1d0931882))
+* **deps:** update actions/checkout action to v6 ([#1400](https://github.com/DanySK/gradle-java-qa/issues/1400)) ([0c8566a](https://github.com/DanySK/gradle-java-qa/commit/0c8566a9c87494f70ff7aee756b9e3b22a3f7d6f))
+* **deps:** update danysk/action-checkout action to v0.2.25 ([#1398](https://github.com/DanySK/gradle-java-qa/issues/1398)) ([e714344](https://github.com/DanySK/gradle-java-qa/commit/e714344cfc91159291235ca676c6edbf524c9c79))
+* **deps:** update danysk/action-checkout action to v0.2.26 ([#1399](https://github.com/DanySK/gradle-java-qa/issues/1399)) ([c98b297](https://github.com/DanySK/gradle-java-qa/commit/c98b297b184f4c3a31617744a2bcf83a7d616c08))
+
 ## [1.155.0](https://github.com/DanySK/gradle-java-qa/compare/1.154.0...1.155.0) (2025-11-11)
 
 ### Dependency updates
