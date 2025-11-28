@@ -1,3 +1,9 @@
+## [1.157.0](https://github.com/DanySK/gradle-java-qa/compare/1.156.0...1.157.0) (2025-11-28)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.19.0 ([#1403](https://github.com/DanySK/gradle-java-qa/issues/1403)) ([1a97bce](https://github.com/DanySK/gradle-java-qa/commit/1a97bce910ee0b1ac2fb760929ab271c8d411a99))
+
 ## [1.156.0](https://github.com/DanySK/gradle-java-qa/compare/1.155.0...1.156.0) (2025-11-26)
 
 ### Dependency updates
