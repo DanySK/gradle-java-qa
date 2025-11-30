@@ -1,3 +1,10 @@
+## [1.158.0](https://github.com/DanySK/gradle-java-qa/compare/1.157.0...1.158.0) (2025-11-30)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.4.7 ([#1405](https://github.com/DanySK/gradle-java-qa/issues/1405)) ([ef92484](https://github.com/DanySK/gradle-java-qa/commit/ef92484a17b0b16596705ea26e6a4f6ad09c88e9))
+* **deps:** update plugin kotlin-qa to v0.99.0 ([#1404](https://github.com/DanySK/gradle-java-qa/issues/1404)) ([86a0890](https://github.com/DanySK/gradle-java-qa/commit/86a0890ddd9ca157b0ca22adaa0ea823af54160d))
+
 ## [1.157.0](https://github.com/DanySK/gradle-java-qa/compare/1.156.0...1.157.0) (2025-11-28)
 
 ### Dependency updates
