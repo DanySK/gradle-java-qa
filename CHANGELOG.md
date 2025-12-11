@@ -1,3 +1,20 @@
+## [1.160.0](https://github.com/DanySK/gradle-java-qa/compare/1.159.0...1.160.0) (2025-12-11)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.4.8 ([#1415](https://github.com/DanySK/gradle-java-qa/issues/1415)) ([49299a8](https://github.com/DanySK/gradle-java-qa/commit/49299a8f0468e5c96d717b90a16133fad689b77e))
+* **deps:** update kotest to v6.0.6 ([#1407](https://github.com/DanySK/gradle-java-qa/issues/1407)) ([2bf85b7](https://github.com/DanySK/gradle-java-qa/commit/2bf85b716c9e862297d3740e08a506bfc667daa6))
+* **deps:** update kotest to v6.0.7 ([#1408](https://github.com/DanySK/gradle-java-qa/issues/1408)) ([d32edde](https://github.com/DanySK/gradle-java-qa/commit/d32edde69829cbc7a6f16d8875afd3f88fe19a5e))
+* **deps:** update plugin com.gradle.develocity to v4.3 ([#1414](https://github.com/DanySK/gradle-java-qa/issues/1414)) ([52eeb1a](https://github.com/DanySK/gradle-java-qa/commit/52eeb1aa71836aa5c567348f82f0aabb16f5d8b9))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v6.0.1 ([#1409](https://github.com/DanySK/gradle-java-qa/issues/1409)) ([fde2bfe](https://github.com/DanySK/gradle-java-qa/commit/fde2bfe3822f9ed704881371248051ac75ce4cb5))
+* **deps:** update actions/setup-node action to v6.1.0 ([#1411](https://github.com/DanySK/gradle-java-qa/issues/1411)) ([682462a](https://github.com/DanySK/gradle-java-qa/commit/682462ab60a68c60a7874f6115b471c384e19387))
+* **deps:** update danysk/action-checkout action to v0.2.27 ([#1410](https://github.com/DanySK/gradle-java-qa/issues/1410)) ([7ce0af7](https://github.com/DanySK/gradle-java-qa/commit/7ce0af7e72ce63d53eb309b3f68c591a24881936))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.13 ([#1412](https://github.com/DanySK/gradle-java-qa/issues/1412)) ([63a3f69](https://github.com/DanySK/gradle-java-qa/commit/63a3f69dfa841531ef8fe6a46236c516f0c2593d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.14 ([#1413](https://github.com/DanySK/gradle-java-qa/issues/1413)) ([ae36d76](https://github.com/DanySK/gradle-java-qa/commit/ae36d76b8c5d0e766d3c28fdff828c73415b9b1e))
+
 ## [1.159.0](https://github.com/DanySK/gradle-java-qa/compare/1.158.0...1.159.0) (2025-11-30)
 
 ### Dependency updates
