@@ -1,3 +1,15 @@
+## [1.161.0](https://github.com/DanySK/gradle-java-qa/compare/1.160.0...1.161.0) (2025-12-13)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v12.3.0 ([#1419](https://github.com/DanySK/gradle-java-qa/issues/1419)) ([23c7902](https://github.com/DanySK/gradle-java-qa/commit/23c790208191bbffdbda3f2193a78a45a407fc05))
+* **deps:** update node.js to 24.12 ([#1418](https://github.com/DanySK/gradle-java-qa/issues/1418)) ([cb132ef](https://github.com/DanySK/gradle-java-qa/commit/cb132ef02e6710a462f84a7352732074b5365c34))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.15 ([#1416](https://github.com/DanySK/gradle-java-qa/issues/1416)) ([9c26c47](https://github.com/DanySK/gradle-java-qa/commit/9c26c4756990c37e0105c191da55fa8d8b64957d))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.17 ([#1417](https://github.com/DanySK/gradle-java-qa/issues/1417)) ([10a6441](https://github.com/DanySK/gradle-java-qa/commit/10a6441c01d890899b390e087df34bb57f23ebc8))
+
 ## [1.160.0](https://github.com/DanySK/gradle-java-qa/compare/1.159.0...1.160.0) (2025-12-11)
 
 ### Dependency updates
