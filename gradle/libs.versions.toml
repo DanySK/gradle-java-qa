@@ -34,6 +34,6 @@ gitSemVer = "org.danilopianini.git-sensitive-semantic-versioning:7.0.8"
 gradlePluginPublish = "com.gradle.plugin-publish:2.0.0"
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-qa = "org.danilopianini.gradle-kotlin-qa:0.99.0"
-publishOnCentral = "org.danilopianini.publish-on-central:9.1.8"
+publishOnCentral = "org.danilopianini.publish-on-central:9.1.9"
 multiJvmTesting = { id = "org.danilopianini.multi-jvm-test-plugin", version.ref = "multi-jvm" }
 taskTree = "com.dorongold.task-tree:4.0.1"
