@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout
         uses: DanySK/action-checkout@17f5de6c9546f22aad5eab262982aa8847eebd4f # 0.2.28
-      - uses: DanySK/build-check-deploy-gradle-action@601236cb74355c3bb81aa9fc060fa72f204831a1 # 4.0.21
+      - uses: DanySK/build-check-deploy-gradle-action@6f8a33cf8c9ac881ea79ce642139449d3c60f3c4 # 4.0.22
         with:
           retries-on-failure: 5
           wait-between-retries: 120
@@ -58,7 +58,7 @@ jobs:
         uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
         with:
           node-version-file: package.json
-      - uses: DanySK/build-check-deploy-gradle-action@601236cb74355c3bb81aa9fc060fa72f204831a1 # 4.0.21
+      - uses: DanySK/build-check-deploy-gradle-action@6f8a33cf8c9ac881ea79ce642139449d3c60f3c4 # 4.0.22
         with:
           retries-on-failure: 1
           build-command: true
