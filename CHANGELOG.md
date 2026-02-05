@@ -1,3 +1,10 @@
+## [1.166.0](https://github.com/DanySK/gradle-java-qa/compare/1.165.0...1.166.0) (2026-02-05)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v13.2.0 ([#1462](https://github.com/DanySK/gradle-java-qa/issues/1462)) ([e76256e](https://github.com/DanySK/gradle-java-qa/commit/e76256e011cab4a684fcdfa587b457921a2199f2))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.9 ([#1461](https://github.com/DanySK/gradle-java-qa/issues/1461)) ([38e3a71](https://github.com/DanySK/gradle-java-qa/commit/38e3a71d5d1f7072a6b28630f97e47bd785fb328))
+
 ## [1.165.0](https://github.com/DanySK/gradle-java-qa/compare/1.164.0...1.165.0) (2026-01-31)
 
 ### Dependency updates
