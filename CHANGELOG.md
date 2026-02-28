@@ -1,3 +1,22 @@
+## [1.167.0](https://github.com/DanySK/gradle-java-qa/compare/1.166.0...1.167.0) (2026-02-28)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v13.3.0 ([#1472](https://github.com/DanySK/gradle-java-qa/issues/1472)) ([17ecb79](https://github.com/DanySK/gradle-java-qa/commit/17ecb79052688f0216cc6a23ea36cd6916e90bd7))
+* **deps:** update dependency org.jetbrains.kotlin.jvm to v2.3.10 ([#1459](https://github.com/DanySK/gradle-java-qa/issues/1459)) ([008797a](https://github.com/DanySK/gradle-java-qa/commit/008797a50ca30e5cf239526505004a45d157d7df))
+* **deps:** update kotest to v6.1.3 ([#1460](https://github.com/DanySK/gradle-java-qa/issues/1460)) ([6980aa3](https://github.com/DanySK/gradle-java-qa/commit/6980aa3717869343cc4cda5099269a5a700730f1))
+* **deps:** update kotest to v6.1.4 ([#1469](https://github.com/DanySK/gradle-java-qa/issues/1469)) ([ede2e22](https://github.com/DanySK/gradle-java-qa/commit/ede2e22904c066f25707d040c7dc607d96e54e65))
+* **deps:** update node.js to 24.14 ([#1470](https://github.com/DanySK/gradle-java-qa/issues/1470)) ([5fd592c](https://github.com/DanySK/gradle-java-qa/commit/5fd592c6e5f0714148842b93371afa7421dce59b))
+* **deps:** update plugin gitsemver to v7.0.12 ([#1464](https://github.com/DanySK/gradle-java-qa/issues/1464)) ([6fad1a5](https://github.com/DanySK/gradle-java-qa/commit/6fad1a564749ca73874bfd412a2fceef5fe4379b))
+* **deps:** update plugin kotlin-qa to v0.101.1 ([#1463](https://github.com/DanySK/gradle-java-qa/issues/1463)) ([40c88f0](https://github.com/DanySK/gradle-java-qa/commit/40c88f050e2fdfa5300efcd63cfdd404b2c6eb07))
+* **deps:** update plugin kotlin-qa to v1 ([#1466](https://github.com/DanySK/gradle-java-qa/issues/1466)) ([40dd75a](https://github.com/DanySK/gradle-java-qa/commit/40dd75a4d1c82c95fc93ee987d049125d70e02f1))
+* **deps:** update plugin kotlin-qa to v1.0.1 ([#1467](https://github.com/DanySK/gradle-java-qa/issues/1467)) ([e126037](https://github.com/DanySK/gradle-java-qa/commit/e12603717a7c45af088ef8d919b79d7042a535bf))
+* **deps:** update plugin publishoncentral to v9.1.13 ([#1465](https://github.com/DanySK/gradle-java-qa/issues/1465)) ([8d7a98d](https://github.com/DanySK/gradle-java-qa/commit/8d7a98d3d77a8f2c045bf01e455bdb506cc4e814))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.24 ([#1468](https://github.com/DanySK/gradle-java-qa/issues/1468)) ([dd344db](https://github.com/DanySK/gradle-java-qa/commit/dd344dbf00b688fce493ac1cb972d6577a4075ee))
+
 ## [1.166.0](https://github.com/DanySK/gradle-java-qa/compare/1.165.0...1.166.0) (2026-02-05)
 
 ### Dependency updates
