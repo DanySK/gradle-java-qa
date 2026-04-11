@@ -1,3 +1,15 @@
+## [1.169.0](https://github.com/DanySK/gradle-java-qa/compare/1.168.0...1.169.0) (2026-04-11)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.4.10 ([#1508](https://github.com/DanySK/gradle-java-qa/issues/1508)) ([20b45c5](https://github.com/DanySK/gradle-java-qa/commit/20b45c5f42f4383ac42c1329a31b125ff0ab35a8))
+* **deps:** update kotest to v6.1.10 ([#1505](https://github.com/DanySK/gradle-java-qa/issues/1505)) ([b033861](https://github.com/DanySK/gradle-java-qa/commit/b0338612b7df59ff9068b816d7803728d0075456))
+* **deps:** update kotest to v6.1.11 ([#1507](https://github.com/DanySK/gradle-java-qa/issues/1507)) ([52e629e](https://github.com/DanySK/gradle-java-qa/commit/52e629eb0398f11e4ce5ff157399cbfd479248f5))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.31 ([#1506](https://github.com/DanySK/gradle-java-qa/issues/1506)) ([db59012](https://github.com/DanySK/gradle-java-qa/commit/db59012458d8cb3303535158dbac627cdaea5f7e))
+
 ## [1.168.0](https://github.com/DanySK/gradle-java-qa/compare/1.167.0...1.168.0) (2026-03-29)
 
 ### Dependency updates
