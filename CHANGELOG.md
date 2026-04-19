@@ -1,3 +1,15 @@
+## [1.173.1](https://github.com/DanySK/gradle-java-qa/compare/1.173.0...1.173.1) (2026-04-19)
+
+### Dependency updates
+
+* **core-deps:** update PMD to v7.23.0 ([#1517](https://github.com/DanySK/gradle-java-qa/issues/1517)) ([b3d5830](https://github.com/DanySK/gradle-java-qa/commit/b3d58301777963a7ea99358affbb1075f378006c))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.13 ([#1518](https://github.com/DanySK/gradle-java-qa/issues/1518)) ([4b1ef31](https://github.com/DanySK/gradle-java-qa/commit/4b1ef31b8c2c7bd8f576bbfbb75ded6cee9a1daa))
+* **deps:** update plugin publishoncentral to v9.1.15 ([#1515](https://github.com/DanySK/gradle-java-qa/issues/1515)) ([a68ab59](https://github.com/DanySK/gradle-java-qa/commit/a68ab5975f9d03aa97b1e059e30cce2f9a9cf53b))
+
+### General maintenance
+
+* create AGENTS.md ([#1516](https://github.com/DanySK/gradle-java-qa/issues/1516)) ([962a2c5](https://github.com/DanySK/gradle-java-qa/commit/962a2c5e1771b1477473077558dc61f24935ad18))
+
 ## [1.173.0](https://github.com/DanySK/gradle-java-qa/compare/1.172.0...1.173.0) (2026-04-19)
 
 ### Dependency updates
