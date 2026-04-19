@@ -2,7 +2,10 @@ package javaqa;
 
 import java.util.Arrays;
 
-final class HelloWorld {
+/**
+ * Simple entry point used by integration tests.
+ */
+public final class HelloWorld {
 
     private NetworkManager networkManager = new NetworkManager();
 
@@ -13,6 +16,11 @@ final class HelloWorld {
         this.networkManager = networkManager;
     }
 
+    /**
+     * Launches the sample application.
+     *
+     * @param a ignored command line arguments
+     */
     public static void main(final String... a) {
         final double something = Math.random();
         final double anotherVar = something + 1;
