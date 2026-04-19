@@ -1,3 +1,14 @@
+## [1.173.0](https://github.com/DanySK/gradle-java-qa/compare/1.172.0...1.173.0) (2026-04-19)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.5.1 ([#1514](https://github.com/DanySK/gradle-java-qa/issues/1514)) ([8ae20d1](https://github.com/DanySK/gradle-java-qa/commit/8ae20d159e99412ab335bcffd59770657803aa9d))
+* **deps:** update node.js to 24.15 ([#1513](https://github.com/DanySK/gradle-java-qa/issues/1513)) ([2c0f5f9](https://github.com/DanySK/gradle-java-qa/commit/2c0f5f91e0b50d96bf0fd5c40582805e3a30a868))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.32 ([#1512](https://github.com/DanySK/gradle-java-qa/issues/1512)) ([95f1158](https://github.com/DanySK/gradle-java-qa/commit/95f11583bdf3565e81e99005f6ec939ccc66b2dc))
+
 ## [1.172.0](https://github.com/DanySK/gradle-java-qa/compare/1.171.0...1.172.0) (2026-04-13)
 
 ### Dependency updates
