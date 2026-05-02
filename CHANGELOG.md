@@ -1,3 +1,14 @@
+## [1.176.0](https://github.com/DanySK/gradle-java-qa/compare/1.175.0...1.176.0) (2026-05-02)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v13.4.2 ([#1538](https://github.com/DanySK/gradle-java-qa/issues/1538)) ([4e986b0](https://github.com/DanySK/gradle-java-qa/commit/4e986b02ced500e563a2a85fcd49f27a4b589fd8))
+* **deps:** update gradle to v9.5.0 ([#1533](https://github.com/DanySK/gradle-java-qa/issues/1533)) ([6c28e2c](https://github.com/DanySK/gradle-java-qa/commit/6c28e2c024a4263da26fd1b2d3cca86410ede5d6))
+* **deps:** update plugin gitsemver to v7.0.18 ([#1534](https://github.com/DanySK/gradle-java-qa/issues/1534)) ([84b28b2](https://github.com/DanySK/gradle-java-qa/commit/84b28b24f7f62bf9198d843ba9a8947855fe2e20))
+* **deps:** update plugin kotlin-qa to v1.6.1 ([#1537](https://github.com/DanySK/gradle-java-qa/issues/1537)) ([aa562fb](https://github.com/DanySK/gradle-java-qa/commit/aa562fbe9dca0ec5bf310d2150aa033349f23983))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.16 ([#1535](https://github.com/DanySK/gradle-java-qa/issues/1535)) ([b4d67fd](https://github.com/DanySK/gradle-java-qa/commit/b4d67fd13c63cdb0a3406cbeb607017cab1eb675))
+* **deps:** update plugin publishoncentral to v9.2.2 ([#1536](https://github.com/DanySK/gradle-java-qa/issues/1536)) ([b866041](https://github.com/DanySK/gradle-java-qa/commit/b866041c9eefb9e22a8d3a9c3cdb457c035168ca))
+
 ## [1.175.0](https://github.com/DanySK/gradle-java-qa/compare/1.174.0...1.175.0) (2026-04-27)
 
 ### Dependency updates
