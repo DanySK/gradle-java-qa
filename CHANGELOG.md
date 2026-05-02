@@ -1,3 +1,10 @@
+## [1.177.0](https://github.com/DanySK/gradle-java-qa/compare/1.176.0...1.177.0) (2026-05-02)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.5.3 ([#1540](https://github.com/DanySK/gradle-java-qa/issues/1540)) ([15f4be5](https://github.com/DanySK/gradle-java-qa/commit/15f4be54353cd17c6f2b2e515e79b68e489a1a0d))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.3.4 ([#1539](https://github.com/DanySK/gradle-java-qa/issues/1539)) ([1d7a143](https://github.com/DanySK/gradle-java-qa/commit/1d7a14314bb9d64f61d9ebd613f842c395f7df01))
+
 ## [1.176.0](https://github.com/DanySK/gradle-java-qa/compare/1.175.0...1.176.0) (2026-05-02)
 
 ### Dependency updates
