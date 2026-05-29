@@ -1,3 +1,13 @@
+## [1.180.0](https://github.com/DanySK/gradle-java-qa/compare/1.179.0...1.180.0) (2026-05-29)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.25.0 ([#1557](https://github.com/DanySK/gradle-java-qa/issues/1557)) ([ae0b72d](https://github.com/DanySK/gradle-java-qa/commit/ae0b72da0b1470471395619008afc3c270240631))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.4.0 ([#1554](https://github.com/DanySK/gradle-java-qa/issues/1554)) ([73875e0](https://github.com/DanySK/gradle-java-qa/commit/73875e0bafacccabc14b39e87e38a83d1f859aff))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.5.0 ([#1555](https://github.com/DanySK/gradle-java-qa/issues/1555)) ([13ee3c2](https://github.com/DanySK/gradle-java-qa/commit/13ee3c2dc1c519439808b4e5af42dd9d1a882983))
+* **deps:** update node.js to 24.16 ([#1553](https://github.com/DanySK/gradle-java-qa/issues/1553)) ([dbbc4ee](https://github.com/DanySK/gradle-java-qa/commit/dbbc4eeb2e7a5f9230bb9e840df0d15b46e224e2))
+* **deps:** update plugin com.gradle.develocity to v4.4.2 ([#1556](https://github.com/DanySK/gradle-java-qa/issues/1556)) ([d878bc6](https://github.com/DanySK/gradle-java-qa/commit/d878bc67d68b04dfb7dd1c7b11537752c1d040a2))
+
 ## [1.179.0](https://github.com/DanySK/gradle-java-qa/compare/1.178.0...1.179.0) (2026-05-23)
 
 ### Dependency updates
