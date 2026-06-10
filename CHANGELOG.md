@@ -1,3 +1,9 @@
+## [1.184.0](https://github.com/DanySK/gradle-java-qa/compare/1.183.0...1.184.0) (2026-06-10)
+
+### Dependency updates
+
+* **api-deps:** update spotbugs.gradle to v6.5.6 ([#1570](https://github.com/DanySK/gradle-java-qa/issues/1570)) ([a231135](https://github.com/DanySK/gradle-java-qa/commit/a231135b46e55ac9378cebbf2641e4b0b0258885))
+
 ## [1.183.0](https://github.com/DanySK/gradle-java-qa/compare/1.182.0...1.183.0) (2026-06-10)
 
 ### Dependency updates
