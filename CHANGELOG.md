@@ -1,3 +1,9 @@
+## [1.183.0](https://github.com/DanySK/gradle-java-qa/compare/1.182.0...1.183.0) (2026-06-10)
+
+### Dependency updates
+
+* **api-deps:** update spotbugs to v4.10.2 ([#1569](https://github.com/DanySK/gradle-java-qa/issues/1569)) ([21deaf3](https://github.com/DanySK/gradle-java-qa/commit/21deaf3c1891730bbd6a9926d5d0181ae509850d))
+
 ## [1.182.0](https://github.com/DanySK/gradle-java-qa/compare/1.181.0...1.182.0) (2026-06-08)
 
 ### Dependency updates
