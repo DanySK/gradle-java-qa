@@ -1,3 +1,16 @@
+## [1.185.0](https://github.com/DanySK/gradle-java-qa/compare/1.184.0...1.185.0) (2026-06-15)
+
+### Dependency updates
+
+* **api-deps:** update checkstyle to v13.6.0 ([#1575](https://github.com/DanySK/gradle-java-qa/issues/1575)) ([7096058](https://github.com/DanySK/gradle-java-qa/commit/7096058fea435d2314d071cf31b9dc76685ab3af))
+* **deps:** update plugin gitsemver to v7.0.21 ([#1573](https://github.com/DanySK/gradle-java-qa/issues/1573)) ([5ba267d](https://github.com/DanySK/gradle-java-qa/commit/5ba267d13615cb5ef138413057b1b53c87951f0f))
+* **deps:** update plugin gitsemver to v7.0.22 ([#1574](https://github.com/DanySK/gradle-java-qa/issues/1574)) ([9312985](https://github.com/DanySK/gradle-java-qa/commit/9312985b0915483af63ae1d917ea73519a0ee430))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.34 ([#1571](https://github.com/DanySK/gradle-java-qa/issues/1571)) ([7d473d4](https://github.com/DanySK/gradle-java-qa/commit/7d473d4cd9d57ef5eb5c4f24ffab55182a198a78))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.35 ([#1572](https://github.com/DanySK/gradle-java-qa/issues/1572)) ([fb4ad0b](https://github.com/DanySK/gradle-java-qa/commit/fb4ad0bdc1fabfb63441b9b54f01fc6725d434c5))
+
 ## [1.184.0](https://github.com/DanySK/gradle-java-qa/compare/1.183.0...1.184.0) (2026-06-10)
 
 ### Dependency updates
