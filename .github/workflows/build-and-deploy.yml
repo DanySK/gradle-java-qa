@@ -12,7 +12,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
       - name: Checkout
-        uses: DanySK/action-checkout@6e7553884091a482fd7d86e876c286d3fb2db292 # 0.2.29
+        uses: DanySK/action-checkout@a68beea0e65091ba27ce80140f3b1fc5fe8d7e83 # 0.2.30
       - uses: DanySK/build-check-deploy-gradle-action@45863e1647807c6eba29a310f19d7503c8a8b960 # 4.0.36
         with:
           retries-on-failure: 5
