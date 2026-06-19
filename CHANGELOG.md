@@ -1,3 +1,22 @@
+## [1.186.0](https://github.com/DanySK/gradle-java-qa/compare/1.185.0...1.186.0) (2026-06-19)
+
+### Dependency updates
+
+* **api-deps:** update spotbugs.gradle to v6.5.8 ([#1585](https://github.com/DanySK/gradle-java-qa/issues/1585)) ([926903c](https://github.com/DanySK/gradle-java-qa/commit/926903cd47c0dddf83877883418547ece54d545a))
+* **deps:** update gradle to v9.6.0 ([#1583](https://github.com/DanySK/gradle-java-qa/issues/1583)) ([f246403](https://github.com/DanySK/gradle-java-qa/commit/f246403c4d7e2b6c78d6121a79f43bc7e8100fbf))
+* **deps:** update kotest to v6.2.0 ([#1576](https://github.com/DanySK/gradle-java-qa/issues/1576)) ([297c46b](https://github.com/DanySK/gradle-java-qa/commit/297c46bda4a2964843151640522087d6ac865433))
+* **deps:** update kotest to v6.2.1 ([#1580](https://github.com/DanySK/gradle-java-qa/issues/1580)) ([83be991](https://github.com/DanySK/gradle-java-qa/commit/83be9914bc604612f97662b77d7abf0a4ccefd0b))
+* **deps:** update multi.jvm to v4.5.2 ([#1584](https://github.com/DanySK/gradle-java-qa/issues/1584)) ([a509d9c](https://github.com/DanySK/gradle-java-qa/commit/a509d9c18ffbc2bccaf5f4cf1a2fb7de91713adc))
+* **deps:** update plugin com.gradle.develocity to v4.4.3 ([#1577](https://github.com/DanySK/gradle-java-qa/issues/1577)) ([4e69727](https://github.com/DanySK/gradle-java-qa/commit/4e69727e7fb74b86660ae789093ffaa2fad41031))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.19 ([#1581](https://github.com/DanySK/gradle-java-qa/issues/1581)) ([6962037](https://github.com/DanySK/gradle-java-qa/commit/69620370366e79d85236924cc14d13a6fbc2fce6))
+* **deps:** update plugin publishoncentral to v9.2.6 ([#1586](https://github.com/DanySK/gradle-java-qa/issues/1586)) ([5b01d51](https://github.com/DanySK/gradle-java-qa/commit/5b01d51f7bbf9bf04574a3390599f1437fb6565c))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v7 ([#1579](https://github.com/DanySK/gradle-java-qa/issues/1579)) ([9a3f819](https://github.com/DanySK/gradle-java-qa/commit/9a3f819a5aa3f1eee2391a4f7bc4e8c32ff9c844))
+* **deps:** update danysk/action-checkout action to v0.2.30 ([#1582](https://github.com/DanySK/gradle-java-qa/issues/1582)) ([f16f6cf](https://github.com/DanySK/gradle-java-qa/commit/f16f6cf236c1ad62c305b938bd4fb1dfe966cb96))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.36 ([#1578](https://github.com/DanySK/gradle-java-qa/issues/1578)) ([2b286f8](https://github.com/DanySK/gradle-java-qa/commit/2b286f831302eda1d8b4ec50a62e830e1e152409))
+
 ## [1.185.0](https://github.com/DanySK/gradle-java-qa/compare/1.184.0...1.185.0) (2026-06-15)
 
 ### Dependency updates
