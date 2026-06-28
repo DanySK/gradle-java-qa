@@ -1,3 +1,21 @@
+## [1.187.0](https://github.com/DanySK/gradle-java-qa/compare/1.186.0...1.187.0) (2026-06-28)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v13.7.0 ([#1596](https://github.com/DanySK/gradle-java-qa/issues/1596)) ([760ecc5](https://github.com/DanySK/gradle-java-qa/commit/760ecc5996ac0dc1e287d2ae2f35f971bda953f1))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.5.3 ([#1591](https://github.com/DanySK/gradle-java-qa/issues/1591)) ([c0b6569](https://github.com/DanySK/gradle-java-qa/commit/c0b6569b332013e36bd101faed43a80ed65d8691))
+* **deps:** update gradle to v9.6.1 ([#1592](https://github.com/DanySK/gradle-java-qa/issues/1592)) ([5e91de7](https://github.com/DanySK/gradle-java-qa/commit/5e91de7ef116ce97aa5480db32a0eb1b194b992d))
+* **deps:** update node.js to 24.17 ([#1587](https://github.com/DanySK/gradle-java-qa/issues/1587)) ([846f5b8](https://github.com/DanySK/gradle-java-qa/commit/846f5b851e979caf14973422a918f6bba4ed71cc))
+* **deps:** update node.js to 24.18 ([#1590](https://github.com/DanySK/gradle-java-qa/issues/1590)) ([b70928c](https://github.com/DanySK/gradle-java-qa/commit/b70928cb55c728a676d31388bab18dab98e326d2))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.20 ([#1594](https://github.com/DanySK/gradle-java-qa/issues/1594)) ([b8b31a8](https://github.com/DanySK/gradle-java-qa/commit/b8b31a89bf2fb69294db11d0e7610dbff421546e))
+* **deps:** update plugin publishoncentral to v9.2.7 ([#1593](https://github.com/DanySK/gradle-java-qa/issues/1593)) ([bff8977](https://github.com/DanySK/gradle-java-qa/commit/bff8977ca4d5e618f610ab5e0f7604af17e3e788))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.37 ([#1588](https://github.com/DanySK/gradle-java-qa/issues/1588)) ([6edd13a](https://github.com/DanySK/gradle-java-qa/commit/6edd13a94fe304c663508b091c3c16d09046a4fb))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.38 ([#1589](https://github.com/DanySK/gradle-java-qa/issues/1589)) ([39e5eea](https://github.com/DanySK/gradle-java-qa/commit/39e5eea55c80af0dc3d9ef7e17581969db17d00c))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.39 ([#1595](https://github.com/DanySK/gradle-java-qa/issues/1595)) ([4963cc4](https://github.com/DanySK/gradle-java-qa/commit/4963cc495ef325cc42d4249d904058b14d052896))
+
 ## [1.186.0](https://github.com/DanySK/gradle-java-qa/compare/1.185.0...1.186.0) (2026-06-19)
 
 ### Dependency updates
