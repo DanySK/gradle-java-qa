@@ -1,3 +1,10 @@
+## [1.188.0](https://github.com/DanySK/gradle-java-qa/compare/1.187.0...1.188.0) (2026-06-29)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.26.0 ([#1597](https://github.com/DanySK/gradle-java-qa/issues/1597)) ([e74dc67](https://github.com/DanySK/gradle-java-qa/commit/e74dc675c992d2216d11034ca43292d89962afcc))
+* **deps:** update plugin kotlin-qa to v1.8.0 ([#1598](https://github.com/DanySK/gradle-java-qa/issues/1598)) ([201172c](https://github.com/DanySK/gradle-java-qa/commit/201172c64aabb80acad63dfc33f5451d1df3f255))
+
 ## [1.187.0](https://github.com/DanySK/gradle-java-qa/compare/1.186.0...1.187.0) (2026-06-28)
 
 ### Dependency updates
