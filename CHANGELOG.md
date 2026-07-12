@@ -1,3 +1,15 @@
+## [1.189.0](https://github.com/DanySK/gradle-java-qa/compare/1.188.0...1.189.0) (2026-07-12)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v13.8.0 ([#1602](https://github.com/DanySK/gradle-java-qa/issues/1602)) ([69ffbca](https://github.com/DanySK/gradle-java-qa/commit/69ffbca43d535c2ebec6805237424152bb7f2daf))
+* **deps:** update kotest to v6.2.2 ([#1601](https://github.com/DanySK/gradle-java-qa/issues/1601)) ([ef2a175](https://github.com/DanySK/gradle-java-qa/commit/ef2a1756bc7eb573b14e66d83b1b2bd350f0662f))
+* **deps:** update plugin com.gradle.develocity to v4.5.0 ([#1599](https://github.com/DanySK/gradle-java-qa/issues/1599)) ([e4caf7a](https://github.com/DanySK/gradle-java-qa/commit/e4caf7adda43954f03207a6eca2d240d1681e07d))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.40 ([#1600](https://github.com/DanySK/gradle-java-qa/issues/1600)) ([4fdfb18](https://github.com/DanySK/gradle-java-qa/commit/4fdfb18de5260857fa7c5cf69b9e6e2ce6e918ba))
+
 ## [1.188.0](https://github.com/DanySK/gradle-java-qa/compare/1.187.0...1.188.0) (2026-06-29)
 
 ### Dependency updates
