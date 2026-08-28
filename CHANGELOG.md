@@ -1,3 +1,15 @@
+## [1.195.0](https://github.com/DanySK/gradle-java-qa/compare/1.194.0...1.195.0) (2026-08-28)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.27.0 ([#1648](https://github.com/DanySK/gradle-java-qa/issues/1648)) ([8ade16e](https://github.com/DanySK/gradle-java-qa/commit/8ade16e022789b56451bc903ccbde0d93294f290))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.193 ([#1645](https://github.com/DanySK/gradle-java-qa/issues/1645)) ([07d1fdb](https://github.com/DanySK/gradle-java-qa/commit/07d1fdb24b68019347d0dd280bb3919b40a98856))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.194 ([#1646](https://github.com/DanySK/gradle-java-qa/issues/1646)) ([4145db5](https://github.com/DanySK/gradle-java-qa/commit/4145db54377a23c88c4bbe9da55f724b31a7a379))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.44 ([#1647](https://github.com/DanySK/gradle-java-qa/issues/1647)) ([902ab14](https://github.com/DanySK/gradle-java-qa/commit/902ab148554c08f693c7cc57676aa73cff605270))
+
 ## [1.194.0](https://github.com/DanySK/gradle-java-qa/compare/1.193.0...1.194.0) (2026-08-20)
 
 ### Dependency updates
