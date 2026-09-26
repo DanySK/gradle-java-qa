@@ -1,3 +1,12 @@
+## [1.197.0](https://github.com/DanySK/gradle-java-qa/compare/1.196.0...1.197.0) (2026-09-26)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.5.12 ([#1675](https://github.com/DanySK/gradle-java-qa/issues/1675)) ([39ff120](https://github.com/DanySK/gradle-java-qa/commit/39ff120df45701c172e56fe3159448f82adf87e6))
+* **deps:** update plugin com.gradle.develocity to v4.6.0 ([#1671](https://github.com/DanySK/gradle-java-qa/issues/1671)) ([4459980](https://github.com/DanySK/gradle-java-qa/commit/4459980ab6d2f90fbf4b53068d98cc2bbdf7a485))
+* **deps:** update plugin kotlin-qa to v1.10.0 ([#1676](https://github.com/DanySK/gradle-java-qa/issues/1676)) ([ea62b0b](https://github.com/DanySK/gradle-java-qa/commit/ea62b0b3bee31ca48e68cbf2cc060075627d02ff))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.25 ([#1674](https://github.com/DanySK/gradle-java-qa/issues/1674)) ([17276f3](https://github.com/DanySK/gradle-java-qa/commit/17276f36f83739bcbbbc4e42a1b558e8cb656c2f))
+
 ## [1.196.0](https://github.com/DanySK/gradle-java-qa/compare/1.195.0...1.196.0) (2026-09-25)
 
 ### Dependency updates
