@@ -1,3 +1,10 @@
+## [1.199.0](https://github.com/DanySK/gradle-java-qa/compare/1.198.0...1.199.0) (2026-10-13)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.5.13 ([#1693](https://github.com/DanySK/gradle-java-qa/issues/1693)) ([03e44c3](https://github.com/DanySK/gradle-java-qa/commit/03e44c3be1051106f2aadf8a80a2151e84249c41))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.198 ([#1692](https://github.com/DanySK/gradle-java-qa/issues/1692)) ([9b22f14](https://github.com/DanySK/gradle-java-qa/commit/9b22f14def66470c2ab407d5df2b3f202dda1086))
+
 ## [1.198.0](https://github.com/DanySK/gradle-java-qa/compare/1.197.0...1.198.0) (2026-10-12)
 
 ### Dependency updates
