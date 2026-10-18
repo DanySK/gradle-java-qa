@@ -39,7 +39,7 @@ repositories {
     gradlePluginPortal()
 }
 
-val copyJavaVersion by tasks.registering(Copy::class) {
+val copyJavaVersion = tasks.register<Copy>("copyJavaVersion") {
     description = "Copies the java version from the main project to the resources output"
     from(".java-version")
     into(
@@ -49,7 +49,7 @@ val copyJavaVersion by tasks.registering(Copy::class) {
     )
 }
 
-val copyToolVersions by tasks.registering {
+val copyToolVersions = tasks.register("copyToolVersions") {
     description = "Writes the checkstyle, jacoco, pmd, and spotbugs versions from the version catalog " +
         "into META-INF/javaqa/tool-versions.properties"
     inputs.file(File(rootProject.rootDir, "gradle/libs.versions.toml"))
@@ -123,8 +123,8 @@ tasks.cpdKotlinCheck {
 
 signing {
     if (System.getenv()["CI"].equals("true", ignoreCase = true)) {
-        val signingKey: String? by project
-        val signingPassword: String? by project
+        val signingKey = findProperty("signingKey")?.toString()
+        val signingPassword = findProperty("signingPassword")?.toString()
         useInMemoryPgpKeys(signingKey, signingPassword)
     }
 }
