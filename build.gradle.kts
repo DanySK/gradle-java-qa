@@ -40,7 +40,10 @@ repositories {
     gradlePluginPortal()
 }
 
+val preCompilationTaskGroupName = "Pre-compilation operations"
+
 val copyJavaVersion = tasks.register<Copy>("copyJavaVersion") {
+    group = preCompilationTaskGroupName
     description = "Copies the java version from the main project to the resources output"
     from(".java-version")
     into(
@@ -51,6 +54,7 @@ val copyJavaVersion = tasks.register<Copy>("copyJavaVersion") {
 }
 
 val copyToolVersions = tasks.register("copyToolVersions") {
+    group = preCompilationTaskGroupName
     description = "Writes the checkstyle, jacoco, pmd, and spotbugs versions from the version catalog " +
         "into META-INF/javaqa/tool-versions.properties"
     inputs.file(File(rootProject.rootDir, "gradle/libs.versions.toml"))
