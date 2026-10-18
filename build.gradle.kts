@@ -40,6 +40,7 @@ repositories {
 }
 
 val copyJavaVersion by tasks.registering(Copy::class) {
+    description = "Copies the java version from the main project to the resources output"
     from(".java-version")
     into(
         project.layout.buildDirectory
@@ -49,6 +50,8 @@ val copyJavaVersion by tasks.registering(Copy::class) {
 }
 
 val copyToolVersions by tasks.registering {
+    description = "Writes the checkstyle, jacoco, pmd, and spotbugs versions from the version catalog " +
+        "into META-INF/javaqa/tool-versions.properties"
     inputs.file(File(rootProject.rootDir, "gradle/libs.versions.toml"))
     val outputDir = project.layout.buildDirectory
         .dir("resources/main/META-INF/javaqa/")
