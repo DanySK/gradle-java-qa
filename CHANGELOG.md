@@ -1,3 +1,26 @@
+## [1.200.0](https://github.com/DanySK/gradle-java-qa/compare/1.199.0...1.200.0) (2026-10-18)
+
+### Dependency updates
+
+* **api-deps:** update checkstyle to v14.3.0 ([#1701](https://github.com/DanySK/gradle-java-qa/issues/1701)) ([7b7185f](https://github.com/DanySK/gradle-java-qa/commit/7b7185f89028b67794103eca2473d0bd7ca42a03))
+* **deps:** update dependency io.github.classgraph:classgraph to v4.8.199 ([b9bab6b](https://github.com/DanySK/gradle-java-qa/commit/b9bab6b3b0a68e80c8408aceb341fed086fb5018))
+* **deps:** update kotest to v6.2.6 ([#1697](https://github.com/DanySK/gradle-java-qa/issues/1697)) ([093765e](https://github.com/DanySK/gradle-java-qa/commit/093765e2de78d2cb500e22184b8b3f6204bb8d49))
+* **deps:** update node.js to 24.22 ([a43fdbe](https://github.com/DanySK/gradle-java-qa/commit/a43fdbe46277315e6344848682a9cf7a95a76292))
+* **deps:** update plugin kotlin-qa to v1.10.2 ([#1700](https://github.com/DanySK/gradle-java-qa/issues/1700)) ([05ea4f1](https://github.com/DanySK/gradle-java-qa/commit/05ea4f141ca579b4afeb9c301f3a615f3e1c3061))
+
+### Tests
+
+* remove the dependency on classgraph ([fd07509](https://github.com/DanySK/gradle-java-qa/commit/fd075091d6fd6f0a62b1231810b0a1a02c3b17d8))
+
+### Build and continuous integration
+
+* add descriptions for copyJavaVersion and copyToolVersions tasks ([b88c42f](https://github.com/DanySK/gradle-java-qa/commit/b88c42f40529f88501111f821598afe441e727e7))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.49 ([#1698](https://github.com/DanySK/gradle-java-qa/issues/1698)) ([ca9cc93](https://github.com/DanySK/gradle-java-qa/commit/ca9cc937fc0678a95bca8f2d6ffdb34002f4f92c))
+* drop the deprecated delegate syntax ([779bd00](https://github.com/DanySK/gradle-java-qa/commit/779bd0037e41d47c3e1f908843367e0a9c7173c9))
+* force the Jackson version to fix the complaints about vulnerabilities pulled in by konf ([2fa1b37](https://github.com/DanySK/gradle-java-qa/commit/2fa1b3747b4b58b41f462c4fefb11d44f8ee3e1f))
+* simplify test logging event declaration ([6d28be7](https://github.com/DanySK/gradle-java-qa/commit/6d28be7658ee77351a86e155a13cc44dac6ea49e))
+* update developer URL to use HTTPS ([e7b6819](https://github.com/DanySK/gradle-java-qa/commit/e7b6819acfd4e1437b45a5d0862fb51e4709d61c))
+
 ## [1.199.0](https://github.com/DanySK/gradle-java-qa/compare/1.198.0...1.199.0) (2026-10-13)
 
 ### Dependency updates
