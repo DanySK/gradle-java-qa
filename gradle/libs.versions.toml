@@ -2,6 +2,7 @@
 cpd-gradle = "3.5"
 checkstyle = "13.8.0"
 dokka = "2.2.0"
+jackson = "2.22.4"
 jacoco = "0.8.15"
 konf = "1.1.2"
 kotlin = "2.4.21"
@@ -14,6 +15,7 @@ spotbugs-gradle = "6.5.13"
 [libraries]
 checkstyle = { module = "com.puppycrawl.tools:checkstyle", version.ref = "checkstyle" }
 cpd-gradle = { module = "de.aaschmid:gradle-cpd-plugin", version.ref = "cpd-gradle" }
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jackson" }
 jacoco = { module = "org.jacoco:org.jacoco.core", version.ref = "jacoco" }
 konf-yaml = { module = "com.uchuhimo:konf-yaml", version.ref = "konf" }
 kotest-junit5-jvm = { module = "io.kotest:kotest-runner-junit5-jvm", version.ref = "kotest" }

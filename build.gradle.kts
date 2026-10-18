@@ -93,6 +93,7 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
 
     testImplementation(gradleTestKit())
+    testImplementation(platform(libs.jackson.bom))
     testImplementation(libs.konf.yaml)
     testImplementation(libs.bundles.kotlin.testing)
 }
