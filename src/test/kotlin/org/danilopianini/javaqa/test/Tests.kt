@@ -2,7 +2,6 @@ package org.danilopianini.javaqa.test
 
 import com.uchuhimo.konf.Config
 import com.uchuhimo.konf.source.yaml
-import io.github.classgraph.ClassGraph
 import io.kotest.core.spec.style.StringSpec
 import io.kotest.matchers.file.shouldBeAFile
 import io.kotest.matchers.file.shouldExist
@@ -19,11 +18,14 @@ import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
 class Tests : StringSpec({
-    val scan = ClassGraph().enableAllInfo().acceptPackages(Tests::class.java.`package`.name).scan()
-    scan.getResourcesWithLeafName("test.yaml").flatMap { resource ->
-        log.debug("Found test list in {}", resource)
-        val yamlFile = File(resource.classpathElementFile.absolutePath + "/" + resource.path)
-        val testConfiguration = Config { addSpec(Root) }.from.yaml.inputStream(resource.open())
+    val packagePath = Tests::class.java.`package`.name.replace('.', '/')
+    val testFiles = checkNotNull(Tests::class.java.classLoader).getResources(packagePath).asSequence()
+        .filter { it.protocol == "file" }
+        .flatMap { File(it.toURI()).walkTopDown().filter { file -> file.isFile && file.name == "test.yaml" } }
+        .toList()
+    testFiles.flatMap { yamlFile ->
+        log.debug("Found test list in {}", yamlFile)
+        val testConfiguration = Config { addSpec(Root) }.from.yaml.file(yamlFile)
         testConfiguration[Root.tests].map { it to yamlFile.parentFile }
     }.forEach { (test, location) ->
         log.debug("Test to be executed: {} from {}", test, location)

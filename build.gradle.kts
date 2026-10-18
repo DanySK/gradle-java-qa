@@ -90,7 +90,6 @@ dependencies {
 
     testImplementation(gradleTestKit())
     testImplementation(libs.konf.yaml)
-    testImplementation(libs.classgraph)
     testImplementation(libs.bundles.kotlin.testing)
 }
 
