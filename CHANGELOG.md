@@ -1,3 +1,24 @@
+## [1.201.0](https://github.com/DanySK/gradle-java-qa/compare/1.200.0...1.201.0) (2026-10-31)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.puppycrawl.tools:checkstyle to v14.4.0 ([#1716](https://github.com/DanySK/gradle-java-qa/issues/1716)) ([bad3a11](https://github.com/DanySK/gradle-java-qa/commit/bad3a11693a50d6c6949e311fceb4dc1261ac14e))
+* **deps:** update dependency org.danilopianini.multi-jvm-test-plugin to v4.5.11 ([#1709](https://github.com/DanySK/gradle-java-qa/issues/1709)) ([36feec5](https://github.com/DanySK/gradle-java-qa/commit/36feec5967f11f35afd159143846cdc541a31ee1))
+* **deps:** update dependency org.jacoco:org.jacoco.core to v0.8.16 ([#1712](https://github.com/DanySK/gradle-java-qa/issues/1712)) ([cc8e87d](https://github.com/DanySK/gradle-java-qa/commit/cc8e87ddab5342d433d69e8ad296b7a12d97d609))
+* **deps:** update gradle to v9.8.2 ([a84f875](https://github.com/DanySK/gradle-java-qa/commit/a84f8751c9365d4229c09c0a238b5a8b535a2d98))
+* **deps:** update node.js to v26 ([4267c4f](https://github.com/DanySK/gradle-java-qa/commit/4267c4f25c236f708993e52cac6f94ca7a248d72))
+* **deps:** update plugin com.gradle.develocity to v4.6.1 ([793a138](https://github.com/DanySK/gradle-java-qa/commit/793a138d410b578068ba5197eb77de4118b3a658))
+* **deps:** update plugin gitsemver to v7.1.0 ([1114dea](https://github.com/DanySK/gradle-java-qa/commit/1114deafaaf919b9d8cf17e195e9d22346fa7a19))
+* **deps:** update plugin gitsemver to v7.2.0 ([#1710](https://github.com/DanySK/gradle-java-qa/issues/1710)) ([86586b1](https://github.com/DanySK/gradle-java-qa/commit/86586b15896adb3cdeaec4200e27fb0ff9e893f1))
+* **deps:** update plugin gitsemver to v7.3.0 ([110acb9](https://github.com/DanySK/gradle-java-qa/commit/110acb9eb0332159f824e20db16e8f23af5f98b9))
+* **deps:** update plugin publishoncentral to v9.2.15 ([c53a685](https://github.com/DanySK/gradle-java-qa/commit/c53a6853c28d4ce3460b655fabaee1668e71afb8))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.50 ([5255638](https://github.com/DanySK/gradle-java-qa/commit/525563857a10bed481d62d9f2b53e22009603ffc))
+* **deps:** update dependency macos github actions runner to v26 ([292720a](https://github.com/DanySK/gradle-java-qa/commit/292720a3f828167c2a66a772041ebda4cc473490))
+* **deps:** update dependency ubuntu github actions runner to v26 ([cd53889](https://github.com/DanySK/gradle-java-qa/commit/cd538890db3b6647ef61b7fd1f626dd382075924))
+
 ## [1.200.0](https://github.com/DanySK/gradle-java-qa/compare/1.199.0...1.200.0) (2026-10-18)
 
 ### Dependency updates
