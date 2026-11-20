@@ -1,0 +1,17 @@
+name: CI/CD (full, on escalation)
+# Starts the full CI as soon as a pull request gets the `full-ci` label
+# (Mergify adds it to pull requests that failed in the merge queue).
+# Later pushes are handled by the dispatcher, which runs the full CI on labeled pull requests.
+on:
+  pull_request:
+    types: [labeled]
+
+jobs:
+  ci-cd:
+    if: github.event.label.name == 'full-ci'
+    # Job-level, so that other labels (skipped job) do not cancel the runs in progress
+    concurrency:
+      group: ci-cd-${{ github.event.number }}
+      cancel-in-progress: true
+    uses: ./.github/workflows/build-and-deploy.yml
+    secrets: inherit

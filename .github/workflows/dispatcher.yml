@@ -1,11 +1,11 @@
 name: CI/CD
 on:
   push:
-    branches-ignore:
-      - 'dependabot/**'
+    branches:
+      - master
     paths-ignore:
       - '.gitignore'
-      - '.mergify'
+      - '.mergify.yml'
       - 'CHANGELOG.md'
       - 'LICENSE'
       - 'README.md'
@@ -13,21 +13,34 @@ on:
   pull_request:
   workflow_dispatch:
 
+# Shared with full-ci-on-label.yml, so that runs on the same pull request supersede each other
 concurrency:
-  group: build-${{ github.workflow }}-${{ github.event.number || github.ref }}
+  group: ci-cd-${{ github.event.number || github.ref }}
   cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
-  dispatcher:
+  # Quick CI: default for pull requests
+  quick-check:
+    if: >-
+      github.event_name == 'pull_request'
+      && !startsWith(github.head_ref, 'mergify/merge-queue/')
+      && !contains(github.event.pull_request.labels.*.name, 'full-ci')
     runs-on: ubuntu-26.04
+    steps:
+      - name: Checkout
+        uses: DanySK/action-checkout@e9de212326294d8149a4bd74c85db6c6bc2b6da3 # 0.2.31
+      - uses: DanySK/build-check-deploy-gradle-action@51381e61be6d527c330f3c69913b5c6256fa15ee # 4.0.52
+        with:
+          build-command: true
+          check-command: ./gradlew check
+          should-run-codecov: false
+          should-deploy: false
+  # Full CI: pushes to master, manual dispatch, merge queue draft pull requests (mergify/merge-queue/*),
+  # and pull requests labeled `full-ci` (Mergify adds the label to pull requests that failed in the queue)
+  ci-cd:
     if: >-
       github.event_name != 'pull_request'
-      || github.event.pull_request.head.repo.full_name != github.repository
-      || startsWith(github.head_ref, 'dependabot/')
-    steps:
-      - run: 'true'
-  ci-cd:
-    needs:
-      - dispatcher
+      || startsWith(github.head_ref, 'mergify/merge-queue/')
+      || contains(github.event.pull_request.labels.*.name, 'full-ci')
     uses: ./.github/workflows/build-and-deploy.yml
     secrets: inherit
