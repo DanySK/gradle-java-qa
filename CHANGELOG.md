@@ -1,3 +1,26 @@
+## [1.201.1](https://github.com/DanySK/gradle-java-qa/compare/1.201.0...1.201.1) (2026-11-21)
+
+### Dependency updates
+
+* **deps:** update dependency com.fasterxml.jackson:jackson-bom to v2.23.0 ([#1720](https://github.com/DanySK/gradle-java-qa/issues/1720)) ([284d5b3](https://github.com/DanySK/gradle-java-qa/commit/284d5b35f68724b48889d208ef363fe353c13cc4))
+* **deps:** update dependency org.jetbrains.dokka to v2.3.0 ([2990b2d](https://github.com/DanySK/gradle-java-qa/commit/2990b2d35a52ad30cdadb0efa1ce507f27fe38e7))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.158 ([#1717](https://github.com/DanySK/gradle-java-qa/issues/1717)) ([e38cca9](https://github.com/DanySK/gradle-java-qa/commit/e38cca97f37c3ca7f2f3ac74984e2385968ea26c))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.159 ([#1724](https://github.com/DanySK/gradle-java-qa/issues/1724)) ([dadf865](https://github.com/DanySK/gradle-java-qa/commit/dadf865156bef6db008536d37f19842f9d631bc6))
+* **deps:** update gradle to v9.9.1 ([#1722](https://github.com/DanySK/gradle-java-qa/issues/1722)) ([8b8ab24](https://github.com/DanySK/gradle-java-qa/commit/8b8ab244aa4375168b684bfd80f3a952be27ddae))
+* **deps:** update gradle to v9.9.2 ([#1725](https://github.com/DanySK/gradle-java-qa/issues/1725)) ([ef7f71a](https://github.com/DanySK/gradle-java-qa/commit/ef7f71acde24ee97d5b5af10d8c45bfa17dc6ae9))
+* **deps:** update kotest to v6.2.7 ([#1718](https://github.com/DanySK/gradle-java-qa/issues/1718)) ([ad0c2e4](https://github.com/DanySK/gradle-java-qa/commit/ad0c2e49e8e4cea5103815a42c99510bb82e98ba))
+* **deps:** update plugin publishoncentral to v9.3.2 ([#1723](https://github.com/DanySK/gradle-java-qa/issues/1723)) ([8542efb](https://github.com/DanySK/gradle-java-qa/commit/8542efb00c522ecdaf86222ad9d92acb5dbde3c2))
+* **deps:** update plugin publishoncentral to v9.3.3 ([#1726](https://github.com/DanySK/gradle-java-qa/issues/1726)) ([2246159](https://github.com/DanySK/gradle-java-qa/commit/2246159a50a143f8ccf94192a0bf85edff487a97))
+
+### Bug Fixes
+
+* disable the atrocious PMD rule `LocalVariableDeclarationShouldBeAtStartOfBlock` ([#1727](https://github.com/DanySK/gradle-java-qa/issues/1727)) ([2973dd6](https://github.com/DanySK/gradle-java-qa/commit/2973dd6379fe28b8e960a025ebf9ef41baf8a16d))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.52 ([#1719](https://github.com/DanySK/gradle-java-qa/issues/1719)) ([c27d0e1](https://github.com/DanySK/gradle-java-qa/commit/c27d0e1972d81ebac65de1359b2439067cf47c0b))
+* switch to a merge-queue based workflow ([c0e16b7](https://github.com/DanySK/gradle-java-qa/commit/c0e16b756b397b833bad61c763784d177aadf742))
+
 ## [1.201.0](https://github.com/DanySK/gradle-java-qa/compare/1.200.0...1.201.0) (2026-10-31)
 
 ### Dependency updates
