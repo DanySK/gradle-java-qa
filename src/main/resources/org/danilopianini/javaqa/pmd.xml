@@ -42,6 +42,7 @@
         <exclude name="CommentDefaultAccessModifier" />
         <exclude name="ConfusingTernary" />
         <exclude name="EmptyMethodInAbstractClassShouldBeAbstract" />
+        <exclude name="LocalVariableDeclarationShouldBeAtStartOfBlock" />
         <exclude name="LongVariable" />
         <exclude name="MDBAndSessionBeanNamingConvention" />
         <exclude name="OnlyOneReturn" />
