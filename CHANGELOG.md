@@ -1,3 +1,10 @@
+## [1.203.0](https://github.com/DanySK/gradle-java-qa/compare/1.202.0...1.203.0) (2026-11-27)
+
+### Dependency updates
+
+* **api-deps:** update dependency com.github.spotbugs.snom:spotbugs-gradle-plugin to v6.5.15 ([#1734](https://github.com/DanySK/gradle-java-qa/issues/1734)) ([332b7e7](https://github.com/DanySK/gradle-java-qa/commit/332b7e77ab3079512ad217c91f09eba7cb318150))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.160 ([#1732](https://github.com/DanySK/gradle-java-qa/issues/1732)) ([031debc](https://github.com/DanySK/gradle-java-qa/commit/031debc8ae13ae0e7496b48a22b01684695d8a8f))
+
 ## [1.202.0](https://github.com/DanySK/gradle-java-qa/compare/1.201.1...1.202.0) (2026-11-21)
 
 ### Dependency updates
