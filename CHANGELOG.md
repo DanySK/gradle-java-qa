@@ -1,3 +1,14 @@
+## [1.204.0](https://github.com/DanySK/gradle-java-qa/compare/1.203.0...1.204.0) (2026-11-27)
+
+### Dependency updates
+
+* **api-deps:** update dependency net.sourceforge.pmd:pmd-java to v7.30.0 ([#1736](https://github.com/DanySK/gradle-java-qa/issues/1736)) ([33659d7](https://github.com/DanySK/gradle-java-qa/commit/33659d7892455f3c7035b572e542995a57bd7cb2))
+* **deps:** update gradle to v9.9.3 ([#1739](https://github.com/DanySK/gradle-java-qa/issues/1739)) ([ae1003b](https://github.com/DanySK/gradle-java-qa/commit/ae1003bd25e4a24b4254ca0bfc0dd181c7daa3e3))
+
+### Build and continuous integration
+
+* assign a group to pre-compilation tasks ([#1702](https://github.com/DanySK/gradle-java-qa/issues/1702)) ([094103b](https://github.com/DanySK/gradle-java-qa/commit/094103b663e0387fbe16df2f1ee49b32549bfbe8))
+
 ## [1.203.0](https://github.com/DanySK/gradle-java-qa/compare/1.202.0...1.203.0) (2026-11-27)
 
 ### Dependency updates
